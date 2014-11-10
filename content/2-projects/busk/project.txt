@@ -1,0 +1,21 @@
+Title: Busk
+
+----
+
+Client: Franz Magazine
+
+----
+
+Category: festival
+
+----
+
+Date: 2014-11-05
+
+----
+
+Text: - (image: busk-5.png)
+- some random text standalone
+- (image: busk-2.png)
+- (image: busk-3.png)
+- (image: busk-poster.png)

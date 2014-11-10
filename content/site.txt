@@ -1,8 +1,8 @@
-Title: Kirby Starterkit
+Title: Studio MUT
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Amin Al Hazwani
 
 ----
 
