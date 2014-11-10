@@ -5,20 +5,24 @@
     <h1><?php echo $page->title()->html() ?></h1>
 
     <ul class="meta cf">
-      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
+      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('M. Y') ?></time></li>
+      <li><b>Category:</b> <?php echo $page->category() ?></li>
+      <li><b>Client:</b> <?php echo $page->client() ?></li>
     </ul>
 
-    <div class="text">
-      <?php echo $page->text()->kirbytext() ?>
+    <div class="slider__container">
+      <div class="slider royalSlider rsDefault">
+        <!--
+        <?php echo $page->text()->kirbytext() ?>
+        -->
 
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-      <figure>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-      </figure>
-      <?php endforeach ?>
+        <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+          <img class ="rsImg" src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+        <?php endforeach ?>
+      </div>
     </div>
 
+    <!--
     <nav class="nextprev cf" role="navigation">
       <?php if($prev = $page->prevVisible()): ?>
       <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
@@ -27,7 +31,17 @@
       <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
       <?php endif ?>
     </nav>
+    -->
 
   </main>
 
-<?php snippet('footer') ?>
+  <script type="text/javascript">
+    $(function() {
+      $('.slider').royalSlider({
+        autoScaleSlider:false,
+        autoHeight: false,
+        imageScalePadding: 0,
+        keyboardNavEnabled: true
+      });
+    });
+  </script>
