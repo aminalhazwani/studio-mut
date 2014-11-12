@@ -2,7 +2,9 @@
 
 title: Projects
 pages:
-  template: project
+  template: 
+	  - project
+	  - showcase
 files: false
 fields:
   title:
