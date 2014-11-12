@@ -6,8 +6,8 @@ files:
   sortable: true
   fields: 
     caption: 
-        label: Text over picture
-        type: text
+      label: Caption and Alt text
+      type: text
 fields:
   title:
     label: Title
@@ -15,12 +15,14 @@ fields:
   date:
     label: Date
     type:  date
-  client:
-    label: Client
-    type: text
+    width: 1/2
   category:
     label: Category
     type:  tags
+    width: 1/2
+  client:
+    label: Client
+    type: text
   text:
     label: Content
     type:  textarea
