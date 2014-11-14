@@ -12,12 +12,12 @@ files:
       label: Background color HEX
       type: text
     measure:
-      label: Fullscreen?
+      label: Size
       type: radio
-      default: nein
+      default: enclosed
       options:
-        full: Yep
-        nein: Nope
+        full: Full
+        enclosed: Enclosed
     overtext: 
       label: Text over picture
       type: textarea

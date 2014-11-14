@@ -7,3 +7,7 @@ Slidebkcolor: #d2222a
 ----
 
 Overtext: 
+
+----
+
+Measure: enclosed
