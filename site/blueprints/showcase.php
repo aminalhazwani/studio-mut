@@ -8,6 +8,10 @@ files:
     caption: 
       label: Caption (Alt text)
       type: text
+    cover:
+      label: Thumbnail
+      type: checkbox
+      text: Is this the project thumbnail?
     slidebkcolor: 
       label: Background color HEX
       type: text

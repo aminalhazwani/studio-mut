@@ -8,6 +8,10 @@ files:
     caption: 
       label: Caption and Alt text
       type: text
+    cover:
+      label: Thumbnail
+      type: checkbox
+      text: Is this the project thumbnail?
 fields:
   title:
     label: Title
