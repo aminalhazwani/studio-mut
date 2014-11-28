@@ -1,1 +1,5 @@
 Caption: Homepage on different devices
+
+----
+
+Cover: 1

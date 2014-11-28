@@ -6,8 +6,13 @@ Slidebkcolor:
 
 ----
 
-Overtext: # Sed posuere consectetur est at lobortis.
+Overtext: # We design an awesome booklet
+15 musicians will spread their music in 10 locations. Everyone can participate, local but also international artists.
 
 ----
 
 Measure: enclosed
+
+----
+
+Cover: 

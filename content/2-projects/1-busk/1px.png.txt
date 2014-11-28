@@ -6,4 +6,12 @@ Slidebkcolor:
 
 ----
 
-Overtext: # Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+Overtext: On June 14th and 13th (link: http://franzmagazine.com/ text: franzmagazine.com) is organizing the second edition of the **Singer–Songwriter Festival** in the center of Bolzano.
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
