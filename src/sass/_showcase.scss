@@ -7,7 +7,7 @@
 		height: 30px;
 		text-align: center;
 
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-left: calc(50% - 15px);
 
 		@include m(line) {
@@ -42,9 +42,15 @@
 		bottom: 0;
 		z-index: 1;
 
-		margin-bottom: 25px;
+		margin-bottom: 10px;
 		width: 100%;
 		text-align: center;
+
+		font-family: 'maria_proregular';
+
+		@include media-query(palm) {
+			font-size: small;
+		}
 	}
 
 	@include e(slider) {
@@ -67,14 +73,14 @@
 		@include m(enclosed) {
 			position: relative;
 			max-width: 100%;
-			max-height: 80%;
+			max-height: 85%;
 			width: auto;
 			height: auto;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			box-sizing: border-box;
-			padding: 20px;
+			padding: 10px;
 		}
 
 		@include m(full) {
@@ -86,8 +92,8 @@
 			margin: 0!important;
 			height: auto!important;
 			width: auto!important;
-			min-width: 100%;
-		  	min-height: 100%;
+			min-width: 101%;
+		  	min-height: 101%;
 		}
 
 		@include m(text) {
@@ -95,6 +101,36 @@
 			top: 50%;
 		 	left: 50%;
 			transform: translate(-50%, -50%);
+
+			width: calc(100% - 40px);
+			opacity: 0;
+			transition: opacity 1s ease-in;
+			text-align: center;
+
+			@include media-query(lap-and-up) {
+				max-width: 80%;
+			}
+
+			h1, h2, h3 {
+				margin: 0 0 0.5rem 0;
+				font-size: 1.25em;
+				line-height: 1.1;
+				font-family: 'maria_proregular';
+
+				@include media-query(lap-and-up) {
+					margin-bottom: 0.75rem;
+					line-height: 1.2;
+				}
+			}
+
+			p {
+				margin: 0;
+				line-height: 1.2;
+			}
+
+			&.ready {
+				opacity: 1;
+			}
 		}
 	}
 }

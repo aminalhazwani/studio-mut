@@ -20,3 +20,6 @@
     </div>
 
 </main>
+
+<?php echo js('assets/scripts/showcase.min.js') ?>
+<?php snippet('footer') ?>

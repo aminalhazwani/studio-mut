@@ -1,7 +1,13 @@
 @import "normalize";
+@import "vars";
 @import "mixin";
+@import "fonts";
+@import "base";
 
-// SHOWCASE TEMPLATE
+// Showcase Template
 @import "slider";
 @import "slider-skin";
 @import "showcase";
+
+// Projects Template
+@import "projects";
