@@ -1,0 +1,82 @@
+.projects {
+	@include e(item) {
+		@include m(thumb-wrapper) {
+			max-height: 180px;
+			overflow: hidden;
+			margin-bottom: 0.75rem;
+		}
+		@include m(thumb) {
+			width: 100%;
+			height: auto;
+			background-color: #ccc;
+		}
+
+		@include m(link) {
+			display: block;
+			text-decoration: none;
+		}
+
+		@include m(title) {
+			margin: 0;
+			text-decoration: none;
+			text-align: center;
+			color: $heading;
+		}
+	}
+}
+
+.block {
+	display: none;
+}
+
+.container{
+  text-align: justify;
+  
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .mix,
+.container .gap{
+	display: inline-block;
+	width: 49%;
+	overflow: hidden;
+}
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container .mix,
+  .container .gap{
+    width: 23.5%;
+  }
+}
+
+.container .mix{
+  text-align: left;
+  margin-bottom: 2%;
+  display: none;
+}
+
+/**
+ * List Styles
+ */
+
+.container.list .mix{
+  width: 100%;
+}
+
+.container.list .mix:before{
+  padding-top: 40px;
+}
