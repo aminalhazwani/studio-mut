@@ -13,7 +13,6 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <?php echo js('assets/scripts/vendor/vendor.min.js') ?>
-  <?php echo js('assets/scripts/main.min.js') ?>
 
 </head>
 <body>
