@@ -12,8 +12,14 @@ var gulp = require('gulp'),
 // gulp styles task
 gulp.task('styles', function() {
   return gulp.src('src/sass/main.scss')
-    .pipe(sass({ style: 'expanded' }))
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    .pipe(sass({ 
+        style: 'expanded', 
+        "sourcemap=none": true
+    }))
+    .pipe(autoprefixer({
+        browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
+        cascade: false
+    }))
     .pipe(gulp.dest('assets/styles'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
@@ -25,7 +31,6 @@ gulp.task('styles', function() {
 gulp.task('vendor', function() {
   return gulp.src('src/js/vendor/*.js')
     .pipe(concat('vendor.js'))
-    .pipe(gulp.dest('assets/scripts/vendor'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
     .pipe(gulp.dest('assets/scripts/vendor'))
@@ -35,8 +40,6 @@ gulp.task('vendor', function() {
 // gulp scripts task
 gulp.task('scripts', function() {
   return gulp.src('src/js/*.js')
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('assets/scripts'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
     .pipe(gulp.dest('assets/scripts'))
