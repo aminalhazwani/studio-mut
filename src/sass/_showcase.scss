@@ -85,15 +85,16 @@
 
 		@include m(full) {
 			position: relative;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			top: 0;
+			left: 0;
 
-			margin: 0!important;
-			height: auto!important;
-			width: auto!important;
-			min-width: 101%;
-		  	min-height: 101%;
+			width: 100%;
+			height: 100%;
+
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;
+
 		}
 
 		@include m(text) {
@@ -102,21 +103,38 @@
 		 	left: 50%;
 			transform: translate(-50%, -50%);
 
-			width: calc(100% - 40px);
 			opacity: 0;
 			transition: opacity 1s ease-in;
 			text-align: center;
 
+			width: calc(100% - 40px);
+			@include media-query(tabl) {
+				max-width: 70%;
+			}
 			@include media-query(lap-and-up) {
-				max-width: 80%;
+				max-width: 60%;
+			}
+
+			font-size: 1.25em;
+			@include media-query(tabl) {
+				font-size: 1.5em;
+			}
+			@include media-query(lap) {
+				font-size: 1.75em;
+			}
+			@include media-query(desk) {
+				font-size: 2em;
+			}
+			@include media-query(desk-wide) {
+				font-size: 2.5em;
 			}
 
 			h1, h2, h3 {
-				margin: 0 0 0.5rem 0;
 				font-size: 1.25em;
 				line-height: 1.1;
 				font-family: 'maria_proregular';
 
+				margin: 0 0 0.5rem 0;
 				@include media-query(lap-and-up) {
 					margin-bottom: 0.75rem;
 					line-height: 1.2;
@@ -126,6 +144,7 @@
 			p {
 				margin: 0;
 				line-height: 1.2;
+				font-family: 'times_new_romanregular';
 			}
 
 			&.ready {

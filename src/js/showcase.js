@@ -25,11 +25,11 @@ $(function() {
 $(document).ready(function(){
   $('.showcase__image--text').addClass('ready');
 
-  $('.showcase__image--text').flowtype({
-    minimum   : 320,
-    maximum   : 1200,
-    minFont   : 20,
-    maxFont   : 50
-  });
+  // $('.showcase__image--text').flowtype({
+  //   minimum   : 850,
+  //   maximum   : 2560,
+  //   minFont   : 20,
+  //   maxFont   : 50
+  // });
 });
 
