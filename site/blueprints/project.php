@@ -20,7 +20,7 @@ fields:
     label: Date
     type:  date
     width: 1/2
-  category:
+  keywords:
     label: Category
     type:  tags
     width: 1/2
@@ -28,6 +28,5 @@ fields:
     label: Client
     type: text
   text:
-    label: Content
+    label: Project decription
     type:  textarea
-    size: large

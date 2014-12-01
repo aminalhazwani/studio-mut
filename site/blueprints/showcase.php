@@ -37,7 +37,7 @@ fields:
     label: Client
     type: text
     width: 1/2
-  category:
+  keywords:
     label: Category
     type:  tags
     width: 1/2
@@ -45,3 +45,6 @@ fields:
     label: Background color HEX
     type: text
     width: 1/2
+  text:
+    label: Showcase descrption
+    type: textarea
