@@ -24,12 +24,5 @@ $(function() {
 
 $(document).ready(function(){
   $('.showcase__image--text').addClass('ready');
-
-  // $('.showcase__image--text').flowtype({
-  //   minimum   : 850,
-  //   maximum   : 2560,
-  //   minFont   : 20,
-  //   maxFont   : 50
-  // });
 });
 
