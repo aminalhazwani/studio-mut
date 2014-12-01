@@ -1,0 +1,17 @@
+Caption: 
+
+----
+
+Slidebkcolor: 
+
+----
+
+Measure: full
+
+----
+
+Overtext: 
+
+----
+
+Sort: 6
