@@ -6,12 +6,12 @@ Author: Amin Al Hazwani
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: A nice description for SEO optimisation Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords: design,art direction,creative direction,editotial
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright: 

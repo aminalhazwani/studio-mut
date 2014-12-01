@@ -10,8 +10,12 @@ Client: Franz Magazine
 
 ----
 
-Category: Festival
+Pagebkcolor: #fdad1d
 
 ----
 
-Pagebkcolor: #ff9930
+Text: Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.
+
+----
+
+Keywords: Festival
