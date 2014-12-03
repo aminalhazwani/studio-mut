@@ -1,5 +1,5 @@
-Caption: 
+Cover: 1
 
 ----
 
-Cover: 1
+Measure: half

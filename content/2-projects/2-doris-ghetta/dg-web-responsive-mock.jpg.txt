@@ -1,5 +1,5 @@
-Caption: Homepage on different devices
+Cover: 1
 
 ----
 
-Cover: 1
+Measure: full
