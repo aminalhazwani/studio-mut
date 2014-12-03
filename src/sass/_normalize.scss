@@ -15,7 +15,7 @@ $legacy_support_for_ie: false !default; // Used also in Compass
 
 
 // Set the default font family here so you don't have to override it later
-$normalized_font_family: serif !default;
+$normalized_font_family: $times !default;
 
 $normalize_headings: true !default;
 
@@ -26,12 +26,12 @@ $h4_font_size: 1em !default;
 $h5_font_size: 0.83em !default;
 $h6_font_size: 0.75em !default;
 
-$h1_margin: 0.67em 0 !default;
-$h2_margin: 0.83em 0 !default;
-$h3_margin: 1em 0 !default;
-$h4_margin: 1.33em 0 !default;
-$h5_margin: 1.67em 0 !default;
-$h6_margin: 2.33em 0 !default;
+$h1_margin: 0 0 .5em 0 !default;
+$h2_margin: 0 0 .5em 0 !default;
+$h3_margin: 0 0 .5em 0 !default;
+$h4_margin: 0 0 .5em 0 !default;
+$h5_margin: 0 0 .5em 0 !default;
+$h6_margin: 0 0 .5em 0 !default;
 
 $background: #fff !default;
 $color: #000 !default;
@@ -348,6 +348,7 @@ nav {
 //    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
 
 img {
+    max-width: 100%;
     border: 0; // 1
     @if $legacy_support_for_ie {
         -ms-interpolation-mode: bicubic; // 2
@@ -367,6 +368,7 @@ svg:not(:root) {
 // Addresses margin not present in IE6/7/8/9, S5, O11
 
 figure {
+    line-height: 0;
     margin: 0;
 }
 

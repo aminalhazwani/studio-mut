@@ -1,8 +1,9 @@
-@import "normalize";
 @import "vars";
+@import "normalize";
 @import "mixin";
 @import "fonts";
 @import "base";
+@import "typography";
 
 // Showcase Template
 @import "slider";
@@ -11,3 +12,6 @@
 
 // Projects Template
 @import "projects";
+
+// Project Template
+@import "project";
