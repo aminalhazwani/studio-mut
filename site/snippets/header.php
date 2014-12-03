@@ -50,10 +50,21 @@
 
 	<meta property="og:url" content="<?php echo $page->url() ?>" />
 
-	<?php if($page->template() != 'home'): ?>
+	<?php if($page->template() == 'showcase'): ?>
+		<?php if($page->images()->first() != $page->image('1px.png')): ?>
+			<meta property="og:image" content="<?php echo $page->images()->first()->url() ?>" />
+		<?php else: ?>
+			<meta property="og:image" content="<?php echo $page->images()->not('1px.png')->first()->url() ?>" />
+		<?php endif ?>
+	<?php endif ?>
+	<?php if($page->template() == 'project'): ?>
 		<meta property="og:image" content="<?php echo $page->images()->first()->url() ?>" />
-	<?php else: ?>
-		<meta property="og:image" content="<?php echo $page->images()->first()->url() ?>" />
+	<?php endif ?>
+	<?php if($page->template() == 'projects'): ?>
+		<meta property="og:image" content="#" />
+	<?php endif ?>
+	<?php if($page->template() == 'home'): ?>
+		<meta property="og:image" content="#" />
 	<?php endif ?>
 
 	<!-- Stylesheets -->
