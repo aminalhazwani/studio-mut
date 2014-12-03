@@ -46,7 +46,7 @@
 		width: 100%;
 		text-align: center;
 
-		font-family: 'maria_proregular';
+		font-family: $maria;
 
 		@include media-query(palm) {
 			font-size: small;
@@ -138,12 +138,10 @@
 			h1, h2, h3 {
 				font-size: 1.25em;
 				line-height: 1.1;
-				font-family: $maria;
 
 				margin: 0 0 0.5rem 0;
 				@include media-query(lap-and-up) {
 					margin-bottom: 0.75rem;
-					line-height: 1.2;
 				}
 			}
 
