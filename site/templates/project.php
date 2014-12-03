@@ -11,7 +11,7 @@
             <time class="project__header--meta--date" datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('M. Y') ?></time> ~
         </div>
         <div class="project__header--intro">
-            <?php echo $page->intro() ?>
+            <?php echo $page->intro()->kirbytext() ?>
         </div>
     </header>
 
