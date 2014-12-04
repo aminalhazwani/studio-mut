@@ -3,9 +3,6 @@
 	@include media-query(tabl-and-up) {
 		padding: 32px;
 	}
-	@include media-query(desk-wide) {
-		padding: 64px;
-	}
 
 	@include e(index) {
 		text-align: justify;
@@ -22,18 +19,18 @@
 		width: 100%;
 		margin: 0 0 1rem 0;
 
-		@include media-query(tabl) {
+		@include media-query(tabl-and-up) {
 			width: calc(50% - .5rem);
 			margin-right: -4px;
 		}
 
-		@include media-query(lap-and-up) {
-			width: calc(33% - .333rem);
+		@include media-query(desk) {
+			width: calc(33% - .5rem);
 			margin-right: -4px;
 		}
 
 		@include media-query(desk-wide) {
-			width: calc(25% - .25rem);
+			width: calc(25% - 1rem);
 			margin-right: -4px;
 		}
 
