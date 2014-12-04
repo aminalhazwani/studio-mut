@@ -1,3 +1,56 @@
 .projects {
+	padding: 16px;
+	@include media-query(tabl-and-up) {
+		padding: 32px;
+	}
+	@include media-query(desk-wide) {
+		padding: 64px;
+	}
 
+	@include e(index) {
+		text-align: justify;
+		&:after {
+			content: " ";
+			display: inline-block;
+			width: 100%; 
+			height: 0;
+		}
+	}
+
+	figure {
+		display: inline-block;
+		width: 100%;
+		margin: 0 0 1rem 0;
+
+		@include media-query(tabl) {
+			width: calc(50% - .5rem);
+			margin-right: -4px;
+		}
+
+		@include media-query(lap-and-up) {
+			width: calc(33% - .333rem);
+			margin-right: -4px;
+		}
+
+		@include media-query(desk-wide) {
+			width: calc(25% - .25rem);
+			margin-right: -4px;
+		}
+
+		img {
+			width: 100%;
+			height: 0;
+
+			padding-top: 70%;
+
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+		}
+
+		figcaption {
+			text-align: center;
+			line-height: 2;
+		}
+	}
 }

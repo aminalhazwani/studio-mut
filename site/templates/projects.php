@@ -6,17 +6,21 @@
 		<?php echo $page->text()->kirbytext() ?>
 	</div>
 
+    <div class="projects__index">
 	<?php foreach(page('projects')->children()->visible() as $project): ?>
-        <div class="projects__item mix">
-            <a class="projects__item--link"  href="<?php echo $project->url() ?>/">
-                <p class="projects__item--title"><?php echo html($project->title()) ?></p>
-                <!-- 
-                <p class="project__item--client"><?php echo html($project->client()) ?></p>
-                <p class="project__item--date"><?php echo html($project->date()) ?></p> 
-            	-->
+        <figure>
+            <a href="<?php echo $project->url() ?>/">
+                <?php foreach($project->images() as $image): ?>
+                    <?php if($image->cover() != ''): ?>
+                    <img src="/assets/images/1px.png" alt="<?php echo html($project->title()) ?>" style="background-image: url('<?php echo $image->url() ?>')">
+                    <?php endif ?>
+                <?php endforeach ?>
+                <figcaption class="projects__item--title"><?php echo html($project->title()) ?></figcaption>
             </a>
-        </div>
+        </figure>
     <?php endforeach ?>
+    <figure><figure>
+    </div>
 </main>
 
 <?php echo js('assets/scripts/projects.min.js') ?>
