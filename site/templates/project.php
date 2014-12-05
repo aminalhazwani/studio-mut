@@ -1,4 +1,7 @@
+<?php snippet('head') ?>
 <?php snippet('header') ?>
+<?php snippet('menu-button') ?>
+<?php snippet('navigation') ?>
 
 <main class="project" role="main">
     <header class="project__header">

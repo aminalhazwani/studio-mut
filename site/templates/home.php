@@ -1,16 +1,10 @@
+<?php snippet('head') ?>
 <?php snippet('header') ?>
+<?php snippet('menu-button') ?>
+<?php snippet('navigation') ?>
 
-  <main class="main" role="main">
-
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
-    </div>
-
-    <hr>
-
-    <?php snippet('menu') ?>
-
-  </main>
+<main class="home" role="main">
+	<p>We are Studio MUT and this is our <a href="http://motherfuckingwebsite.com/">motherfucking</a> awesome homepage.</p>
+</main>
 
 <?php snippet('footer') ?>

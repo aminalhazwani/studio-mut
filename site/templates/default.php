@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('head') ?>
 
   <main class="main" role="main">
 

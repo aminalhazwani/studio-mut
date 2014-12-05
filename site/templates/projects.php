@@ -1,12 +1,10 @@
+<?php snippet('head') ?>
 <?php snippet('header') ?>
+<?php snippet('menu-button') ?>
+<?php snippet('navigation') ?>
 
 <main class="projects" role="main">
-	<div>
-		<h1><?php echo $page->title()->html() ?></h1>
-		<?php echo $page->text()->kirbytext() ?>
-	</div>
-
-    <div class="projects__index">
+	<div class="projects__index">
 	<?php foreach(page('projects')->children()->visible() as $project): ?>
         <figure>
             <a href="<?php echo $project->url() ?>/">
@@ -24,3 +22,4 @@
 </main>
 
 <?php echo js('assets/scripts/projects.min.js') ?>
+<?php snippet('footer') ?>

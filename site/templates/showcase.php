@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('head') ?>
 
 <main class="showcase" role="main">
     <a class="showcase__close" href="<?php echo $site->url() ?>/projects">
