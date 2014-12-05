@@ -13,13 +13,20 @@
 	@include media-query(desk) {
 		padding: 32px;
 	}
+	@include media-query(desk-wide) {
+		padding: 32px 64px;
+	}
 
 	@include e(logo) {
-		width: 50%;
+		max-width: 60%;
 		height: 30px;
 
 		background-image: url(/assets/images/mut--logo.svg);
 		background-position: 0% 50%;
 		background-repeat: no-repeat;
+
+		@include media-query(tabl-and-up) {
+			max-width: 50%;
+		}
 	}
 }

@@ -14,5 +14,9 @@
 	p {
 		font-family: $maria;
 		font-size: 3em;
+
+		@include media-query(palm) {
+			font-size: 2em;
+		}
 	}
 }

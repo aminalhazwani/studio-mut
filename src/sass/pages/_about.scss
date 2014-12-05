@@ -6,13 +6,167 @@
 	}
 	@include media-query(desk) {
 		margin-top: 97px;
+		padding: 32px;
 	}
 	@include media-query(desk-wide) {
-		padding: 64px;
+		padding: 32px 64px;
 	}
+}
 
-	p {
-		font-family: $maria;
-		font-size: 3em;
+.about {
+	@include e(intro) {
+		border-bottom: 1px solid $black;
+		margin: .5rem 0 2rem 0;
+		padding-bottom: 1rem;
+		overflow: hidden;
+		@include media-query(tabl-and-up) {
+			margin: 1rem 0 3% 0;
+			padding-bottom: 6%;
+		}
+
+		figure {
+			margin-bottom: 1.3rem;
+
+			@include media-query(tabl) {
+				display: inline-block;
+				vertical-align: top;
+				max-width: 45%;
+				margin-right: calc(5% - 4px);
+			}
+			@include media-query(lap-and-up) {
+				display: inline-block;
+				vertical-align: top;
+				max-width: 40%;
+				margin-right: calc(10% - 4px);
+			}
+		}
+
+		p {
+			@include media-query(tabl-and-up) {
+				display: inline-block;
+				width: 49%;
+			}
+		}
+	}
+}
+
+.about {
+	@include e(team) {
+		border-bottom: 1px solid $black;
+		margin: .5rem 0 2rem 0;
+		padding-bottom: 1rem;
+		@include media-query(tabl-and-up) {
+			margin: 1rem 0 3% 0;
+			padding-bottom: 6%;
+		}
+		@include m(designer) {
+			h1, h2 {
+				margin-bottom: .25rem;
+			}
+			h3 {
+				font-size: smaller;
+				margin-bottom: 0;
+			}
+			@include media-query(lap-and-up) {
+				width: calc(50% - 2rem);
+				display: inline-block;
+				vertical-align: top;
+				margin-right: -4px;
+			}
+		}
+		@include media-query(lap-and-up) {
+			div:first-of-type {
+				margin-right: calc(1rem - 4px);
+			}
+			div:last-of-type {
+				margin-left: 1rem;
+			}
+		}
+	}
+}
+
+.about {
+	@include e(info) {
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			@include media-query(lap-and-up) {
+				li:last-child {
+					margin-bottom: 1.3rem;
+				}
+			}
+		}
+		@include media-query(lap-and-up) {
+			div:first-of-type {
+				padding-right: .5rem; 
+				box-sizing: border-box;
+			}
+			div:nth-child(2) {
+				padding-right: .5rem; 
+				padding-left: .5rem;
+				box-sizing: border-box;
+			}
+			div:last-of-type {
+				padding-left: .5rem; 
+				box-sizing: border-box;
+			}
+		}
+
+		@include m(clients){
+			h1, h2 {
+				margin-bottom: .25rem;
+			}
+			h3 {
+				font-size: smaller;
+				margin-bottom: 0;
+			}
+			@include media-query(lap-and-up) {
+				width: calc(33.333% - 1rem);
+				display: inline-block;
+				vertical-align: top;
+				margin-right: -4px;
+			}
+			@include media-query(tabl-and-down) {
+				border-bottom: 1px solid $black;
+		argin: 1rem 0 3% 0;
+			}
+		}
+
+		@include m(awards){
+			h1, h2 {
+				margin-bottom: .25rem;
+			}
+			h3 {
+				font-size: smaller;
+				margin-bottom: 0;
+			}
+			@include media-query(lap-and-up) {
+				width: calc(33.333% - 1rem);
+				display: inline-block;
+				vertical-align: top;
+				margin-right: -4px;
+			}
+		}
+
+		@include m(publications){
+			h1, h2 {
+				margin-bottom: .25rem;
+			}
+			h3 {
+				font-size: smaller;
+				margin-bottom: 0;
+			}
+			@include media-query(lap-and-up) {
+				width: calc(33.333% - 1rem);
+				display: inline-block;
+				vertical-align: top;
+				margin-right: -4px;
+			}
+			@include media-query(tabl-and-down) {
+				border-bottom: 1px solid $black;
+				padding-bottom: 6%;
+			}
+		}
 	}
 }

@@ -1,16 +1,83 @@
-Title: About
+Title: Information
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+Intro: 
 
-## Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+(image: studio-mut-place.jpg)
 
-(image: about.jpg)
+Studio MUT is a design studio focusing on print, identity, exhibition, and interactive work with clients in art and architecture. The studio was founded in 2014 by Thomas Kronbichler and Martin Kerschbaumer;
 
-### Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+----
 
-#### Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+Thomastext: 
+
+## Thomas Kronbichler
+1985 in Bozen geboren.
+Designstudium in Bozen und London. Arbeit für circus Buero für Kommunikation Innsbruck/Wien, Meiré und Meiré Köln/ Berlin, Fons Hickmann m23 Berlin.
+Publikationen in Grafik Magazine, 100 Beste Plakate, Slanted, Spiegel, Graphics, Abitare, Domus.
+
+----
+
+Martintext: 
+
+## Martin Kerschbaumer
+1988 in Bozen geboren.
+Designstudium in Bozen, Lissabon und Florenz.
+Arbeit für Fons Hickmann m23 Berlin, helios Bozen, lungomare / Lupo & Burtscher Bozen
+Teaching Assistant an der Freien Universität Bozen / Fakultät für Design und Künste.
+
+----
+
+Clients: 
+
+## Clients
+- Akademie der bildenden Künste Stuttgart 
+- Architekturstiftung Südtirol 
+- Bozen-Bolzano University Press 
+- Château de Versailles, Paris
+- ewo
+- Freie Universität Bozen
+- Jewish Museum Berlin
+- Lange Nacht der Forschung Südtirol 
+- Martino Gamper
+- Microtec
+- Museion Bozen
+- Plank
+- Red Dot Design Award
+- Royal College of Art, London 
+- Stiftung Südtiroler Sparkasse 
+- Technische Universität Berlin
+- Tiroler Festspiele
+- Val Gardena Marketing
+
+----
+
+Awards: 
+
+## Awards
+### 2014
+- Type Directors Club New York
+- 100 Beste Plakate Deutschland, Österreich, Schweiz 
+- Graphis Poster Annual 2014
+- Golden Bee, Russia
+- Josef Binder Award, Österreich
+
+### 2013
+- Behance Honorable Mention
+- Design Miami, USA
+
+----
+
+Publications: 
+
+## Publications
+### 2014
+- Slanted Magazine 
+- Complex Magazine 
+
+### 2013
+- Domus
+- Abitare
+- idPure
+- grafik Magazine

@@ -37,3 +37,9 @@ p {
     50% { border-bottom-color: transparent; }
     100% { border-bottom-color: $black; }
 }
+
+main {
+	&.is-hidden {
+		display: none;
+	}
+}

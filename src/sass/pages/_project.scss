@@ -6,9 +6,10 @@
 	}
 	@include media-query(desk) {
 		margin-top: 97px;
+		padding: 32px;
 	}
 	@include media-query(desk-wide) {
-		padding: 64px;
+		padding: 32px 64px
 	}
 	// max-width: 1680px;
 	// margin: 0 auto;
