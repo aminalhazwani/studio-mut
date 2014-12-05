@@ -13,11 +13,11 @@
 		@include m(line) {
 			&:after {
 				position: absolute;
-				top: 15px;
+				top: 13px;
 				display: block;
 				transform: rotate(-45deg);
 				width: 30px;
-				height: 2px;
+				height: 4px;
 				background-color: $black;
 				content: " ";
 			}
@@ -29,7 +29,7 @@
 				display: block;
 				transform: rotate(45deg);
 				width: 30px;
-				height: 2px;
+				height: 4px;
 				background-color: $black;
 				content: " ";
 			}
@@ -147,7 +147,7 @@
 
 			p {
 				margin: 0;
-				line-height: 1.2;
+				line-height: 1.3;
 				font-family: $times;
 			}
 

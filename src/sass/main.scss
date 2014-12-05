@@ -1,17 +1,20 @@
-@import "vars";
-@import "normalize";
-@import "mixin";
-@import "fonts";
-@import "base";
-@import "typography";
+@import "helpers/vars";
+@import "helpers/mixin";
 
-// Showcase Template
-@import "slider";
-@import "slider-skin";
-@import "showcase";
+@import "base/normalize";
+@import "base/fonts";
+@import "base/typography";
 
-// Projects Template
-@import "projects";
+@import "layout/header";
+@import "layout/footer";
 
-// Project Template
-@import "project";
+@import "components/navigation";
+@import "components/menu-button";
+@import "components/slider";
+@import "components/slider-skin";
+
+@import "pages/showcase";
+@import "pages/projects";
+@import "pages/project";
+@import "pages/home";
+@import "pages/about";

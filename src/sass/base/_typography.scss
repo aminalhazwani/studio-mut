@@ -1,3 +1,22 @@
+h1, h2, h3, h4 {
+	font-family: $maria;
+	color: $black;
+}
+
+p {
+	margin: 0 0 0.5rem 0;
+	color: $black;
+
+	// strong {
+	// 	font-family: 'times_new_romanbold';
+	// 	font-style: normal;
+	// }
+
+	// em {
+	// 	font-family: 'times_new_romanitalic';
+	// }
+}
+
 p {
 	a {
 		color: $black;
@@ -17,8 +36,4 @@ p {
     0% { border-bottom-color: $black; }
     50% { border-bottom-color: transparent; }
     100% { border-bottom-color: $black; }
-}
-
-figure {
-	margin-bottom: .5rem;
 }

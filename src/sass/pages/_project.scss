@@ -1,7 +1,11 @@
 .project {
+	margin-top: 65px;
 	padding: 16px;
 	@include media-query(tabl-and-up) {
 		padding: 32px;
+	}
+	@include media-query(desk) {
+		margin-top: 97px;
 	}
 	@include media-query(desk-wide) {
 		padding: 64px;

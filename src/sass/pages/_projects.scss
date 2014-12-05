@@ -1,7 +1,14 @@
 .projects {
 	padding: 16px;
+	margin-top: 65px;
 	@include media-query(tabl-and-up) {
 		padding: 32px;
+	}
+	@include media-query(tabl-and-up) {
+		padding: 32px;
+	}
+	@include media-query(desk) {
+		margin-top: 97px;
 	}
 
 	@include e(index) {
@@ -34,18 +41,26 @@
 			margin-right: -4px;
 		}
 
+		a {
+			text-decoration: none;
+		}
+
 		img {
 			width: 100%;
 			height: 0;
-
 			padding-top: 70%;
-
 			background-size: cover;
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
+			transition: background-size 1s ease-in;
+			&:hover {
+				background-size: 150%;
+			}
 		}
 
 		figcaption {
+			color: $black;
+			font-family: $maria;
 			text-align: center;
 			line-height: 2;
 		}
