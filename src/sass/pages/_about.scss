@@ -60,6 +60,8 @@
 			padding-bottom: 6%;
 		}
 		@include m(designer) {
+			margin-bottom: 1.3rem;
+			overflow: hidden;
 			h1, h2 {
 				margin-bottom: .25rem;
 			}
@@ -114,6 +116,8 @@
 		}
 
 		@include m(clients){
+			margin: 1rem 0 3%;
+			padding-bottom: 6%;
 			h1, h2 {
 				margin-bottom: .25rem;
 			}
@@ -134,6 +138,8 @@
 		}
 
 		@include m(awards){
+			margin: 1rem 0 3%;
+			padding-bottom: 6%;
 			h1, h2 {
 				margin-bottom: .25rem;
 			}
@@ -150,6 +156,9 @@
 		}
 
 		@include m(publications){
+			border-bottom: 1px solid $black;
+			margin: 1rem 0 3%;
+			padding-bottom: 6%;
 			h1, h2 {
 				margin-bottom: .25rem;
 			}
@@ -162,10 +171,7 @@
 				display: inline-block;
 				vertical-align: top;
 				margin-right: -4px;
-			}
-			@include media-query(tabl-and-down) {
-				border-bottom: 1px solid $black;
-				padding-bottom: 6%;
+				border-bottom: none;
 			}
 		}
 	}
