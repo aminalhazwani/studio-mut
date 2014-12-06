@@ -24,7 +24,7 @@ p {
 		border-bottom: 1px solid $black;
 
 		&:hover {
-	        animation-name: blinkborder;
+	        animation-name: blinkblackborder;
 	        animation-duration: 0.2s;
 	        animation-timing-function: linear;
 	        animation-iteration-count: infinite;
@@ -32,7 +32,13 @@ p {
 	}
 }
 
-@keyframes blinkborder {  
+@keyframes blinkwhiteborder {  
+    0% { border-bottom-color: $white; }
+    50% { border-bottom-color: transparent; }
+    100% { border-bottom-color: $white; }
+}
+
+@keyframes blinkblackborder {  
     0% { border-bottom-color: $black; }
     50% { border-bottom-color: transparent; }
     100% { border-bottom-color: $black; }

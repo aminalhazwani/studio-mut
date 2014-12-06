@@ -26,5 +26,7 @@
     </div>
 </main>
 
-<?php echo js('assets/scripts/showcase.min.js') ?>
-<?php snippet('footer') ?>
+    <?php echo js('assets/scripts/showcase.min.js') ?>
+    <?php echo js('assets/scripts/main.min.js') ?>
+    </body>
+</html>

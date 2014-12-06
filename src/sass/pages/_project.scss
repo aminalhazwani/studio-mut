@@ -82,15 +82,14 @@
 		@include m(image) {
 			@include m(full) {
 				width: 100%;
-				margin-bottom: 1rem;
+				margin-bottom: calc(1rem - 5px);
 			}
 			@include m(half) {
 				width: 100%;
-				margin-bottom: 1rem;
+				margin-bottom: calc(1rem - 5px);
 				@include media-query(tabl-and-up) {
 					display: inline-block;
 					width: calc(50% - .5rem);
-					margin: 0 0 1rem 0;
 					overflow: hidden;
 				}
 			}

@@ -3,3 +3,10 @@ $('.header__menu').click(function(){
     $('.navigation').toggleClass('is-open');
     $('main').toggleClass('is-hidden');
 });
+
+// $('.footer__brand > p').flowtype({
+//     minimum   : 481,
+//     maximum   : 2560,
+//     minFont   : 16,
+//     maxFont   : 32
+// });
