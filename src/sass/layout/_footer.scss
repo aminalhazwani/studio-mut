@@ -14,6 +14,8 @@ footer {
 	}
 	background-color: $rich-black;
 	font-family: $maria;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .footer {
@@ -89,6 +91,7 @@ footer {
 		h3 {
 			color: $white;
 			margin-bottom: .25rem;
+			clear: both;
 		}
 		p {
 			color: $white;
