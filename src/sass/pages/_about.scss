@@ -64,6 +64,7 @@
 			overflow: hidden;
 			h1, h2 {
 				margin-bottom: .25rem;
+				text-align: center;
 			}
 			h3 {
 				font-size: smaller;
@@ -71,7 +72,7 @@
 			}
 			figure {
 				width: 40%;
-				float: left;
+				margin: 0 auto;
 			}
 			@include media-query(lap-and-up) {
 				width: calc(50% - 2rem);
@@ -93,16 +94,6 @@
 
 .about {
 	@include e(info) {
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			@include media-query(lap-and-up) {
-				li:last-child {
-					margin-bottom: 1.3rem;
-				}
-			}
-		}
 		@include media-query(lap-and-up) {
 			div:first-of-type {
 				padding-right: .5rem; 
@@ -124,21 +115,25 @@
 			padding-bottom: 6%;
 			h1, h2 {
 				margin-bottom: .25rem;
+				text-align: center;
 			}
 			h3 {
 				font-size: smaller;
 				margin-bottom: 0;
 			}
-			@include media-query(lap-and-up) {
-				width: calc(33.333% - 1rem);
-				display: inline-block;
-				vertical-align: top;
-				margin-right: -4px;
+			p {
+				line-height: 1.6;
 			}
-			@include media-query(tabl-and-down) {
+			// @include media-query(lap-and-up) {
+			// 	width: calc(33.333% - 1rem);
+			// 	display: inline-block;
+			// 	vertical-align: top;
+			// 	margin-right: -4px;
+			// }
+			//@include media-query(tabl-and-down) {
 				border-bottom: 1px solid $black;
-		argin: 1rem 0 3% 0;
-			}
+				margin: 1rem 0 3% 0;
+			//}
 		}
 
 		@include m(awards){
@@ -146,17 +141,23 @@
 			padding-bottom: 6%;
 			h1, h2 {
 				margin-bottom: .25rem;
+				text-align: center;
 			}
 			h3 {
 				font-size: smaller;
 				margin-bottom: 0;
+				float: left;
+				margin-right: 1rem;
 			}
-			@include media-query(lap-and-up) {
-				width: calc(33.333% - 1rem);
-				display: inline-block;
-				vertical-align: top;
-				margin-right: -4px;
+			p {
+				line-height: 1.6;
 			}
+			// @include media-query(lap-and-up) {
+			// 	width: calc(33.333% - 1rem);
+			// 	display: inline-block;
+			// 	vertical-align: top;
+			// 	margin-right: -4px;
+			// }
 		}
 
 		@include m(publications){
@@ -165,18 +166,24 @@
 			padding-bottom: 6%;
 			h1, h2 {
 				margin-bottom: .25rem;
+				text-align: center;
 			}
 			h3 {
 				font-size: smaller;
 				margin-bottom: 0;
+				float: left;
+				margin-right: 1rem;
 			}
-			@include media-query(lap-and-up) {
-				width: calc(33.333% - 1rem);
-				display: inline-block;
-				vertical-align: top;
-				margin-right: -4px;
-				border-bottom: none;
+			p {
+				line-height: 1.6;
 			}
+			// @include media-query(lap-and-up) {
+			// 	width: calc(33.333% - 1rem);
+			// 	display: inline-block;
+			// 	vertical-align: top;
+			// 	margin-right: -4px;
+			// 	border-bottom: none;
+			// }
 		}
 	}
 }
