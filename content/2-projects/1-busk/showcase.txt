@@ -10,7 +10,7 @@ Client: Franz Magazine
 
 ----
 
-Pagebkcolor: #fdad1d
+Pagebkcolor: #ffffff
 
 ----
 

@@ -2,7 +2,7 @@ Caption:
 
 ----
 
-Slidebkcolor: #d2222a
+Slidebkcolor: 
 
 ----
 

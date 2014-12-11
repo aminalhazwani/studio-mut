@@ -6,11 +6,11 @@ Slidebkcolor:
 
 ----
 
-Measure: full
+Measure: enclosed
 
 ----
 
-Overtext: # During the festival each musician will have a container for the collection of funds and a space to sell their products
+Overtext: 
 
 ----
 

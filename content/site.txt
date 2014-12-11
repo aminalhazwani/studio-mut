@@ -6,7 +6,7 @@ Author: Amin Al Hazwani
 
 ----
 
-Description: A nice description for SEO optimisation Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+Description: Studio MUT is a design studio focusing on print, identity, exhibition, and interactive work with clients in art and architecture. The studio was founded in 2014 by Thomas Kronbichler and Martin Kerschbaumer;
 
 ----
 
@@ -15,3 +15,23 @@ Keywords: design,art direction,creative direction,editotial
 ----
 
 Copyright: Copyright © 2014 Studio MUT, all rights reserved.
+
+----
+
+Street: Oswaldweg 1c
+
+----
+
+City: 39100 Bozen Bolzano
+
+----
+
+Country: Italy
+
+----
+
+Contact: If you are willing to work, collaborate or produce with MUT give us a call at +39 0471 194 2440 or write to → (link: mailto:hello@studiomut.com text: hello@studiomut.com)
+
+----
+
+Interships: We are looking for young and motivated designer, send your application → (link: mailto:work@studiomut.com text: work@studiomut.com)

@@ -1,5 +1,11 @@
 .header {
 	@include e(menu) {
+		&::selection {
+  			background: white; 
+		}
+		&::-moz-selection {
+			background: white;
+		}
 		height: 62px;
 		width: calc(30px + 16px);
 		@include media-query(tabl-and-up) {

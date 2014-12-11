@@ -6,8 +6,7 @@ Slidebkcolor:
 
 ----
 
-Overtext: # We design an awesome booklet
-15 musicians will spread their music in 10 locations. Everyone can participate, local but also international artists.
+Overtext: 
 
 ----
 

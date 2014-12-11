@@ -21,12 +21,19 @@
 		max-width: 60%;
 		height: 30px;
 
-		background-image: url(/assets/images/mut--logo.svg);
+		background-image: url('/assets/images/mut--logo.svg');
 		background-position: 0% 50%;
 		background-repeat: no-repeat;
 
 		@include media-query(tabl-and-up) {
 			max-width: 50%;
 		}
+	}
+
+	&::selection {
+  		background: white; 
+	}
+	&::-moz-selection {
+		background: white;
 	}
 }

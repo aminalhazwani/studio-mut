@@ -6,6 +6,12 @@
 	top: 0;
 	left: 0;
 	background: $white;
+	&::selection {
+  		background: white; 
+	}
+	&::-moz-selection {
+		background: white;
+	}
 
 	&.is-open {
 		display: block;
