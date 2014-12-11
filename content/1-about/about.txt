@@ -13,6 +13,7 @@ Studio MUT is a design studio focusing on print, identity, exhibition, and inter
 Thomastext: 
 
 ## Thomas Kronbichler
+(image: thomas.png)
 1985 in Bozen geboren.
 Designstudium in Bozen und London. 
 Arbeit für circus Buero für Kommunikation Innsbruck/Wien, Meiré und Meiré Köln/Berlin, Fons Hickmann m23 Berlin.
@@ -23,6 +24,7 @@ Publikationen in Grafik Magazine, 100 Beste Plakate, Slanted, Spiegel, Graphics,
 Martintext: 
 
 ## Martin Kerschbaumer
+(image: martin.png)
 1988 in Bozen geboren.
 Designstudium in Bozen, Lissabon und Florenz.
 Arbeit für Fons Hickmann m23 Berlin, helios Bozen, lungomare / Lupo & Burtscher Bozen.

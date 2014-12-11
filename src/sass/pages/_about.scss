@@ -69,6 +69,10 @@
 				font-size: smaller;
 				margin-bottom: 0;
 			}
+			figure {
+				width: 40%;
+				float: left;
+			}
 			@include media-query(lap-and-up) {
 				width: calc(50% - 2rem);
 				display: inline-block;
