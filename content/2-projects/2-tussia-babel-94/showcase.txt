@@ -10,8 +10,12 @@ Client: Architekturstiftung Südtirol
 
 ----
 
-Category: Magazine,Art direction,Architecture
+Pagebkcolor: #003200
 
 ----
 
-Pagebkcolor: #003200
+Keywords: editorial
+
+----
+
+Text: 
