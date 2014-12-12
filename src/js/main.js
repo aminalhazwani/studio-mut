@@ -1,12 +1,12 @@
 $('.header__menu').click(function(){
     $('.header__menu').toggleClass('is-open');
-    $('.navigation').toggleClass('is-open');
-    $('main').toggleClass('is-hidden');
+    $('.nav').toggleClass('is-open');
+    $('.about__wrapper').toggleClass('is-hidden');
 });
 
-// $('.footer__brand > p').flowtype({
-//     minimum   : 481,
-//     maximum   : 2560,
-//     minFont   : 16,
-//     maxFont   : 32
-// });
+$('.nav').flowtype({
+    minimum   : 481,
+    maximum   : 2560,
+    minFont   : 24,
+    maxFont   : 60
+});

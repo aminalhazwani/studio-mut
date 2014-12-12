@@ -1,5 +1,4 @@
 <?php snippet('head') ?>
-<?php snippet('header') ?>
 <?php snippet('menu-button') ?>
 <?php snippet('navigation') ?>
 

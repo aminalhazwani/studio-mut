@@ -13,8 +13,12 @@ $rich-black: #000;
 $black: #222;
 $white: #fff;
 $grey: #aaa;
-$blue: #0a189c;
+$blue: #1160fb;
+$red: #fc0d1b;
 
 // Typogrpahy
 $maria: 'maria_proregular';
 $times: 'leitura-news';
+
+// Transition
+$bezier: cubic-bezier(.55, 0, .1, 1);

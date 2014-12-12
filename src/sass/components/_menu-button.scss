@@ -8,25 +8,15 @@
 		}
 		height: 62px;
 		width: calc(30px + 16px);
-		@include media-query(tabl-and-up) {
-			width: calc(30px + 32px);
-		}
-		@include media-query(desk) {
-			height: 94px;
-		}
-		@include media-query(desk-wide) {
-			height: 94px;
-			width: calc(30px + 64px);
-		}
 		position: fixed;
 		right: 0;
 		top: 0;
 		cursor: pointer;
+		z-index: 2;
 
 		@include m(line) {
 			display: block;
 			width: 30px;
-			height: 4px;
 			background-color: $black;
 
 			position: relative;
@@ -35,37 +25,37 @@
 
 			&:after {
 		        position: absolute;
-		        top: -10px;
+		        top: -5px;
 		        left: 0;
 		        width: 30px;
 		        height: 4px;
 		        background-color: $black;
 		        content: " ";
+		        transition: transform 1s $bezier, top 1s $bezier;
 		    }
 
 		    &:before {
 		        position: absolute;
 		        left: 0;
-		        top: 10px;
+		        top: 5px;
 		        width: 30px;
 		        height: 4px;
 		        background-color: $black;
 		        content: " ";
+		        transition: transform 1s $bezier, top 1s $bezier;
 		    }
 		}
 
 		&.is-open {
-			z-index: 1;
-
 			span {
 				background-color: $white;
 				&:after {
 					top: 0;
-					transform: rotate(-45deg);
+					transform: rotate(225deg);
 				}
 				&:before {
 					top: 0;
-					transform: rotate(45deg);
+					transform: rotate(-225deg);
 				}
 			}
 		}

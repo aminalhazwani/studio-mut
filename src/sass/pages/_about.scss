@@ -1,15 +1,6 @@
 .about {
-	margin-top: 65px;
-	padding: 16px;
-	@include media-query(tabl-and-up) {
-		padding: 32px;
-	}
-	@include media-query(desk) {
-		margin-top: 97px;
-		padding: 32px;
-	}
-	@include media-query(desk-wide) {
-		padding: 32px 64px;
+	@include e(wrapper) {
+		@extend %wrapper;
 	}
 }
 

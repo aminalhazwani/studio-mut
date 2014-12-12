@@ -1,63 +1,126 @@
-.navigation {
-	display: none;
+.nav {
 	width: 100%;
-	height: 100%;
 	position: fixed;
-	top: 0;
+	top: 101%;
 	left: 0;
-	background: $white;
-	&::selection {
-  		background: white; 
-	}
-	&::-moz-selection {
-		background: white;
-	}
+	background-color: $white;
+	transition: top .7s $bezier;
+	z-index: 1;
+	overflow: hidden;
 
 	&.is-open {
-		display: block;
+		position: absolute;
+		top: 0;
+		overflow: scroll;
+		min-height: 100%;
 	}
+}
 
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		width: 100%;
-		height: 100%;
+.nav {
+	@include e(tags) {
+		background-color: $red;
+		padding: 1rem 0;
 
-		li {
-			position: relative;
-			height: 33.333%;
-			box-sizing: border-box;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
 
-			&:nth-child(2) {
-				border-top: 3px solid $black;
-				border-bottom: 3px solid $black;
-			}
-
-			a {
-				display: block;
-				position: relative;
-				width: 100%;
-				height: 100%;
-
-				span {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-
-					font-size: 2em;
-					font-family: $maria;
-					color: $black;
-
-					@include media-query(tabl-and-up) {
-						font-size: 3em;
-					}
-					@include media-query(desk) {
-						font-size: 4em;
+			li {
+				font-family: $maria;
+				text-transform: capitalize;
+				a {
+					display: block;
+					text-decoration: none;
+					color: $white;
+					text-align: center;
+					padding: 1rem;
+					sup {
+						font-family: $times;
+						margin-left: .25rem;
+						font-size: .5em;
 					}
 				}
 			}
+		}
+
+		@include media-query(lap-and-up) {
+			width: 50%;
+			float: left;
+			margin-bottom: -100rem;
+			padding-bottom: 100rem;
+			overflow: hidden;
+		}
+	}
+	.footnotes {
+		font-size: small;
+		color: $white;
+		text-align: center;
+		margin-top: 2rem;
+		padding-bottom: 1rem;
+		
+		span {
+			&:nth-child(1) {
+				margin-right: .5rem;
+			}
+			&:nth-child(2) {
+				margin-left: .5rem;
+			}
+		}
+	}
+}
+
+.nav {
+	@include e(links) {
+		background-color: $blue;
+		padding: 1rem 0;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+
+			li {
+				font-family: $maria;
+				color: $white;
+				text-transform: capitalize;
+				a {
+					display: block;
+					text-decoration: none;
+					color: $white;
+					text-align: center;
+					padding: 1rem;
+					sup {
+						font-family: $times;
+						margin-left: .25rem;
+						font-size: .5em;
+					}
+				}
+			}
+		}
+		.footnotes {
+			font-size: small;
+			color: $white;
+			text-align: center;
+			margin-top: 2rem;
+			padding-bottom: 1rem;
+			
+			span {
+				&:nth-child(1) {
+					margin: 0;
+				}
+				&:nth-child(2) {
+					margin: 0 1rem;
+				}
+			}
+		}
+
+		@include media-query(lap-and-up) {
+			width: 50%;
+			float: left;
+			margin-bottom: -100rem;
+			padding-bottom: 100rem;
+			overflow: hidden;
 		}
 	}
 }

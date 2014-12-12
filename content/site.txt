@@ -35,3 +35,24 @@ Contact: If you are willing to work, collaborate or produce with MUT give us a c
 ----
 
 Interships: We are looking for young and motivated designer, send your application → (link: mailto:work@studiomut.com text: work@studiomut.com)
+
+----
+
+Menu: 
+
+- (link: # text: Contact Mut)
+- (link: # text: Client List)
+- (link: # text: Internships) 
+- (link: https://www.tumblr.com/ text: Tumblr<sup>1</sup>)
+- (link: # text: Behance<sup>1</sup>)
+- (link: # text: Twitter<sup>1</sup>)
+- (link: # text: Facebook<sup>1</sup>)
+- (link: # text: Typographic Posters<sup>2</sup>)
+- (link: # text: 100 Best Posters<sup>2</sup>)
+- (link: # text: It’s Nice That<sup>3</sup>)
+
+<div class="footnotes">
+<span>1) Outside</span>
+<span>2) Awards</span>
+<span>3) Press</span>
+</div>

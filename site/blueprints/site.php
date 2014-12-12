@@ -15,6 +15,9 @@ fields:
   description:
     label: Description
     type:  textarea
+  menu:
+    label: Menu Links
+    type: textarea
   street:
     label: Street
     type: text

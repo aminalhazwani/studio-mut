@@ -44,8 +44,8 @@ p {
     100% { border-bottom-color: $black; }
 }
 
-main {
+.about__wrapper {
 	&.is-hidden {
-		display: none;
+		overflow: hidden;
 	}
 }

@@ -1,0 +1,22 @@
+.main, %main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper, %wrapper {
+  overflow: auto;
+  height: 100%;
+  padding: 16px;
+  @include media-query(tabl-and-up) {
+    padding: 32px;
+  }
+  @include media-query(desk) {
+    margin-top: 97px;
+    padding: 32px;
+  }
+  @include media-query(desk-wide) {
+    padding: 32px 64px;
+  }
+}
