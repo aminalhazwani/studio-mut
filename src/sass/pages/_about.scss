@@ -59,7 +59,7 @@
 		}
 
 		h4 {
-			font-size: smaller;
+			font-size: medium;
 		}
 	}
 }
@@ -139,9 +139,64 @@
 .about {
 	@include e(more) {
 		@include m(col) {
+			@include media-query(tabl) {
+				div {
+					ul > li, p, span {
+						font-size: 1.15em;
+					}
+				}
+			}
 			@include media-query(lap-and-up) {
 				width: 33%;
 				float: left;
+				padding-right: 1rem;
+				box-sizing: border-box;
+			}
+			@include media-query(desk) {
+				div {
+					ul > li, p, span {
+						font-size: 1.15em;
+					}
+				}
+			}
+			@include media-query(desk-white) {
+				div {
+					ul > li, p, span {
+						font-size: 1.25em;
+					}
+				}
+			}
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(clients) {
+			margin-bottom: 3rem;
+			h1 {
+				margin-bottom: 0;
+			}
+			ul {
+				margin: 0 0 2rem 0;
+				padding: 0;
+				list-style-type: none;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
+				li {
+					color: $white;
+					margin-bottom: .25rem;
+					@include font-smooth();
+					a {
+						color: $white;
+						text-decoration: none;
+						border-bottom: 1px solid $white;
+						@include font-smooth();
+					}
+				}
 			}
 		}
 	}
@@ -241,6 +296,27 @@
 	@include e(more) {
 		@include m(weather) {
 			margin-bottom: 3rem;
+			p {
+				&:first-of-type {
+					display: none;
+				}
+
+				b {
+					display: none;
+				}
+
+				br {
+					&:nth-child(1) {
+						display: none;
+					}
+					&:nth-child(2) {
+						display: none;
+					}
+					&:nth-child(2) {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }

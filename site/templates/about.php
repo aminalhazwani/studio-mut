@@ -26,43 +26,36 @@
 
 			<div class="about__more--col">
 				<div class="about__more--clients">
-					<h4>Mut clients</h4>
+					<?php echo $page->clients()->kirbytext() ?>
 				</div>
 			</div>
 
 			<div class="about__more--col">
 				<div class="about__more--social">
-					<h4>Mut on</h4>
 					<?php echo $page->social()->kirbytext() ?>
 				</div>
 
 				<div class="about__more--awards">
-					<h4>Mut wins</h4>
 					<?php echo $page->awards()->kirbytext() ?>
 				</div>
 
 				<div class="about__more--talks">
-					<h4>Mut talks</h4>
 					<?php echo $page->talks()->kirbytext() ?>
 				</div>
 
 				<div class="about__more--newsletter">
-					<h4>Up to date with Mut</h4>
 					<?php echo $page->newsletter()->kirbytext() ?>
 				</div>
 			</div>
 
 			<div class="about__more--col">
 				<div class="about__more--info-mail">
-					<h4>Ask Mut</h4>
 					<?php echo $page->infomail()->kirbytext() ?>
 				</div>
 
 				<div class="about__more--weather">
 					<h4>Todays weather at Oswaldweg, Bolzano</h4>
-					<p>
-						<?php snippet('weather') ?>
-					</p>
+					<?php snippet('weather') ?>
 				</div>
 
 				<div class="about__more--time">
@@ -71,7 +64,6 @@
 				</div>
 
 				<div class="about__more--warning">
-					<h4>Warning</h4>
 					<?php echo $page->warning()->kirbytext() ?>
 				</div>
 			</div>

@@ -22,8 +22,8 @@ window.onload = (function startTime() {
     var ampm=h >= 12 ? 'PM' : 'AM';
     // add a zero in front of numbers greater than 10
     document.getElementById('time').innerHTML = "It is " +
-        convertHourToName(h) + " and " + 
-        convertNumberToName(m) + " minutes and " + 
+        convertHourToName(h) + "–" + 
+        convertNumberToName(m) + " and " + 
         convertNumberToName(s) + " seconds" + " " + ampm;
     setTimeout(startTime,300);
 });

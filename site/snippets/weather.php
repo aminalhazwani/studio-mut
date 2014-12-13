@@ -1,1 +1,24 @@
-<script type="text/javascript">document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js"><' + '/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.provincia.bz.it/meteo/rss.asp",frame_height_by_article: "1",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "off",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_item_description: "content_only",item_link: "off",rssmikle_item_description_length: "300",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text",item_thumbnail: "full",article_num: "1",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
+<?php
+	$rss = new DOMDocument();
+	$rss->load('http://www.provinz.bz.it/wetter/suedtirolrss.asp');
+	$feed = array();
+	foreach ($rss->getElementsByTagName('item') as $node) {
+		$item = array ( 
+			'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+			'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+			'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+			'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+			);
+		array_push($feed, $item);
+	}
+	$limit = 2;
+	if ($feed == null) echo '<span>If you are seeing this it means that the Province RSS Weather Feed sucks.</span>';
+	else
+	for($x=0;$x<$limit;$x++) {
+		$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
+		$link = $feed[$x]['link'];
+		$description = $feed[$x]['desc'];
+		$date = date('l F d, Y', strtotime($feed[$x]['date']));
+		echo '<p>'.$description.'</p>';
+	}
+?>
