@@ -11,6 +11,12 @@
     }
 }
 
+// Font-smoothing 
+@mixin font-smooth(){
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 // Mixin media queries
 @mixin media-query($media-query){
     @if $media-query == palm{

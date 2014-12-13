@@ -10,24 +10,35 @@ fields:
   intro:
     label: Introduction
     type:  textarea
-    size:  large
-  thomastext:
-    label: Thomas presentation
-    type:  textarea
-    size:  large
-  martintext:
-    label: Martin presentation
-    type:  textarea
-    size:  large
+  address:
+    label: Address
+    type: text
+  phone:
+    label: Telephone
+    type: text
+    width: 1/2
+  mail:
+    label: E-Mail
+    type: email
+    width: 1/2
   clients:
     label: Clients
     type:  textarea
-    size:  large
+  social:
+    label: Mut on
+    type: textarea
   awards:
-    label: Awards
-    type:  textarea
-    size:  large
-  publications:
-    label: Publications
-    type:  textarea
-    size:  large
+    label: Mut wins
+    type: textarea
+  talks:
+    label: Mut talks
+    type: textarea
+  newsletter:
+    label: Up to date with Mut
+    type: textarea
+  infomail:
+    label: Ask Mut
+    type: textarea
+  warning:
+    label: Warning
+    type: textarea

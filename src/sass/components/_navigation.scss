@@ -7,12 +7,12 @@
 	transition: top .7s $bezier;
 	z-index: 1;
 	overflow: hidden;
+	min-height: 100%;
 
 	&.is-open {
 		position: absolute;
 		top: 0;
 		overflow: scroll;
-		min-height: 100%;
 	}
 }
 

@@ -6,175 +6,257 @@
 
 .about {
 	@include e(intro) {
-		border-bottom: 1px solid $black;
-		margin: .5rem 0 2rem 0;
-		padding-bottom: 1rem;
-		overflow: hidden;
-		@include media-query(tabl-and-up) {
-			margin: 1rem 0 3% 0;
-			padding-bottom: 6%;
+		background-color: $red;
+		p {
+			margin-bottom: 4%;
+			color: $white;
+			line-height: 1.4;
+			@include font-smooth();
 		}
 
 		figure {
-			margin-bottom: 1.3rem;
+			img {
+				width: 100%;
+			}
+			padding: 0 15%;
+		}
 
-			@include media-query(tabl) {
-				display: inline-block;
-				vertical-align: top;
-				max-width: 45%;
-				margin-right: calc(5% - 4px);
-			}
-			@include media-query(lap-and-up) {
-				display: inline-block;
-				vertical-align: top;
-				max-width: 40%;
-				margin-right: calc(10% - 4px);
-			}
+		padding: 15% 3% 0 3%;
+		@include media-query(tabl) {
+			padding: 10% 5% 0 5%;
+		}
+		@include media-query(lap-and-up) {
+			padding: 10% 7% 0 7%;
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		background-color: $blue;
+		padding: 0 3% 0 3%;
+		overflow: hidden;
+		@include media-query(tabl) {
+			padding: 0 5% 0 5%;
+		}
+		@include media-query(lap-and-up) {
+			padding: 0 7% 0 7%;
+		}
+
+		span, h1, h2, h3, h4 {
+			color: $white;
+			@include font-smooth();
 		}
 
 		p {
-			@include media-query(tabl-and-up) {
-				display: inline-block;
-				width: 49%;
+			color: $white;
+			line-height: 1.4;
+			@include font-smooth();
+		}
+
+		ul > li > a {
+			@include font-smooth();
+		}
+
+		h4 {
+			font-size: smaller;
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(designers) {
+			padding-top: .5rem;
+			text-align: center;
+			font-size: medium;
+
+			div {
+				&:first-of-type {
+					margin-bottom: .25rem;
+					span {
+						&:first-of-type {
+							margin-right: .3rem;
+						}
+						&:last-of-type {
+							font-family: $maria;
+						}
+					}
+					@include media-query(tabl-and-up) {
+						display: inline-block;
+						margin-right: 1rem;
+						margin-bottom: 0;
+					}
+				}
+				&:last-of-type{
+					span {
+						&:first-of-type {
+							margin-right: .3rem;
+						}
+						&:last-of-type {
+							font-family: $maria;
+						}
+					}
+					@include media-query(tabl-and-up) {
+						display: inline-block;
+						margin-left: 1rem;
+					}
+				}
 			}
 		}
 	}
 }
 
 .about {
-	@include e(team) {
-		border-bottom: 1px solid $black;
-		margin: .5rem 0 2rem 0;
-		padding-bottom: 1rem;
-		@include media-query(tabl-and-up) {
-			margin: 1rem 0 3% 0;
-			padding-bottom: 6%;
-		}
-		@include m(designer) {
-			margin-bottom: 1.3rem;
-			overflow: hidden;
-			h1, h2 {
-				margin-bottom: .25rem;
-				text-align: center;
-			}
-			h3 {
-				font-size: smaller;
-				margin-bottom: 0;
-			}
-			figure {
-				width: 40%;
-				margin: 0 auto;
+	@include e(more) {
+		@include m(address) {
+			margin: 3rem 0;
+			@include media-query(tabl) {
+				margin: 3rem 0 10% 0;
 			}
 			@include media-query(lap-and-up) {
-				width: calc(50% - 2rem);
-				display: inline-block;
-				vertical-align: top;
-				margin-right: -4px;
+				margin: 5% 0 10% 0;
 			}
-		}
-		@include media-query(lap-and-up) {
-			div:first-of-type {
-				margin-right: calc(1rem - 4px);
+
+			p {
+				margin-bottom: .25rem;
+				@include media-query(tabl-and-up) {
+					margin-bottom: .35rem;
+				}
 			}
-			div:last-of-type {
-				margin-left: 1rem;
+
+			a {
+				color: $white;
+				text-decoration: none;
+				border-bottom: 1px solid $white;
+				-webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
 			}
 		}
 	}
 }
 
 .about {
-	@include e(info) {
-		@include media-query(lap-and-up) {
-			div:first-of-type {
-				padding-right: .5rem; 
-				box-sizing: border-box;
-			}
-			div:nth-child(2) {
-				padding-right: .5rem; 
-				padding-left: .5rem;
-				box-sizing: border-box;
-			}
-			div:last-of-type {
-				padding-left: .5rem; 
-				box-sizing: border-box;
-			}
-		}
-
-		@include m(clients){
-			margin: 1rem 0 3%;
-			padding-bottom: 6%;
-			h1, h2 {
-				margin-bottom: .25rem;
-				text-align: center;
-			}
-			h3 {
-				font-size: smaller;
-				margin-bottom: 0;
-			}
-			p {
-				line-height: 1.6;
-			}
-			// @include media-query(lap-and-up) {
-			// 	width: calc(33.333% - 1rem);
-			// 	display: inline-block;
-			// 	vertical-align: top;
-			// 	margin-right: -4px;
-			// }
-			//@include media-query(tabl-and-down) {
-				border-bottom: 1px solid $black;
-				margin: 1rem 0 3% 0;
-			//}
-		}
-
-		@include m(awards){
-			margin: 1rem 0 3%;
-			padding-bottom: 6%;
-			h1, h2 {
-				margin-bottom: .25rem;
-				text-align: center;
-			}
-			h3 {
-				font-size: smaller;
-				margin-bottom: 0;
+	@include e(more) {
+		@include m(col) {
+			@include media-query(lap-and-up) {
+				width: 33%;
 				float: left;
-				margin-right: 1rem;
 			}
-			p {
-				line-height: 1.6;
-			}
-			// @include media-query(lap-and-up) {
-			// 	width: calc(33.333% - 1rem);
-			// 	display: inline-block;
-			// 	vertical-align: top;
-			// 	margin-right: -4px;
-			// }
 		}
+	}
+}
 
-		@include m(publications){
-			border-bottom: 1px solid $black;
-			margin: 1rem 0 3%;
-			padding-bottom: 6%;
-			h1, h2 {
-				margin-bottom: .25rem;
-				text-align: center;
+.about {
+	@include e(more) {
+		@include m(social) {
+			margin-bottom: 3rem;
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+
+				li {
+					a {
+						text-decoration: none;
+						color: $white;
+					}
+				}
 			}
-			h3 {
-				font-size: smaller;
-				margin-bottom: 0;
-				float: left;
-				margin-right: 1rem;
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(awards) {
+			margin-bottom: 3rem;
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+
+				li {
+					a {
+						text-decoration: none;
+						color: $white;
+					}
+				}
 			}
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(talks) {
+			margin-bottom: 3rem;
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+
+				li {
+					a {
+						text-decoration: none;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(newsletter) {
+			margin-bottom: 3rem;
 			p {
-				line-height: 1.6;
+				a {
+					color: $white;
+					text-decoration: none;
+					border-bottom: 1px solid $white;
+				}
 			}
-			// @include media-query(lap-and-up) {
-			// 	width: calc(33.333% - 1rem);
-			// 	display: inline-block;
-			// 	vertical-align: top;
-			// 	margin-right: -4px;
-			// 	border-bottom: none;
-			// }
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(info-mail) {
+			margin-bottom: 3rem;
+			p {
+				a {
+					color: $white;
+					text-decoration: none;
+					border-bottom: 1px solid $white;
+				}
+			}
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(weather) {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(time) {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(warning) {
+			margin-bottom: 3rem;
 		}
 	}
 }

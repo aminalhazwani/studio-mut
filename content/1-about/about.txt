@@ -4,25 +4,9 @@ Title: Information
 
 Intro: 
 
-(image: studio-mut-place.jpg)
+Mut ist ein Graphic Design Studio am Oswaldweg in Bozen, gegründet von Thomas Kronbichler und Martin Kerschbaumer. Wir machen Identities, Bücher, Editorial Design, Websites, Posters. Gerade arbeiten wir für *Museion Bozen*, *Microtec*, *Royal College of Art*, *Technische Universität Berlin*, *Architekturstiftung Südtirol*, *Hofburg Brixen* und mit vielen anderen.
 
-Studio MUT is a design studio focusing on print, identity, exhibition, and interactive work with clients in art and architecture. The studio was founded in 2014 by Thomas Kronbichler and Martin Kerschbaumer;
-
-----
-
-Thomastext: 
-
-## Thomas Kronbichler
-(image: thomas.png)
-1985 in Bozen geboren. Designstudium in Bozen und London. Arbeit für circus Buero für Kommunikation Innsbruck/Wien, Meiré und Meiré Köln/Berlin, Fons Hickmann m23 Berlin. Publikationen in Grafik Magazine, 100 Beste Plakate, Slanted, Spiegel, Graphics, Abitare, Domus.
-
-----
-
-Martintext: 
-
-## Martin Kerschbaumer
-(image: martin.png)
-1988 in Bozen geboren. Designstudium in Bozen, Lissabon und Florenz. Arbeit für Fons Hickmann m23 Berlin, helios Bozen, lungomare / Lupo & Burtscher Bozen. Teaching Assistant an der Freien Universität Bozen / Fakultät für Design und Künste.
+(image: screen-shot-2014-12-12-at-19-39.12.png)
 
 ----
 
@@ -33,21 +17,53 @@ Akademie der bildenden Künste Stuttgart / Architekturstiftung Südtirol / Bozen
 
 ----
 
-Awards: 
-
-## Awards
-### 2014
-Type Directors Club New York / 100 Beste Plakate Deutschland, Österreich, Schweiz / Graphis Poster Annual 2014 / Golden Bee, Russia / Josef Binder Award, Österreich
-
-### 2013
-Behance Honorable Mention / Design Miami, USA
+Address: Oswaldweg 1c, 39100 Bolzano, Italy
 
 ----
 
-Publications: 
+Phone: +39 0471 194 2440
 
-## Publications
-### 2014 
-Slanted Magazine / Complex Magazine 
-### 2013 
-Domus / Abitare / idPure / grafik Magazine
+----
+
+Mail: hello@studiomut.com
+
+----
+
+Social: 
+
+- (link: # text: Facebook)
+- (link: # text: Behance)
+- (link: # text: Tumblr)
+- (link: # text: Linkedin)
+
+----
+
+Awards: 
+
+- (link: # text: Type Directors Club)
+- (link: # text: Elle Decor Prize) 
+- (link: # text: ADC)
+- (link: # text: Beste Plakate)
+- (link: # text: Haufn Zuig Preis)
+
+----
+
+Talks: 
+
+- (link: # text: Free University of Bolzano) 
+- (link: # text: Technische Universität Berlin)
+- (link: # text: Universität Innsbruck)
+
+----
+
+Newsletter: Jaja, we know are interested. From time to time, friendly but also severe news drop into your mailbox. If you want to take part at this game, (link: # text: subscribe here) otherwise, don’t give a damn f**k about it.
+
+----
+
+Infomail: Don’t worry: we are if you drop us a line. For general things, just write to (link: mailto:info@studiomut.com text: info@ studiomut.com) and we come back to you as soon as our demanding clients allows us to do so.
+
+----
+
+Warning: 
+
+Body of work contains flashing images — 包含闪烁 的图像
