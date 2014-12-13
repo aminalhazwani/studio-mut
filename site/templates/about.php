@@ -53,7 +53,7 @@
 					<?php echo $page->infomail()->kirbytext() ?>
 				</div>
 
-				<div id="interships" class="about__more--interships">
+				<div class="about__more--interships">
 					<?php echo $page->interships()->kirbytext() ?>
 				</div>
 
