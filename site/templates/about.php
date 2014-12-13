@@ -53,6 +53,10 @@
 					<?php echo $page->infomail()->kirbytext() ?>
 				</div>
 
+				<div id="interships" class="about__more--interships">
+					<?php echo $page->interships()->kirbytext() ?>
+				</div>
+
 				<div class="about__more--weather">
 					<h4>Todays weather at Oswaldweg, Bolzano</h4>
 					<?php snippet('weather') ?>

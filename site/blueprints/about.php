@@ -39,6 +39,9 @@ fields:
   infomail:
     label: Ask Mut
     type: textarea
+  interships:
+    label: Interships
+    type: textarea
   warning:
     label: Warning
     type: textarea

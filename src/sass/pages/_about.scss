@@ -153,13 +153,15 @@
 				box-sizing: border-box;
 			}
 			@include media-query(desk) {
+				padding-right: 2rem;
 				div {
 					ul > li, p, span {
 						font-size: 1.15em;
 					}
 				}
 			}
-			@include media-query(desk-white) {
+			@include media-query(desk-wide) {
+				padding-right: 3rem;
 				div {
 					ul > li, p, span {
 						font-size: 1.25em;
@@ -280,6 +282,21 @@
 .about {
 	@include e(more) {
 		@include m(info-mail) {
+			margin-bottom: 3rem;
+			p {
+				a {
+					color: $white;
+					text-decoration: none;
+					border-bottom: 1px solid $white;
+				}
+			}
+		}
+	}
+}
+
+.about {
+	@include e(more) {
+		@include m(interships) {
 			margin-bottom: 3rem;
 			p {
 				a {
