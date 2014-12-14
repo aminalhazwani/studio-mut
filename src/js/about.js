@@ -67,5 +67,3 @@ function convertNumberToName(num) {
     }
     return result;
 }
-
-startTime();

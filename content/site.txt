@@ -18,31 +18,11 @@ Copyright: Copyright © 2014 Studio MUT, all rights reserved.
 
 ----
 
-Street: Oswaldweg 1c
-
-----
-
-City: 39100 Bozen Bolzano
-
-----
-
-Country: Italy
-
-----
-
-Contact: If you are willing to work, collaborate or produce with MUT give us a call at +39 0471 194 2440 or write to → (link: mailto:hello@studiomut.com text: hello@studiomut.com)
-
-----
-
-Interships: We are looking for young and motivated designer, send your application → (link: mailto:work@studiomut.com text: work@studiomut.com)
-
-----
-
 Menu: 
 
-- (link: # text: Contact Mut)
-- (link: # text: Client List)
-- (link: # text: Internships) 
+- (link: http://studiomut.dev/about/#contact text: Contact Mut)
+- (link: http://studiomut.dev/about/#clients text: Client List)
+- (link: http://studiomut.dev/about/#interships text: Internships) 
 - (link: https://www.tumblr.com/ text: Tumblr<sup>1</sup>)
 - (link: # text: Behance<sup>1</sup>)
 - (link: # text: Twitter<sup>1</sup>)

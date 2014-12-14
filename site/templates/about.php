@@ -17,7 +17,7 @@
 				</div>
 			</div>
 
-			<div class="about__more--address">
+			<div id="contact" class="about__more--address">
 				<?php echo $site->title()->kirbytext() ?>
 				<?php echo $page->address()->kirbytext() ?>
 				<?php echo $page->phone()->kirbytext() ?>
@@ -25,7 +25,7 @@
 			</div>
 
 			<div class="about__more--col">
-				<div class="about__more--clients">
+				<div id="clients" class="about__more--clients">
 					<?php echo $page->clients()->kirbytext() ?>
 				</div>
 			</div>
@@ -53,7 +53,7 @@
 					<?php echo $page->infomail()->kirbytext() ?>
 				</div>
 
-				<div class="about__more--interships">
+				<div id="interships" class="about__more--interships">
 					<?php echo $page->interships()->kirbytext() ?>
 				</div>
 
