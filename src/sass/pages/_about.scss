@@ -129,8 +129,7 @@
 				color: $white;
 				text-decoration: none;
 				border-bottom: 1px solid $white;
-				-webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
+				@include font-smooth();
 			}
 		}
 	}
