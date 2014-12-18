@@ -4,3 +4,11 @@ $('.home__header').flowtype({
     minFont   : 18,
     maxFont   : 48
 });
+
+$(function(){
+  $('#container').mixItUp({
+  	animation: {
+		enable: false		
+	}
+  });
+});

@@ -19,6 +19,13 @@ $('.nav__tags').find('a').click(function(){
     $('.home').toggleClass('is-hidden');
 });
 
+$('.nav__tags').find('button').click(function(){
+    $('.header__menu').removeClass('is-open');
+    $('.nav').toggleClass('is-open');
+    $('.about').toggleClass('is-hidden');
+    $('.home').toggleClass('is-hidden');
+});
+
 $('.nav').flowtype({
     minimum   : 481,
     maximum   : 2560,

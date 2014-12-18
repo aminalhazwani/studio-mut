@@ -1,7 +1,7 @@
 <?php snippet('head') ?>
 
 <main class="showcase" role="main">
-    <a class="showcase__close" href="<?php echo $site->url() ?>/projects">
+    <a class="showcase__close" href="<?php echo $site->url() ?>">
         <span class="showcase__close--line"></span>
     </a>
 

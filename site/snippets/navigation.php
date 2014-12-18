@@ -17,9 +17,9 @@
                 </li>
             <?php else: ?>
                 <li>
-                    <a href="#">
+                    <button class="filter" data-filter=".<?php echo html($tag) ?>">
                         <?php echo html($tag) ?>
-                    </a>
+                    </button>
                 </li>
             <?php endif ?>
             <?php endforeach ?>

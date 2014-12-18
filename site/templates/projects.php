@@ -5,7 +5,7 @@
 
 <main class="projects" role="main">
 	<div class="projects__index">
-	<?php foreach(page('projects')->children()->visible() as $project): ?>
+	<?php foreach($pages->find('projects')->children()->visible() as $project): ?>
         <figure>
             <a href="<?php echo $project->url() ?>/">
                 <?php foreach($project->images() as $image): ?>

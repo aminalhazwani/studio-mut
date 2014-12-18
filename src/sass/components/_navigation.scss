@@ -19,7 +19,7 @@
 .nav {
 	@include e(tags) {
 		background-color: $red;
-		padding: 1rem 0;
+		padding: calc(1rem + 50px) 0 1rem 0;
 
 		ul {
 			margin: 0;
@@ -29,7 +29,7 @@
 			li {
 				font-family: $maria;
 				text-transform: capitalize;
-				a {
+				a, button {
 					display: block;
 					text-decoration: none;
 					color: $white;
@@ -73,7 +73,7 @@
 .nav {
 	@include e(links) {
 		background-color: $blue;
-		padding: 1rem 0;
+		padding: calc(1rem + 50px) 0 1rem 0;
 
 		ul {
 			margin: 0;
