@@ -6,7 +6,7 @@ Author: Amin Al Hazwani
 
 ----
 
-Description: Studio MUT is a design studio focusing on print, identity, exhibition, and interactive work with clients in art and architecture. The studio was founded in 2014 by Thomas Kronbichler and Martin Kerschbaumer;
+Description: Mut ist ein Graphic Design Studio am Oswaldweg in Bozen, gegründet von Thomas Kronbichler und Martin Kerschbaumer. Wir machen Identities, Bücher, Editorial Design, Websites, Posters. Gerade arbeiten wir für *Museion Bozen*, *Microtec*, *Royal College of Art*, *Technische Universität Berlin*, *Architekturstiftung Südtirol*, *Hofburg Brixen* und mit vielen anderen.
 
 ----
 
@@ -20,8 +20,8 @@ Copyright: Copyright © 2014 Studio MUT, all rights reserved.
 
 Menu: 
 
+- (link: http://studiomut.dev/about/ text: About Mut)
 - (link: http://studiomut.dev/about/#contact text: Contact Mut)
-- (link: http://studiomut.dev/about/#clients text: Client List)
 - (link: http://studiomut.dev/about/#interships text: Internships) 
 - (link: https://www.tumblr.com/ text: Tumblr<sup>1</sup>)
 - (link: # text: Behance<sup>1</sup>)

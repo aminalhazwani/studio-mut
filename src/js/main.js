@@ -1,19 +1,22 @@
 $('.header__menu').click(function(){
     $('.header__menu').toggleClass('is-open');
     $('.nav').toggleClass('is-open');
-    $('.about__wrapper').toggleClass('is-hidden');
+    $('.about').toggleClass('is-hidden');
+    $('.home').toggleClass('is-hidden');
 });
 
 $('.nav__links').find('a').click(function(){
     $('.header__menu').removeClass('is-open');
     $('.nav').toggleClass('is-open');
-    $('.about__wrapper').toggleClass('is-hidden');
+    $('.about').toggleClass('is-hidden');
+    $('.home').toggleClass('is-hidden');
 });
 
 $('.nav__tags').find('a').click(function(){
     $('.header__menu').removeClass('is-open');
     $('.nav').toggleClass('is-open');
-    $('.about__wrapper').toggleClass('is-hidden');
+    $('.about').toggleClass('is-hidden');
+    $('.home').toggleClass('is-hidden');
 });
 
 $('.nav').flowtype({
@@ -23,8 +26,7 @@ $('.nav').flowtype({
     maxFont   : 60
 });
 
-$(document).ready(function (){ 
-  $(function() {
+$(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -38,4 +40,4 @@ $(document).ready(function (){
     }
   });
 });
-});
+

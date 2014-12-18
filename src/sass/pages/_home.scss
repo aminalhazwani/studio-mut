@@ -1,22 +1,35 @@
 .home {
-	margin-top: 65px;
-	padding: 16px;
-	@include media-query(tabl-and-up) {
-		padding: 32px;
-	}
-	@include media-query(desk) {
-		margin-top: 97px;
-	}
-	@include media-query(desk-wide) {
-		padding: 64px;
+	@include e(wrapper) {
+		@extend %wrapper;
 	}
 
-	p {
-		font-family: $maria;
-		font-size: 3em;
+    &.is-hidden {
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+    }
+}
 
-		@include media-query(palm) {
-			font-size: 2em;
-		}
+.home {
+	background-color: $blue;
+
+	@include e(header) {
+        padding: 20% 3% 20% 3%;
+        @include media-query(tabl) {
+            padding: 10% 5% 10% 5%;
+        }
+        @include media-query(lap-and-up) {
+            padding: 10% 7% 10% 7%;
+        }
+
+        p {
+            color: $white;
+            @include font-smooth();
+        }
+	}
+
+	@include e(content) {
+		padding: 4rem;
+		background-color: $white;
 	}
 }

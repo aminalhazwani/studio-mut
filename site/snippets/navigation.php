@@ -1,4 +1,4 @@
-<nav class="nav" role="navigation">
+<nav class="nav scene_element scene_element--fadeoutdown" role="navigation">
     <div class="nav__tags">
         <?php $tags = $pages->find('/projects')->children()->visible()->pluck('keywords', ',', true); ?>
         <ul>

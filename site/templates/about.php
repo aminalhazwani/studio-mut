@@ -1,9 +1,9 @@
 <?php snippet('head') ?>
-<?php snippet('menu-button') ?>
+<?php snippet('header') ?>
 <?php snippet('navigation') ?>
 
-<main class="main" role="main">
-	<div class="about__wrapper">
+<main id="main" class="about m-scene" role="main">
+	<div class="about__wrapper scene_element scene_element--fadeinup">
 		<div class="about__intro">
 			<?php echo $page->intro()->kirbytext() ?>
 		</div>

@@ -2,6 +2,12 @@
 	@include e(wrapper) {
 		@extend %wrapper;
 	}
+
+    &.is-hidden {
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+    }
 }
 
 .about {
@@ -21,7 +27,7 @@
 			padding: 0 15%;
 		}
 
-		padding: 15% 3% 0 3%;
+		padding: 20% 3% 0 3%;
 		@include media-query(tabl) {
 			padding: 10% 5% 0 5%;
 		}

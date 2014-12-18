@@ -1,5 +1,6 @@
 @import "helpers/vars";
 @import "helpers/mixin";
+@import "helpers/animations";
 
 @import "base/normalize";
 @import "base/fonts";
@@ -9,7 +10,6 @@
 @import "layout/footer";
 
 @import "components/navigation";
-@import "components/menu-button";
 @import "components/slider";
 @import "components/slider-skin";
 

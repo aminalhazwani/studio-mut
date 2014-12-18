@@ -73,6 +73,25 @@
 	<!-- Scripts -->
   	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   	<?php echo js('assets/scripts/vendor/vendor.min.js') ?>
+  	<script>
+	  	;(function ($) {
+	    'use strict';
+	    var $body    = $('html, body'),
+	        content  = $('#main').smoothState({
+	            prefetch: true,
+	            pageCacheSize: 4,
+	            onStart: {
+	                duration: 600,
+	                render: function (url, $container) {
+	                    content.toggleAnimationClass('is-exiting');
+	                    $body.animate({
+	                        scrollTop: 0
+	                    });
+	                }
+	            }
+	        }).data('smoothState');
+		})(jQuery);
+	</script>
 
   	<!-- Typekit fonts -->
   	<script src="//use.typekit.net/dee1mbn.js"></script>
