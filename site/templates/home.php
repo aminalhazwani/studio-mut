@@ -9,9 +9,6 @@
 				<?php echo $site->description()->kirbytext() ?>
 			</div>
 		</div>
-		<button class="filter" data-filter="all">All</button>
-		<button class="filter" data-filter=".web">Web</button>
-		<button class="filter" data-filter=".editorial">Editorial</button>
 		<div id="container" class="home__content scene_element scene_element--fadeinup">
 		<?php foreach(page('projects')->children()->visible() as $project): ?>
 	        <figure class="mix<?php foreach(str::split($project->keywords()) as $tag): ?> <?php echo $tag ?><?php endforeach ?>">

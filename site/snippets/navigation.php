@@ -2,24 +2,21 @@
     <div class="nav__tags">
         <?php $tags = $pages->find('/projects')->children()->visible()->pluck('keywords', ',', true); ?>
         <ul>
+                <li>
+                    <a href="#" class="filter" data-filter="all">Everything</a>
+                </li>
             <?php foreach($tags as $tag): ?>
             <?php if($tag == 'design' or $tag == 'art'): ?>
                 <li>
-                    <a href="#">
-                        <?php echo html($tag) ?><sup>A</sup>
-                    </a>
+                    <a href="#" class="filter" data-filter=".<?php echo html($tag) ?>"><?php echo html($tag) ?><sup>A</sup></a>
                 </li>
             <?php elseif($tag == 'web'): ?>
                 <li>
-                    <a href="#">
-                        <?php echo html($tag) ?><sup>B</sup>
-                    </a>
+                    <a href="#" class="filter" data-filter=".<?php echo html($tag) ?>"><?php echo html($tag) ?><sup>B</sup></a>
                 </li>
             <?php else: ?>
                 <li>
-                    <button class="filter" data-filter=".<?php echo html($tag) ?>">
-                        <?php echo html($tag) ?>
-                    </button>
+                    <a href="#" class="filter" data-filter=".<?php echo html($tag) ?>"><?php echo html($tag) ?></a>
                 </li>
             <?php endif ?>
             <?php endforeach ?>

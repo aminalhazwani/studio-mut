@@ -29,12 +29,19 @@
 			li {
 				font-family: $maria;
 				text-transform: capitalize;
-				a, button {
+				button {
 					display: block;
+					width: 100%;
+					background-color: $red;
+					border: none;
+					outline: none;
 					text-decoration: none;
 					color: $white;
 					text-align: center;
 					padding: 1rem;
+					&:focus {
+						outline: none;
+					}
 					sup {
 						font-family: $times;
 						margin-left: .25rem;
