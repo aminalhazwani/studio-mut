@@ -3,20 +3,20 @@
         <?php $tags = $pages->find('/projects')->children()->visible()->pluck('keywords', ',', true); ?>
         <ul>
                 <li>
-                    <a href="#" class="filter" data-filter="all">Everything</a>
+                    <button class="filter" data-filter="all">Everything</button>
                 </li>
             <?php foreach($tags as $tag): ?>
             <?php if($tag == 'design' or $tag == 'art'): ?>
                 <li>
-                    <a href="#" class="filter" data-filter=".<?php echo html($tag) ?>"><?php echo html($tag) ?><sup>A</sup></a>
+                    <button class="filter" data-filter=".<?php echo html($tag) ?>"><?php echo html($tag) ?><sup>A</sup></button>
                 </li>
             <?php elseif($tag == 'web'): ?>
                 <li>
-                    <a href="#" class="filter" data-filter=".<?php echo html($tag) ?>"><?php echo html($tag) ?><sup>B</sup></a>
+                    <button class="filter" data-filter=".<?php echo html($tag) ?>"><?php echo html($tag) ?><sup>B</sup></button>
                 </li>
             <?php else: ?>
                 <li>
-                    <a href="#" class="filter" data-filter=".<?php echo html($tag) ?>"><?php echo html($tag) ?></a>
+                    <button class="filter" data-filter=".<?php echo html($tag) ?>"><?php echo html($tag) ?></button>
                 </li>
             <?php endif ?>
             <?php endforeach ?>
