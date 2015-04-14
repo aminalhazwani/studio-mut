@@ -22,7 +22,3 @@ $(function() {
   updCount();
 });
 
-$(document).ready(function(){
-  $('.showcase__image--text').addClass('ready');
-});
-
