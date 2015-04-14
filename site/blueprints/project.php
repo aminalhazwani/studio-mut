@@ -5,17 +5,29 @@ pages: false
 files:
   sortable: true
   fields: 
+    caption: 
+      label: Caption (Alt text)
+      type: text
     cover:
-      label: Thumbnail
-      type: checkbox
-      text: Is this the project thumbnail?
-    measure:
-      label: Width size
+      label: Is this the project preview?
       type: radio
-      default: full
+      default: nein
+      options: 
+        ja: Yes, please!
+        nein: No, thank you.
+    slidebkcolor: 
+      label: Background color HEX
+      type: text
+    measure:
+      label: Size
+      type: radio
+      default: enclosed
       options:
         full: Full
-        half: Half
+        enclosed: Enclosed
+    overtext: 
+      label: Text over picture
+      type: textarea
 fields:
   title:
     label: Title
@@ -23,12 +35,23 @@ fields:
   date:
     label: Date
     type:  date
-  keywords:
-    label: Category
-    type:  tags
+    width: 1/2
   client:
     label: Client
     type: text
-  intro:
-    label: Project abstract
-    type:  textarea
+    width: 1/2
+  category:
+    label: Category
+    type:  tags
+    width: 1/2
+  previewSize:
+    label: Preview size
+    width: 1/2
+    type: radio
+    default: full
+    options:
+      half: 50%
+      full: 100%
+  text:
+    label: Descrption
+    type: textarea

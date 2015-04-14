@@ -1,38 +1,32 @@
 <?php snippet('head') ?>
-<?php snippet('header') ?>
-<?php snippet('menu-button') ?>
-<?php snippet('navigation') ?>
 
-<main class="project" role="main">
-    <header class="project__header">
-        <div class="project__header--meta">
-            <h1 class="project__header--meta--title">
-                <?php echo $page->title()->html() ?>
-            </h1>
-            <p class="project__header--meta--client"><?php echo $page->client() ?></p>
-            <!-- <span class="project__header--meta--category"><?php echo $page->keywords() ?></span> -->
-            <time class="project__header--meta--date" datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('M. Y') ?></time> ~
-        </div>
-        <div class="project__header--intro">
-            <?php echo $page->intro()->kirbytext() ?>
-        </div>
-    </header>
+<main class="showcase" role="main">
+    <a class="showcase__close" href="<?php echo $site->url() ?>">
+        <span class="showcase__close--line"></span>
+    </a>
 
-    <article class="project__article">
+    <div class="showcase__slider royalSlider rsDefault" <?php if($page->pagebkcolor() != ''): ?>style="background-color:<?php echo $page->pagebkcolor() ?>"<?php endif ?>>
         <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-            <img class="project__article--image--<?php echo $image->measure() ?>" src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-    <?php endforeach ?>
-    </article>
-
-    <!-- <nav class="nextprev cf" role="navigation">
-    <?php if($prev = $page->prevVisible()): ?>
-    <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
-    <?php endif ?>
-    <?php if($next = $page->nextVisible()): ?>
-    <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
-    <?php endif ?>
-    </nav> -->
+            <?php if($image->measure() == 'enclosed'): ?>
+                <figure class="showcase__slider--slide" <?php if($image->slidebkcolor() != ''): ?>style="background-color:<?php echo $image->slidebkcolor() ?>"<?php endif ?>>
+                    <img class="showcase__image--enclosed" src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+                    <?php if($image->overtetext() != ' '): ?>
+                        <figcaption class="showcase__image--text"><?php echo $image->overtext()->kirbytext() ?></figcaption>
+                    <?php endif ?>
+                </figure>
+            <?php else: ?>
+                <figure class="showcase__slider--slide" <?php if($image->slidebkcolor() != ''): ?>style="background-color:<?php echo $image->slidebkcolor() ?>"<?php endif ?>>
+                    <img class="showcase__image--full" src="/assets/images/1px.png" alt="<?php echo $page->title()->html() ?>" style="background-image:url('<?php echo $image->url() ?>');">
+                    <?php if($image->overtetext() != ' '): ?>
+                        <figcaption class="showcase__image--text"><?php echo $image->overtext()->kirbytext() ?></figcaption>
+                    <?php endif ?>
+                </figure>
+            <?php endif ?>
+        <?php endforeach ?>
+    </div>
 </main>
 
-<?php echo js('assets/scripts/project.min.js') ?>
-<?php snippet('footer') ?>
+    <?php echo js('assets/scripts/showcase.min.js') ?>
+    <?php echo js('assets/scripts/main.min.js') ?>
+    </body>
+</html>

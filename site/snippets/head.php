@@ -23,7 +23,7 @@
 
 	<!-- Page keywords -->
 	<?php if($page->template() != 'home'): ?>
-		<meta name="keywords" content="<?php echo $page->keywords()->html() ?>">
+		<meta name="keywords" content="<?php echo $page->category()->html() ?>">
 	<?php else: ?>
 		<meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 	<?php endif ?>
@@ -50,21 +50,18 @@
 
 	<meta property="og:url" content="<?php echo $page->url() ?>" />
 
-	<?php if($page->template() == 'showcase'): ?>
-		<?php if($page->images()->first() != $page->image('1px.png')): ?>
-			<meta property="og:image" content="<?php echo $page->images()->first()->url() ?>" />
-		<?php else: ?>
-			<meta property="og:image" content="<?php echo $page->images()->not('1px.png')->first()->url() ?>" />
-		<?php endif ?>
-	<?php endif ?>
-	<?php if($page->template() == 'project'): ?>
-		<meta property="og:image" content="<?php echo $page->images()->first()->url() ?>" />
-	<?php endif ?>
-	<?php if($page->template() == 'projects'): ?>
-		<meta property="og:image" content="#" />
-	<?php endif ?>
-	<?php if($page->template() == 'home'): ?>
-		<meta property="og:image" content="#" />
+
+	<!-- Remember to fix this if text-slide is not necessary -->
+	<?php if($page->template() != 'home'): ?>
+		<?php foreach($page->images() as $image): ?>
+			<?php if($image->cover() != ''): ?>
+				<meta property="og:image" content="<?php echo $image->url() ?>" />
+			<?php endif ?>
+		<?php endforeach ?>
+	<?php else: ?>
+		<?php foreach($page->images() as $image): ?>
+			<meta property="og:image" content="<?php echo $image->first()->url() ?>" />
+		<?php endforeach ?>
 	<?php endif ?>
 
 	<!-- Stylesheets -->
@@ -73,31 +70,14 @@
 	<!-- Scripts -->
   	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   	<?php echo js('assets/scripts/vendor/vendor.min.js') ?>
-  	<script>
-	  	;(function ($) {
-	    'use strict';
-	    var $body    = $('html, body'),
-	        content  = $('#main').smoothState({
-	            prefetch: true,
-	            pageCacheSize: 4,
-	            onStart: {
-	                duration: 600,
-	                render: function (url, $container) {
-	                    content.toggleAnimationClass('is-exiting');
-	                    $body.animate({
-	                        scrollTop: 0
-	                    });
-	                }
-	            }
-	        }).data('smoothState');
-		})(jQuery);
-	</script>
-
-  	<!-- Typekit fonts -->
-  	<script src="//use.typekit.net/dee1mbn.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
 </head>
-<body class="scene_element--fadein">
+<body>
 	<!--[if lt IE 7]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
+	<header>
+		<a href="<?php echo $site->url() ?>">Studio Mut</a>
+		<a href="#">About</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+	</header>

@@ -1,30 +1,35 @@
 <?php snippet('head') ?>
-<?php snippet('header') ?>
-<?php snippet('navigation') ?>
 
-<main id="main" class="home m-scene" role="main">
-	<div class="home__wrapper">
-		<div class="home__header scene_element scene_element--fadein">
-			<div class="scene_element scene_element--fadein">
-				<?php echo $site->description()->kirbytext() ?>
-			</div>
+	<main>
+		<?php echo $page->intro()->kirbytext() ?>
+
+		<div>
+			<?php $tags = $pages->find('/projects')->children()->visible()->pluck('category', ',', true); ?>
+			<?php foreach($tags as $tag): ?>
+		   	<a href="<?php echo url('/tag:' . $tag)?>">
+		   		<?php echo html($tag) ?>
+				</a>
+			<?php endforeach ?>
 		</div>
-		<div id="container" class="home__content scene_element scene_element--fadeinup">
+
 		<?php foreach(page('projects')->children()->visible() as $project): ?>
-	        <figure class="mix<?php foreach(str::split($project->keywords()) as $tag): ?> <?php echo $tag ?><?php endforeach ?>">
-	            <a href="<?php echo $project->url() ?>/">
-	                <?php foreach($project->images() as $image): ?>
-	                    <?php if($image->cover() != ''): ?>
-	                    <img src="/assets/images/1px.png" alt="<?php echo html($project->title()) ?>" style="background-image: url('<?php echo $image->url() ?>')">
-	                    <?php endif ?>
-	                <?php endforeach ?>
-	                <figcaption class="projects__item--title"><?php echo html($project->title()) ?></figcaption>
-	            </a>
+	      <figure class="project<?php if($project->previewSize() == 'half'): ?> project__half<?php endif?>">
+				<?php foreach($project->images() as $image): ?>
+				<?php if($image->cover() == 'ja'): ?>
+				<a href="<?php echo $project->url() ?>/">
+					<img src="<?php echo $image->url() ?>" alt="<?php echo html($project->title()) ?>"/>
+				</a>
+				<?php endif ?>
+				<?php endforeach ?>
+	            <figcaption class="projects__item--title">
+	            	<span><?php echo html($project->category()) ?></span>
+	            	<a href="<?php echo $project->url() ?>/">
+	            		<?php echo html($project->title()) ?>
+	         		</a>
+	            </figcaption>
 	        </figure>
 	    <?php endforeach ?>
-		</div>
-	</div>
-</main>
+	</main>
 
 <?php echo js('assets/scripts/home.min.js') ?>
 <?php snippet('footer') ?>
