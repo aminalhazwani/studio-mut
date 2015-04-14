@@ -1,5 +1,0 @@
-Cover: 1
-
-----
-
-Measure: full
