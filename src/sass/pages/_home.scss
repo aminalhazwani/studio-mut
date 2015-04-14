@@ -1,55 +1,7 @@
-.home {
-	@include e(wrapper) {
-		@extend %wrapper;
+.project {
+	display: inline-block;
+	
+	@include e(half) {
+		max-width: 50%;
 	}
-
-    &.is-hidden {
-        position: fixed;
-        height: 100%;
-        overflow: hidden;
-    }
-}
-
-.home {
-	background-color: $blue;
-
-	@include e(header) {
-        padding: 20% 3% 20% 3%;
-        @include media-query(tabl) {
-            padding: 10% 5% 10% 5%;
-        }
-        @include media-query(lap-and-up) {
-            padding: 10% 7% 10% 7%;
-        }
-
-        p {
-            color: $white;
-            @include font-smooth();
-        }
-	}
-}
-
-.home {
-    @include e(content) {
-        padding: 4rem;
-        background-color: $white;
-        overflow: hidden;
-
-        figure {
-            width: 300px;
-            height: 200px;
-            margin: 0 2rem 2rem;
-            line-height: 1;
-
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-
-            &.mix {
-                display: none;
-            }
-        }
-    }
 }

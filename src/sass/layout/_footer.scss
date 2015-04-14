@@ -31,7 +31,6 @@ footer {
 		}
 		p {
 			color: $white;
-			font-family: $times;
 			margin-bottom: 0;
 			@include media-query(lap-and-up) {
 				width: 70%;
@@ -65,7 +64,6 @@ footer {
 		}
 		p {
 			color: $white;
-			font-family: $times;
 			margin-bottom: 0;
 			@include media-query(lap) {
 				font-size: 18px;
@@ -95,7 +93,6 @@ footer {
 		}
 		p {
 			color: $white;
-			font-family: $times;
 			float: left;
 			@include media-query(tabl) {
 				font-size: 18px;
@@ -112,7 +109,6 @@ footer {
 		}
 		a {
 			display: inline-block;
-			font-family: $times;
 			color: $white;
 			text-decoration: none;
 			border-bottom: 1px solid $white;

@@ -1,17 +1,3 @@
-$('.about__intro').flowtype({
-    minimum   : 481,
-    maximum   : 2560,
-    minFont   : 18,
-    maxFont   : 48
-});
-
-$('.about__more--address').flowtype({
-    minimum   : 481,
-    maximum   : 2560,
-    minFont   : 16,
-    maxFont   : 32
-});
-
 window.onload = (function startTime() {
     var today = new Date();
     var h = today.getUTCHours() + 1;

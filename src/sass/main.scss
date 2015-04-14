@@ -1,15 +1,14 @@
 @import "helpers/vars";
 @import "helpers/mixin";
-@import "helpers/animations";
 
-@import "base/normalize";
+@import "base/reset";
 @import "base/fonts";
 @import "base/typography";
 
+@import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
 
-@import "components/navigation";
 @import "components/slider";
 @import "components/slider-skin";
 
