@@ -1,0 +1,25 @@
+Title: Footer
+
+----
+
+Firstcol: 
+
+#### About us
+Mut is a graphic design studio and it is designing his own website. Therefore this text is just a placeholder text and in future Thomas is going to write something very charming. (link: # text: More)
+
+----
+
+Secondcol: 
+
+#### Selected Clients
+Architekturstiftung Südtirol, Akademie der bildenden Künste Stuttgart Architekturstiftung Südtirol, Bozen-Bolzano University Press, Château de Versailles, Paris, ewo, (link: # text: More)
+
+----
+
+Thirdcol: 
+
+#### Selected Awards
+TDC New York, 100 beste Plakate Deutschland Österreich Schweiz,  (link: # text: More)
+￼
+#### Connect with Mut
+Facebook, Behance
