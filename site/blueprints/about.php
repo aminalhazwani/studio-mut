@@ -3,6 +3,10 @@
 title: About
 pages: false
 files: true
+  fields: 
+    caption: 
+      label: Caption
+      type: text
 fields:
   title:
     label: Title
@@ -10,9 +14,6 @@ fields:
   about:
     label: Text 
     type:  textarea
-  imageCaption:
-    label: Image caption
-    type: text
   address:
     label: Address
     type: text

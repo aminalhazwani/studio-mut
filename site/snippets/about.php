@@ -1,6 +1,6 @@
 <?php $about = $pages->find('/about') ?>
 <?php echo $about->intro()->kirbytext() ?>
-<?php echo $about->imageCaption()->kirbytext() ?>
+<!-- remember to check images caption. -->
 
 <?php echo $site->title()->kirbytext() ?>
 <?php echo $about->address()->kirbytext() ?>
