@@ -13,11 +13,8 @@ fields:
     label: Author
     type:  text
   description:
-    label: Description
+    label: Meta description
     type:  textarea
-  menu:
-    label: Menu Links
-    type: textarea
   copyright:
     label: Copyright
     type:  textarea

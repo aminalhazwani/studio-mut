@@ -1,8 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Error
+title: Clients
 pages: false
-files: true
+files: false
 fields:
   title:
     label: Title
@@ -10,4 +10,3 @@ fields:
   text:
     label: Text
     type:  textarea
-    size:  large

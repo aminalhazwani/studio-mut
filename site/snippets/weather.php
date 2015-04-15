@@ -1,3 +1,4 @@
+<h4>Todays weather at Oswaldweg, Bolzano</h4>
 <?php
 	$rss = new DOMDocument();
 	$rss->load('http://www.provinz.bz.it/wetter/suedtirolrss.asp');

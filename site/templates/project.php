@@ -24,6 +24,13 @@
             <?php endif ?>
         <?php endforeach ?>
     </div>
+
+    <div class="showcase__info">
+        <span class="showcase__info--title">
+            <?php echo $page->title()->html() ?>
+        </span>
+        <a class="showcase__info--more" href="#">Project Information</a>
+    </div>
 </main>
 
     <?php echo js('assets/scripts/showcase.min.js') ?>

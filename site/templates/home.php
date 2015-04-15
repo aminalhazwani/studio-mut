@@ -31,5 +31,4 @@
 	    <?php endforeach ?>
 	</main>
 
-<?php echo js('assets/scripts/home.min.js') ?>
 <?php snippet('footer') ?>

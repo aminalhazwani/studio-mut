@@ -7,23 +7,23 @@ fields:
   title:
     label: Title
     type:  text
-  intro:
-    label: Introduction
+  about:
+    label: Text 
     type:  textarea
+  imageCaption:
+    label: Image caption
+    type: text
   address:
     label: Address
     type: text
   phone:
     label: Telephone
-    type: text
+    type: tel
     width: 1/2
   mail:
     label: E-Mail
     type: email
     width: 1/2
-  clients:
-    label: Clients
-    type:  textarea
   social:
     label: Mut on
     type: textarea
@@ -36,11 +36,11 @@ fields:
   newsletter:
     label: Up to date with Mut
     type: textarea
-  infomail:
-    label: Ask Mut
-    type: textarea
   interships:
     label: Interships
+    type: textarea
+  infomail:
+    label: Ask Mut
     type: textarea
   warning:
     label: Warning
