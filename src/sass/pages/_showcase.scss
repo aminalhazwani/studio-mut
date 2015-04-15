@@ -2,13 +2,11 @@
 	@include e(close) {
 		position: fixed;
 		z-index: 1;
+		top: 0;
+		right: 0;
 
 		width: 30px;
 		height: 30px;
-		text-align: center;
-
-		margin-top: 10px;
-		margin-left: calc(50% - 15px);
 
 		@include m(line) {
 			&:after {
@@ -38,13 +36,10 @@
 	}
 
 	@include e(count) {
-		position: absolute;
+		position: fixed;
 		bottom: 0;
+		right: 0;
 		z-index: 1;
-
-		margin-bottom: 10px;
-		width: 100%;
-		text-align: center;
 
 		font-family: $maria;
 
@@ -154,5 +149,13 @@
 				opacity: 1;
 			}
 		}
+	}
+}
+
+.showcase {
+	@include e(info) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
 	}
 }
