@@ -1,4 +1,4 @@
-.header {
+FÏ.header {
 	position: fixed;
 	z-index: 2;
 	width: 100%;
@@ -41,7 +41,7 @@
 		        left: 0;
 		        width: 30px;
 		        height: 4px;
-		        background-color: $rich-black;
+		        background-color: $black;
 		        content: " ";
 		        transition: transform 1s $bezier, top 1s $bezier;
 		    }
@@ -52,7 +52,7 @@
 		        top: 5px;
 		        width: 30px;
 		        height: 4px;
-		        background-color: $rich-black;
+		        background-color: $black;
 		        content: " ";
 		        transition: transform 1s $bezier, top 1s $bezier;
 		    }
@@ -61,7 +61,7 @@
 		&.is-open {
 			-webkit-tap-highlight-color: rgba(0,0,0,0);
 			span {
-				background-color: $rich-black;
+				background-color: $black;
 				&:after {
 					top: 0;
 					transform: rotate(225deg);

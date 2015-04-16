@@ -1,0 +1,13 @@
+.contact {
+	position: absolute;
+	left: -100%;
+	z-index: 9999;
+
+	width: 70%;
+
+	background-color: $grey-light;
+
+	&.visible {
+		left: 0;
+	}
+}

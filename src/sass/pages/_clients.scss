@@ -1,0 +1,13 @@
+.clients {
+	position: absolute;
+	left: -100%;
+	z-index: 999;
+
+	width: 60%;
+
+	background-color: $grey;
+
+	&.visible {
+		left: 0;
+	}
+}

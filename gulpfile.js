@@ -39,6 +39,7 @@ gulp.task('vendor', function() {
 // gulp scripts task
 gulp.task('scripts', function() {
   return gulp.src('src/js/*.js')
+    .pipe(concat('main.js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
     .pipe(gulp.dest('assets/scripts'))

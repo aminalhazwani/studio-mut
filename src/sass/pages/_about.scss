@@ -1,0 +1,13 @@
+.about {
+	position: absolute;
+	left: -100%;
+	z-index: 99;
+
+	width: 90%;
+
+	background-color: $grey-dark;
+
+	&.visible {
+		left: 0;
+	}
+}
