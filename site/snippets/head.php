@@ -66,10 +66,6 @@
 
 	<!-- Stylesheets -->
 	<?php echo css('assets/styles/main.min.css') ?>
-
-	<!-- Scripts -->
-  	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  	<?php echo js('assets/scripts/vendor/vendor.min.js') ?>
 </head>
 <body>
 	<!--[if lt IE 7]>
@@ -77,7 +73,7 @@
 	<![endif]-->
 	<header>
 		<a href="<?php echo $site->url() ?>">Studio Mut</a>
-		<a href="#">About</a>
-		<a href="#">Clients</a>
-		<a href="#">Contact</a>
+		<button id="about">About</button>
+		<button id="clients">Clients</button>
+		<button id="contact">Contact</button>
 	</header>

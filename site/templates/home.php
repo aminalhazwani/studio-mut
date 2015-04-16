@@ -1,5 +1,9 @@
 <?php snippet('head') ?>
 
+	<?php snippet('about') ?>
+	<?php snippet('clients') ?>
+	<?php snippet('contact') ?>
+
 	<main>
 		<?php echo $page->intro()->kirbytext() ?>
 

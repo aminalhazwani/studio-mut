@@ -9,6 +9,8 @@
 		<?php echo $footer->thirdCol()->kirbytext() ?>
 	</footer>
 
+	<!-- Scripts -->
+  	<?php echo js('assets/scripts/vendor/vendor.min.js') ?>
 	<?php echo js('assets/scripts/main.min.js') ?>
 	</body>
 </html>
