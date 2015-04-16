@@ -1,5 +1,12 @@
 .project {
-	display: inline-block;
+	@include e(container) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.project {
+	
 	
 	@include e(half) {
 		max-width: 50%;

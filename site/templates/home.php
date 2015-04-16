@@ -16,8 +16,9 @@
 			<?php endforeach ?>
 		</div>
 
+		<div class="project__container">
 		<?php foreach(page('projects')->children()->visible() as $project): ?>
-	      <figure class="project<?php if($project->previewSize() == 'half'): ?> project__half<?php endif?>">
+	      <figure class="project<?php if($project->previewSize() == 'half'): ?> project__half<?php endif?><?php if($project->previewSize() == 'full'): ?> project__full<?php endif?>">
 				<?php foreach($project->images() as $image): ?>
 				<?php if($image->cover() == 'ja'): ?>
 				<a href="<?php echo $project->url() ?>/">
@@ -33,6 +34,7 @@
 	            </figcaption>
 	        </figure>
 	    <?php endforeach ?>
+	 </div>
 	</main>
 
 <?php snippet('footer') ?>
