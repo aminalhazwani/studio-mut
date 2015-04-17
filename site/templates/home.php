@@ -1,12 +1,9 @@
 <?php snippet('head') ?>
-
 	<?php snippet('about') ?>
 	<?php snippet('clients') ?>
 	<?php snippet('contact') ?>
-
 	<main>
 		<?php echo $page->intro()->kirbytext() ?>
-
 		<div>
 			<?php $tags = $pages->find('/projects')->children()->visible()->pluck('category', ',', true); ?>
 			<?php foreach($tags as $tag): ?>
@@ -15,7 +12,6 @@
 				</a>
 			<?php endforeach ?>
 		</div>
-
 		<div class="project__container">
 		<?php foreach(page('projects')->children()->visible() as $project): ?>
 	      <figure class="project<?php if($project->previewSize() == 'half'): ?> project__half<?php endif?><?php if($project->previewSize() == 'full'): ?> project__full<?php endif?>">
@@ -36,5 +32,4 @@
 	    <?php endforeach ?>
 	 </div>
 	</main>
-
 <?php snippet('footer') ?>
