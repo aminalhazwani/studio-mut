@@ -19,6 +19,7 @@
                         <video id="video" class="showcase__image--enclosed showcase__image--video" poster="">
                             <source src="<?php echo $image->url() ?>" type="video/mp4">
                         </video>
+                        <button type="button" id="play-pause" style="position: absolute; z-index: 1">Play</button>
                         <?php if($image->overtetext() != ''): ?>
                             <figcaption class="showcase__image--text"><?php echo $image->overtext()->kirbytext() ?></figcaption>
                         <?php endif ?>
