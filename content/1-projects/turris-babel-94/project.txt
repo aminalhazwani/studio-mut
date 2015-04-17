@@ -6,7 +6,7 @@ Date:
 
 ----
 
-Client: 
+Client: Architektur Stiftung
 
 ----
 
@@ -14,7 +14,7 @@ Category:
 
 ----
 
-Previewsize: full
+Previewsize: half
 
 ----
 
