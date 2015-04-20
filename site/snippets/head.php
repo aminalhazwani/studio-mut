@@ -9,7 +9,7 @@
 
 	<!-- Page title -->
 	<?php if($page->template() != 'home'): ?>
-		<title><?php echo $page->title()->html() ?> – <?php echo $site->title()->html() ?></title>
+		<title><?php echo $site->title()->html() ?> – <?php echo $page->title()->html() ?></title>
 	<?php else: ?>
 		<title><?php echo $site->title()->html() ?></title>
 	<?php endif ?>
