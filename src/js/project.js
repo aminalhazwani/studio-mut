@@ -41,10 +41,6 @@ $(function() {
   });
 });
 
-function testTrigger() {
-  $('a.showcase__close')[0].click();
-}
-
 window.onload = function() {
   var video = document.getElementById("video");
   var playButton = document.getElementById("play-pause");
