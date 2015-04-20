@@ -12,6 +12,7 @@
 	<?php echo $about->awards()->kirbytext() ?>
 	<?php echo $about->talks()->kirbytext() ?>
 	<?php echo $about->newsletter()->kirbytext() ?>
+	<?php snippet('newsletter') ?>
 	<?php echo $about->interships()->kirbytext() ?>
 
 	<?php echo $about->infomail()->kirbytext() ?>
