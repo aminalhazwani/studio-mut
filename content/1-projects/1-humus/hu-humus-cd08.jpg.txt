@@ -1,0 +1,21 @@
+Caption: 
+
+----
+
+Cover: nein
+
+----
+
+Slidebkcolor: 
+
+----
+
+Measure: enclosed
+
+----
+
+Overtext: 
+
+----
+
+Sort: 7

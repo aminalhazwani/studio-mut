@@ -14,7 +14,7 @@ Category: Exhibition design
 
 ----
 
-Previewsize: half
+Previewsize: full
 
 ----
 
