@@ -1,19 +1,18 @@
-// Navigation
 $('#about').click(function(){
-    $('.about').toggleClass('visible');
+   $('.about').toggleClass('visible');
 });
 
 $('#clients').click(function(){
-    $('.clients').toggleClass('visible');
+   $('.clients').toggleClass('visible');
 });
 
 $('#contact').click(function(){
-    $('.contact').toggleClass('visible');
+   $('.contact').toggleClass('visible');
 });
 
 $(document).on('keydown', function(e) {
-    if ( e.keyCode === 27 ) { // ESC
-      if ( $('.about').hasClass('visible') )  {
+	if ( e.keyCode === 27 ) {
+		if ( $('.about').hasClass('visible') )  {
 			$('.about').removeClass('visible');
 		}
 		if ( $('.clients').hasClass('visible') )  {
@@ -22,5 +21,5 @@ $(document).on('keydown', function(e) {
 		if ( $('.contact').hasClass('visible') )  {
 			$('.contact').removeClass('visible');
 		}
-    }
+	}
 });
