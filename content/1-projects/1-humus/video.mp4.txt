@@ -2,6 +2,10 @@ Caption:
 
 ----
 
+Cover: nein
+
+----
+
 Slidebkcolor: 
 
 ----
@@ -14,4 +18,8 @@ Overtext:
 
 ----
 
-Sort: 8
+Poster: 
+
+----
+
+Sort: 1
