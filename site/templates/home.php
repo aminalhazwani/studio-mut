@@ -2,7 +2,7 @@
 	<?php snippet('about') ?>
 	<?php snippet('clients') ?>
 	<?php snippet('contact') ?>
-	<main>
+	<main class="home">
 		<?php echo $page->intro()->kirbytext() ?>
 		<div>
 			<?php $tags = $pages->find('/projects')->children()->visible()->pluck('category', ',', true); ?>
