@@ -50,7 +50,6 @@
 
 	<meta property="og:url" content="<?php echo $page->url() ?>" />
 
-
 	<!-- Remember to fix this if text-slide is not necessary -->
 	<?php if($page->template() != 'home'): ?>
 		<?php foreach($page->images() as $image): ?>
