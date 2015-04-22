@@ -10,12 +10,16 @@ Client: Glashaus
 
 ----
 
-Category: Exhibition design
-
-----
-
 Previewsize: full
 
 ----
 
 Text: Listicle sartorial slow-carb Carles. Keytar try-hard slow-carb, cliche ethical occupy deep v actually asymmetrical letterpress. Slow-carb beard brunch, four loko fingerstache kale chips pickled semiotics. Disrupt master cleanse Truffaut food truck synth, chillwave vegan normcore cold-pressed PBR&B four dollar toast raw denim sriracha mumblecore Helvetica. Freegan Pitchfork VHS fashion axe, pork belly chia Pinterest Truffaut brunch. Banh mi quinoa +1, twee swag before they sold out cornhole selfies craft beer bicycle rights health goth Pinterest Intelligentsia Austin fap. YOLO cold-pressed bespoke disrupt.
+
+----
+
+Pagebkcolor: 
+
+----
+
+Tag: Exhibition design

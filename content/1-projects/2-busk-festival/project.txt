@@ -14,8 +14,12 @@ Text: Bla bla bla bla
 
 ----
 
-Category: Editorial
+Previewsize: half
 
 ----
 
-Previewsize: half
+Pagebkcolor: 
+
+----
+
+Tag: Editorial

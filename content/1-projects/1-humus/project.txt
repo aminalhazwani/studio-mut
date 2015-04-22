@@ -10,10 +10,6 @@ Client: Humus
 
 ----
 
-Category: Branding
-
-----
-
 Previewsize: half
 
 ----
@@ -23,3 +19,7 @@ Text: Beard fap paleo mixtape High Life direct trade. Wes Anderson pour-over mus
 ----
 
 Pagebkcolor: 
+
+----
+
+Tag: Branding
