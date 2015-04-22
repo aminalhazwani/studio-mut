@@ -1,0 +1,21 @@
+Caption: 
+
+----
+
+Cover: nein
+
+----
+
+Slidebkcolor: 
+
+----
+
+Measure: enclosed
+
+----
+
+Overtext: 
+
+----
+
+Poster: 1
