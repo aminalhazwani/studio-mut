@@ -13,8 +13,8 @@
                     <?php if($image->measure() == 'enclosed'): ?>
                         <?php if($image->type() != 'video'): ?>
                         <figure class="showcase__slider--slide" <?php if($image->slidebkcolor() != ''): ?>style="background-color:<?php echo $image->slidebkcolor() ?>"<?php endif ?>>
-                            <img class="showcase__image--enclosed" src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-                            <?php if($image->overtetext() != ''): ?>
+                            <img class="showcase__image--enclosed" src="<?php echo $image->url() ?>" alt="<?php if($image->caption() != ''): ?><?php echo $image->caption()->html() ?><?php else: ?><?php echo $page->title()->html() ?><?php endif ?>">
+                            <?php if($image->overtext() != ''): ?>
                                 <figcaption class="showcase__image--text"><?php echo $image->overtext()->kirbytext() ?></figcaption>
                             <?php endif ?>
                         </figure>
@@ -24,16 +24,13 @@
                                 <source src="<?php echo $image->url() ?>" type="video/mp4">
                             </video>
                             <button class="button" type="button" style="position: absolute; z-index: 1">Play</button>
-                            <?php if($image->overtetext() != ''): ?>
-                                <figcaption class="showcase__image--text"><?php echo $image->overtext()->kirbytext() ?></figcaption>
-                            <?php endif ?>
                         </figure>
                         <?php endif ?>
                     <?php endif ?>
                     <?php if($image->measure() == 'full'): ?>
                         <figure class="showcase__slider--slide" <?php if($image->slidebkcolor() != ''): ?>style="background-color:<?php echo $image->slidebkcolor() ?>"<?php endif ?>>
-                            <img class="showcase__image--full" src="/assets/images/1px.png" alt="<?php echo $page->title()->html() ?>" style="background-image:url('<?php echo $image->url() ?>');">
-                            <?php if($image->overtetext() != ''): ?>
+                            <img class="showcase__image--full" src="/assets/images/1px.png" alt="<?php if($image->caption() != ''): ?><?php echo $image->caption()->html() ?><?php else: ?><?php echo $page->title()->html() ?><?php endif ?>" style="background-image:url('<?php echo $image->url() ?>');">
+                            <?php if($image->overtext() != ''): ?>
                                 <figcaption class="showcase__image--text"><?php echo $image->overtext()->kirbytext() ?></figcaption>
                             <?php endif ?>
                         </figure>
