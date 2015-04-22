@@ -64,7 +64,7 @@ fields:
       half: 50%
       full: 100%
   tag:
-    label: Category
+    label: 'Category (You must hyphanate category names with more than one word: i.e. graphic-design)'
     type:  tags
   text:
     label: Descrption

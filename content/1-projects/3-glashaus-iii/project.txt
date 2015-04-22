@@ -22,4 +22,4 @@ Pagebkcolor:
 
 ----
 
-Tag: Exhibition design
+Tag: exhibition-design

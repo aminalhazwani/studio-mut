@@ -22,4 +22,4 @@ Pagebkcolor:
 
 ----
 
-Tag: Editorial
+Tag: editorial
