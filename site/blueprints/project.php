@@ -31,9 +31,9 @@ files:
       label: Slide text
       type: textarea
     poster:
-      label: Is this the video thumbnail?
+      label: Is this a video thumbnail?
       type: checkbox
-      text: Yes, thanks!
+      text: Yes!
     info:
       label:
       type: info
@@ -63,7 +63,7 @@ fields:
     options:
       half: 50%
       full: 100%
-  category:
+  tag:
     label: Category
     type:  tags
   text:
