@@ -24,71 +24,43 @@ $(function() {
 
   var si = jQuery('.royalSlider').data('royalSlider');
   si.ev.on('rsBeforeMove', function(e, type, action) {
-    console.log(si.currSlideId, type, si.numSlides);
-    if(si.currSlideId+1 === si.numSlides) {
- // if(si.currSlideId+2 === si.numSlides) {
-      $('.rsContainer').click(function() {
-        $('a.showcase__close')[0].click();
-      });
-      $(document).on('keydown', function(e) {
-        if ( e.keyCode === 39 ) { // ESC 
-          $('a.showcase__close')[0].click();
-        }
-      });
+    if(si.currSlideId+1 === si.numSlides && type === "next") {
+      $('.showcase__close').addClass("swing");
+      setTimeout(function() {
+        $('.showcase__close').removeClass("swing")
+      },600);
+    }
+    if(si.numSlides+si.currSlideId <= si.numSlides && type === "prev") {
+      $('.showcase__close').addClass("swing");
+      setTimeout(function() {
+        $('.showcase__close').removeClass("swing")
+      },600);
     }
   });
 });
 
 window.onload = function() {
-  var video = document.getElementById("video");
-  var playButton = document.getElementById("play-pause");
-  playButton.addEventListener("click", function() {
-    if (video.paused == true) {
-      console.log('video is playing');
-      video.play();
-      playButton.innerHTML = "Pause";
-    } else {
-      console.log('video is pause');
-      video.pause();
-      playButton.innerHTML = "Play";
-    }
-  });
-}
-
-window.onload = function() {
-  // var video = $('.showcase__image--video');
   var currentFigure = $('.showcase__slider--slide');
   currentFigure.each(function() {
     var video = $(this).children('.showcase__image--video');
-    // var videoElement = video.get(0);
     var playButton = $(this).children('.button');
     playButton.on("click", function() {
-      console.log(playButton);
-      console.log('click');
-      if (video.get(0).paused == true) {
-        console.log('video is playing');
+      if (video.get(0).paused === true) {
         video.get(0).play();
-        playButton.innerHTML = "Pause";
+        playButton.addClass('play');
       } else {
-        console.log('video is pause');
         video.get(0).pause();
-        playButton.innerHTML = "Play";
+        playButton.removeClass('play');
       }
     });
   })
-  // var playButton = document.getElementById("play-pause");
-  //var playButton = $('.button');
 }
 
-
 function pauseAllVideos() {
-  var video = document.getElementById("video");
-  var playButton = document.getElementById("play-pause");
-  if (video.paused === false) {
-    video.pause();
-    playButton.innerHTML = "Play";
-    console.log('video is paused by slide');
-  }
+  $('video').each(function() {
+    $(this).get(0).pause();
+    $('.button').removeClass('play');
+  });
 }
 
 $('.button').click(function(e) {
