@@ -1,4 +1,4 @@
-Caption: 
+Caption: Caption of this image
 
 ----
 
@@ -14,8 +14,12 @@ Measure: enclosed
 
 ----
 
-Overtext: 
+Overtext: Some random text
 
 ----
 
 Sort: 4
+
+----
+
+Poster: 

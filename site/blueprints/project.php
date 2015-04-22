@@ -6,8 +6,9 @@ files:
   sortable: true
   fields: 
     caption: 
-      label: Caption (Alt text)
+      label: Slide caption (used also for alt text)
       type: text
+      placeholder: If empty it will use the project title
     cover:
       label: Is this the project preview?
       type: radio
@@ -17,22 +18,26 @@ files:
         nein: No, thank you.
     slidebkcolor: 
       label: Slide background color
-      placeholder: '#000000'
+      placeholder: '#ffffff'
       type: text
     measure:
-      label: Size
+      label: Slide size
       type: radio
       default: enclosed
       options:
         full: Full
         enclosed: Enclosed
     overtext: 
-      label: Text over picture
+      label: Slide text
       type: textarea
     poster:
-      label: Is this the video preview?
+      label: Is this the video thumbnail?
       type: checkbox
       text: Yes, thanks!
+    info:
+      label:
+      type: info
+      text: 'Remember: the thumbnail must have the same name as the video and it must be a .jpg file. For example video.mp4 and video.jpg.'
 fields:
   title:
     label: Title
@@ -45,18 +50,22 @@ fields:
     label: Client
     type: text
     width: 1/2
-  category:
-    label: Category
-    type:  tags
+  pagebkcolor:
+    label: Slider background color
+    type: text
     width: 1/2
+    placeholder: '#ffffff'
   previewSize:
     label: Preview size
-    width: 1/2
     type: radio
+    width: 1/2
     default: full
     options:
       half: 50%
       full: 100%
+  category:
+    label: Category
+    type:  tags
   text:
     label: Descrption
     type: textarea

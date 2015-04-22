@@ -6,7 +6,7 @@ Cover: nein
 
 ----
 
-Slidebkcolor: 
+Slidebkcolor: #cccccc
 
 ----
 
@@ -14,11 +14,7 @@ Measure: full
 
 ----
 
-Overtext: 
-
-----
-
-Sort: 6
+Overtext: A only text slide
 
 ----
 
