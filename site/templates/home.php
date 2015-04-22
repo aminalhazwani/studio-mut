@@ -3,18 +3,21 @@
 	<?php snippet('clients') ?>
 	<?php snippet('contact') ?>
 	<div class="overlay"></div>
+	<button class="close__side-elements" type="button">close</button>
+	
 	<main class="home">
 		<?php echo $page->intro()->kirbytext() ?>
 		<div>
-			<?php $tags = $pages->find('/projects')->children()->visible()->pluck('category', ',', true); ?>
+			<?php $tags = $pages->find('/projects')->children()->visible()->pluck('tag', ',', true); ?>
 			<?php foreach($tags as $tag): ?>
 		   	<a href="<?php echo url('/tag:' . $tag)?>">
 		   		<?php echo html($tag) ?>
 				</a>
 			<?php endforeach ?>
+
 		</div>
 		<div class="project__container">
-		<?php foreach(page('projects')->children()->visible() as $project): ?>
+		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
 	      <figure class="project<?php if($project->previewSize() == 'half'): ?> project__half<?php endif?><?php if($project->previewSize() == 'full'): ?> project__full<?php endif?>">
 				<?php foreach($project->images() as $image): ?>
 				<?php if($image->cover() == 'ja'): ?>
@@ -24,7 +27,7 @@
 				<?php endif ?>
 				<?php endforeach ?>
 	            <figcaption class="projects__item--title">
-	            	<span><?php echo html($project->category()) ?></span>
+	            	<span><?php echo html($project->tag()) ?></span>
 	            	<a href="<?php echo $project->url() ?>/">
 	            		<?php echo html($project->title()) ?>
 	         		</a>

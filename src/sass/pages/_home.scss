@@ -6,11 +6,17 @@
 	@include e(container) {
 		display: flex;
 		flex-wrap: wrap;
+		margin-top: 1rem;
 	}
 }
 
 .project {
 	@include e(half) {
 		max-width: 50%;
+		margin-bottom: 1rem;
+	}
+	@include e(full) {
+		max-width: 100%;
+		margin-bottom: 1rem;
 	}
 }
