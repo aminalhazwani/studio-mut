@@ -2,6 +2,7 @@
 	<?php snippet('about') ?>
 	<?php snippet('clients') ?>
 	<?php snippet('contact') ?>
+	<div class="overlay"></div>
 	<main class="home">
 		<?php echo $page->intro()->kirbytext() ?>
 		<div>

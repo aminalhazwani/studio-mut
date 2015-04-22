@@ -2,6 +2,7 @@
     <?php snippet('about') ?>
     <?php snippet('clients') ?>
     <?php snippet('contact') ?>
+    <div class="overlay"></div>
 
     <main class="showcase" role="main">
         <a class="showcase__close" href="<?php echo $site->url() ?>">
