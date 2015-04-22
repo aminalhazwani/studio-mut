@@ -16,7 +16,8 @@ files:
         ja: Yes, please!
         nein: No, thank you.
     slidebkcolor: 
-      label: Background color HEX
+      label: Slide background color
+      placeholder: '#000000'
       type: text
     measure:
       label: Size
@@ -28,6 +29,10 @@ files:
     overtext: 
       label: Text over picture
       type: textarea
+    poster:
+      label: Is this the video preview?
+      type: checkbox
+      text: Yes, thanks!
 fields:
   title:
     label: Title
