@@ -10,12 +10,16 @@ Client: Architektur Stiftung
 
 ----
 
-Category: 
-
-----
-
 Previewsize: full
 
 ----
 
 Text: 
+
+----
+
+Pagebkcolor: 
+
+----
+
+Tag: branding

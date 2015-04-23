@@ -1,0 +1,21 @@
+Caption: 
+
+----
+
+Cover: ja
+
+----
+
+Slidebkcolor: 
+
+----
+
+Measure: enclosed
+
+----
+
+Overtext: 
+
+----
+
+Poster: 

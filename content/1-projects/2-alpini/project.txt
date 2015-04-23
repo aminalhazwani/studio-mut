@@ -1,4 +1,4 @@
-Title: Turris Babel #94
+Title: Alpini
 
 ----
 
@@ -6,15 +6,19 @@ Date:
 
 ----
 
-Client: Architektur Stiftung
+Client: 
 
 ----
 
-Category: 
+Pagebkcolor: 
 
 ----
 
 Previewsize: half
+
+----
+
+Tag: editorial
 
 ----
 
