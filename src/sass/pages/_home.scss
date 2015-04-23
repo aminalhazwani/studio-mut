@@ -6,13 +6,16 @@
 	@include e(container) {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 		margin-top: 1rem;
 	}
 }
 
 .project {
+	display: none;
+
 	@include e(half) {
-		max-width: 50%;
+		max-width: 48%;
 		margin-bottom: 1rem;
 	}
 	@include e(full) {
@@ -20,3 +23,13 @@
 		margin-bottom: 1rem;
 	}
 }
+
+// .filter {
+// 	@include m(reset) {
+// 		display: none;
+
+// 		&.visible {
+// 			display: inline-block;
+// 		}
+// 	}
+// }

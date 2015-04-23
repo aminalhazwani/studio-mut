@@ -10,9 +10,9 @@
 		<div>
 			<?php $tags = $pages->find('/projects')->children()->visible()->pluck('tag', ',', true); ?>
 			<?php foreach($tags as $tag): ?>
-		   	<button class="filter" href=" " data-filter=".<?php echo strtolower($tag) ?>"><?php echo str_replace("-"," ",$tag) ?></button>
+		   	<button class="filter" data-filter=".<?php echo strtolower($tag) ?>"><?php echo str_replace("-"," ",$tag) ?></button>
 			<?php endforeach ?>
-			<button class="filter" data-filter="*">All</button>
+			<button class="filter filter--reset" data-filter="*">all</button>
 		</div>
 		<div class="project__container">
 		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>

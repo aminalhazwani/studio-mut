@@ -58,6 +58,10 @@ $('.close__side-elements').click(function(){
 	}
 });
 
+// $('.filter').click(function(){
+// 	$('.filter--reset').addClass('visible');
+// });
+
 $(document).on('keydown', function(e) {
 	if ( e.keyCode === 27 ) {
 		if ( $('.about').hasClass('visible') )  {
@@ -76,4 +80,13 @@ $(document).on('keydown', function(e) {
 			$('.close__side-elements').removeClass('active');
 		}
 	}
+});
+
+$(document).ready(function(){
+	$('.project__container').mixItUp({
+		selectors: {
+			target: '.project',
+			filter: '.filter'
+		}
+	});
 });
