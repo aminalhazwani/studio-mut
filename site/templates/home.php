@@ -10,15 +10,13 @@
 		<div>
 			<?php $tags = $pages->find('/projects')->children()->visible()->pluck('tag', ',', true); ?>
 			<?php foreach($tags as $tag): ?>
-		   	<a href="<?php echo url('/tag:' . $tag)?>">
-		   		<?php echo html($tag) ?>
-				</a>
+		   	<button class="filter" href=" " data-filter=".<?php echo strtolower($tag) ?>"><?php echo str_replace("-"," ",$tag) ?></button>
 			<?php endforeach ?>
-
+			<button class="filter" data-filter="*">All</button>
 		</div>
 		<div class="project__container">
 		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
-	      <figure class="project<?php if($project->previewSize() == 'half'): ?> project__half<?php endif?><?php if($project->previewSize() == 'full'): ?> project__full<?php endif?>">
+	      <figure class="project <?php echo strtolower($project->tag()) ?><?php if($project->previewSize() == 'half'): ?> project__half<?php endif?><?php if($project->previewSize() == 'full'): ?> project__full<?php endif?>">
 				<?php foreach($project->images() as $image): ?>
 				<?php if($image->cover() == 'ja'): ?>
 				<a href="<?php echo $project->url() ?>/">
@@ -27,7 +25,7 @@
 				<?php endif ?>
 				<?php endforeach ?>
 	            <figcaption class="projects__item--title">
-	            	<span><?php echo html($project->tag()) ?></span>
+	            	<span><?php echo str_replace("-"," ",$project->tag()->html()) ?></span>
 	            	<a href="<?php echo $project->url() ?>/">
 	            		<?php echo html($project->title()) ?>
 	         		</a>
