@@ -1,3 +1,9 @@
+main {
+	&.fixed {
+		position: fixed;
+	}
+}
+
 .overlay {
 	display: none;
 	position: absolute;

@@ -2,18 +2,21 @@ $('#about').click(function(){
    $('.about').addClass('visible');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
+   $('main').addClass('fixed');
 });
 
 $('#clients').click(function(){
    $('.clients').addClass('visible');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
+   $('main').addClass('fixed');
 });
 
 $('#contact').click(function(){
    $('.contact').addClass('visible');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
+   $('main').addClass('fixed');
 });
 
 $('.overlay').click(function(){
@@ -21,16 +24,19 @@ $('.overlay').click(function(){
 		$('.about').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('main').removeClass('fixed');
 	}
 	if ( $('.clients').hasClass('visible') )  {
 		$('.clients').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('main').removeClass('fixed');
 	}
 	if ( $('.contact').hasClass('visible') )  {
 		$('.contact').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('main').removeClass('fixed');
 	}
 });
 
@@ -39,16 +45,19 @@ $('.close__side-elements').click(function(){
 		$('.about').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('main').removeClass('fixed');
 	}
 	if ( $('.clients').hasClass('visible') )  {
 		$('.clients').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('main').removeClass('fixed');
 	}
 	if ( $('.contact').hasClass('visible') )  {
 		$('.contact').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('main').removeClass('fixed');
 	}
 });
 
@@ -62,16 +71,19 @@ $(document).on('keydown', function(e) {
 			$('.about').removeClass('visible');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
+			$('main').removeClass('fixed');
 		}
 		if ( $('.clients').hasClass('visible') )  {
 			$('.clients').removeClass('visible');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
+			$('main').removeClass('fixed');
 		}
 		if ( $('.contact').hasClass('visible') )  {
 			$('.contact').removeClass('visible');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
+			$('main').removeClass('fixed');
 		}
 	}
 });
