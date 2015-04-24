@@ -5,7 +5,8 @@
     <div class="overlay"></div>
     <button class="close__side-elements" type="button">close</button>
 
-    <main class="showcase" role="main">
+    <main id="main">
+        <div class="showcase">
         <a class="showcase__close" href="<?php echo $site->url() ?>">
             <span class="showcase__close--line"></span>
         </a>
@@ -48,9 +49,8 @@
             </span>
             <a class="showcase__info--more" href="#">Project Information</a>
         </div>
+        </div>
     </main>
-
-    <!-- Scripts -->
     <?php echo js('assets/scripts/vendor/vendor.min.js') ?>
     <?php echo js('assets/scripts/main.min.js') ?>
     </body>
