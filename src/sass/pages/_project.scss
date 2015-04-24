@@ -42,10 +42,6 @@
 		z-index: 999;
 
 		font-family: $maria;
-
-		@include media-query(palm) {
-			font-size: small;
-		}
 	}
 
 	@include e(slider) {

@@ -16,8 +16,10 @@
 	display: none;
 
 	@include e(half) {
-		max-width: 48%;
-		margin-bottom: 1rem;
+		@include mq(tabl-and-up) {
+			max-width: 48%;
+			margin-bottom: 1rem;
+		}
 	}
 	@include e(full) {
 		max-width: 100%;

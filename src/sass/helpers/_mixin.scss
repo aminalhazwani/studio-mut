@@ -18,7 +18,7 @@
 }
 
 // Mixin media queries
-@mixin media-query($media-query){
+@mixin mq($media-query){
     @if $media-query == palm{
       @media only screen and (max-width:$palm-end) { @content; }
     }
