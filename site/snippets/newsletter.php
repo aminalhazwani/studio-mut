@@ -4,7 +4,7 @@
 			<div class="mc-field-group">
 			<label for="mce-EMAIL">Email Address </label>
 			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
 		</div>
 		<div id="mce-responses" class="clear">
 			<div class="response" id="mce-error-response" style="display:none"></div>
