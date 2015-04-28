@@ -138,3 +138,48 @@
  	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.project-information {
+	position: absolute;
+	left: -100%;
+	z-index: 9999;
+	padding-top: 2rem;
+
+	width: 100%;
+	height: 100%;
+	// width: 70%;
+
+	color: $white;
+	background-color: $grey-dark;
+
+	&.visible {
+		left: 0;
+	}
+}
+
+.project-information {
+	@include e(title) {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+}
+
+.project-information {
+	@include e(content) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-strech;
+
+		h4 {
+			width: 20%;
+		}
+		p {
+			width: 80%;
+			margin-bottom: 1rem;
+
+			&:last-of-type {
+				width: 100%;
+			}
+		}
+	}
+}

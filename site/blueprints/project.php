@@ -67,5 +67,5 @@ fields:
     label: 'Category (You must hyphanate category names with more than one word: i.e. graphic-design)'
     type:  tags
   text:
-    label: Descrption
+    label: Description
     type: textarea

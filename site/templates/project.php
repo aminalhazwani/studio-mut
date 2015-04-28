@@ -2,6 +2,9 @@
     <?php snippet('about') ?>
     <?php snippet('clients') ?>
     <?php snippet('contact') ?>
+    <?php snippet('contact') ?>
+    <?php snippet('project-information') ?>
+    
     <div class="overlay"></div>
     <button class="close__side-elements" type="button">close</button>
 
