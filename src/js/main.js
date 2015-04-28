@@ -19,6 +19,13 @@ $('#contact').click(function(){
    $('main').addClass('fixed');
 });
 
+$('.showcase__info--more').click(function(){
+   $('.project-information').addClass('visible');
+   $('.overlay').addClass('active');
+   $('.close__side-elements').addClass('active');
+   $('main').addClass('fixed');
+});
+
 $('.overlay').click(function(){
    if ( $('.about').hasClass('visible') )  {
 		$('.about').removeClass('visible');
@@ -34,6 +41,12 @@ $('.overlay').click(function(){
 	}
 	if ( $('.contact').hasClass('visible') )  {
 		$('.contact').removeClass('visible');
+		$('.overlay').removeClass('active');
+		$('.close__side-elements').removeClass('active');
+		$('main').removeClass('fixed');
+	}
+	if ( $('.project-information').hasClass('visible') )  {
+		$('.project-information').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
@@ -55,6 +68,12 @@ $('.close__side-elements').click(function(){
 	}
 	if ( $('.contact').hasClass('visible') )  {
 		$('.contact').removeClass('visible');
+		$('.overlay').removeClass('active');
+		$('.close__side-elements').removeClass('active');
+		$('main').removeClass('fixed');
+	}
+	if ( $('.project-information').hasClass('visible') )  {
+		$('.project-information').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
@@ -81,6 +100,12 @@ $(document).on('keydown', function(e) {
 		}
 		if ( $('.contact').hasClass('visible') )  {
 			$('.contact').removeClass('visible');
+			$('.overlay').removeClass('active');
+			$('.close__side-elements').removeClass('active');
+			$('main').removeClass('fixed');
+		}
+		if ( $('.project-information').hasClass('visible') )  {
+			$('.project-information').removeClass('visible');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
 			$('main').removeClass('fixed');
