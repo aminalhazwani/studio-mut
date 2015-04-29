@@ -2,3 +2,5 @@ site/accounts
 .sass-cache
 node_modules
 thumbs
+*.mov
+*.mp4
