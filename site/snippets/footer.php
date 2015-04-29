@@ -1,12 +1,14 @@
 	<footer class="footer">
-		<?php $about = $pages->find('/about') ?>
-		<?php echo $about->phone()->kirbytext() ?>
-		<?php echo $about->mail()->kirbytext() ?>
+		<div class="footer__container">
+			<?php $about = $pages->find('/about') ?>
+			<?php echo $about->phone()->kirbytext() ?>
+			<?php echo $about->mail()->kirbytext() ?>
 
-		<?php $footer = $pages->find('/footer') ?>
-		<?php echo $footer->firstCol()->kirbytext() ?>
-		<?php echo $footer->secondCol()->kirbytext() ?>
-		<?php echo $footer->thirdCol()->kirbytext() ?>
+			<?php $footer = $pages->find('/footer') ?>
+			<?php echo $footer->firstCol()->kirbytext() ?>
+			<?php echo $footer->secondCol()->kirbytext() ?>
+			<?php echo $footer->thirdCol()->kirbytext() ?>
+		</div>
 	</footer>
 	<div class="footer__space"></div>
 
