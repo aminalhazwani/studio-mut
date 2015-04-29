@@ -1,7 +1,14 @@
 <div class="about">
 	<?php $about = $pages->find('/about') ?>
-	<?php echo $about->intro()->kirbytext() ?>
-	<!-- remember to check images caption. -->
+	<?php echo $about->text()->kirbytext() ?>
+	<?php if($about->hasImages()): ?>
+	<?php foreach($about->images() as $image): ?>
+	<figure>
+		<img src="<?php echo $image->url() ?>"> 
+		<figcaption><?php echo $image->caption() ?></figcaption>
+	</figure>
+	<?php endforeach ?>
+	<?php endif ?>
 
 	<?php echo $site->title()->kirbytext() ?>
 	<?php echo $about->address()->kirbytext() ?>

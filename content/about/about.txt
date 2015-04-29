@@ -72,8 +72,4 @@ If you are young, handsome and beautiful you are the one. Send you PDF portfolio
 
 ----
 
-About: 
-
-Mut ist ein Graphic Design Studio am Oswaldweg in Bozen, gegründet von Thomas Kronbichler und Martin Kerschbaumer. Wir machen Identities, Bücher, Editorial Design, Websites, Posters. Gerade arbeiten wir für *Museion Bozen*, *Microtec*, *Royal College of Art*, *Technische Universität Berlin*, *Architekturstiftung Südtirol*, *Hofburg Brixen* und mit vielen anderen.
-
-(image: studio-mut-place.jpg)
+Text: Mut ist ein Graphic Design Studio am Oswaldweg in Bozen, gegründet von Thomas Kronbichler und Martin Kerschbaumer. Wir machen Identities, Bücher, Editorial Design, Websites, Posters. Gerade arbeiten wir für *Museion Bozen*, *Microtec*, *Royal College of Art*, *Technische Universität Berlin*, *Architekturstiftung Südtirol*, *Hofburg Brixen* und mit vielen anderen.

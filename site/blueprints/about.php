@@ -11,7 +11,7 @@ fields:
   title:
     label: Title
     type:  text
-  about:
+  text:
     label: Text 
     type:  textarea
   address:
