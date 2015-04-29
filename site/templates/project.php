@@ -50,7 +50,7 @@
             <span class="showcase__info--title">
                 <?php echo $page->title()->html() ?>
             </span>
-            <a class="showcase__info--more" href="#">Project Information</a>
+            <button class="showcase__info--more">Project Information</button>
         </div>
         </div>
     </main>
