@@ -18,7 +18,6 @@
 
 .project {
 	display: none;
-
 	@include e(half) {
 		@include mq(tabl-and-up) {
 			max-width: 48%;

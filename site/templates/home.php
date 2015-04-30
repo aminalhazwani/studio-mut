@@ -9,11 +9,11 @@
 		<div class="home">
 			<?php echo $page->intro()->kirbytext() ?>
 			<div>
+				<button class="filter filter--reset" data-filter="*">everything</button>
 				<?php $tags = $pages->find('/projects')->children()->visible()->pluck('tag', ',', true); ?>
 				<?php foreach($tags as $tag): ?>
 			   	<button class="filter" data-filter=".<?php echo strtolower($tag) ?>"><?php echo str_replace("-"," ",$tag) ?></button>
 				<?php endforeach ?>
-				<button class="filter filter--reset" data-filter="*">all</button>
 			</div>
 			<div class="project__container">
 			<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
