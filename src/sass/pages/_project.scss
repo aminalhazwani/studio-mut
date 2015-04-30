@@ -176,10 +176,9 @@
 		p {
 			width: 80%;
 			margin-bottom: 1rem;
-
-			&:last-of-type {
-				width: 100%;
-			}
+		}
+		blockquote {
+			width: 100%;
 		}
 	}
 }
