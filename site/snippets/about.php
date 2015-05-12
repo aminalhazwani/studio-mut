@@ -2,12 +2,19 @@
 	<?php $about = $pages->find('/about') ?>
 	<?php echo $about->text()->kirbytext() ?>
 	<?php if($about->hasImages()): ?>
-	<div class="about__images">
-		<?php foreach($about->images() as $image): ?>
-		<figure class="about__image">
+	<div class="about__images--top">
+		<?php foreach($about->images()->sortBy('sort','asc')->limit(2) as $image): ?>
+		<figure class="about__image about__image--top">
 			<img src="<?php echo $image->url() ?>"> 
 		</figure>
-	<?php endforeach ?>
+		<?php endforeach ?>
+	</div>
+	<div class="about__images--bottom">
+		<?php foreach($about->images()->sortBy('sort','desc')->limit(2) as $image): ?>
+		<figure class="about__image about__image--bottom">
+			<img src="<?php echo $image->url() ?>"> 
+		</figure>
+		<?php endforeach ?>
 	</div>
 	<figcaption><?php echo $about->caption() ?></figcaption>
 	<?php endif ?>

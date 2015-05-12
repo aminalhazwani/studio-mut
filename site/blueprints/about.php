@@ -3,6 +3,7 @@
 title: About
 pages: false
 files: true
+  sortable: true
 fields:
   title:
     label: Title

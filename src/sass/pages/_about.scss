@@ -18,6 +18,10 @@
 .about {
 	@include e(images){
 		overflow: hidden;
+
+		@include m(top){
+			position: absolute;
+		}
 	}
 }
 
@@ -25,5 +29,11 @@
 	@include e(image){
 		width: 50%;
 		float: left;
+
+		@include m(top) {
+			&:hover {
+				opacity: 0;
+			}
+		}
 	}
 }
