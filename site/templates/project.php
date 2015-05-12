@@ -10,9 +10,16 @@
 
     <main id="main">
         <div class="showcase">
-        <a class="showcase__close" href="<?php echo $site->url() ?>">
-            <span class="showcase__close--line"></span>
-        </a>
+        <?php $referer = $_SERVER['HTTP_REFERER']; ?>
+        <?php if($referer == ''): ?>
+            <a class="showcase__close" href="<?php echo $site->url() ?>">
+                <span class="showcase__close--line"></span>
+            </a>
+        <?php else: ?>
+            <a class="showcase__close" onclick="history.back(-1)">
+                <span class="showcase__close--line"></span>
+            </a>
+        <?php endif ?>
         <div class="showcase__slider royalSlider rsDefault" <?php if($page->pagebkcolor() != ''): ?>style="background-color:<?php echo $page->pagebkcolor() ?>"<?php endif ?>>
             <?php foreach($page->files()->sortBy('sort', 'asc') as $image): ?>
                 <?php if($image->poster() == ''): ?>
