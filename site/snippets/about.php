@@ -2,12 +2,14 @@
 	<?php $about = $pages->find('/about') ?>
 	<?php echo $about->text()->kirbytext() ?>
 	<?php if($about->hasImages()): ?>
-	<?php foreach($about->images() as $image): ?>
-	<figure>
-		<img src="<?php echo $image->url() ?>"> 
-		<figcaption><?php echo $image->caption() ?></figcaption>
-	</figure>
+	<div class="about__images">
+		<?php foreach($about->images() as $image): ?>
+		<figure class="about__image">
+			<img src="<?php echo $image->url() ?>"> 
+		</figure>
 	<?php endforeach ?>
+	</div>
+	<figcaption><?php echo $about->caption() ?></figcaption>
 	<?php endif ?>
 
 	<?php echo $site->title()->kirbytext() ?>

@@ -14,3 +14,16 @@
 		left: 0;
 	}
 }
+
+.about {
+	@include e(images){
+		overflow: hidden;
+	}
+}
+
+.about {
+	@include e(image){
+		width: 50%;
+		float: left;
+	}
+}
