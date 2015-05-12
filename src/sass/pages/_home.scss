@@ -1,10 +1,30 @@
 .home {
-	padding-top: 2rem;
+	padding-top: 4em;
 	background-color: $white;
 }
 
 .home > p {
-	margin-bottom: 1rem;
+	margin-bottom: .5em;
+	font-size: 1.25em;
+	font-family: $times;
+	line-height: 1.2;
+
+	em {
+		font-family: $times;
+	}
+}
+
+.filter {
+	margin-right: .5em;
+	padding: 0;
+	font-size: .8em;
+	font-family: $maria;
+	border: none;
+	background-color: transparent;
+
+	&.active {
+		border-bottom: 2px solid $black;
+	}
 }
 
 .project {
@@ -12,30 +32,35 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin-top: 1rem;
+		margin-top: 2rem;
 	}
 }
 
 .project {
 	display: none;
 	@include e(half) {
+		margin-bottom: 1.5em;
 		@include mq(tabl-and-up) {
 			max-width: 48%;
-			margin-bottom: 1rem;
 		}
 	}
 	@include e(full) {
 		max-width: 100%;
-		margin-bottom: 1rem;
+		margin-bottom: 1.5em;
 	}
 }
 
-// .filter {
-// 	@include m(reset) {
-// 		display: none;
+.project__item--caption {
+	margin-top: .5em;
+}
 
-// 		&.visible {
-// 			display: inline-block;
-// 		}
-// 	}
-// }
+.project__item--category {
+	margin-right: .5em;
+	font-size: .8em;
+}
+
+.project__item--title {
+	color: $black;
+	font-family: $times;
+	text-decoration: none;
+}
