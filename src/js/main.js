@@ -160,8 +160,3 @@ function elementResize() {
 $(window).resize(function() {
 	elementResize();
 });
-
-
-// (function ($) {
-//     $('#main').smoothState();
-// })(jQuery);
