@@ -4,14 +4,12 @@
 	z-index: 9;
 	padding: 4rem 1rem 1rem 1rem;
 	box-sizing: border-box;
-
-
 	width: 100%;
 	// width: 90%;
-
 	color: $white;
 	background-color: $grey-dark;
 	@include font-smooth;
+	transition: left 0.5s $bezier;
 
 	&.visible {
 		left: 0;

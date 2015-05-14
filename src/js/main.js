@@ -3,6 +3,8 @@ $('#about').click(function(){
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
    $('main').addClass('fixed');
+   $('header > a').addClass('white');
+   $('header > button').addClass('white');
 });
 
 $('#clients').click(function(){
@@ -10,6 +12,8 @@ $('#clients').click(function(){
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
    $('main').addClass('fixed');
+   $('header > a').addClass('white');
+   $('header > button').addClass('white');
 });
 
 $('#contact').click(function(){
@@ -17,6 +21,8 @@ $('#contact').click(function(){
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
    $('main').addClass('fixed');
+   $('header > a').addClass('white');
+   $('header > button').addClass('white');
 });
 
 $('.showcase__info--more').click(function(){
@@ -24,6 +30,8 @@ $('.showcase__info--more').click(function(){
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
    $('main').addClass('fixed');
+   $('header > a').addClass('white');
+   $('header > button').addClass('white');
 });
 
 $('.overlay').click(function(){
@@ -32,24 +40,32 @@ $('.overlay').click(function(){
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
+		$('header > a').removeClass('white');
+		$('header > button').removeClass('white');
 	}
 	if ( $('.clients').hasClass('visible') )  {
 		$('.clients').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
+		$('header > a').removeClass('white');
+		$('header > button').removeClass('white');
 	}
 	if ( $('.contact').hasClass('visible') )  {
 		$('.contact').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
+		$('header > a').removeClass('white');
+		$('header > button').removeClass('white');
 	}
 	if ( $('.project-information').hasClass('visible') )  {
 		$('.project-information').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
+		$('header > a').removeClass('white');
+		$('header > button').removeClass('white');
 	}
 });
 
@@ -59,24 +75,32 @@ $('.close__side-elements').click(function(){
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
+		$('header > a').removeClass('white');
+		$('header > button').removeClass('white');
 	}
 	if ( $('.clients').hasClass('visible') )  {
 		$('.clients').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
+		$('header > a').removeClass('white');
+		$('header > button').removeClass('white');
 	}
 	if ( $('.contact').hasClass('visible') )  {
 		$('.contact').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
+		$('header > a').removeClass('white');
+		$('header > button').removeClass('white');
 	}
 	if ( $('.project-information').hasClass('visible') )  {
 		$('.project-information').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
+		$('header > a').removeClass('white');
+		$('header > button').removeClass('white');
 	}
 });
 
@@ -91,24 +115,32 @@ $(document).on('keydown', function(e) {
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
 			$('main').removeClass('fixed');
+			$('header > a').removeClass('white');
+			$('header > button').removeClass('white');
 		}
 		if ( $('.clients').hasClass('visible') )  {
 			$('.clients').removeClass('visible');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
 			$('main').removeClass('fixed');
+			$('header > a').removeClass('white');
+			$('header > button').removeClass('white');
 		}
 		if ( $('.contact').hasClass('visible') )  {
 			$('.contact').removeClass('visible');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
 			$('main').removeClass('fixed');
+			$('header > a').removeClass('white');
+			$('header > button').removeClass('white');
 		}
 		if ( $('.project-information').hasClass('visible') )  {
 			$('.project-information').removeClass('visible');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
 			$('main').removeClass('fixed');
+			$('header > a').removeClass('white');
+			$('header > button').removeClass('white');
 		}
 	}
 });
