@@ -89,3 +89,60 @@
 .about__info > p > a {
 	border-bottom: 1px solid $white;
 }
+
+.about__newsletter > p {
+	margin-bottom: .5em;
+}
+
+.email {
+	padding: .4rem 0 .4rem .4rem;
+	background-color: transparent;
+	border: none;
+	box-shadow: inset 0px -1px 0px 0px $white;
+	font-family: $times;
+	font-size: 1em;
+	color: $white;
+	transition: box-shadow .2s ease-in-out;
+
+	&:focus {
+		outline: 0;
+		color: $black;
+		box-shadow: inset 0px -50px 0px 0px $white;
+	}
+}
+
+.email-button {
+	margin-left: .5em;
+	padding: .5rem;
+	background-color: $grey-dark;
+	color: $white;
+	border: 1px solid $white;
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+	}
+}
+
+.mce_inline_error {
+	background-color: transparent!important;
+	padding: .4rem 0 .4rem .4rem!important;
+	font-family: $times;
+	font-weight: normal!important;
+
+	&:before {
+		content: "☝";
+		font-size: .8em;
+		margin-right: .4rem;
+		margin-left: -.4rem;
+	}
+}
+
+.response {
+	margin-top: .5rem;
+	font-family: $times;
+	line-height: 1.4;
+}
+
+.response > a {
+	border-bottom: 1px solid $white;
+}
