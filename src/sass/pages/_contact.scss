@@ -5,13 +5,15 @@
 	padding: 1rem 1rem 3rem 1rem;
 	box-sizing: border-box;
 	width: 100%;
-	// width: 70%;
 	color: $white;
 	background-color: $grey-light;
 	transition: left 0.5s $bezier;
 
 	&.visible {
 		left: 0;
+	}
+	@include mq(lap-and-up) {
+		width: 70%
 	}
 }
 

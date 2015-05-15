@@ -1,3 +1,13 @@
+$('.showcase__close').click(function() {
+	var loc = window.location.href,
+    index = loc.indexOf('#');
+
+	if (index > 0) {
+	  window.location = loc.substring(0, index);
+	}
+	history.go(-1);
+});
+
 $('#about').click(function(){
    $('.about').addClass('visible');
    $('#about').addClass('active');
@@ -40,7 +50,7 @@ $('.showcase__info--more').click(function(){
 $('.overlay').click(function(){
    if ( $('.about').hasClass('visible') )  {
 		$('.about').removeClass('visible');
-		$('#about').addClass('active');
+		$('#about').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
@@ -78,7 +88,7 @@ $('.overlay').click(function(){
 $('.close__side-elements').click(function(){
 	if ( $('.about').hasClass('visible') )  {
 		$('.about').removeClass('visible');
-		$('#about').addClass('active');
+		$('#about').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');

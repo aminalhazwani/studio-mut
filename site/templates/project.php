@@ -5,7 +5,6 @@
     <?php snippet('project-information') ?>
     
     <div class="overlay"></div>
-    <button class="close__side-elements" type="button">close</button>
 
     <main id="main">
         <div class="showcase">
@@ -15,7 +14,7 @@
                 <span class="showcase__close--line"></span>
             </a>
         <?php else: ?>
-            <a class="showcase__close" onclick="history.back(-1)">
+            <a class="showcase__close">
                 <span class="showcase__close--line"></span>
             </a>
         <?php endif ?>
