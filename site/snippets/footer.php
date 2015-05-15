@@ -14,7 +14,6 @@
 			</div>
 		</div>
 	</footer>
-	<div class="footer__space"></div>
 
 	<!-- Scripts -->
   	<?php echo js('assets/scripts/vendor/vendor.min.js') ?>

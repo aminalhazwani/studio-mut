@@ -180,19 +180,6 @@ $('.project__container').mixItUp({
 	}
 });
 
-$(document).ready(function() {
-	elementResize();
-});
-
-function elementResize() {
-	var footerHeight = $(".footer").outerHeight();
-	$(".footer__space").css("height", footerHeight-1);
-};
-
-$(window).resize(function() {
-	elementResize();
-});
-
 function checkTime(i) {
     if (i < 10) {
         i = "0" + i;
