@@ -2,7 +2,7 @@
 	position: absolute;
 	left: -100%;
 	z-index: 99;
-	padding: 4rem 1rem 1rem 1rem;
+	padding: 1rem 1rem 2rem 1rem;
 	box-sizing: border-box;
 	width: 100%;
 	// width: 60%;
@@ -16,14 +16,22 @@
 	}
 }
 
-.clients__character {
-	margin-bottom: 2em;
+.clients__headline {
+	@extend .about__headline;
+}
 
+.clients__character {
 	h3 {
 		font-size: 2em;
 		margin-bottom: .5rem;
 	}
-	ul li {
-		font-family: $times;
+	ul {
+		li {
+			font-family: $times;
+
+			&:last-child {
+				margin-bottom: 2em;
+			}
+		}
 	}
 }

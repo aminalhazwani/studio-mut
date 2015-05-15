@@ -21,8 +21,37 @@ main {
 		position: absolute;
 		display: none;
 		z-index: 9999;
-		top: 0;
-		right: 0;
+		top: .6rem;
+		right: .6rem;
+
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+
+		@include m(line) {
+			&:after {
+				position: absolute;
+				top: 14px;
+				display: block;
+				transform: rotate(-45deg);
+				width: 30px;
+				height: 3px;
+				background-color: $white;
+				content: " ";
+			}
+
+			&:before {
+				position: absolute;
+				bottom: 0;
+				margin-bottom: 13px;
+				display: block;
+				transform: rotate(45deg);
+				width: 30px;
+				height: 3px;
+				background-color: $white;
+				content: " ";
+			}
+		}
 
 		&.active {
 			display: block;

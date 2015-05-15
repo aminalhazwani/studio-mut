@@ -3,7 +3,6 @@
 	<?php snippet('clients') ?>
 	<?php snippet('contact') ?>
 	<div class="overlay"></div>
-	<button class="close__side-elements" type="button">close</button>
 	
 	<main id="main">
 		<div class="home">
