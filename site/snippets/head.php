@@ -72,7 +72,7 @@
 	<![endif]-->
 	<header>
 		<a href="<?php echo $site->url() ?>">Studio Mut</a>
-		<button id="about">About</button>
-		<button id="clients">Clients</button>
-		<button id="contact">Contact</button>
+		<button id="about" <?php if($page->template() != 'home'): ?>class="header__button"<?php endif ?>>About</button>
+		<button id="clients" <?php if($page->template() != 'home'): ?>class="header__button"<?php endif ?>>Clients</button>
+		<button id="contact" <?php if($page->template() != 'home'): ?>class="header__button"<?php endif ?>>Contact</button>
 	</header>

@@ -4,7 +4,6 @@
 }
 
 .home > p {
-	margin-bottom: .5em;
 	font-size: 1.25em;
 	font-family: $times;
 	line-height: 1.2;
@@ -21,6 +20,7 @@
 	font-family: $maria;
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
 
 	&.active {
 		border-bottom: 2px solid $black;

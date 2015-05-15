@@ -68,3 +68,13 @@ button {
 		border-bottom-color: $white;
 	}
 }
+
+.header__button {
+	visibility: hidden;
+	pointer-events: none;
+
+	@include mq(tabl-and-up) {
+		visibility: visible;
+		pointer-events: auto;
+	}
+}

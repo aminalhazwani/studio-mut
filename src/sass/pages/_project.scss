@@ -2,8 +2,8 @@
 	@include e(close) {
 		position: fixed;
 		z-index: 9999999;
-		top: 0;
-		right: 0;
+		top: .6rem;
+		right: .6rem;
 
 		width: 30px;
 		height: 30px;
@@ -12,11 +12,11 @@
 		@include m(line) {
 			&:after {
 				position: absolute;
-				top: 13px;
+				top: 14px;
 				display: block;
 				transform: rotate(-45deg);
 				width: 30px;
-				height: 4px;
+				height: 3px;
 				background-color: $black;
 				content: " ";
 			}
@@ -28,7 +28,7 @@
 				display: block;
 				transform: rotate(45deg);
 				width: 30px;
-				height: 4px;
+				height: 3px;
 				background-color: $black;
 				content: " ";
 			}
@@ -38,8 +38,8 @@
 
 	@include e(count) {
 		position: fixed;
-		bottom: 0;
-		right: 0;
+		bottom: .6rem;
+		right: .6rem;
 		z-index: 999;
 
 		font-family: $maria;
@@ -102,10 +102,30 @@
 
 .showcase {
 	@include e(info) {
+		display: none;
 		position: fixed;
 		z-index: 999;
-		left: 0;
-		bottom: 0;
+		left: .6rem;
+		bottom: .6rem;
+
+		@include mq(tabl-and-up) {
+			display: block;
+		}
+	}
+}
+
+.showcase {
+	@include e(info) {
+		@include m(title) {
+			margin-right: 1rem;
+		}
+		@include m(more) {
+			border: none;
+			background-color: transparent;
+			font-size: 1em;
+			font-family: $maria;
+			cursor: pointer;
+		}
 	}
 }
 

@@ -2,7 +2,6 @@
     <?php snippet('about') ?>
     <?php snippet('clients') ?>
     <?php snippet('contact') ?>
-    <?php snippet('contact') ?>
     <?php snippet('project-information') ?>
     
     <div class="overlay"></div>
