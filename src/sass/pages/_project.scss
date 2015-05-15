@@ -45,7 +45,7 @@
 		position: fixed;
 		z-index: 999;
 		bottom: .6rem;
-		right: .6rem;
+		right: 1rem;
 
 		@include mq(tabl) {
 			bottom: 2rem;
@@ -119,7 +119,7 @@
 		display: none;
 		position: fixed;
 		z-index: 999;
-		left: .6rem;
+		left: 1rem;
 		bottom: .6rem;
 
 		@include mq(tabl) {
