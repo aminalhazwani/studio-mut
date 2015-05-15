@@ -23,7 +23,7 @@
       @media only screen and (max-width:$palm-end) { @content; }
     }
     @if $media-query == tabl{
-      @media only screen and (min-width:$tabl-start) and (max-width:$tabl-end) { @content; }
+      @media only screen and (min-width:$tabl-start) and (max-width:$tabl-end) and (min-height:500px){ @content; }
     }
     @if $media-query == tabl-and-up{
       @media only screen and (min-width:$tabl-start) { @content; }
