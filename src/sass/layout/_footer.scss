@@ -4,6 +4,17 @@
 	color: $white;
 	background-color: $grey-dark;
 	@include font-smooth;
+
+	@include mq(tabl) {
+		padding: 2rem 0;
+	}	
+}
+
+.footer__container {
+	@include mq(tabl) {
+		max-width: 90%;
+		margin: 0 auto;
+	}
 }
 
 .footer__contacts {

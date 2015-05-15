@@ -24,6 +24,11 @@ main {
 		top: .6rem;
 		right: .6rem;
 
+		@include mq(tabl) {
+			top: 1.6rem;
+			right: 5%;
+		}
+
 		width: 30px;
 		height: 30px;
 		cursor: pointer;

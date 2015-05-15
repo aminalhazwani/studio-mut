@@ -5,6 +5,11 @@
 		top: .6rem;
 		right: .6rem;
 
+		@include mq(tabl) {
+			top: 1.6rem;
+			right: 5%;
+		}
+
 		width: 30px;
 		height: 30px;
 		cursor: pointer;
@@ -38,9 +43,14 @@
 
 	@include e(count) {
 		position: fixed;
+		z-index: 999;
 		bottom: .6rem;
 		right: .6rem;
-		z-index: 999;
+
+		@include mq(tabl) {
+			bottom: 2rem;
+			right: 5%;
+		}
 
 		font-family: $maria;
 	}
@@ -73,6 +83,10 @@
 			transform: translate(-50%, -50%);
 			box-sizing: border-box;
 			padding: 1rem;
+
+			@include mq(tabl) {
+				padding: 5%;
+			}
 		}
 
 		@include m(full) {
@@ -107,6 +121,11 @@
 		z-index: 999;
 		left: .6rem;
 		bottom: .6rem;
+
+		@include mq(tabl) {
+			left: 5%;
+			bottom: 2rem;
+		}
 
 		@include mq(tabl-and-up) {
 			display: block;

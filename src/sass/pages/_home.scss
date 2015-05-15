@@ -1,6 +1,12 @@
 .home {
-	padding-top: 4em;
+	padding: 4rem 1rem 1rem 1rem;
 	background-color: $white;
+
+	@include mq(tabl) {
+		padding-top: 5rem;
+		width: 90%;
+		margin: 0 auto;
+	}
 }
 
 .home > p {

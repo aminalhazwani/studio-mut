@@ -1,18 +1,8 @@
 .clients {
-	position: absolute;
-	left: -100%;
+	@extend .about;
 	z-index: 99;
-	padding: 1rem 1rem 2rem 1rem;
-	box-sizing: border-box;
-	width: 100%;
-	color: $white;
-	@include font-smooth;
 	background-color: $grey;
-	transition: left 0.5s $bezier;
 
-	&.visible {
-		left: 0;
-	}
 	@include mq(lap-and-up) {
 		width: 60%
 	}

@@ -6,6 +6,11 @@ header {
 	@include mq(tabl-and-up){
 		z-index: 999999;
 	}
+
+	@include mq(tabl) {
+		padding: 2rem 0 0 0;
+		left: 5%;
+	}
 }
 
 header > a {
@@ -29,8 +34,13 @@ header > button {
 	&:last-of-type {
 		margin-right: 0;
 	}
+
+	@include mq(tabl-and-up) {
+		margin-right: 1.5rem;
+	}
 }
 
 .white {
 	color: $white;
+	@include font-smooth;
 }

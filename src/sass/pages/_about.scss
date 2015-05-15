@@ -14,6 +14,10 @@
 		left: 0;
 	}
 
+	@include mq(tabl) {
+		padding: 2rem 5% 3rem 5%;
+	}
+
 	@include mq(lap-and-up) {
 		width: 90%
 	}
@@ -35,6 +39,10 @@
 		@include m(top){
 			position: absolute;
 			width: calc(100% - 2rem);
+
+			@include mq(tabl) {
+				width: 90%;
+			}
 		}
 	}
 }
@@ -49,6 +57,12 @@
 				opacity: 0;
 			}
 		}
+	}
+}
+
+.about__columns {
+	@include mq(lap-and-up) {
+		display: flex;
 	}
 }
 

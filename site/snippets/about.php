@@ -33,41 +33,47 @@
 		<?php echo $about->mail()->kirbytext() ?>
 	</div>
 
-	<div class="about__content about__social">
-		<?php echo $about->social()->kirbytext() ?>
-	</div>
+	<div class="about__columns">
+		<div class="about__column">
+			<div class="about__content about__social">
+				<?php echo $about->social()->kirbytext() ?>
+			</div>
 
-	<div class="about__content about__awards">
-		<?php echo $about->awards()->kirbytext() ?>
-	</div>
+			<div class="about__content about__awards">
+				<?php echo $about->awards()->kirbytext() ?>
+			</div>
 
-	<div class="about__content about__talks">
-		<?php echo $about->talks()->kirbytext() ?>
-	</div>
+			<div class="about__content about__talks">
+				<?php echo $about->talks()->kirbytext() ?>
+			</div>
 
-	<div class="about__content about__newsletter">
-		<?php echo $about->newsletter()->kirbytext() ?>
-		<?php snippet('newsletter') ?>
-	</div>
+			<div class="about__content about__newsletter">
+				<?php echo $about->newsletter()->kirbytext() ?>
+				<?php snippet('newsletter') ?>
+			</div>
 
-	<div class="about__content about__interships">
-		<?php echo $about->interships()->kirbytext() ?>
-	</div>
+			<div class="about__content about__interships">
+				<?php echo $about->interships()->kirbytext() ?>
+			</div>
+		</div>
 
-	<div class="about__content about__info">
-		<?php echo $about->infomail()->kirbytext() ?>
-	</div>
+		<div class="about__column">
+			<div class="about__content about__info">
+				<?php echo $about->infomail()->kirbytext() ?>
+			</div>
 
-	<div class="about__content about__weather">
-		<!--<?php snippet('weather') ?>-->
-	</div>
+			<div class="about__content about__weather">
+				<!--<?php snippet('weather') ?>-->
+			</div>
 
-	<div class="about__content about__time">
-		<h4>Actual time at Mut</h4>
-		<span id="time"></span>
-	</div>
+			<div class="about__content about__time">
+				<h4>Actual time at Mut</h4>
+				<span id="time"></span>
+			</div>
 
-	<div class="about__content about__warning">
-		<?php echo $about->warning()->kirbytext() ?>
+			<div class="about__content about__warning">
+				<?php echo $about->warning()->kirbytext() ?>
+			</div>
+		</div>
 	</div>
 </div>
