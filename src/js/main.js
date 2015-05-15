@@ -1,5 +1,6 @@
 $('#about').click(function(){
    $('.about').addClass('visible');
+   $('#about').addClass('active');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
    $('main').addClass('fixed');
@@ -9,6 +10,7 @@ $('#about').click(function(){
 
 $('#clients').click(function(){
    $('.clients').addClass('visible');
+   $('#clients').addClass('active');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
    $('main').addClass('fixed');
@@ -18,6 +20,7 @@ $('#clients').click(function(){
 
 $('#contact').click(function(){
    $('.contact').addClass('visible');
+   $('#contact').addClass('active');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
    $('main').addClass('fixed');
@@ -37,6 +40,7 @@ $('.showcase__info--more').click(function(){
 $('.overlay').click(function(){
    if ( $('.about').hasClass('visible') )  {
 		$('.about').removeClass('visible');
+		$('#about').addClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
@@ -45,6 +49,7 @@ $('.overlay').click(function(){
 	}
 	if ( $('.clients').hasClass('visible') )  {
 		$('.clients').removeClass('visible');
+		$('#clients').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
@@ -53,6 +58,7 @@ $('.overlay').click(function(){
 	}
 	if ( $('.contact').hasClass('visible') )  {
 		$('.contact').removeClass('visible');
+		$('#contact').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
@@ -72,6 +78,7 @@ $('.overlay').click(function(){
 $('.close__side-elements').click(function(){
 	if ( $('.about').hasClass('visible') )  {
 		$('.about').removeClass('visible');
+		$('#about').addClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
@@ -80,6 +87,7 @@ $('.close__side-elements').click(function(){
 	}
 	if ( $('.clients').hasClass('visible') )  {
 		$('.clients').removeClass('visible');
+		$('#clients').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
@@ -88,6 +96,7 @@ $('.close__side-elements').click(function(){
 	}
 	if ( $('.contact').hasClass('visible') )  {
 		$('.contact').removeClass('visible');
+		$('#contact').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
 		$('main').removeClass('fixed');
@@ -112,6 +121,7 @@ $(document).on('keydown', function(e) {
 	if ( e.keyCode === 27 ) {
 		if ( $('.about').hasClass('visible') )  {
 			$('.about').removeClass('visible');
+			$('#about').removeClass('active');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
 			$('main').removeClass('fixed');
@@ -120,6 +130,7 @@ $(document).on('keydown', function(e) {
 		}
 		if ( $('.clients').hasClass('visible') )  {
 			$('.clients').removeClass('visible');
+			$('#clients').removeClass('active');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
 			$('main').removeClass('fixed');
@@ -128,6 +139,7 @@ $(document).on('keydown', function(e) {
 		}
 		if ( $('.contact').hasClass('visible') )  {
 			$('.contact').removeClass('visible');
+			$('#contact').removeClass('active');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
 			$('main').removeClass('fixed');

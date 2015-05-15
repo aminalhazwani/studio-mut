@@ -56,5 +56,15 @@ main {
 		&.active {
 			display: block;
 		}
+
+		@include mq(lap-and-up){
+			visibility: hidden;
+		}
+	}
+}
+
+button {
+	&.active {
+		border-bottom-color: $white;
 	}
 }

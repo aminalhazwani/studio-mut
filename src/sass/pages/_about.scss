@@ -19,10 +19,14 @@
 .about__headline {
 	margin-bottom: 2em;
 	line-height: 1.4;
+
+	@include mq(tabl-and-up) {
+		visibility: hidden;
+	}
 }
 
 .about {
-	@include e(images){
+	@include e(images) {
 		overflow: hidden;
 
 		@include m(top){

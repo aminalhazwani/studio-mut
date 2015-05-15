@@ -1,8 +1,11 @@
 header {
 	position: absolute;
 	z-index: 1;
-
 	padding: 1rem 1rem 0 1rem;
+
+	@include mq(tabl-and-up){
+		z-index: 999999;
+	}
 }
 
 header > a {
@@ -30,5 +33,4 @@ header > button {
 
 .white {
 	color: $white;
-	border-bottom-color: $white;
 }
