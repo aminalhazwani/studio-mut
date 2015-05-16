@@ -20,14 +20,14 @@
 		      <figure class="project <?php echo strtolower($project->tag()) ?><?php if($project->previewSize() == 'half'): ?> project__half<?php endif?><?php if($project->previewSize() == 'full'): ?> project__full<?php endif?>">
 					<?php foreach($project->images() as $image): ?>
 					<?php if($image->cover() == 'ja'): ?>
-					<a href="<?php echo $project->url() ?>/">
+					<a href="<?php echo $project->url() ?>/" alt="<?php echo html($project->title()) ?>">
 						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo $image->url() ?>" alt="<?php echo html($project->title()) ?>"/>
 					</a>
 					<?php endif ?>
 					<?php endforeach ?>
 		            <figcaption class="project__item--caption">
 		            	<span class="project__item--category"><?php echo str_replace("-"," ",$project->tag()->html()) ?></span>
-		            	<a class="project__item--title" href="<?php echo $project->url() ?>/">
+		            	<a class="project__item--title" href="<?php echo $project->url() ?>/" alt="<?php echo html($project->title()) ?>">
 		            		<?php echo html($project->title()) ?>
 		         		</a>
 		            </figcaption>
