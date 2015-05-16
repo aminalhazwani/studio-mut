@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    $('.splash').addClass('hide');
+});
+
 $('.showcase__close').click(function() {
 	var loc = window.location.href,
     index = loc.indexOf('#');
