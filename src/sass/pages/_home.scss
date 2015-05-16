@@ -3,7 +3,7 @@
 	background-color: $white;
 
 	@include mq(tabl) {
-		padding-top: 5rem;
+		padding: 5rem 0 0 0;
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -13,9 +13,17 @@
 	font-size: 1.15em;
 	font-family: $times;
 	line-height: 1.6;
+	color: $black;
 
 	em {
 		font-family: $times;
+	}
+
+	a {
+		font-family: $times;
+		color: $black;
+		text-decoration: none;
+		border-bottom: 1px solid $black;
 	}
 }
 
