@@ -26,7 +26,6 @@
 					<?php endif ?>
 					<?php endforeach ?>
 		            <figcaption class="project__item--caption">
-		            	<span class="project__item--category"><?php echo str_replace("-"," ",$project->tag()->html()) ?></span>
 		            	<a class="project__item--title" href="<?php echo $project->url() ?>/" alt="<?php echo html($project->title()) ?>">
 		            		<?php echo html($project->title()) ?>
 		         		</a>
