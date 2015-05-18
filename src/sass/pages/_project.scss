@@ -2,7 +2,7 @@
 	@include e(close) {
 		position: fixed;
 		z-index: 9999999;
-		top: .6rem;
+		top: .8rem;
 		right: .6rem;
 
 		@include mq(tabl) {

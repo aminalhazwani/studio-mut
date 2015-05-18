@@ -2,7 +2,7 @@
 	position: absolute;
 	left: -100%;
 	z-index: 9;
-	padding: 1rem 1rem 3rem 1rem;
+	padding: 1.4rem 1rem 3rem 1rem;
 	box-sizing: border-box;
 	width: 100%;
 	color: $white;
@@ -24,6 +24,7 @@
 }
 
 .about__headline {
+	font-size: .9em;
 	margin-bottom: 2em;
 	line-height: 1.4;
 

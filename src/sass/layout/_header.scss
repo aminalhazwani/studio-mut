@@ -1,13 +1,16 @@
 header {
 	position: absolute;
 	z-index: 1;
-	padding: 1rem 1rem 0 1rem;
+	padding: 1.4rem 1rem 0 1rem;
+	font-size: .9em;
+	box-sizing: border-box;
 
 	@include mq(tabl-and-up){
 		z-index: 999999;
 	}
 
 	@include mq(tabl) {
+		font-size: 1em;
 		padding: 2rem 0 0 0;
 		left: 5%;
 	}

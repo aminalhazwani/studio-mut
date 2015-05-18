@@ -43,7 +43,7 @@ main {
 		position: absolute;
 		display: none;
 		z-index: 9999;
-		top: .6rem;
+		top: .8rem;
 		right: .6rem;
 
 		@include mq(tabl) {
