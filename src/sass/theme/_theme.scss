@@ -84,6 +84,10 @@ main {
 			display: block;
 		}
 
+		&.fixed {
+			position: fixed;
+		}
+
 		@include mq(lap-and-up){
 			visibility: hidden;
 		}

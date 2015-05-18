@@ -28,21 +28,18 @@
 }
 
 .filter {
-	display: none;
-}
-// .filter {
-// 	margin: .5em 1em 0 0;
-// 	padding: 0;
-// 	font-size: .8em;
-// 	font-family: $maria;
-// 	border: none;
-// 	background-color: transparent;
-// 	cursor: pointer;
+	margin: .5em 1em 0 0;
+	padding: 0;
+	font-size: .8em;
+	font-family: $maria;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
 
-// 	&.active {
-// 		border-bottom: 2px solid $black;
-// 	}
-// }
+	&.active {
+		border-bottom: 2px solid $black;
+	}
+}
 
 .project {
 	@include e(container) {
