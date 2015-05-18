@@ -12,7 +12,7 @@
 .home > p {
 	font-size: 1.15em;
 	font-family: $times;
-	line-height: 1.6;
+	line-height: 1.4;
 	color: $black;
 
 	em {
@@ -28,18 +28,21 @@
 }
 
 .filter {
-	margin: .5em 1em 0 0;
-	padding: 0;
-	font-size: .8em;
-	font-family: $maria;
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
-
-	&.active {
-		border-bottom: 2px solid $black;
-	}
+	display: none;
 }
+// .filter {
+// 	margin: .5em 1em 0 0;
+// 	padding: 0;
+// 	font-size: .8em;
+// 	font-family: $maria;
+// 	border: none;
+// 	background-color: transparent;
+// 	cursor: pointer;
+
+// 	&.active {
+// 		border-bottom: 2px solid $black;
+// 	}
+// }
 
 .project {
 	@include e(container) {
