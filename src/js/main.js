@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $('.splash').addClass('hide');
+    setTimeout(function() {
+        $('.splash').addClass('hide');
+    }, 2000);
 });
 
 $('.showcase__close').click(function() {
@@ -17,6 +19,9 @@ $('#about').click(function(){
    $('#about').addClass('active');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
+   setTimeout(function() {
+   		$('.close__side-elements').addClass('fixed');
+	}, 500);
    $('main').addClass('fixed');
    $('header > a').addClass('white');
    $('header > button').addClass('white');
@@ -27,6 +32,9 @@ $('#clients').click(function(){
    $('#clients').addClass('active');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
+   setTimeout(function() {
+   		$('.close__side-elements').addClass('fixed');
+	}, 500);
    $('main').addClass('fixed');
    $('header > a').addClass('white');
    $('header > button').addClass('white');
@@ -37,6 +45,9 @@ $('#contact').click(function(){
    $('#contact').addClass('active');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
+   setTimeout(function() {
+   		$('.close__side-elements').addClass('fixed');
+	}, 500);
    $('main').addClass('fixed');
    $('header > a').addClass('white');
    $('header > button').addClass('white');
@@ -46,6 +57,9 @@ $('.showcase__info--more').click(function(){
    $('.project-information').addClass('visible');
    $('.overlay').addClass('active');
    $('.close__side-elements').addClass('active');
+   setTimeout(function() {
+   		$('.close__side-elements').addClass('fixed');
+	}, 500);
    $('main').addClass('fixed');
    $('header > a').addClass('white');
    $('header > button').addClass('white');
@@ -57,6 +71,7 @@ $('.overlay').click(function(){
 		$('#about').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -66,6 +81,7 @@ $('.overlay').click(function(){
 		$('#clients').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -75,6 +91,7 @@ $('.overlay').click(function(){
 		$('#contact').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -83,6 +100,7 @@ $('.overlay').click(function(){
 		$('.project-information').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -95,6 +113,7 @@ $('.close__side-elements').click(function(){
 		$('#about').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -104,6 +123,7 @@ $('.close__side-elements').click(function(){
 		$('#clients').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -113,6 +133,7 @@ $('.close__side-elements').click(function(){
 		$('#contact').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -121,6 +142,7 @@ $('.close__side-elements').click(function(){
 		$('.project-information').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
+		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -134,6 +156,7 @@ $(document).on('keydown', function(e) {
 			$('#about').removeClass('active');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
+			$('.close__side-elements').removeClass('fixed');
 			$('main').removeClass('fixed');
 			$('header > a').removeClass('white');
 			$('header > button').removeClass('white');
@@ -143,6 +166,7 @@ $(document).on('keydown', function(e) {
 			$('#clients').removeClass('active');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
+			$('.close__side-elements').removeClass('fixed');
 			$('main').removeClass('fixed');
 			$('header > a').removeClass('white');
 			$('header > button').removeClass('white');
@@ -152,6 +176,7 @@ $(document).on('keydown', function(e) {
 			$('#contact').removeClass('active');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
+			$('.close__side-elements').removeClass('fixed');
 			$('main').removeClass('fixed');
 			$('header > a').removeClass('white');
 			$('header > button').removeClass('white');
@@ -160,6 +185,7 @@ $(document).on('keydown', function(e) {
 			$('.project-information').removeClass('visible');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
+			$('.close__side-elements').removeClass('fixed');
 			$('main').removeClass('fixed');
 			$('header > a').removeClass('white');
 			$('header > button').removeClass('white');
