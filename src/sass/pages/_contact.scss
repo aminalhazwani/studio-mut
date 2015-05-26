@@ -9,6 +9,12 @@
 	@include mq(lap-and-up) {
 		width: 70%
 	}
+	@include mq(desk) {
+		width: 60%;
+	}
+	@include mq(desk-wide) {
+		width: 50%;
+	}
 }
 
 .contact__headline {
@@ -18,5 +24,18 @@
 .contact__content > p {
 	font-family: $times;
 	font-size: 1.15em;
-	line-height: 1.6;
+	line-height: 1.2;
+
+	@include mq(tabl) {
+		font-size: 1.25em;
+	}
+	@include mq(lap) {
+		font-size: 1.5em;
+	}
+	@include mq(desk) {
+		font-size: 1.8em;
+	}
+	@include mq(desk-wide) {
+		font-size: 2.2em;
+	}
 }

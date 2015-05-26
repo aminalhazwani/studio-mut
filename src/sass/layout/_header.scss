@@ -14,6 +14,14 @@ header {
 		padding: 2rem 0 0 0;
 		left: 5%;
 	}
+
+	@include mq(lap) {
+		font-size: 1.1em;
+	}
+
+	@include mq(desk) {
+		font-size: 1.15em;
+	}
 }
 
 header > a {

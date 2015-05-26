@@ -45,9 +45,15 @@
 				</div>
 				<div class="footer__about">
 					<?php $footer = $pages->find('/footer') ?>
-					<?php echo $footer->firstCol()->kirbytext() ?>
-					<?php echo $footer->secondCol()->kirbytext() ?>
-					<?php echo $footer->thirdCol()->kirbytext() ?>
+					<div class="footer__col">
+						<?php echo $footer->firstCol()->kirbytext() ?>
+					</div>
+					<div class="footer__col">
+						<?php echo $footer->secondCol()->kirbytext() ?>
+					</div>
+					<div class="footer__col">
+						<?php echo $footer->thirdCol()->kirbytext() ?>
+					</div>
 				</div>
 			</div>
 		</footer>

@@ -4,7 +4,7 @@
 $(window).on("resize", function() {
 	var width = $(window).width();
 	if (width >= 768) {
-		var posLeft = ($('body').outerWidth() - $('.home').innerWidth())/2;
+		var posLeft = ($('body').outerWidth() - $('.home > p').innerWidth())/2;
 		$('.header-home').css('left', posLeft);
 		$('.about').css('padding-left', posLeft);
 		$('.clients').css('padding-left', posLeft);
