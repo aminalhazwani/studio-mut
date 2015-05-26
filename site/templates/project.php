@@ -5,7 +5,7 @@
     <?php snippet('project-information') ?>
     
     <div class="overlay"></div>
-    <div class="splash"><span class="splash__text">M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;T</span></div>
+    <!-- <div class="splash"><span class="splash__text">M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;T</span></div> -->
 
     <main id="main">
         <div class="showcase">
