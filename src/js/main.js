@@ -1,287 +1,47 @@
+// This function set the position left of the header and
+// the padding left of the side elements accordingly to 
+// the margin-left of the body which is set to auto in CSS
+$(window).on("resize", function() {
+	var width = $(window).width();
+	if (width >= 768) {
+		var posLeft = ($('body').outerWidth() - $('.home').innerWidth())/2;
+		$('.header-home').css('left', posLeft);
+		$('.about').css('padding-left', posLeft);
+		$('.clients').css('padding-left', posLeft);
+		$('.contact').css('padding-left', posLeft);
+	}
+	else if (width >= 481 && width < 768) {
+		$('.header-home').css('left', '5%');
+		$('.about').css('padding-left', '5%');
+		$('.clients').css('padding-left', '5%');
+		$('.contact').css('padding-left', '5%');
+	}
+	else {
+		$('.header-home').css('left', '0');
+		$('.about').css('padding-left', '1rem');
+		$('.clients').css('padding-left', '1rem');
+		$('.contact').css('padding-left', '1rem');
+	}
+}).resize();
+
+
+// This function plays an animation before 
+// redirecting to the clicked link
 $(document).ready(function() {
-    setTimeout(function() {
-        $('.splash').addClass('hide');
-    }, 2000);
-});
+    $('.project > a').click(function() {
+        $('main').addClass('hide');
+        var href = $(this).attr('href');
+        setTimeout(function() {window.location = href}, 1000);
+        return false;
+    });
+});​
 
-$('.showcase__close').click(function() {
-	var loc = window.location.href,
-    index = loc.indexOf('#');
+// $(document).ready(function() {
+//     setTimeout(function() {
+//         $('.splash').addClass('hide');
+//     }, 2000);
 
-	if (index > 0) {
-	  window.location = loc.substring(0, index);
-	}
-	history.go(-1);
-});
-
-$('#about').click(function(){
-   $('.about').addClass('visible');
-   $('#about').addClass('active');
-   $('.overlay').addClass('active');
-   $('.close__side-elements').addClass('active');
-   setTimeout(function() {
-   		$('.close__side-elements').addClass('fixed');
-	}, 500);
-   $('main').addClass('fixed');
-   $('header > a').addClass('white');
-   $('header > button').addClass('white');
-});
-
-$('#clients').click(function(){
-   $('.clients').addClass('visible');
-   $('#clients').addClass('active');
-   $('.overlay').addClass('active');
-   $('.close__side-elements').addClass('active');
-   setTimeout(function() {
-   		$('.close__side-elements').addClass('fixed');
-	}, 500);
-   $('main').addClass('fixed');
-   $('header > a').addClass('white');
-   $('header > button').addClass('white');
-});
-
-$('#contact').click(function(){
-   $('.contact').addClass('visible');
-   $('#contact').addClass('active');
-   $('.overlay').addClass('active');
-   $('.close__side-elements').addClass('active');
-   setTimeout(function() {
-   		$('.close__side-elements').addClass('fixed');
-	}, 500);
-   $('main').addClass('fixed');
-   $('header > a').addClass('white');
-   $('header > button').addClass('white');
-});
-
-$('.showcase__info--more').click(function(){
-   $('.project-information').addClass('visible');
-   $('.overlay').addClass('active');
-   $('.close__side-elements').addClass('active');
-   setTimeout(function() {
-   		$('.close__side-elements').addClass('fixed');
-	}, 500);
-   $('main').addClass('fixed');
-   $('header > a').addClass('white');
-   $('header > button').addClass('white');
-});
-
-$('.overlay').click(function(){
-   if ( $('.about').hasClass('visible') )  {
-		$('.about').removeClass('visible');
-		$('#about').removeClass('active');
-		$('.overlay').removeClass('active');
-		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
-		$('main').removeClass('fixed');
-		$('header > a').removeClass('white');
-		$('header > button').removeClass('white');
-	}
-	if ( $('.clients').hasClass('visible') )  {
-		$('.clients').removeClass('visible');
-		$('#clients').removeClass('active');
-		$('.overlay').removeClass('active');
-		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
-		$('main').removeClass('fixed');
-		$('header > a').removeClass('white');
-		$('header > button').removeClass('white');
-	}
-	if ( $('.contact').hasClass('visible') )  {
-		$('.contact').removeClass('visible');
-		$('#contact').removeClass('active');
-		$('.overlay').removeClass('active');
-		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
-		$('main').removeClass('fixed');
-		$('header > a').removeClass('white');
-		$('header > button').removeClass('white');
-	}
-	if ( $('.project-information').hasClass('visible') )  {
-		$('.project-information').removeClass('visible');
-		$('.overlay').removeClass('active');
-		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
-		$('main').removeClass('fixed');
-		$('header > a').removeClass('white');
-		$('header > button').removeClass('white');
-	}
-});
-
-$('.close__side-elements').click(function(){
-	if ( $('.about').hasClass('visible') )  {
-		$('.about').removeClass('visible');
-		$('#about').removeClass('active');
-		$('.overlay').removeClass('active');
-		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
-		$('main').removeClass('fixed');
-		$('header > a').removeClass('white');
-		$('header > button').removeClass('white');
-	}
-	if ( $('.clients').hasClass('visible') )  {
-		$('.clients').removeClass('visible');
-		$('#clients').removeClass('active');
-		$('.overlay').removeClass('active');
-		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
-		$('main').removeClass('fixed');
-		$('header > a').removeClass('white');
-		$('header > button').removeClass('white');
-	}
-	if ( $('.contact').hasClass('visible') )  {
-		$('.contact').removeClass('visible');
-		$('#contact').removeClass('active');
-		$('.overlay').removeClass('active');
-		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
-		$('main').removeClass('fixed');
-		$('header > a').removeClass('white');
-		$('header > button').removeClass('white');
-	}
-	if ( $('.project-information').hasClass('visible') )  {
-		$('.project-information').removeClass('visible');
-		$('.overlay').removeClass('active');
-		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
-		$('main').removeClass('fixed');
-		$('header > a').removeClass('white');
-		$('header > button').removeClass('white');
-	}
-});
-
-$(document).on('keydown', function(e) {
-	if ( e.keyCode === 27 ) {
-		if ( $('.about').hasClass('visible') )  {
-			$('.about').removeClass('visible');
-			$('#about').removeClass('active');
-			$('.overlay').removeClass('active');
-			$('.close__side-elements').removeClass('active');
-			$('.close__side-elements').removeClass('fixed');
-			$('main').removeClass('fixed');
-			$('header > a').removeClass('white');
-			$('header > button').removeClass('white');
-		}
-		if ( $('.clients').hasClass('visible') )  {
-			$('.clients').removeClass('visible');
-			$('#clients').removeClass('active');
-			$('.overlay').removeClass('active');
-			$('.close__side-elements').removeClass('active');
-			$('.close__side-elements').removeClass('fixed');
-			$('main').removeClass('fixed');
-			$('header > a').removeClass('white');
-			$('header > button').removeClass('white');
-		}
-		if ( $('.contact').hasClass('visible') )  {
-			$('.contact').removeClass('visible');
-			$('#contact').removeClass('active');
-			$('.overlay').removeClass('active');
-			$('.close__side-elements').removeClass('active');
-			$('.close__side-elements').removeClass('fixed');
-			$('main').removeClass('fixed');
-			$('header > a').removeClass('white');
-			$('header > button').removeClass('white');
-		}
-		if ( $('.project-information').hasClass('visible') )  {
-			$('.project-information').removeClass('visible');
-			$('.overlay').removeClass('active');
-			$('.close__side-elements').removeClass('active');
-			$('.close__side-elements').removeClass('fixed');
-			$('main').removeClass('fixed');
-			$('header > a').removeClass('white');
-			$('header > button').removeClass('white');
-		}
-	}
-});
-
-var $container = $('.project__container'),
-lazyLoad = function($show){
-	var $image = $show.find('img');
-	$image.each(function(){
-		var $img = $(this),
-			  src = $img.attr('data-src');	
-		if(!$img.hasClass('loaded') && src){
-			$img[0].src = src;
-			$img.addClass('loaded');
-		}
-	});
-};
-
-$('.project__container').mixItUp({
-	selectors: {
-		target: '.project',
-		filter: '.filter'
-	},
-	animation: {
-		enable: false
-	},
-	callbacks: {
-		onMixLoad: function(){
-			$(this).mixItUp('setOptions', {
-				animation: {
-					enable: true	
-				}
-			});
-		},
-		onMixEnd: function(state){
-			lazyLoad(state.$show);
-		}
-	}
-});
-
-function checkTime(i) {
-    if (i < 10) {
-        i = "0" + i;
-    }
-    return i;
-}
-
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    var ampm = h >= 12 ? 'PM' : 'AM';
-    h = h % 12;
-    h = h ? h : 12;
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('time').innerHTML = 
-    	"It is " + convertHourToName(h) + "–" + convertNumberToName(m) + " and " + convertNumberToName(s) + " seconds " + ampm;
-    t = setTimeout(function () {
-        startTime()
-    }, 500);
-}
-startTime();
-
-function convertHourToName(num) {
-    if (num > 12) {
-        num -= 12;
-    }
-    return convertNumberToName(num);
-}
-
-function convertNumberToName(num) {
-    var lowNames = ["zero", "one", "two", "three", 
-                  "four", "five", "six", "seven", "eight", "nine", 
-                 "ten", "eleven", "twelve", "thirteen", "fourteen", 
-                  "fifteen", "sixteen", "seventeen", 
-                  "eighteen", "nineteen"];
-    var tensNames = ["twenty", "thirty", "forty", "fifty", 
-                "sixty", "seventy", "eighty", "ninety"];
-    var tens, ones, result;
-    if (num < lowNames.length) {
-        result = lowNames[num];
-    } else {
-        tens = Math.floor(num / 10);
-        ones = num % 10;
-        if (tens <= 9) {
-            result = tensNames[tens - 2];
-            if (ones > 0) {
-                result += "" + lowNames[ones];
-            }
-        } else {
-            result = "unknown"
-        }
-    }
-    return result;
-}
+//     setTimeout(function() {
+//         $('.splash').addClass('remove');
+//     }, 4000);
+// });
