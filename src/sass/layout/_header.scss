@@ -9,7 +9,7 @@ header {
 		z-index: 999999;
 	}
 
-	@include mq(tabl) {
+	@include mq(tabl-and-up) {
 		font-size: 1em;
 		padding: 2rem 0 0 0;
 		left: 5%;

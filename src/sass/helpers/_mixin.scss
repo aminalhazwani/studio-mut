@@ -13,37 +13,37 @@
 
 // Font-smoothing 
 @mixin font-smooth(){
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 // Mixin media queries
 @mixin mq($media-query){
     @if $media-query == palm{
-      @media only screen and (max-width:$palm-end) { @content; }
+        @media only screen and (max-width:$palm-end) { @content; }
     }
     @if $media-query == tabl{
-      @media only screen and (min-width:$tabl-start) and (max-width:$tabl-end) and (min-height:500px){ @content; }
+        @media only screen and (min-width:$tabl-start) and (max-width:$tabl-end) and (min-height:500px){ @content; }
     }
     @if $media-query == tabl-and-up{
-      @media only screen and (min-width:$tabl-start) { @content; }
+        @media only screen and (min-width:$tabl-start) { @content; }
     }
     @if $media-query == tabl-and-down{
-      @media only screen and (max-width:$tabl-end) { @content; }
+        @media only screen and (max-width:$tabl-end) { @content; }
     }
     @if $media-query == lap{
-      @media only screen and (min-width:$lap-start) and (max-width:$lap-end) { @content; }
+        @media only screen and (min-width:$lap-start) and (max-width:$lap-end) { @content; }
     }
     @if $media-query == lap-and-up{
-      @media only screen and (min-width:$lap-start) { @content; }
+        @media only screen and (min-width:$lap-start) { @content; }
     }
     @if $media-query == portable{
-      @media only screen and (max-width:$lap-end) { @content; }
+        @media only screen and (max-width:$lap-end) { @content; }
     }
     @if $media-query == desk{
-      @media only screen and (min-width:$desk-start) { @content; }
+        @media only screen and (min-width:$desk-start) { @content; }
     }
     @if $media-query == desk-wide{
-      @media only screen and (min-width: $desk-wide-start) { @content; }
+        @media only screen and (min-width: $desk-wide-start) { @content; }
     }
 }
