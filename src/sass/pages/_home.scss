@@ -2,10 +2,18 @@
 	padding: 4rem 1rem 1rem 1rem;
 	background-color: $white;
 
-	@include mq(tabl) {
+	@include mq(tabl-and-up) {
 		padding: 5rem 0 0 0;
 		width: 90%;
 		margin: 0 auto;
+	}
+
+	@include mq(lap) {
+		width: 690px;
+	}
+
+	@include mq(desk) {
+		width: 900px;
 	}
 }
 
