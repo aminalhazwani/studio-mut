@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 
 // gulp styles task
 gulp.task('styles', function() {
-  return gulp.src('src/sass/main.scss')
+    return gulp.src('src/sass/main.scss')
     .pipe(sass({ 
         style: 'expanded', 
         "sourcemap=none": true
@@ -28,7 +28,7 @@ gulp.task('styles', function() {
 
 // gulp vendor task
 gulp.task('vendor', function() {
-  return gulp.src(['src/js/vendor/jquery-2.1.1.min.js', 'src/js/vendor/*.js'])
+    return gulp.src(['src/js/vendor/jquery-2.1.1.min.js', 'src/js/vendor/*.js'])
     .pipe(concat('vendor.js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
@@ -38,7 +38,7 @@ gulp.task('vendor', function() {
 
 // gulp scripts task
 gulp.task('scripts', function() {
-  return gulp.src('src/js/*.js')
+    return gulp.src('src/js/*.js')
     .pipe(concat('main.js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
