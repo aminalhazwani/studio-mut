@@ -2,7 +2,6 @@
 	<?php $about = $pages->find('/about') ?>
 	<div class="about__wrapper">
 		<p class="about__headline">About Studio Mut</p>
-		<a class="close__side-elements"><span class="close__side-elements--line"></span></a>
 		<div class="about__content about__text">
 			<?php echo $about->text()->kirbytext() ?>
 		</div>

@@ -1,6 +1,5 @@
 <div class="clients">
 	<p class="clients__headline">Studio Mut Clients</p>
-	<a class="close__side-elements"><span class="close__side-elements--line"></span></a>
 	<?php $characters = range('A', 'Z'); ?>
 	<?php foreach($characters as $character): ?>
 		<div class="clients__character">
