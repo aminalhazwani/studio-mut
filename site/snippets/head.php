@@ -71,9 +71,10 @@
 	<!--[if lt IE 7]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
-	<header <?php if($page->template() != 'home'): ?>class="header-project"<?php else: ?>class="header-home"<?php endif ?>>
+	<header <?php if($page->template() != 'home'): ?>class="header-project"<?php else: ?>class="wrap"<?php endif ?>>
 		<a href="<?php echo $site->url() ?>">Studio Mut</a>
 		<button id="about" <?php if($page->template() != 'home'): ?>class="header__button"<?php endif ?>>About</button>
 		<button id="clients" <?php if($page->template() != 'home'): ?>class="header__button"<?php endif ?>>Clients</button>
 		<button id="contact" <?php if($page->template() != 'home'): ?>class="header__button"<?php endif ?>>Contact</button>
+		<a class="close__side-elements"><span class="close__side-elements--line"></span></a>
 	</header>

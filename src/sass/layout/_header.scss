@@ -1,5 +1,5 @@
 header {
-	position: absolute;
+	position: relative;
 	z-index: 1;
 	padding: 1.4rem 1rem 0 1rem;
 	font-size: .9em;
@@ -12,7 +12,6 @@ header {
 	@include mq(tabl-and-up) {
 		font-size: 1em;
 		padding: 2rem 0 0 0;
-		left: 5%;
 	}
 
 	@include mq(lap) {
@@ -51,7 +50,74 @@ header > button {
 	}
 }
 
+.header__button {
+	visibility: hidden;
+	pointer-events: none;
+
+	@include mq(tabl-and-up) {
+		visibility: visible;
+		pointer-events: auto;
+	}
+}
+
 .white {
 	color: $white;
 	@include font-smooth;
+}
+
+.close {
+	@include e(side-elements) {
+		position: fixed;
+		display: none;
+		margin: 0;
+		z-index: 9999;
+		top: .8rem;
+		right: .6rem;
+
+		@include mq(tabl) {
+			top: 1.6rem;
+			right: 4.5%;
+		}
+
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+
+		@include m(line) {
+			&:after {
+				position: absolute;
+				top: 14px;
+				display: block;
+				transform: rotate(-45deg);
+				width: 30px;
+				height: 3px;
+				background-color: $white;
+				content: " ";
+			}
+
+			&:before {
+				position: absolute;
+				bottom: 0;
+				margin-bottom: 13px;
+				display: block;
+				transform: rotate(45deg);
+				width: 30px;
+				height: 3px;
+				background-color: $white;
+				content: " ";
+			}
+		}
+
+		&.active {
+			display: block;
+		}
+
+		&.fixed {
+			position: fixed;
+		}
+
+		@include mq(lap-and-up){
+			visibility: hidden;
+		}
+	}
 }

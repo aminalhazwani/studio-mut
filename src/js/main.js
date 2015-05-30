@@ -5,19 +5,16 @@ $(window).on("resize", function() {
 	var width = $(window).width();
 	if (width >= 768) {
 		var posLeft = ($('body').outerWidth() - $('.home > p').innerWidth())/2;
-		$('.header-home').css('left', posLeft);
 		$('.about').css('padding-left', posLeft);
 		$('.clients').css('padding-left', posLeft);
 		$('.contact').css('padding-left', posLeft);
 	}
 	else if (width >= 481 && width < 768) {
-		$('.header-home').css('left', '5%');
 		$('.about').css('padding-left', '5%');
 		$('.clients').css('padding-left', '5%');
 		$('.contact').css('padding-left', '5%');
 	}
 	else {
-		$('.header-home').css('left', '0');
 		$('.about').css('padding-left', '1rem');
 		$('.clients').css('padding-left', '1rem');
 		$('.contact').css('padding-left', '1rem');

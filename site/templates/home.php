@@ -6,9 +6,9 @@
 	<!-- <div class="splash"><span class="splash__text">M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;T</span></div> -->
 	
 	<main id="main">
-		<div class="home">
+		<div class="home wrap">
 			<?php echo $page->intro()->kirbytext() ?>
-			<div>
+			<div class="filter__container">
 				<button class="filter filter--reset" data-filter="*">everything</button>
 				<?php $tags = $pages->find('/projects')->children()->visible()->pluck('tag', ',', true); ?>
 				<?php foreach($tags as $tag): ?>
