@@ -2,51 +2,75 @@
 // elements and accordingly chnage the state of the other
 // components of the page
 $('#about').click(function(){
-	$('.about').addClass('visible');
-	$('#about').addClass('active');
-	$('.overlay').addClass('active');
-	$('.close__side-elements').addClass('active');
-	setTimeout(function() {
-		$('.close__side-elements').addClass('fixed');
-	}, 500);
-	$('main').addClass('fixed');
-	$('header > a').addClass('white');
-	$('header > button').addClass('white');
+	if ($('.about').hasClass('visible')) {
+		$('.about').removeClass('visible');
+		$('#about').removeClass('active');
+		if (!$('.clients').hasClass('visible') && !$('.contacts').hasClass('visible')){ 
+			$('.close__side-elements').removeClass('active');
+			$('main').removeClass('fixed');
+			$('header > a').removeClass('white');
+			$('header > button').removeClass('white');
+		}
+	}
+	else {
+		$('.about').addClass('visible');
+		$('#about').addClass('active');
+		$('.overlay').addClass('active');
+		$('.close__side-elements').addClass('active');
+		$('main').addClass('fixed');
+		$('header > a').addClass('white');
+		$('header > button').addClass('white');
+	}
 });
 
 $('#clients').click(function(){
-	$('.clients').addClass('visible');
-	$('#clients').addClass('active');
-	$('.overlay').addClass('active');
-	$('.close__side-elements').addClass('active');
-	setTimeout(function() {
-		$('.close__side-elements').addClass('fixed');
-	}, 500);
-	$('main').addClass('fixed');
-	$('header > a').addClass('white');
-	$('header > button').addClass('white');
+	if ($('.clients').hasClass('visible')) { 
+		$('.clients').removeClass('visible');
+		$('#clients').removeClass('active');
+		if (!$('.about').hasClass('visible') && !$('.contact').hasClass('visible')){ 
+			$('.close__side-elements').removeClass('active');
+			$('main').removeClass('fixed');
+			$('header > a').removeClass('white');
+			$('header > button').removeClass('white');
+		}
+	}
+	else {
+		$('.clients').addClass('visible');
+		$('#clients').addClass('active');
+		$('.overlay').addClass('active');
+		$('.close__side-elements').addClass('active');
+		$('main').addClass('fixed');
+		$('header > a').addClass('white');
+		$('header > button').addClass('white');
+	}
 });
 
 $('#contact').click(function(){
-	$('.contact').addClass('visible');
-	$('#contact').addClass('active');
-	$('.overlay').addClass('active');
-	$('.close__side-elements').addClass('active');
-	setTimeout(function() {
-		$('.close__side-elements').addClass('fixed');
-	}, 500);
-	$('main').addClass('fixed');
-	$('header > a').addClass('white');
-	$('header > button').addClass('white');
+	if ($('.contact').hasClass('visible')) { 
+		$('.contact').removeClass('visible');
+		$('#contact').removeClass('active');
+		if (!$('.about').hasClass('visible') && !$('.clients').hasClass('visible')){ 
+			$('.close__side-elements').removeClass('active');
+			$('main').removeClass('fixed');
+			$('header > a').removeClass('white');
+			$('header > button').removeClass('white');
+		}
+	}
+	else {
+		$('.contact').addClass('visible');
+		$('#contact').addClass('active');
+		$('.overlay').addClass('active');
+		$('.close__side-elements').addClass('active');
+		$('main').addClass('fixed');
+		$('header > a').addClass('white');
+		$('header > button').addClass('white');
+	}
 });
 
 $('.showcase__info--more').click(function(){
 	$('.project-information').addClass('visible');
 	$('.overlay').addClass('active');
 	$('.close__side-elements').addClass('active');
-	setTimeout(function() {
-		$('.close__side-elements').addClass('fixed');
-	}, 500);
 	$('main').addClass('fixed');
 	$('header > a').addClass('white');
 	$('header > button').addClass('white');
@@ -58,7 +82,6 @@ $('.overlay').click(function(){
 		$('#about').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -68,7 +91,6 @@ $('.overlay').click(function(){
 		$('#clients').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -78,7 +100,6 @@ $('.overlay').click(function(){
 		$('#contact').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -87,7 +108,6 @@ $('.overlay').click(function(){
 		$('.project-information').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -100,7 +120,6 @@ $('.close__side-elements').click(function(){
 		$('#about').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -110,7 +129,6 @@ $('.close__side-elements').click(function(){
 		$('#clients').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -120,7 +138,6 @@ $('.close__side-elements').click(function(){
 		$('#contact').removeClass('active');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -129,7 +146,6 @@ $('.close__side-elements').click(function(){
 		$('.project-information').removeClass('visible');
 		$('.overlay').removeClass('active');
 		$('.close__side-elements').removeClass('active');
-		$('.close__side-elements').removeClass('fixed');
 		$('main').removeClass('fixed');
 		$('header > a').removeClass('white');
 		$('header > button').removeClass('white');
@@ -143,7 +159,6 @@ $(document).on('keydown', function(e) {
 			$('#about').removeClass('active');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
-			$('.close__side-elements').removeClass('fixed');
 			$('main').removeClass('fixed');
 			$('header > a').removeClass('white');
 			$('header > button').removeClass('white');
@@ -153,7 +168,6 @@ $(document).on('keydown', function(e) {
 			$('#clients').removeClass('active');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
-			$('.close__side-elements').removeClass('fixed');
 			$('main').removeClass('fixed');
 			$('header > a').removeClass('white');
 			$('header > button').removeClass('white');
@@ -163,7 +177,6 @@ $(document).on('keydown', function(e) {
 			$('#contact').removeClass('active');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
-			$('.close__side-elements').removeClass('fixed');
 			$('main').removeClass('fixed');
 			$('header > a').removeClass('white');
 			$('header > button').removeClass('white');
@@ -172,7 +185,6 @@ $(document).on('keydown', function(e) {
 			$('.project-information').removeClass('visible');
 			$('.overlay').removeClass('active');
 			$('.close__side-elements').removeClass('active');
-			$('.close__side-elements').removeClass('fixed');
 			$('main').removeClass('fixed');
 			$('header > a').removeClass('white');
 			$('header > button').removeClass('white');
