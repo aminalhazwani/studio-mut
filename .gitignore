@@ -1,6 +1,17 @@
+# Ignore Kirby specific files
 site/accounts
-.sass-cache
-node_modules
 thumbs
+
+# Ignore junk files
+.DS_Store
+.sass-cache
+
+# Ignore node_modules
+node_modules
+
+# Ignore huge files, content is just used as placeholder. Not vital.
 *.mov
 *.mp4
+
+# Ignore webfonts until you find a better method
+*.woff

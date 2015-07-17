@@ -1,10 +1,5 @@
 <?php snippet('head') ?>
-	<?php snippet('about') ?>
-	<?php snippet('clients') ?>
-	<?php snippet('contact') ?>
-	<div class="overlay"></div>
 	<!-- <div class="splash"><span class="splash__text">M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;T</span></div> -->
-	
 	<main id="main">
 		<div class="home wrap">
 			<?php echo $page->intro()->kirbytext() ?>
@@ -35,8 +30,8 @@
 			</div>
 		</div>
 
-		<footer class="footer">
-			<div class="footer__container">
+		<div class="footer">
+			<div class="footer__container wrap">
 				<div class="footer__contacts">
 					<?php $about = $pages->find('/about') ?>
 					<?php echo $about->phone()->kirbytext() ?>
@@ -56,7 +51,11 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
 	</main>
+	<?php snippet('about') ?>
+	<?php snippet('clients') ?>
+	<?php snippet('contact') ?>
+	<div class="overlay"></div>
 
 <?php snippet('footer') ?>

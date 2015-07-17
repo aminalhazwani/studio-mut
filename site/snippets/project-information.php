@@ -1,4 +1,4 @@
-<div id="info" class="project-information">
+<aside id="info" class="project-information">
 	<div class="project-information__container">
 		<a class="close__side-elements"><span class="close__side-elements--line"></span></a>
 		<span class="project-information__title"><?php echo $page->title() ?></span>
@@ -7,4 +7,4 @@
 			<?php echo $page->text()->kirbytext() ?>
 		</div>
 	</div>
-</div>
+</aside>

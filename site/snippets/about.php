@@ -1,4 +1,4 @@
-<div class="about">
+<aside class="about">
 	<?php $about = $pages->find('/about') ?>
 	<div class="about__wrapper">
 		<p class="about__headline">About Studio Mut</p>
@@ -79,4 +79,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</aside>

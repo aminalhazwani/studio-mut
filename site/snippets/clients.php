@@ -1,4 +1,4 @@
-<div class="clients">
+<aside class="clients">
 	<p class="clients__headline">Studio Mut Clients</p>
 	<?php $characters = range('A', 'Z'); ?>
 	<?php foreach($characters as $character): ?>
@@ -26,4 +26,4 @@
 			</ul>
 		</div>
 	<?php endforeach ?>
-</div>
+</aside>

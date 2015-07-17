@@ -1,12 +1,5 @@
 <?php snippet('head') ?>
-    <?php snippet('about') ?>
-    <?php snippet('clients') ?>
-    <?php snippet('contact') ?>
-    <?php snippet('project-information') ?>
-    
-    <div class="overlay"></div>
     <!-- <div class="splash"><span class="splash__text">M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;T</span></div> -->
-
     <main id="main">
         <div class="showcase">
         <?php $referer = $_SERVER['HTTP_REFERER']; ?>
@@ -60,6 +53,12 @@
         </div>
         </div>
     </main>
+    <?php snippet('about') ?>
+    <?php snippet('clients') ?>
+    <?php snippet('contact') ?>
+    <?php snippet('project-information') ?>
+    <div class="overlay"></div>
+    <div class="wrap"></div>
     <?php echo js('assets/scripts/vendor/vendor.min.js') ?>
     <?php echo js('assets/scripts/main.min.js') ?>
     </body>

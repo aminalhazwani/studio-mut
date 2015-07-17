@@ -65,7 +65,7 @@
 	<?php endif ?>
 
 	<!-- Stylesheets -->
-	<?php echo css('assets/styles/main.min.css') ?>
+	<?php echo css('assets/css/main.css') ?>
 </head>
 <body>
 	<!--[if lt IE 7]>
