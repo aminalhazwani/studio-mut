@@ -15,6 +15,3 @@
 	<?php endif ?>
 	<?php break; ?>
 <?php endforeach ?>
-
-
-

@@ -16,10 +16,6 @@ files:
       options: 
         ja: Yes, please!
         nein: No, thank you.
-    slidebkcolor: 
-      label: Slide background color
-      placeholder: '#ffffff'
-      type: text
     measure:
       label: Slide size
       type: radio
@@ -46,26 +42,17 @@ fields:
     label: Date
     type:  date
     width: 1/2
+  pagebkcolor:
+    label: Project background color
+    type: radio
+    width: 1/2
+    default: bg-black
+    options:
+      bg-black: Black
+      bg-white: White
   client:
     label: Client
     type: text
-    width: 1/2
-  pagebkcolor:
-    label: Slider background color
-    type: text
-    width: 1/2
-    placeholder: '#ffffff'
-  previewSize:
-    label: Preview size
-    type: radio
-    width: 1/2
-    default: full
-    options:
-      half: 50%
-      full: 100%
-  tag:
-    label: 'Category (You must hyphanate category names with more than one word: i.e. graphic-design)'
-    type:  tags
   text:
-    label: Description
+    label: Description for SEO
     type: textarea

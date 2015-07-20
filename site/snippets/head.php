@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
-  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-  	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="format-detection" content="telephone=no">
 
 	<!-- Page title -->
 	<?php if($page->template() != 'home'): ?>
@@ -68,13 +65,7 @@
 	<?php echo css('assets/css/main.css') ?>
 </head>
 <body>
-	<!--[if lt IE 7]>
+	<!--[if lt IE 9]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
-	<header <?php if($page->template() != 'home'): ?>class="header-project"<?php else: ?>class="wrap"<?php endif ?>>
-		<a href="<?php echo $site->url() ?>">Studio Mut</a>
-		<button id="about" <?php if($page->template() != 'home'): ?>class="header__button"<?php endif ?>>About</button>
-		<button id="clients" <?php if($page->template() != 'home'): ?>class="header__button"<?php endif ?>>Clients</button>
-		<button id="contact" <?php if($page->template() != 'home'): ?>class="header__button"<?php endif ?>>Contact</button>
-		<a class="close__side-elements"><span class="close__side-elements--line"></span></a>
-	</header>
+	<?php snippet('header') ?>

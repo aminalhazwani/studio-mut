@@ -6,15 +6,9 @@
 // Colors
 //============================================
 
-$primary:     #00f;
-$black:       #111;
-
-$gray: #ddd;
-$gray-light:  #f7f7f7;
-$gray-dark: #767676;
-
-$color-text:  $black;
-$color-bg:    white;
+$primary:     #0000ff;
+$black:       #19191b;
+$white:       #ffffff;
 
 
 // Dimensions
@@ -78,7 +72,7 @@ $bp-lg-down:  "(max-width: #{($layout-width-lg + ($layout-gutter-lg * 2)) - 1px}
 // Grid
 //============================================
 
-$grid-columns: 24;
+$grid-columns: 12;
 
 $grid-config-xs: (
   "name": "",

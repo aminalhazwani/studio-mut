@@ -4,17 +4,24 @@ title: Site
 pages: default
 fields:
   title:
-    label: Title
+    label: Website title
     type:  text
   keywords:
-    label: Keywords
+    label: Keywords for SEO
     type:  tags
-  author:
-    label: Author
-    type:  text
   description:
-    label: Meta description
+    label: Meta description for SEO
     type:  textarea
-  copyright:
-    label: Copyright
-    type:  textarea
+  menuItems:
+    label: Menu items
+    type: structure
+    entry: >
+      {{ label }}<br />
+      {{ hyperlink }}
+    fields:
+      label:
+        label: Menu Item Text
+        type: text
+      hyperlink:
+        label: Menu Item Link
+        type: url

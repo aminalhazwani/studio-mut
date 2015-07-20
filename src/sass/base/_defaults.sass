@@ -33,8 +33,9 @@ html
 
 body
   font: #{$fs}/#{$lh} $font
-  background: $color-bg
-  color: $color-text
+  background: $black
+  color: $white
+  -webkit-font-smoothing: antialiased;
 
 
 // Vertical rhythm
@@ -89,7 +90,7 @@ dd
 //============================================
 
 img
-  max-width: 100%
+  width: 100%
   -ms-interpolation-mode: bicubic
   vertical-align: bottom
 
@@ -123,7 +124,7 @@ hr
   display: block
   height: 1px
   border: 0
-  border-top: 1px solid rgba($gray-light, .5)
+  border-top: 1px solid $primary
   margin: $space 0
   padding: 0
   clear: both
@@ -136,7 +137,7 @@ pre, code
   font-family: $font-mono
 
 pre
-  background-color: $gray-light
+  background-color: $white
   overflow: auto
   padding: $space-half
   line-height: inherit
@@ -149,7 +150,7 @@ pre
 
 blockquote
   padding-left: 15px
-  border-left: 2px solid $gray-light
+  border-left: 2px solid $primary
 
 q
   quotes: "\201C" "\201D" "\2018" "\2019"
