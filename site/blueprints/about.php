@@ -2,8 +2,6 @@
 
 title: About
 pages: false
-files: true
-  sortable: true
 fields:
   title:
     label: Title
@@ -11,20 +9,17 @@ fields:
   text:
     label: Text 
     type:  textarea
-  caption:
-    label: Image caption
-    type: text
-  address:
-    label: Address
-    type: text
-  phone:
-    label: Telephone
-    type: tel
-    width: 1/2
-  mail:
-    label: E-Mail
-    type: email
-    width: 1/2
+
+  firstcol:
+    label: First coloumn content
+    type: textarea
+  secondcol:
+    label: Second coloumn content
+    type: textarea
+  thirdcol:
+    label: Third coloumn content
+    type: textarea
+
   social:
     label: Mut on
     type: textarea
@@ -46,3 +41,19 @@ fields:
   warning:
     label: Warning
     type: textarea
+  credits:
+    label: Credits
+    type: textarea
+  legal:
+    label: Legal
+    type: textarea
+
+files:
+  sortable: true
+  fields: 
+    fullname: 
+      label: Name
+      type: text
+    bio: 
+      label: Bio
+      type: textarea

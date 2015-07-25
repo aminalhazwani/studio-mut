@@ -12,14 +12,14 @@
 			);
 		array_push($feed, $item);
 	}
-	$limit = 2;
-	if ($feed == null) echo '<span>If you are seeing this it means that the Province RSS Weather Feed sucks.</span>';
+	$limit = 1;
+	if ($feed == null) echo '<span>If you are seeing this it means that the Province RSS Weather Feed fucked up.</span>';
 	else
 	for($x=0; $x<$limit; $x++) {
 		$title = str_replace('&', '&amp;', $feed[$x]['title']);
 		$link = $feed[$x]['link'];
 		$description = $feed[$x]['desc'];
 		$date = date('l F d, Y', strtotime($feed[$x]['date']));
-		echo '<p>'.$description.'</p>';
+		echo '<p class="weather">'.$description.'</p>';
 	}
 ?>

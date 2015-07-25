@@ -1,4 +1,4 @@
-Title: Fuchs, wer hat die Gans gestohlen?
+Title: MPR
 
 ----
 
@@ -15,3 +15,11 @@ Pagebkcolor: bg-black
 ----
 
 Text: 
+
+----
+
+Titl: 
+
+Structure, Pattern,
+Explosions and a
+Very Merry Christmas

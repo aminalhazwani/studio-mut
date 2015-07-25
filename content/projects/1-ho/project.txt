@@ -1,4 +1,4 @@
-Title: Classical Music, Modern Twist
+Title: Hofburg Brixen
 
 ----
 
@@ -15,3 +15,10 @@ Pagebkcolor: bg-white
 ----
 
 Text: 
+
+----
+
+Titl: 
+
+Classical Music,
+Modern Twist

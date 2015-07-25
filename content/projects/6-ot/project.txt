@@ -1,4 +1,4 @@
-Title: Ornamental Architecture Nowadays and  back then
+Title: Ornament Today
 
 ----
 
@@ -15,3 +15,12 @@ Pagebkcolor: bg-black
 ----
 
 Text: 
+
+----
+
+Titl: 
+
+Ornamental
+Architecture
+Nowadays and
+back then

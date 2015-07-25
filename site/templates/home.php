@@ -1,11 +1,16 @@
 <?php snippet('head') ?>
-
+<header class="header header-primary">
+  <div class="l-container">
+    <img class="u-padd-top u-padd-btm u-sm-padd-top-double u-sm-padd-btm-double" src="assets/images/mut-logo.svg">
+  </div>
+  <?php snippet('navigation') ?>
+</header>
 	<main>
 		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
 			<article>
 				<div class="bg-blue u-padd u-sm-padd-double u-ta-center">
 					<div class="l-container">
-						<h2 class="h1"><?php echo html($project->title()) ?></h2>
+						<h2 class="h1"><?php echo $project->titl()->kirbytext() ?></h2>
 						<h5 class="u-push-btm-none"><?php echo html($project->client()) ?></h5>
 					</div>
 				</div>

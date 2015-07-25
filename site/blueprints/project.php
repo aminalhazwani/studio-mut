@@ -2,6 +2,31 @@
 
 title: Project
 pages: false
+fields:
+  title:
+    label: Title
+    type:  text
+  titl:
+    label: Title on homepage
+    type:  textarea
+  date:
+    label: Date
+    type:  date
+    width: 1/2
+  pagebkcolor:
+    label: Project background color
+    type: radio
+    width: 1/2
+    default: bg-black
+    options:
+      bg-black: Black
+      bg-white: White
+  client:
+    label: Client
+    type: text
+  text:
+    label: Description for SEO
+    type: textarea
 files:
   sortable: true
   fields: 
@@ -34,25 +59,3 @@ files:
       label:
       type: info
       text: 'Remember: the thumbnail must have the same name as the video and it must be a .jpg file. For example video.mp4 and video.jpg.'
-fields:
-  title:
-    label: Title
-    type:  text
-  date:
-    label: Date
-    type:  date
-    width: 1/2
-  pagebkcolor:
-    label: Project background color
-    type: radio
-    width: 1/2
-    default: bg-black
-    options:
-      bg-black: Black
-      bg-white: White
-  client:
-    label: Client
-    type: text
-  text:
-    label: Description for SEO
-    type: textarea

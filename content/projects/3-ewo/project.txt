@@ -1,4 +1,4 @@
-Title: Structure, Pattern, Explosions and a Very Merry Christmas
+Title: Ewo
 
 ----
 
@@ -15,3 +15,11 @@ Text:
 ----
 
 Pagebkcolor: bg-black
+
+----
+
+Titl: 
+
+Structure, Pattern,
+Explosions and a
+Very Merry Christmas
