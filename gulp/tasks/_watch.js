@@ -12,7 +12,7 @@ var runSequence = require('run-sequence');
 var watch = require('gulp-watch');
 
 
-gulp.task('watch', ['clean'], function() {
+gulp.task('watch', function() {
   runSequence('default', ['watchify','browserSync']);
 
   watch(config.svgSprite.src + '/' + config.svgSprite.glob, function(){
