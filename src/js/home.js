@@ -12,4 +12,4 @@ $(window).scroll(function() {
   }
 });
 
-$('.header-primary').addClass('test');
+jQuery(".fit").fitText();

@@ -5,10 +5,10 @@
 
 <div class="intro bg-blue">
   <div class="l-container">
-    <div class="h1 u-ta-center u-padd-double u-push-none">
+    <div class="h1 u-ta-center u-padd-double u-push-none fit">
       <?php echo $about->text()->kirbytext() ?>
     </div>
-    <div class="g-row u-padd-btm">
+    <div class="g-row u-ta-center u-md-ta-lft u-padd-btm">
       <div class="g g-md-3">
         <?php echo $about->firstcol()->kirbytext() ?>
       </div>
