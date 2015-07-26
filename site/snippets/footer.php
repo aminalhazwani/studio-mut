@@ -1,7 +1,7 @@
   <footer class="l-container u-ta-center u-padd-huge">
     <?php $sentences = yaml($site->footer()) ?>
     <?php foreach($sentences as $sentence): ?>
-      <h2 class="h1 fit">
+      <h2 class="h1 fit u-hide">
         <a href="mailto:hello@studiomut.com?subject=<?php echo $sentence['sentence'] ?>"><?php echo $sentence['sentence'] ?></a>
       </h2>
     <?php endforeach ?>

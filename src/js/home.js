@@ -12,4 +12,8 @@ $(window).on("scroll resize", function() {
   }
 });
 
+var random = Math.floor(Math.random() * 1000);
+var $heading = $("footer h2");
+$heading.eq(random % $heading.length).addClass("u-blk");
+
 jQuery(".fit").fitText();

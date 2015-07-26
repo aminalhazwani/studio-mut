@@ -40,3 +40,7 @@ Footer:
 
 - 
   sentence: Do you piss under the shower?
+- 
+  sentence: >
+    Do you wipe your boogers away when
+    nobody looks at you?
