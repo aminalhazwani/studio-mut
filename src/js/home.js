@@ -1,8 +1,8 @@
-var mn = $(".nav");
-var mns = "nav-scrolled";
-var hdr = $('.header-primary').height();
-
-$(window).scroll(function() {
+$(window).on("scroll resize", function() {
+  var mn = $(".nav");
+  var mns = "nav-scrolled";
+  var hdr = $('.header-primary').height();
+  
   if( $(this).scrollTop() > hdr ) {
     mn.addClass(mns);
     $('main').addClass('nav-is-fixed');
