@@ -12,6 +12,8 @@ fields:
   description:
     label: Meta description for SEO
     type:  textarea
+  line-a:
+    type: line
   menuItems:
     label: Menu items
     type: structure
@@ -25,3 +27,14 @@ fields:
       hyperlink:
         label: Menu Item Link
         type: url
+  line-b:
+    type: line
+  footer:
+    label: Footer sentences
+    type: structure
+    entry: >
+      {{ sentence }}
+    fields:
+      sentence:
+        label: Sentence
+        type: textarea

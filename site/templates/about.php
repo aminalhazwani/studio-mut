@@ -3,11 +3,13 @@
 
 <?php snippet('navigation') ?>
 
-<div class="intro bg-blue">
+<div class="intro bg-blue u-padd-double">
   <div class="l-container">
     <div class="h1 u-ta-center u-padd-double u-push-none fit">
-      <?php echo $about->text()->kirbytext() ?>
+      <?php echo $about->introtext()->kirbytext() ?>
     </div>
+  </div>
+  <div class="l-container-secondary">
     <div class="g-row u-ta-center u-md-ta-lft u-padd-btm">
       <div class="g g-md-3">
         <?php echo $about->firstcol()->kirbytext() ?>
@@ -24,9 +26,9 @@
 
 <div class="profile u-padd-top u-sm-padd-top-double" style="background-image:url('content/1-about/thomas.jpg')">
   <?php foreach($about->images()->filterBy('filename', '*=', 'thomas') as $image): ?>
-  <div class="l-container">
-    <h2 class="h1 u-ta-center profile_name"><?php echo $image->fullname() ?></h2>
-    <div class="g-row u-hide u-sm-blk">
+  <div class="l-container-secondary">
+    <h2 class="h1 u-ta-center profile_name fit"><?php echo $image->fullname() ?></h2>
+    <div class="g-row u-hide u-sm-blk u-md-padd-top-double">
       <div class="g g-sm-7 g-sm-off-4"><?php echo $image->bio()->kirbytext() ?></div>
     </div>
   </div>
@@ -35,17 +37,38 @@
 
 <div class="profile u-padd-top u-sm-padd-top-double" style="background-image:url('content/1-about/martin.jpg')">
   <?php foreach($about->images()->filterBy('filename', '*=', 'martin') as $image): ?>
-  <div class="l-container">
-    <h2 class="h1 u-ta-center profile_name"><?php echo $image->fullname() ?></h2>
-    <div class="g-row u-hide u-sm-blk">
+  <div class="l-container-secondary">
+    <h2 class="h1 u-ta-center profile_name fit"><?php echo $image->fullname() ?></h2>
+    <div class="g-row u-hide u-sm-blk u-md-padd-top-double">
       <div class="g g-sm-7"><?php echo $image->bio()->kirbytext() ?></div>
     </div>
   </div>
   <?php endforeach ?>
 </div>
 
-<div class="l-container u-padd-top-double">
-  <div></div>
+<div class="l-container-secondary u-padd-top-double">
+  <div class="g g-row u-padd-btm-double u-sm-padd-top-double">
+    <div class="g-sm-10">
+      <section class="l-section">
+        <h4>English</h4>
+        <div class="indent">
+          <?php echo $about->descriptioneng()->kirbytext() ?>
+        </div>
+      </section>
+      <section class="l-section">
+        <h4>Deutsch</h4>
+        <div class="indent">
+          <?php echo $about->descriptiondeu()->kirbytext() ?>
+        </div>
+      </section>
+      <section class="l-section">
+        <h4>Italiano</h4>
+        <div class="indent">
+          <?php echo $about->descriptionita()->kirbytext() ?>
+        </div>
+      </section>
+    </div>
+  </div>
   <div class="g-row">
     <div class="g g-sm-6 u-push-btm-double">
       <section class="l-section">

@@ -20,6 +20,21 @@
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
+  width: 90%
+
+.l-container-secondary
+  max-width: 90%
+  padding: 0 $layout-gutter-xs
+  margin: 0 auto
+  +mq($bp-sm)
+    max-width: 90%
+    padding: 0 $layout-gutter-sm
+  +mq($bp-md)
+    max-width: 90%
+    padding: 0 $layout-gutter-md
+  +mq($bp-lg)
+    max-width: $layout-width-lg
+    padding: 0 $layout-gutter-lg
 
 .l-section
   margin-bottom: $space
@@ -34,6 +49,24 @@
   h4
     font-size: small
     margin-bottom: $space-quarter
+    +mq($bp-lg)
+      font-size: smaller
+
+.indent > p
+  text-indent: -$space
+  margin-left: $space
+  +mq($bp-xs)
+    text-indent: -$space*2
+    margin-left: $space*2
+  +mq($bp-sm)
+    text-indent: -$space*3
+    margin-left: $space*3
+  +mq($bp-md)
+    text-indent: -$space*4
+    margin-left: $space*4
+  +mq($bp-lg)
+    text-indent: -$space*5
+    margin-left: $space*5
 
 .weather > b, 
 .weather > br

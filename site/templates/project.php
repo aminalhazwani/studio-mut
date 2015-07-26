@@ -14,4 +14,13 @@
     <?php endforeach ?>
   </div>
 
-<?php snippet('footer') ?>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <?php echo js('assets/js/vendor/vendors.min.js') ?>
+  <?php if($page->template() == 'home'): ?>
+    <?php echo js('assets/js/home.min.js') ?>
+  <?php endif ?>
+  <?php if($page->template() == 'about'): ?>
+    <?php echo js('assets/js/about.min.js') ?>
+  <?php endif ?>
+  </body>
+</html>

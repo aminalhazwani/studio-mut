@@ -6,8 +6,8 @@ fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Text 
+  introtext:
+    label: Introduction text 
     type:  textarea
 
   firstcol:
@@ -19,6 +19,22 @@ fields:
   thirdcol:
     label: Third coloumn content
     type: textarea
+
+  line-a:
+    type: line
+
+  descriptioneng:
+    label: English description
+    type: textarea
+  descriptiondeu:
+    label: German description
+    type: textarea
+  descriptionita:
+    label: Italian description
+    type: textarea
+
+  line-b:
+    type: line
 
   social:
     label: Mut on
