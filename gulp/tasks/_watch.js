@@ -23,6 +23,10 @@ gulp.task('watch', function() {
     runSequence('scripts');
   });
 
+  watch(config.vendors.src, function(){
+    runSequence('vendors');
+  });
+
   watch(config.sass.src, function(){
     runSequence('sass');
   });

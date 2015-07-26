@@ -5,5 +5,5 @@ var runSequence = require('run-sequence');
 var del = require('del');
 
 gulp.task('default', function(cb){
-  runSequence('sprite', ['scripts'], ['sass'], 'images', 'fonts', cb);
+  runSequence('sprite', ['scripts'], ['vendors'], ['sass'], 'images', 'fonts', cb);
 });

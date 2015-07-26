@@ -18,6 +18,11 @@ module.exports = {
     dest: dest + "/js"
   },
 
+  vendors: {
+    src: src + "/js/vendor/*.js",
+    dest: dest + "/js/vendor"
+  },
+
   sass: {
     src: src + "/sass/**/*.{sass,scss}",
     dest: dest + '/css',
