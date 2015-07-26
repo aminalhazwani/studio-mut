@@ -13,18 +13,14 @@ var watch = require('gulp-watch');
 
 
 gulp.task('watch', function() {
-  runSequence('default', ['watchify','browserSync']);
+  runSequence('default', ['browserSync']);
 
   watch(config.svgSprite.src + '/' + config.svgSprite.glob, function(){
     runSequence('sprite', browserSync.reload);
   });
 
-  watch(config.jslint.srcJs, function(){
-    runSequence('jshint', 'jscs');
-  });
-
-  watch(config.jslint.srcCoffee, function(){
-    runSequence('coffeelint');
+  watch(config.scripts.src, function(){
+    runSequence('scripts');
   });
 
   watch(config.sass.src, function(){
