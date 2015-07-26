@@ -1,4 +1,4 @@
-<nav class="bg-black u-padd-top u-padd-btm" role="navigation">
+<nav class="bg-black u-padd-top u-padd-btm nav <?php if($page->template() == 'about'): ?>nav-fixed<?php endif ?>" role="navigation">
   <div class="l-container">
     <?php $menuItems = yaml($site->menuItems()) ?>
     <?php foreach($menuItems as $menuItem): ?>

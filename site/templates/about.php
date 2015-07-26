@@ -1,9 +1,7 @@
 <?php $about = $pages->find('/about') ?>
 <?php snippet('head') ?>
 
-<header class="header header-secondary">
-  <?php snippet('navigation') ?>
-</header>
+<?php snippet('navigation') ?>
 
 <div class="intro bg-blue">
   <div class="l-container">
