@@ -5,15 +5,15 @@ $(function() {
 });
 
 $(window).on("scroll resize load", function() {
-  var mn = $(".nav");
-  var mns = "nav-scrolled";
+  var nav = $(".nav");
+  var nvs = "nav-scrolled";
   var hdr = $('.header-primary').height();
   
   if( $(this).scrollTop() > hdr ) {
-    mn.addClass(mns);
+    nav.addClass(nvs);
     $('main').addClass('nav-is-fixed');
   } else {
-    mn.removeClass(mns);
+    nav.removeClass(nvs);
     $('main').removeClass('nav-is-fixed');
   }
 });
