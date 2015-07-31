@@ -1,5 +1,6 @@
 <?php $about = $pages->find('/about') ?>
 <?php snippet('head') ?>
+<div class="splash"></div>
 <?php snippet('header') ?>
 <?php snippet('navigation') ?>
 

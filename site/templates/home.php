@@ -1,7 +1,9 @@
 <?php snippet('head') ?>
 
+	<div class="splash"></div>
 	<?php snippet('header') ?>
 	<?php snippet('navigation') ?>
+
 	<main>
 		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
 			<article>
@@ -21,5 +23,5 @@
 			</article>
 		<?php endforeach ?>
 	</main>
-	
+
 <?php snippet('footer') ?>
