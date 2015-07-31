@@ -1,4 +1,4 @@
-$(window).on("scroll resize", function() {
+$(window).on("scroll resize load", function() {
   var mn = $(".nav");
   var mns = "nav-scrolled";
   var hdr = $('.header-primary').height();
