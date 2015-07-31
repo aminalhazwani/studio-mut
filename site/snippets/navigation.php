@@ -1,8 +1,8 @@
-<nav class="bg-black u-padd-top u-padd-btm nav <?php if($page->template() == 'about'): ?>nav-fixed<?php endif ?>" role="navigation">
-  <div class="l-container">
+<nav class="nav bg-black u-padd-top-half u-padd-btm-half" role="navigation">
+  <div class="nav_inner">
     <?php $menuItems = yaml($site->menuItems()) ?>
     <?php foreach($menuItems as $menuItem): ?>
-        <a class="u-push-rgt" href="<?php echo $menuItem['hyperlink'] ?>"><?php echo $menuItem['label'] ?></a>
+        <a class="nav_item" href="<?php echo $menuItem['hyperlink'] ?>"><?php echo $menuItem['label'] ?></a>
     <?php endforeach ?>
   </div>
 </nav>

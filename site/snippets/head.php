@@ -63,7 +63,6 @@
 
 	<!-- Stylesheets -->
 	<?php echo css('assets/css/main.css') ?>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.css">
 </head>
 <body>
 	<!--[if lt IE 10]>

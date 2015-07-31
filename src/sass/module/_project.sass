@@ -1,6 +1,101 @@
-*
-  box-sizing: border-box
+.showcase__close
+  position: fixed
+  z-index: 99
+  top: .8rem
+  right: .6rem
+  width: 30px
+  height: 30px
+  cursor: pointer
 
-.gallery_cell
+.showcase__close--line
+  &:after
+    position: absolute
+    top: 14px
+    display: block
+    transform: rotate(-45deg)
+    width: 30px
+    height: 3px
+    background-color: $black
+    content: " "
+  &:before
+    position: absolute
+    bottom: 0
+    margin-bottom: 13px
+    display: block
+    transform: rotate(45deg)
+    width: 30px
+    height: 3px
+    background-color: $black
+    content: " "
+
+.showcase__count
+  position: fixed
+  z-index: 999
+  bottom: .6rem
+  right: 1rem
+
+.showcase__slider
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  height: auto
+  width: auto
+
+.showcase__slider--slide
   width: 100%
   height: 100%
+
+.shocase__image--enclosed
+  position: relative
+  max-width: 100%
+  max-height: 85%
+  width: auto
+  height: auto
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  box-sizing: border-box
+  padding: 1rem
+
+.shocase__image--full
+  position: relative
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+
+.shocase__image--text
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+
+@keyframes swing
+  20%
+    transform: rotate3d(0, 0, 1, 15deg)
+  40%
+    transform: rotate3d(0, 0, 1, -10deg)
+  60%
+    transform: rotate3d(0, 0, 1, 5deg)
+  80%
+    transform: rotate3d(0, 0, 1, -5deg)
+  100%
+    transform: rotate3d(0, 0, 1, 0deg)
+
+
+.swing
+  transform-origin: center center
+  animation-duration: 500ms
+  animation-name: swing
+
+.button
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)

@@ -2,8 +2,19 @@
 // Module
 //============================================
 
+main
+  padding-top: $space
+  +mq($bp-sm)
+    padding-top: 0
+
+p > a:hover
+  border-bottom-color: transparent
+
 .bg-blue
   background-color: $primary
 
 .bg-black
   background-color: $black
+
+.bg-red
+  background-color: $red

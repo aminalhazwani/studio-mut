@@ -2,6 +2,35 @@
 // Navigation
 //============================================
 
+.nav
+  position: relative
+  overflow: hidden
+  margin-bottom: -$space
+  padding-bottom: $space
+
+.nav_inner
+  position: relative
+  white-space: nowrap
+  overflow-x: scroll
+  overflow-y: hidden
+  margin-bottom: -$space
+  padding-bottom: $space
+  padding-left: $layout-gutter-sm
+  +mq($bp-sm)
+    margin: 0 auto
+    padding: 0 0 0 16px
+  +mq($bp-md)
+    padding-left: 18px
+  +mq($bp-lg)
+    padding-left: 26px
+
+.nav_inner::before
+  content: ""
+  display: inline-block
+  width: 2.5%
+  +mq($bp-sm)
+    width: 5%
+
 .nav-scrolled,
 .nav-fixed
   position: fixed
@@ -9,3 +38,19 @@
   left: 0
   z-index: 1
   width: 100%
+
+.nav-is-fixed
+  padding-top: 56px
+  +mq($bp-sm)
+    padding-top: calc(56px - 28px)
+
+.nav_item:not(:last-of-type)
+  margin-right: $space
+
+.nav_item:last-of-type
+  margin-right: calc(28px + 2.5%)
+  +mq($bp-sm)
+    margin-right: calc(28px + 5%)
+
+.nav_item:hover
+  opacity: .5

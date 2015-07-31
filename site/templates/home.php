@@ -1,10 +1,6 @@
 <?php snippet('head') ?>
 
-	<header class="header header-primary">
-	  <div class="l-container logo">
-	    <img class="u-padd-top u-padd-btm u-sm-padd-top-double u-sm-padd-btm-double" src="assets/images/mut-logo.svg">
-	  </div>
-	</header>
+	<?php snippet('header') ?>
 	<?php snippet('navigation') ?>
 	<main>
 		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
