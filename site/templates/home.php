@@ -1,6 +1,6 @@
 <?php snippet('head') ?>
 
-	<div class="splash"></div>
+	<!-- <div class="splash"></div> -->
 	<?php snippet('header') ?>
 	<?php snippet('navigation') ?>
 
