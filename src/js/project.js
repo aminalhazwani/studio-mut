@@ -14,7 +14,7 @@ $(function() {
     numImagesToPreload: 99
   });
   var sliderInstance = sliderJQ.data('royalSlider');
-  var slideCountEl = $('<div class="project_count rsSlideCount"></div>').appendTo( '.l-container' );
+  var slideCountEl = $('<span class="rsSlideCount"></span>').appendTo( '.project_count ' );
   function updCount() {
     slideCountEl.html( (sliderInstance.currSlideId+1) + '&nbsp;&nbsp;/&nbsp;&nbsp;' + sliderInstance.numSlides );
   }
