@@ -11,7 +11,7 @@ $(function() {
     loopRewind: false,
     controlNavigation: 'none',
     arrowsNav: false,
-    numImagesToPreload: 99
+    numImagesToPreload: 2
   });
   var sliderInstance = sliderJQ.data('royalSlider');
   var slideCountEl = $('<span class="rsSlideCount"></span>').appendTo( '.project_count ' );
@@ -19,7 +19,6 @@ $(function() {
     slideCountEl.html( (sliderInstance.currSlideId+1) + '&nbsp;&nbsp;/&nbsp;&nbsp;' + sliderInstance.numSlides );
   }
   sliderInstance.ev.on('rsAfterSlideChange', updCount);
-  // sliderInstance.ev.on('rsAfterSlideChange', pauseAllVideos );
   updCount();
 
   var si = jQuery('.royalSlider').data('royalSlider');
@@ -38,3 +37,14 @@ $(function() {
     }
   });
 });
+
+$('.project_close-history').click(function() {
+  var loc = window.location.href,
+  index = loc.indexOf('#');
+  if (index > 0) {
+    window.location = loc.substring(0, index);
+    }
+  history.go(-1);
+});
+
+$('.project_caption').find('h1').fitText();

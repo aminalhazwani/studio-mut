@@ -13,8 +13,8 @@ fields:
     label: Date
     type:  date
     width: 1/2
-  pagebkcolor:
-    label: Project background color
+  bkcolor:
+    label: Background color
     type: radio
     width: 1/2
     default: bg-black
@@ -30,10 +30,6 @@ fields:
 files:
   sortable: true
   fields: 
-    caption: 
-      label: Slide caption (used also for alt text)
-      type: text
-      placeholder: If empty it will use the project title
     cover:
       label: Is this the project preview?
       type: radio
@@ -51,11 +47,10 @@ files:
     overtext: 
       label: Slide text
       type: textarea
-    poster:
-      label: Is this a video thumbnail?
-      type: checkbox
-      text: Yes!
-    info:
-      label:
-      type: info
-      text: 'Remember: the thumbnail must have the same name as the video and it must be a .jpg file. For example video.mp4 and video.jpg.'
+    overtextcolor: 
+      label: Slide text color
+      type: radio
+      default: text-black
+      options:
+        text-black: Black
+        text-white: White

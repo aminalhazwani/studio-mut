@@ -1,0 +1,29 @@
+Sort: 2
+
+----
+
+Caption: 
+
+----
+
+Cover: nein
+
+----
+
+Measure: enclosed
+
+----
+
+Overtext: 
+
+Alpini. Un racconto contemporaneo.
+Photography by Nicoló Degiorgis
+192 Pages, printed in CMYK Euroskala + Pantone.
+
+----
+
+Poster: 
+
+----
+
+Overtextcolor: text-black

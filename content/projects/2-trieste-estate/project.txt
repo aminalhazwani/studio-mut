@@ -1,0 +1,24 @@
+Title: Trieste Estate
+
+----
+
+Titl: 
+
+Have a drink
+on the beach
+
+----
+
+Date: 
+
+----
+
+Client: Comune di Trieste
+
+----
+
+Text: 
+
+----
+
+Bkcolor: bg-white
