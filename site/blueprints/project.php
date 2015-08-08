@@ -25,7 +25,7 @@ fields:
     label: Client
     type: text
   text:
-    label: Description for SEO
+    label: Description for SEO and Open Graph
     type: textarea
 files:
   sortable: true

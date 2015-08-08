@@ -48,16 +48,19 @@
 
 	<meta property="og:url" content="<?php echo $page->url() ?>" />
 
-	<!-- Remember to fix this if text-slide is not necessary -->
-	<?php if($page->template() != 'home'): ?>
+	<?php if($page->template() == 'project'): ?>
 		<?php foreach($page->images() as $image): ?>
-			<?php if($image->cover() != ''): ?>
+			<?php if($image->cover() == 'ja'): ?>
 				<meta property="og:image" content="<?php echo $image->url() ?>" />
 			<?php endif ?>
 		<?php endforeach ?>
-	<?php else: ?>
-		<?php foreach($page->images() as $image): ?>
-			<meta property="og:image" content="<?php echo $image->first()->url() ?>" />
+	<?php endif ?>
+	<?php if($page->template() != 'project'): ?>
+		<?php $projects = $pages->find('/projects') ?>
+			<?php foreach($projects->children()->first()->images() as $image): ?>
+				<?php if($image->cover() == 'ja'): ?>
+					<meta property="og:image" content="<?php echo $image->url() ?>" />
+				<?php endif ?>
 		<?php endforeach ?>
 	<?php endif ?>
 

@@ -17,7 +17,7 @@ Client: Comune di Trieste
 
 ----
 
-Text: 
+Text: Trieste Estate is a festival organised by the awesome Studiomut.
 
 ----
 
