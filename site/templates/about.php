@@ -75,13 +75,13 @@
       </div>
     </div>
     <div id="clients" class="g-row max-width u-padd-top-double">
-      <div class="g g-sm-6 u-push-btm-double">
+      <div class="g g-sm-6 u-push-btm-double u-sm-padd-top">
         <section class="l-section">
           <h4>Mut Clients</h4>
           <?php snippet('clients') ?>
         </section>
       </div>
-      <div class="g g-sm-6">
+      <div class="g g-sm-6 u-sm-padd-top">
         <section class="l-section">
           <?php echo $about->social()->kirbytext() ?>
         </section>
