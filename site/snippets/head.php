@@ -40,9 +40,13 @@
 		<meta property="og:title" content="<?php echo $site->title()->html() ?>" />
 	<?php endif ?>
 
-	<?php if($page->template() != 'home'): ?>
+	<?php if($page->template() == 'project'): ?>
 		<meta property="og:description" content="<?php echo $page->text()->html() ?>">
-	<?php else: ?>
+	<?php endif ?>
+	<?php if($page->template() == 'about'): ?>
+		<meta property="og:description" content="<?php echo $page->introtext()->html() ?>">
+	<?php endif ?>
+	<?php if($page->template() == 'home'): ?>
 		<meta property="og:description" content="<?php echo $site->description()->html() ?>">
 	<?php endif ?>
 
