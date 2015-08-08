@@ -7,15 +7,15 @@
 <main class="about">
   <div class="intro bg-blue u-sm-padd-double u-sm-padd-btm-none">
     <div class="l-container">
-      <div class="h1 u-ta-center u-padd-top-double u-padd-btm-double u-sm-padd-double u-push-none fit">
+      <div class="h1 u-ta-center u-padd-top-double u-padd-btm-none u-sm-padd-double u-sm-padd-btm-none u-push-none fit">
         <?php echo $about->introtext()->kirbytext() ?>
       </div>
     </div>
   </div>
 
-  <div class="bg-blue u-padd-btm">
+  <div id="contact" class="bg-blue u-padd-btm u-padd-top-double">
     <div class="l-container">
-      <div class="g-row u-ta-center u-md-ta-lft u-padd-btm">
+      <div class="g-row u-ta-center u-md-ta-lft u-sm-padd-btm u-sm-padd-top-double">
         <div class="g g-md-3">
           <?php echo $about->firstcol()->kirbytext() ?>
         </div>
@@ -52,7 +52,7 @@
   </div>
 
   <div class="l-container u-padd-top-double">
-    <div class="g-row u-padd-btm-double u-sm-padd-top-double max-width">
+    <div class="g-row u-sm-padd-top-double max-width">
       <div class="g g-sm-10">
         <section class="l-section">
           <h4>English</h4>
@@ -74,7 +74,7 @@
         </section>
       </div>
     </div>
-    <div class="g-row max-width">
+    <div id="clients" class="g-row max-width u-padd-top-double">
       <div class="g g-sm-6 u-push-btm-double">
         <section class="l-section">
           <h4>Mut Clients</h4>
