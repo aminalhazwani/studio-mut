@@ -1,9 +1,3 @@
-// $(function() {
-//     setTimeout(function() {
-//         $(".splash").hide()
-//     }, 600);
-// });
-
 $(window).on("scroll load", function() {  
   if( $(this).scrollTop() > $('.header-primary').height() ) {
     $('.nav').addClass('nav-scrolled');

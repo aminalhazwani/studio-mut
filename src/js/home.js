@@ -1,9 +1,3 @@
-// $(function() {
-//     setTimeout(function() {
-//         $(".splash").hide()
-//     }, 600);
-// });
-
 $(window).on("scroll resize load", function() {
   var nav = $(".nav");
   var nvs = "nav-scrolled";

@@ -69,7 +69,9 @@
 	<?php endif ?>
 
 	<!-- Stylesheets -->
-	<?php echo css('assets/css/main.css') ?>
+	<?php echo css('assets/css/main.min.css') ?>
+	<!-- Vendors -->
+	<?php echo js('assets/js/vendor/vendors.min.js') ?>
 </head>
 <body <?php if($page->template() == 'project'): ?>class="<?php echo $page->bkcolor() ?>"<?php endif ?>>
 	<!--[if lt IE 10]>

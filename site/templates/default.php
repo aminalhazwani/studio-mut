@@ -1,5 +1,7 @@
 <?php snippet('head') ?>
 
+  <div class="splash"></div>
+
   <main class="default">
 
     <div class="l-container">

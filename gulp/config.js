@@ -53,6 +53,11 @@ module.exports = {
     dest: dest + "/fonts"
   },
 
+  production: {
+    inlineSrc: '../site/snippets/head-dev.html',
+    inlineDest: '../site/snippets/head.html'
+  },
+
   svgSprite: {
     src: src + '/icons',
     glob: '**/*.svg',

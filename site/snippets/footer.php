@@ -9,7 +9,6 @@
       <a href="mailto:hello@studiomut.com">hello@studiomut.com</a>
     </div>
   </footer>
-  <?php echo js('assets/js/vendor/vendors.min.js') ?>
   <?php if($page->template() == 'home'): ?>
     <?php echo js('assets/js/home.min.js') ?>
   <?php endif ?>

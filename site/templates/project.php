@@ -1,5 +1,7 @@
 <?php snippet('head') ?>
   
+  <div class="splash"></div>
+
   <header class="header header-secondary u-padd-top u-padd-btm">
     <div class="l-container">
       <a href="/">Studio Mut</a>
