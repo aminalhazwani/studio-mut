@@ -38,13 +38,5 @@ $(function() {
   });
 });
 
-$('.project_close-history').click(function() {
-  var loc = window.location.href,
-  index = loc.indexOf('#');
-  if (index > 0) {
-    window.location = loc.substring(0, index);
-    }
-  history.go(-1);
-});
-
 $('.project_caption').find('h1').fitText();
+

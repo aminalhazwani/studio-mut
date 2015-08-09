@@ -2,11 +2,16 @@
   
   <div class="splash"></div>
 
-  <header class="header header-secondary u-padd-top u-padd-btm">
+  <header class="header header-secondary u-padd-top-half u-padd-btm-half u-sm-padd-top u-sm-padd-btm">
     <div class="l-container">
       <a href="/">Studio Mut</a>
-      <a class="project_close" href="<?php echo $site->url() ?>">Close</a>
-      <p class="project_count"></p>
+      <?php $_SERVER['HTTP_REFERER']; ?>
+      <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
+        <a class="project_close" href="javascript:history.back(1)">Close</a>
+      <?php else: ?>
+        <a class="project_close" href="<?php echo $site->url() ?>">Close</a>
+      <?php endif ?>
+      <p class="project_count u-push-btm-none"></p>
     </div>
   </header>
 
@@ -15,12 +20,15 @@
 
       <?php if($image->measure() == 'enclosed'): ?>
         <figure class="project_figure">
-          <img class="project_image project_image-enclosed" src="<?php echo thumb($image, array('width' => 1200, 'height' => 900, 'quality' => 70), false) ?>" sizes="100vw" 
-                srcset="<?php echo thumb($image, array('width' => 600, 'height' => 400, 'quality' => 70), false) ?> 600w,
-                        <?php echo thumb($image, array('width' => 800, 'height' => 600, 'quality' => 70), false) ?> 800w,
-                        <?php echo thumb($image, array('width' => 1200, 'height' => 900, 'quality' => 70), false) ?> 1200w,
-                        <?php echo thumb($image, array('width' => 1600, 'height' => 1200, 'quality' => 70), false) ?> 1600w,
-                        <?php echo thumb($image, array('width' => 2560, 'height' => 1500, 'quality' => 70), false) ?> 2560w">
+          <img class="project_image project_image-enclosed" 
+                src="<?php echo thumb($image, array('width' => 1200), false) ?>" 
+                srcset="<?php echo thumb($image, array('width' => 600), false) ?> 600w,
+                        <?php echo thumb($image, array('width' => 800), false) ?> 800w,
+                        <?php echo thumb($image, array('width' => 1200), false) ?> 1200w,
+                        <?php echo thumb($image, array('width' => 1600), false) ?> 1600w,
+                        <?php echo thumb($image, array('width' => 2560), false) ?> 2560w"
+                sizes="100vw"
+          >
           <?php if($image->overtext() != ''): ?>
             <figcaption class="project_caption <?php echo $image->overtextcolor() ?>">
               <?php echo $image->overtext()->kirbytext() ?>

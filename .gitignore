@@ -5,6 +5,7 @@ thumbs
 # Ignore junk files
 .DS_Store
 .sass-cache
+site/cache/*
 
 # Ignore node_modules
 node_modules
