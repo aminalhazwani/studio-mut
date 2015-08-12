@@ -20,18 +20,6 @@ $(function() {
   }
   sliderInstance.ev.on('rsAfterSlideChange', updCount);
   updCount();
-
-  function goBack() {
-    window.history.back();
-  }
-
-  var si = jQuery('.royalSlider').data('royalSlider');
-  si.ev.on('rsBeforeMove', function(e, type, action) {
-      console.log(si.currSlideId, type, si.numSlides);
-      if(si.currSlideId == si.numSlides-1 && type == 'next') {
-        goBack();
-      }
-  });
 });
 
 $('.project_caption').find('h1').fitText();

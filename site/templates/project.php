@@ -53,5 +53,34 @@
 
   <?php echo js('assets/js/vendor/vendors.min.js') ?>
   <?php echo js('assets/js/project.min.js') ?>
+  <?php $_SERVER['HTTP_REFERER']; ?>
+    <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
+      <script type="text/javascript">
+        $( document ).ready(function() {
+          function goBack() {
+            window.history.back();
+          }
+          var si = jQuery('.royalSlider').data('royalSlider');
+          si.ev.on('rsBeforeMove', function(e, type, action) {
+              console.log(si.currSlideId, type, si.numSlides);
+              if(si.currSlideId == si.numSlides-1 && type == 'next') {
+                goBack();
+              }
+          });
+        });
+      </script>
+    <?php else: ?>
+      <script type="text/javascript">
+        $( document ).ready(function() {
+          var si = jQuery('.royalSlider').data('royalSlider');
+          si.ev.on('rsBeforeMove', function(e, type, action) {
+              console.log(si.currSlideId, type, si.numSlides);
+              if(si.currSlideId == si.numSlides-1 && type == 'next') {
+                window.location.href = 'http://localhost:9000/';
+              }
+          });
+        });
+      </script>
+    <?php endif ?>
   </body>
 </html>
