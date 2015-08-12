@@ -56,6 +56,8 @@
 		<?php foreach($page->images() as $image): ?>
 			<?php if($image->cover() == 'ja'): ?>
 				<meta property="og:image" content="<?php echo $image->url() ?>" />
+				<meta property="og:image:width" content="<?php echo $image->width() ?>"/>
+				<meta property="og:image:height" content="<?php echo $image->height() ?>"/>
 			<?php endif ?>
 		<?php endforeach ?>
 	<?php endif ?>
@@ -64,6 +66,8 @@
 			<?php foreach($projects->children()->first()->images() as $image): ?>
 				<?php if($image->cover() == 'ja'): ?>
 					<meta property="og:image" content="<?php echo $image->url() ?>" />
+					<meta property="og:image:width" content="<?php echo $image->width() ?>"/>
+					<meta property="og:image:height" content="<?php echo $image->height() ?>"/>
 				<?php endif ?>
 		<?php endforeach ?>
 	<?php endif ?>
