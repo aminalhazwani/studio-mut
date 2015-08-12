@@ -21,20 +21,16 @@ $(function() {
   sliderInstance.ev.on('rsAfterSlideChange', updCount);
   updCount();
 
+  function goBack() {
+    window.history.back();
+  }
+
   var si = jQuery('.royalSlider').data('royalSlider');
   si.ev.on('rsBeforeMove', function(e, type, action) {
-    if(si.currSlideId+1 === si.numSlides && type === "next") {
-      $('.project__close').addClass("swing");
-      setTimeout(function() {
-        $('.project__close').removeClass("swing")
-      },600);
-    }
-    if(si.numSlides+si.currSlideId <= si.numSlides && type === "prev") {
-      $('.project__close').addClass("swing");
-      setTimeout(function() {
-      $('.project__close').removeClass("swing")
-      },600);
-    }
+      console.log(si.currSlideId, type, si.numSlides);
+      if(si.currSlideId == si.numSlides-1 && type == 'next') {
+        goBack();
+      }
   });
 });
 
