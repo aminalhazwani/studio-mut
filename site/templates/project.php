@@ -57,14 +57,17 @@
     <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
       <script type="text/javascript">
         $( document ).ready(function() {
-          function goBack() {
-            window.history.back();
-          }
           var si = jQuery('.royalSlider').data('royalSlider');
           si.ev.on('rsBeforeMove', function(e, type, action) {
               console.log(si.currSlideId, type, si.numSlides);
               if(si.currSlideId == si.numSlides-1 && type == 'next') {
-                goBack();
+                history.back(1);
+              }
+          });
+          si.ev.on('rsDragRelease', function(e, type, action) {
+              console.log(si.currSlideId, si.numSlides);
+              if(si.currSlideId == si.numSlides-1) {
+                history.back(1);
               }
           });
         });
@@ -76,6 +79,12 @@
           si.ev.on('rsBeforeMove', function(e, type, action) {
               console.log(si.currSlideId, type, si.numSlides);
               if(si.currSlideId == si.numSlides-1 && type == 'next') {
+                window.location.href = 'http://localhost:9000/';
+              }
+          });
+          si.ev.on('rsDragRelease', function(e, type, action) {
+              console.log(si.currSlideId, si.numSlides);
+              if(si.currSlideId == si.numSlides-1) {
                 window.location.href = 'http://localhost:9000/';
               }
           });
