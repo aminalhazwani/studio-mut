@@ -1,7 +1,7 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Site
-pages: default
+pages: single
 fields:
   title:
     label: Website title

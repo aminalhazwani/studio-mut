@@ -1,22 +1,3 @@
-// Sticky Header
-$(window).on("scroll load", function() {  
-  if( $(this).scrollTop() > $('.header-primary').height() ) {
-    $('.nav').addClass('nav-scrolled');
-    $('main').addClass('nav-is-fixed');
-  } else {
-    $('.nav').removeClass('nav-scrolled');
-    $('main').removeClass('nav-is-fixed');
-  }
-});
-
-// Random sentence in footer
-var random = Math.floor(Math.random() * 1000);
-var $heading = $("footer h2");
-$heading.eq(random % $heading.length).addClass("u-blk");
-
-// Footer sentece huge typography
-jQuery(".fit").fitText();
-
 // Clock
 function startTime() {
     var today = new Date();

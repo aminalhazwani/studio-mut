@@ -49,6 +49,9 @@
 	<?php if($page->template() == 'home'): ?>
 		<meta property="og:description" content="<?php echo $site->description()->html() ?>">
 	<?php endif ?>
+	<?php if($page->template() == 'default'): ?>
+		<meta property="og:description" content="<?php echo $page->text()->html() ?>">
+	<?php endif ?>
 
 	<meta property="og:url" content="<?php echo $page->url() ?>" />
 
@@ -61,7 +64,14 @@
 			<?php endif ?>
 		<?php endforeach ?>
 	<?php endif ?>
-	<?php if($page->template() != 'project'): ?>
+
+	<?php if($page->template() == 'single'): ?>
+		<?php foreach($page->images() as $image): ?>
+			<meta property="og:image" content="<?php echo $image->url() ?>" />
+			<meta property="og:image:width" content="<?php echo $image->width() ?>"/>
+			<meta property="og:image:height" content="<?php echo $image->height() ?>"/>
+		<?php endforeach ?>
+	<?php else: ?>
 		<?php $projects = $pages->find('/projects') ?>
 			<?php foreach($projects->children()->first()->images() as $image): ?>
 				<?php if($image->cover() == 'ja'): ?>
