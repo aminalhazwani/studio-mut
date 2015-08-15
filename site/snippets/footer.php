@@ -15,5 +15,32 @@
   <?php if($page->template() == 'about'): ?>
     <?php echo js('assets/js/about.min.js') ?>
   <?php endif ?>
+  <script type="text/javascript">
+    $('.menu').on('click', function(e) {
+      $('.navMobile').toggleClass("navMobile-is-open");
+      e.preventDefault();
+    });
+    $("main").on('click', function(e){
+      if ($('.navMobile').hasClass("navMobile-is-open")) {
+        $('.navMobile').removeClass("navMobile-is-open");
+        e.preventDefault();
+      }
+    });
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+      if (scroll >= 1) {
+        if ($('.navMobile').hasClass("navMobile-is-open")) {
+          $('.navMobile').removeClass("navMobile-is-open");
+        }
+      }
+    });
+    $(document).keydown(function(e){
+      if(e.keyCode == 27) {
+        if ($('.navMobile').hasClass("navMobile-is-open")) {
+          $('.navMobile').removeClass("navMobile-is-open");
+        }
+      }
+    });
+  </script>
   </body>
 </html>

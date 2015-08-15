@@ -2,32 +2,47 @@
 // Navigation
 //============================================
 
-.nav
+.navMobile
   position: relative
-  overflow: hidden
-
-.nav_inner
-  position: relative
-  white-space: nowrap
-  overflow-x: scroll
-  overflow-y: hidden
-  -webkit-overflow-scrolling: touch;
-  margin-bottom: -$space
-  padding-bottom: $space
-  padding-left: 14px
-  +mq($bp-sm)
-    margin: 0 auto
-    padding: 0 0 0 16px
   +mq($bp-md)
-    padding-left: 18px
-  +mq($bp-lg)
-    padding-left: 26px
+    display: none
 
-.nav_inner::before
-  +mq($bp-sm)
-    content: ""
-    display: inline-block
-    width: 5%
+.navMobile_header
+  position: relative
+  z-index: 2
+
+.navMobile_inner
+  display: flex
+  justify-content: space-between
+
+.navMobile_items
+  position: absolute
+  top: auto
+  bottom: 0
+  width: 100%
+  padding-top: 56px
+
+.navMobile_item
+  display: block
+
+.navMobile_item:first-child
+  display: none
+
+.navMobile-is-open
+  .navMobile_items
+    top: 0
+    bottom: auto
+    z-index: 1
+  .menu:before
+    content: "Close "
+
+.menu
+  cursor: pointer
+
+.navDesktop
+  display: none
+  +mq($bp-md)
+    display: block
 
 .nav-scrolled
   position: fixed
