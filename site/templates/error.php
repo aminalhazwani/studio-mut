@@ -10,6 +10,9 @@
     $('body').keyup(function (e){
       window.location.href = '<?php echo $site->url() ?>';
     });
+    $('body').on('click', function (e){
+      window.location.href = '<?php echo $site->url() ?>';
+    });
   </script>
   </body>
 </html>
