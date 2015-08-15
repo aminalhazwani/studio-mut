@@ -10,7 +10,6 @@
     </div>
   </footer>
   <?php if($page->template() == 'home'): ?>
-    <?php echo js('assets/js/home.min.js') ?>
     <?php echo js('assets/js/main.min.js') ?>
   <?php endif ?>
   <?php if($page->template() == 'about'): ?>
