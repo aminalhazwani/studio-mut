@@ -28,14 +28,14 @@ $("main").on('click', function(e){
     e.preventDefault();
   }
 });
-$(window).scroll(function() {    
-var scroll = $(window).scrollTop();
-  if (scroll >= 1) {
-    if ($('.navMobile').hasClass("navMobile-is-open")) {
-      $('.navMobile').removeClass("navMobile-is-open");
-    }
-  }
-});
+// $(window).scroll(function() {    
+// var scroll = $(window).scrollTop();
+//   if (scroll >= 1) {
+//     if ($('.navMobile').hasClass("navMobile-is-open")) {
+//       $('.navMobile').removeClass("navMobile-is-open");
+//     }
+//   }
+// });
 $(document).keydown(function(e){
   if(e.keyCode == 27) {
     if ($('.navMobile').hasClass("navMobile-is-open")) {

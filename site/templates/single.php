@@ -29,19 +29,16 @@
       <div class="g-row u-sm-padd-top-double u-padd-btm-double max-width">
         <div class="g g-sm-10">
           <section class="l-section">
-            <h4>English</h4>
             <div class="indent">
               <?php echo $page->descriptioneng()->kirbytext() ?>
             </div>
           </section>
           <section class="l-section">
-            <h4>Deutsch</h4>
             <div class="indent">
               <?php echo $page->descriptiondeu()->kirbytext() ?>
             </div>
           </section>
           <section class="l-section">
-            <h4>Italiano</h4>
             <div class="indent">
               <?php echo $page->descriptionita()->kirbytext() ?>
             </div>

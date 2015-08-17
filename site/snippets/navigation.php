@@ -1,5 +1,5 @@
 <nav class="nav navMobile">
-  <div class="navMobile_header u-padd-top-half u-padd-btm-half bg-black">
+  <div class="navMobile_header u-padd-top-quarter u-padd-btm-quarter bg-black">
     <div class="l-container">
       <div class="navMobile_inner">
         <a href="<?php echo $site->url() ?>">Studio Mut</a>
@@ -17,7 +17,7 @@
   </div>
 </nav>
 
-<nav class="nav navDesktop bg-black u-padd-top-half u-padd-btm-half" role="navigation">
+<nav class="nav navDesktop bg-black u-padd-top-quarter u-padd-btm-quarter" role="navigation">
     <div class="l-container">
       <?php $menuItems = yaml($site->menuItems()) ?>
       <?php foreach($menuItems as $menuItem): ?>

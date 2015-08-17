@@ -2,7 +2,8 @@
 
 title: Page
 pages: false
-files: true
+files: 
+  sortable: true
 fields:
   title:
     label: Title
