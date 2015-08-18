@@ -14,8 +14,15 @@ var random = Math.floor(Math.random() * 1000);
 var $heading = $("footer h2");
 $heading.eq(random % $heading.length).addClass("u-blk");
 
-// Footer sentece huge typography
+// Huge typography
 jQuery(".fit").fitText();
+
+// Huge typography navigation
+$(window).on("load resize",function(e){
+  if (($(window).height() < 737) && ($(window).width() < 415)) {
+    $(".fit-nav").fitText();
+  }
+});
 
 // Mobile Navigation
 $('.menu').on('click', function(e) {

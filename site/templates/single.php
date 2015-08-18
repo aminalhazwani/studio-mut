@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <?php foreach($page->images() as $image): ?>
+    <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
       <img class="lazyload" 
           src="<?php echo thumb($image, array('width' => 1500), false) ?>" 
           srcset="<?php echo thumb($image, array('width' => 600), false) ?> 600w,
