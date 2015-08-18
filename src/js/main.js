@@ -18,11 +18,27 @@ $heading.eq(random % $heading.length).addClass("u-blk");
 jQuery(".fit").fitText();
 
 // Huge typography navigation
-$(window).on("load resize",function(e){
-  if (($(window).height() < 737) && ($(window).width() < 415)) {
+var mqp = window.matchMedia("(orientation: portrait)");
+var mql = window.matchMedia("(orientation: landscape)");
+
+if(mqp.matches) {  
+  console.log("portrait")
+  $(".fit-nav").fitText();
+}
+else {
+  console.log("landascape")
+  $(".fit-nav").removeAttr('style');
+}
+
+window.addEventListener("orientationchange", function() {
+  console.log("change orientation")
+  if(mql.matches) {
+    $(".fit-nav").removeAttr('style');
+  }
+  if(mqp.matches) {  
     $(".fit-nav").fitText();
   }
-});
+}, false);
 
 // Mobile Navigation
 $('.menu').on('click', function(e) {
