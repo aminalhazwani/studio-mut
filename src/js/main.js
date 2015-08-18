@@ -22,16 +22,13 @@ var mqp = window.matchMedia("(orientation: portrait)");
 var mql = window.matchMedia("(orientation: landscape)");
 
 if(mqp.matches) {  
-  console.log("portrait")
   $(".fit-nav").fitText();
 }
 else {
-  console.log("landascape")
   $(".fit-nav").removeAttr('style');
 }
 
 window.addEventListener("orientationchange", function() {
-  console.log("change orientation")
   if(mql.matches) {
     $(".fit-nav").removeAttr('style');
   }
