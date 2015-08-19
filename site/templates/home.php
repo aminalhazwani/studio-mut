@@ -9,7 +9,7 @@
 			<article>
 				<div class="bg-blue u-ta-center u-padd-huge">
 					<div class="l-container">
-						<h2 class="h1 fit"><a href="<?php echo $project->url() ?>"><?php echo $project->titl()->kirbytext() ?></a></h2>
+						<h2 class="h1 fit"><a class="project_title" href="<?php echo $project->url() ?>"><?php echo $project->titl()->kirbytext() ?></a></h2>
 						<h5 class="u-push-btm-none u-fs-sm-small"><?php echo html($project->client()) ?></h5>
 					</div>
 				</div>

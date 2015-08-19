@@ -2,7 +2,7 @@
   
   <div class="splash"></div>
 
-  <header class="header header-secondary u-padd-top-half u-padd-btm-half u-sm-padd-top u-sm-padd-btm" style="color: <?php echo $page->headercolor() ?>">
+  <header class="header header-secondary u-padd-top-quarter u-padd-btm-quarter" style="color: <?php echo $page->headercolor() ?>">
     <div class="l-container">
       <a href="/">Studio Mut</a>
       <?php $_SERVER['HTTP_REFERER']; ?>
