@@ -2,10 +2,6 @@ Sort: 1
 
 ----
 
-Caption: 
-
-----
-
 Cover: nein
 
 ----
@@ -18,8 +14,8 @@ Overtext: # Test
 
 ----
 
-Poster: 
+Overtextcolor: #ffffff
 
 ----
 
-Overtextcolor: text-white
+Slidebgcolor: #000000

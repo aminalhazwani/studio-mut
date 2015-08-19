@@ -2,10 +2,6 @@ Sort: 2
 
 ----
 
-Caption: 
-
-----
-
 Cover: nein
 
 ----
@@ -22,8 +18,8 @@ Photography by Nicoló Degiorgis
 
 ----
 
-Poster: 
+Slidebgcolor: #ffffff
 
 ----
 
-Overtextcolor: text-black
+Overtextcolor: #000000

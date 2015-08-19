@@ -14,4 +14,8 @@ Overtext: # Santa Claus wearing a green hat. And the pope got involved too.
 
 ----
 
-Overtextcolor: text-black
+Overtextcolor: #5219c4
+
+----
+
+Slidebgcolor: #6ee016

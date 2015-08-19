@@ -87,7 +87,7 @@
 	<!-- Vendors -->
 	<?php echo js('assets/js/vendor/vendors.min.js') ?>
 </head>
-<body <?php if($page->template() == 'project'): ?>class="<?php echo $page->bkcolor() ?>"<?php endif ?>>
+<body <?php if($page->template() == 'project'): ?>style="background-color:<?php echo $page->bkcolor() ?>"<?php endif ?>>
 	<!--[if lt IE 10]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->

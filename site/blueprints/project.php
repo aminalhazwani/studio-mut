@@ -13,17 +13,20 @@ fields:
     label: Date
     type:  date
     width: 1/2
-  bkcolor:
-    label: Background color
-    type: radio
-    width: 1/2
-    default: bg-black
-    options:
-      bg-black: Black
-      bg-white: White
   client:
     label: Client
     type: text
+    width: 1/2
+  headercolor:
+    label: Header text color
+    type: color
+    width: 1/2
+    default: ffffff
+  bkcolor:
+    label: Slider background color
+    type: color
+    width: 1/2
+    default: 000000
   text:
     label: Description for SEO and Open Graph
     type: textarea
@@ -44,13 +47,14 @@ files:
       options:
         full: Full
         enclosed: Enclosed
+    slidebgcolor:
+      label: Slide background color
+      type: color
+      default: 000000
+    overtextcolor:
+      label: Slide text color
+      type: color
+      default: ffffff
     overtext: 
       label: Slide text
       type: textarea
-    overtextcolor: 
-      label: Slide text color
-      type: radio
-      default: text-black
-      options:
-        text-black: Black
-        text-white: White

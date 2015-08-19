@@ -2,7 +2,7 @@
   
   <div class="splash"></div>
 
-  <header class="header header-secondary u-padd-top-half u-padd-btm-half u-sm-padd-top u-sm-padd-btm">
+  <header class="header header-secondary u-padd-top-half u-padd-btm-half u-sm-padd-top u-sm-padd-btm" style="color: <?php echo $page->headercolor() ?>">
     <div class="l-container">
       <a href="/">Studio Mut</a>
       <?php $_SERVER['HTTP_REFERER']; ?>
@@ -19,7 +19,7 @@
     <?php foreach($page->files()->sortBy('sort', 'asc') as $image): ?>
 
       <?php if($image->measure() == 'enclosed'): ?>
-        <figure class="project_figure">
+        <figure class="project_figure" style="background-color: <?php echo $image->slidebgcolor() ?>">
           <img class="project_image project_image-enclosed" 
                 src="<?php echo thumb($image, array('width' => 1200), false) ?>" 
                 srcset="<?php echo thumb($image, array('width' => 600), false) ?> 600w,
@@ -30,7 +30,7 @@
                 sizes="100vw"
           >
           <?php if($image->overtext() != ''): ?>
-            <figcaption class="project_caption <?php echo $image->overtextcolor() ?>">
+            <figcaption class="project_caption" style="color:<?php echo $image->overtextcolor() ?>">
               <?php echo $image->overtext()->kirbytext() ?>
             </figcaption>
           <?php endif ?>
@@ -41,7 +41,7 @@
         <figure class="project_figure">
           <img class="project_image project_image-full" src="/assets/images/1px.png" style="background-image:url('<?php echo $image->url() ?>')">
           <?php if($image->overtext() != ''): ?>
-            <figcaption class="project_caption <?php echo $image->overtextcolor() ?>">
+            <figcaption class="project_caption" style="color:<?php echo $image->overtextcolor() ?>">
               <?php echo $image->overtext()->kirbytext() ?>
             </figcaption>
           <?php endif ?>
