@@ -1,12 +1,8 @@
-Caption: 
-
-----
-
 Cover: ja
 
 ----
 
-Measure: full
+Measure: enclosed
 
 ----
 
@@ -14,4 +10,8 @@ Overtext:
 
 ----
 
-Poster: 
+Slidebgcolor: #000000
+
+----
+
+Overtextcolor: #ffffff

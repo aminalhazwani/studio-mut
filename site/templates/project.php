@@ -20,15 +20,19 @@
 
       <?php if($image->measure() == 'enclosed'): ?>
         <figure class="project_figure" style="background-color: <?php echo $image->slidebgcolor() ?>">
-          <img class="project_image project_image-enclosed" 
-                src="<?php echo thumb($image, array('width' => 1200), false) ?>" 
-                srcset="<?php echo thumb($image, array('width' => 600), false) ?> 600w,
-                        <?php echo thumb($image, array('width' => 800), false) ?> 800w,
-                        <?php echo thumb($image, array('width' => 1200), false) ?> 1200w,
-                        <?php echo thumb($image, array('width' => 1600), false) ?> 1600w,
-                        <?php echo thumb($image, array('width' => 2560), false) ?> 2560w"
-                sizes="100vw"
-          >
+          <?php if($image->extension() == 'gif'): ?>
+            <img class="project_image project_image-enclosed" src="<?php echo $image->url() ?>">
+          <?php else: ?>
+            <img class="project_image project_image-enclosed" 
+                  src="<?php echo thumb($image, array('width' => 1200), false) ?>" 
+                  srcset="<?php echo thumb($image, array('width' => 600), false) ?> 600w,
+                          <?php echo thumb($image, array('width' => 800), false) ?> 800w,
+                          <?php echo thumb($image, array('width' => 1200), false) ?> 1200w,
+                          <?php echo thumb($image, array('width' => 1600), false) ?> 1600w,
+                          <?php echo thumb($image, array('width' => 2560), false) ?> 2560w"
+                  sizes="100vw"
+            >
+          <?php endif ?>
           <?php if($image->overtext() != ''): ?>
             <figcaption class="project_caption" style="color:<?php echo $image->overtextcolor() ?>">
               <?php echo $image->overtext()->kirbytext() ?>
