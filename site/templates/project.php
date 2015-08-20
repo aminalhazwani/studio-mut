@@ -58,42 +58,24 @@
   <?php echo js('assets/js/vendor/vendors.min.js') ?>
   <?php echo js('assets/js/project.min.js') ?>
   <?php $_SERVER['HTTP_REFERER']; ?>
-    <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
+    
       <script type="text/javascript">
         $( document ).ready(function() {
           var si = jQuery('.royalSlider').data('royalSlider');
-          si.ev.on('rsBeforeMove', function(e, type, action) {
-              console.log(si.currSlideId, type, si.numSlides);
-              if(si.currSlideId == si.numSlides-1 && type == 'next') {
-                history.back(1);
+          var prevSlide = (si.currSlideId === si.numSlides-1) ? si.currSlideId : undefined;
+          si.ev.on('rsBeforeAnimStart', function(e, type, action) {
+              console.log(prevSlide, si.currSlideId);
+              if(prevSlide === si.currSlideId){
+                <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
+                  return history.back(1);
+                <?php else: ?>
+                  return window.location.href = 'http://localhost:9000/';
+                <?php endif ?>
               }
-          });
-          si.ev.on('rsDragRelease', function(e, type, action) {
-              console.log(si.currSlideId, si.numSlides);
-              if(si.currSlideId == si.numSlides-1) {
-                history.back(1);
-              }
-          });
-        });
-      </script>
-    <?php else: ?>
-      <script type="text/javascript">
-        $( document ).ready(function() {
-          var si = jQuery('.royalSlider').data('royalSlider');
-          si.ev.on('rsBeforeMove', function(e, type, action) {
-              console.log(si.currSlideId, type, si.numSlides);
-              if(si.currSlideId == si.numSlides-1 && type == 'next') {
-                window.location.href = 'http://localhost:9000/';
-              }
-          });
-          si.ev.on('rsDragRelease', function(e, type, action) {
-              console.log(si.currSlideId, si.numSlides);
-              if(si.currSlideId == si.numSlides-1) {
-                window.location.href = 'http://localhost:9000/';
-              }
+              prevSlide = si.currSlideId;
           });
         });
       </script>
-    <?php endif ?>
+    
   </body>
 </html>
