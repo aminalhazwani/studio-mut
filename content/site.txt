@@ -27,12 +27,15 @@ Menuitems:
 - 
   label: Mutboard
   hyperlink: http://board.studiomut.com
+  target: on
 - 
   label: Mutposter
   hyperlink: http://poster.studiomut.com
+  target: on
 - 
   label: Mut ✕ Love
   hyperlink: http://mutforlove.com
+  target: on
 
 ----
 

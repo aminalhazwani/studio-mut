@@ -11,7 +11,7 @@
     <div class="l-container">
       <?php $menuItems = yaml($site->menuItems()) ?>
       <?php foreach($menuItems as $menuItem): ?>
-          <a class="navMobile_item fit-nav" href="<?php echo $menuItem['hyperlink'] ?>"><?php echo $menuItem['label'] ?></a>
+          <a class="navMobile_item fit-nav" href="<?php echo $menuItem['hyperlink'] ?>" <?php if($menuItem['target'] == '1'): ?>target="_blank"<?php endif ?>><?php echo $menuItem['label'] ?></a>
       <?php endforeach ?>
     </div>
   </div>
@@ -21,7 +21,7 @@
     <div class="l-container">
       <?php $menuItems = yaml($site->menuItems()) ?>
       <?php foreach($menuItems as $menuItem): ?>
-          <a class="nav_item" href="<?php echo $menuItem['hyperlink'] ?>"><?php echo $menuItem['label'] ?></a>
+          <a class="nav_item" href="<?php echo $menuItem['hyperlink'] ?>" <?php if($menuItem['target'] == '1'): ?>target="_blank"<?php endif ?>><?php echo $menuItem['label'] ?></a>
       <?php endforeach ?>
     </div>
   </nav>

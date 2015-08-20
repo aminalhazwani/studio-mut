@@ -27,6 +27,10 @@ fields:
       hyperlink:
         label: Menu Item Link
         type: url
+      target:
+        label: Target blank
+        type: checkbox
+        text: Open in a new window
   line-b:
     type: line
   footer:
