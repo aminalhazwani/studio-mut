@@ -7,7 +7,7 @@
 <main class="about">
   <div class="intro bg-blue u-sm-padd-double u-sm-padd-btm-none">
     <div class="l-container">
-      <div class="h1 u-ta-center u-padd-top-double u-padd-btm-none u-sm-padd-double u-sm-padd-btm-none u-push-none fit">
+      <div class="h1 u-ta-center u-padd-top-double u-padd-btm-none u-sm-padd-btm-none u-push-none fit">
         <?php echo $about->introtext()->kirbytext() ?>
       </div>
     </div>
