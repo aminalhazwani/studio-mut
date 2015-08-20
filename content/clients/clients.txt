@@ -4,7 +4,6 @@ Title: Clients
 
 Text: 
 
-#### Clients
 # A
 - Akademie der bildenden Künste Stuttgart
 - Architekturstiftung Südtirol

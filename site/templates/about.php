@@ -76,9 +76,10 @@
     </div>
     <div id="clients" class="g-row max-width u-padd-top-double">
       <div class="g g-sm-6 u-push-btm-double u-sm-padd-top">
-        <section class="l-section">
+        <section class="l-section clients">
           <h4>Mut Clients</h4>
-          <?php snippet('clients') ?>
+          <?php $clients = $pages->find('/clients') ?>
+          <?php echo $clients->text()->kirbytext() ?>
         </section>
       </div>
       <div class="g g-sm-6 u-sm-padd-top">
