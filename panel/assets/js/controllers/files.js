@@ -23,6 +23,9 @@ var FilesController = {
       case 'page':
         PagesController.show(uri);
         break;
+      case 'metatags':
+        MetatagsController.index();
+        break;
       default:
         FilesController.index(uri);
         break;
@@ -30,9 +33,10 @@ var FilesController = {
 
     app.modal.view('files/upload/' + uri, {to: to}, function(element) {
 
-      var url = $http.endpoint + '/files/upload/' + uri;
+      var dropzone = element.find('.dropzone');
+      var url      = $http.endpoint + '/files/upload/' + uri + '?_csrf=' + dropzone.data('csrf');
 
-      element.find('.dropzone').dropzone(url, function() {
+      dropzone.dropzone(url, function() {
         app.main.data('current', false);
         app.modal.close();
       }, app.modal.alert);
@@ -45,12 +49,14 @@ var FilesController = {
     FilesController.show(uri);
 
     var path = FilesController.path(uri);
+    var url  = path.uri ? 'files/replace/' + path.uri : 'files/replace';
 
-    app.modal.view('files/replace/' + path.uri + '/?filename=' + path.filename, function(element) {
+    app.modal.view(url + '/?filename=' + path.filename, function(element) {
 
-      var url = $http.endpoint + '/files/replace/' + path.uri + '?filename=' + path.filename;
+      var dropzone = element.find('.dropzone');
+      var url      = $http.endpoint + '/files/replace/' + path.uri + '?filename=' + path.filename + '&_csrf=' + dropzone.data('csrf');
 
-      element.find('.dropzone').dropzone(url, function() {
+      dropzone.dropzone(url, function() {
         app.main.data('current', false);
         app.modal.close();
       }, app.modal.alert, {
@@ -63,8 +69,9 @@ var FilesController = {
   show : function(uri) {
 
     var path = FilesController.path(uri);
+    var url  = path.uri ? 'files/show/' + path.uri : 'files/show';
 
-    app.main.view('files/show/' + path.uri + '/?filename=' + path.filename, function(element) {
+    app.main.view(url + '/?filename=' + path.filename, function(element) {
 
       var sidebar = element.find('.fileview-sidebar');
       var form    = element.find('.form').form();

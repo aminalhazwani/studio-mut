@@ -2,10 +2,17 @@
 
 class FilesController extends Controller {
 
-  public function upload($id) {
+  public function upload($id = null) {
 
-    $page   = $this->page($id);
-    $upload = new Upload($page->root() . DS . '{safeFilename}', array(
+    if(!get('_csrf') or !csrf(get('_csrf'))) {
+      return response::error('unauthenticated access');      
+    }
+
+    $page      = $this->page($id);
+    $blueprint = blueprint::find($page);
+    $filename  = $blueprint->files()->sanitize() ? '{safeFilename}' : '{filename}';
+
+    $upload = new Upload($page->root() . DS . $filename, array(
       'overwrite' => true,
       'accept'    => function($file) {
 
@@ -22,8 +29,19 @@ class FilesController extends Controller {
 
     if($file = $upload->file()) {
       try {
-        $this->checkUpload($file);
-        return response::success('success');
+
+        $this->checkUpload($file, $blueprint);
+
+        // flush all cached files
+        $page->reset();
+
+        if($pagefile = $page->file($file->filename())) {
+          kirby()->trigger('panel.file.upload', $pagefile);          
+          return response::success('success');
+        } else {
+          throw new Exception('The file object could not be found');
+        }
+
       } catch(Exception $e) {
         $file->delete();
         return response::error($e->getMessage());
@@ -34,11 +52,16 @@ class FilesController extends Controller {
 
   }
 
-  public function replace($id) {
+  public function replace($id = null) {
 
-    $filename = get('filename');
-    $file     = $this->file($id, $filename);
-    $upload   = new Upload($file->root(), array(
+    if(!get('_csrf') or !csrf(get('_csrf'))) {
+      return response::error('unauthenticated access');      
+    }
+
+    $filename  = get('filename');
+    $file      = $this->file($id, $filename);
+    $blueprint = blueprint::find($this->page($id));
+    $upload    = new Upload($file->root(), array(
       'overwrite' => true,
       'accept' => function($upload) use($file) {
         if($upload->mime() != $file->mime()) {
@@ -49,7 +72,8 @@ class FilesController extends Controller {
 
     if($file = $upload->file()) {
       try {
-        $this->checkUpload($file);
+        $this->checkUpload($file, $blueprint);
+        kirby()->trigger('panel.file.replace', $file);
         return response::success('success');
       } catch(Exception $e) {
         $file->delete();
@@ -61,7 +85,7 @@ class FilesController extends Controller {
 
   }
 
-  public function rename($id) {
+  public function rename($id = null) {
 
     $filename = get('filename');
     $file     = $this->file($id, $filename);
@@ -72,6 +96,7 @@ class FilesController extends Controller {
 
     try {
       $filename = $file->rename(get('name'));
+      kirby()->trigger('panel.file.rename', $file);
       return response::success('success', array(
         'filename' => $filename
       ));
@@ -81,7 +106,7 @@ class FilesController extends Controller {
 
   }
 
-  public function update($id) {
+  public function update($id = null) {
 
     $filename = get('filename');
     $page     = $this->page($id);
@@ -115,6 +140,7 @@ class FilesController extends Controller {
 
     try {
       $file->update($data);
+      kirby()->trigger('panel.file.update', $file);
       return response::success('success', array(
         'data' => $data
       ));
@@ -124,7 +150,7 @@ class FilesController extends Controller {
 
   }
 
-  public function sort($id) {
+  public function sort($id = null) {
 
     $page = $this->page($id);
 
@@ -145,6 +171,7 @@ class FilesController extends Controller {
 
       try {
         $file->update(array('sort' => $counter));
+        kirby()->trigger('panel.file.sort', $file);
       } catch(Exception $e) {
 
       }
@@ -155,7 +182,7 @@ class FilesController extends Controller {
 
   }
 
-  public function delete($id) {
+  public function delete($id = null) {
 
     $filename = get('filename');
     $file     = $this->file($id, $filename);
@@ -166,6 +193,7 @@ class FilesController extends Controller {
 
     try {
       $file->delete();
+      kirby()->trigger('panel.file.delete', $file);
       return response::success('success');
     } catch(Exception $e) {
       return response::error($e->getMessage());
@@ -185,22 +213,47 @@ class FilesController extends Controller {
     }
   }
 
-  protected function checkUpload($file) {
+  protected function checkUpload($file, $blueprint) {
 
     if(strtolower($file->extension()) == kirby()->option('content.file.extension', 'txt')) {
       throw new Exception('Content files cannot be uploaded');
-    } else if(strtolower($file->extension()) == 'php' or in_array($file->mime(), f::$mimes['php'])) {
+    } else if(strtolower($file->extension()) == 'php' or str::contains($file->extension(), 'php') or
+              in_array($file->mime(), f::$mimes['php'])) {
       throw new Exception('PHP files cannot be uploaded');
-    } else if(strtolower($file->extension()) == 'html' or $file->mime() == 'text/html') {
+    } else if(strtolower($file->extension()) == 'html' or
+              $file->mime() == 'text/html') {
       throw new Exception('HTML files cannot be uploaded');
-    } else if(strtolower($file->extension()) == 'exe' or $file->mime() == 'application/x-msdownload') {
+    } else if(strtolower($file->extension()) == 'exe' or
+              $file->mime() == 'application/x-msdownload') {
       throw new Exception('EXE files cannot be uploaded');
     } else if(strtolower($file->filename()) == '.htaccess') {
       throw new Exception('htaccess files cannot be uploaded');
     } else if(str::startsWith($file->filename(), '.')) {
       throw new Exception('Invisible files cannot be uploaded');
+
+    // Files blueprint option 'type'
+    } else if(count($blueprint->files()->type()) > 0 and
+              !in_array($file->type(), $blueprint->files()->type())) {
+      throw new Exception('Page only allows: '.implode(', ', $blueprint->files()->type()));
+
+    // Files blueprint option 'size'
+    } else if($blueprint->files()->size() and
+              f::size($file->root()) > $blueprint->files()->size()) {
+      throw new Exception('Page only allows file size of '.f::niceSize($blueprint->files()->size()));
+
+    // Files blueprint option 'width'
+    } else if($file->type() == 'image' and
+              $blueprint->files()->width() and
+              $file->width() > $blueprint->files()->width()) {
+      throw new Exception('Page only allows image width of '.$blueprint->files()->width().'px');
+
+    // Files blueprint option 'height'
+    } else if($file->type() == 'image' and
+              $blueprint->files()->height() and
+              $file->height() > $blueprint->files()->height()) {
+      throw new Exception('Page only allows image height of '.$blueprint->files()->height().'px');
     }
-    
+
   }
 
 }

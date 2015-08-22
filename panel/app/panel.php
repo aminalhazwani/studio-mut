@@ -2,7 +2,7 @@
 
 class Panel {
 
-  static public $version = '2.0.6';
+  static public $version = '2.1.1';
   static public $instance;
 
   public $kirby;
@@ -23,29 +23,47 @@ class Panel {
     return static::$version;
   }
 
-  public function __construct($kirby, $dir) {
+  public function defaults() {
+
+    return array(
+      'panel.language' => 'en',
+      'panel.widgets'  => array(
+        'pages'   => true,
+        'site'    => true,
+        'account' => true,
+        'history' => true
+      ),
+    );
+
+  }
+
+  public function __construct($kirby, $root) {
 
     static::$instance = $this;
 
     $this->kirby = $kirby;
     $this->site  = $kirby->site();
-    $this->roots = new Panel\Roots($dir);
-    $this->urls  = new Panel\Urls($kirby->urls()->index() . '/' . basename($dir));
+    $this->roots = new Panel\Roots($this, $root);
+    $this->urls  = new Panel\Urls($this, $root);
+
+    // add the panel default options
+    $this->kirby->options = array_merge($this->defaults(), $this->kirby->options);
 
     // load all Kirby extensions (methods, tags, smartypants)
     $this->kirby->extensions();
+    $this->kirby->plugins();
 
     $this->load();
-
-    // load all available routes
-    $this->routes = array_merge($this->routes, require($this->roots->routes . DS . 'api.php'));
-    $this->routes = array_merge($this->routes, require($this->roots->routes . DS . 'views.php'));
 
     // setup the blueprint root
     blueprint::$root = $this->kirby->roots()->blueprints();
 
     // setup the form plugin
     form::setup($this->roots->fields, $this->kirby->roots()->fields());
+
+    // load all available routes
+    $this->routes = array_merge($this->routes, require($this->roots->routes . DS . 'api.php'));
+    $this->routes = array_merge($this->routes, require($this->roots->routes . DS . 'views.php'));
 
     // start the router
     $this->router = new Router($this->routes);
@@ -58,7 +76,7 @@ class Panel {
       if(!$user or !$user->hasPanelAccess()) {
         if($user) $user->logout();
         go('panel/login');
-      } 
+      }
     });
 
     // check for a completed installation
@@ -80,6 +98,11 @@ class Panel {
 
   public function roots() {
     return $this->roots;
+  }
+
+  public function routes($routes = null) {
+    if(is_null($routes)) return $this->routes;
+    return $this->routes = array_merge($this->routes, (array)$routes);
   }
 
   public function urls() {
@@ -110,6 +133,9 @@ class Panel {
       'history'      => $this->roots->lib . DS . 'history.php',
       'installation' => $this->roots->lib . DS . 'installation.php',
       'pagedata'     => $this->roots->lib . DS . 'pagedata.php',
+      'pagestore'    => $this->roots->lib . DS . 'pagestore.php',
+      'subpages'     => $this->roots->lib . DS . 'subpages.php',
+      'widgets'      => $this->roots->lib . DS . 'widgets.php',
 
       // blueprint stuff
       'blueprint'         => $this->roots->lib . DS . 'blueprint.php',
@@ -142,7 +168,7 @@ class Panel {
       $language = new Obj($strings);
       $language->code = str_replace('.php', '', $file);
       $languages->set($language->code, $language);
-    
+
     }
 
     return $languages;
@@ -163,10 +189,17 @@ class Panel {
     }
 
     $translation = require($this->roots()->languages() . DS . 'en.php');
-    $translation = array_merge($translation, require($this->roots()->languages() . DS . $this->language . '.php'));
+    $translation = a::merge($translation, require($this->roots()->languages() . DS . $this->language . '.php'));
 
     // set all language variables
     l::$data = $translation['data'];
+
+    // set language direction (ltr is default)
+    if(isset($translation['direction']) and $translation['direction'] == 'rtl') {
+      l::set('language.direction', 'rtl');
+    } else {
+      l::set('language.direction', 'ltr');
+    }
 
   }
 
@@ -187,6 +220,10 @@ class Panel {
 
   }
 
+  public function direction() {
+    return l::get('language.direction');
+  }
+
   public function launch($path = null) {
 
     // set the timezone for all date functions
@@ -202,6 +239,27 @@ class Panel {
     if(!$this->route) {
       throw new Exception('Invalid route');
     }
+
+    if(is_callable($this->route->action())) {
+      $response = call($this->route->action(), $this->route->arguments());
+    } else {
+      $response = $this->response();
+    }
+
+    ob_start();
+
+    // check for a valid response object
+    if(is_a($response, 'Response')) {
+      echo $response;
+    } else {
+      echo new Response($response);
+    }
+
+    ob_end_flush();
+
+  }
+
+  public function response() {
 
     // let's find the controller and controller action
     $controllerParts  = str::split($this->route->action(), '::');
@@ -242,16 +300,53 @@ class Panel {
 
     }
 
-    ob_start();
+    return $response;
 
-    // check for a valid response object
-    if(is_a($response, 'Response')) {
-      echo $response;
+  }
+
+  public function license() {
+
+    $key  = c::get('license');
+    $type = 'trial';
+
+    /**
+     * Hey stranger, 
+     * 
+     * So this is the mysterious place where the panel checks for 
+     * valid licenses. As you can see, this is not reporting
+     * back to any server and the license keys are rather simple to 
+     * hack. If you really feel like removing the warning in the panel
+     * or tricking Kirby into believing you bought a valid license even 
+     * if you didn't, go for it! But remember that literally thousands of 
+     * hours of work have gone into Kirby in order to make your 
+     * life as a developer, designer, publisher, etc. easier. If this 
+     * doesn't mean anything to you, you are probably a lost case anyway. 
+     * 
+     * Have a great day! 
+     * 
+     * Bastian
+     */
+    if(str::startsWith($key, 'K2-PRO') and str::length($key) == 39) {
+      $type = 'Kirby 2 Professional';
+    } else if(str::startsWith($key, 'K2-PERSONAL') and str::length($key) == 44) {
+      $type = 'Kirby 2 Personal';
+    } else if(str::startsWith($key, 'MD-') and str::length($key) == 35) {
+      $type = 'Kirby 1';
+    } else if(str::startsWith($key, 'BETA') and str::length($key) == 9) {
+      $type = 'Kirby 1';
+    } else if(str::length($key) == 32) {
+      $type = 'Kirby 1';
     } else {
-      echo new Response($response);
+      $key = null;
     }
 
-    ob_end_flush();
+    $localhosts = array('::1', '127.0.01', '0.0.0.0');
+
+    return new Obj(array(
+      'key'   => $key,
+      'local' => (in_array(server::get('SERVER_ADDR'), $localhosts) or server::get('SERVER_NAME') == 'localhost'),
+      'type'  => $type,
+    ));
 
   }
 

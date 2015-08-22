@@ -245,7 +245,12 @@ abstract class PageAbstract {
    * @return boolean
    */
   public function isCachable() {
-    return !in_array($this->uri(), kirby()->option('cache.ignore'));
+    foreach($this->kirby->option('cache.ignore') as $pattern) {
+      if(fnmatch($pattern, $this->uri()) === true) {
+        return false;
+      }
+    }
+    return true;
   }
 
   /**
@@ -299,6 +304,9 @@ abstract class PageAbstract {
     );
 
     foreach($items as $item) {
+
+      // skip any invisible files and folders
+      if(substr($item, 0, 1) === '.') continue;
 
       $root = $this->root . DS . $item;
 
@@ -492,7 +500,11 @@ abstract class PageAbstract {
    * @return mixed Page or null
    */
   public function nextVisible($sort = false, $direction = 'asc') {
-    return $this->_next($this->parent->children(), $sort, $direction, 'visible');
+    if(!$this->parent) {
+      return null;
+    } else {
+      return $this->_next($this->parent->children(), $sort, $direction, 'visible');      
+    }
   }
 
   /**
@@ -514,7 +526,11 @@ abstract class PageAbstract {
    * @return mixed Page or null
    */
   public function nextInvisible($sort = false, $direction = 'asc') {
-    return $this->_next($this->parent->children(), $sort, $direction, 'invisible');
+    if(!$this->parent) {
+      return null;
+    } else {
+      return $this->_next($this->parent->children(), $sort, $direction, 'invisible');
+    }
   }
 
   /**
@@ -556,7 +572,11 @@ abstract class PageAbstract {
    * @return mixed Page or null
    */
   public function prevVisible($sort = false, $direction = 'asc') {
-    return $this->_prev($this->parent->children(), $sort, $direction, 'visible');
+    if(!$this->parent) {
+      return null;
+    } else {
+      return $this->_prev($this->parent->children(), $sort, $direction, 'visible');
+    }
   }
 
   /**
@@ -578,7 +598,11 @@ abstract class PageAbstract {
    * @return mixed Page or null
    */
   public function prevInvisible($sort = false, $direction = 'asc') {
-    return $this->_prev($this->parent->children(), $sort, $direction, 'invisible');
+    if(!$this->parent) {
+      return null;
+    } else {
+      return $this->_prev($this->parent->children(), $sort, $direction, 'invisible');
+    }
   }
 
   /**
@@ -697,9 +721,17 @@ abstract class PageAbstract {
    * @return string
    */
   public function date($format = null, $field = 'date') {
-    $value = strtotime($this->content()->$field());
-    if(!$value) return false;
-    return $format ? date($format, $value) : $value;
+
+    if($timestamp = strtotime($this->content()->$field())) {
+
+      if(is_null($format)) {
+        return $timestamp;
+      } else {
+        return $this->kirby->options['date.handler']($format, $timestamp);
+      }
+
+    }
+
   }
 
   /**
@@ -729,14 +761,14 @@ abstract class PageAbstract {
    * Alternative for $this->equals()
    */
   public function is(Page $page) {
-    return $this == $page;
+    return $this->id() == $page->id();
   }
 
   /**
    * Alternative for $this->is()
    */
   public function equals(Page $page) {
-    return $this == $page;
+    return $this->is($page);
   }
 
   /**
@@ -754,7 +786,7 @@ abstract class PageAbstract {
    * @return boolean
    */
   public function isActive() {
-    return $this->site->page() == $this;
+    return $this->site->page()->is($this);
   }
 
   /**
@@ -883,8 +915,8 @@ abstract class PageAbstract {
    *
    * @return int
    */
-  public function modified($format = null) {
-    return f::modified($this->root, $format);
+  public function modified($format = null, $handler = null) {
+    return f::modified($this->root, $format, $handler ? $handler : $this->kirby->options['date.handler']);
   }
 
   /**
@@ -1040,6 +1072,9 @@ abstract class PageAbstract {
       $num = false;
       $dir = $uid;
     }
+
+    // make sure to check a fresh page
+    $parent->reset();
 
     if($parent->children()->findBy('uid', $uid)) {
       throw new Exception('The page UID exists');
@@ -1238,12 +1273,62 @@ abstract class PageAbstract {
   }
 
   /**
+   * Converts the entire page object into 
+   * a plain PHP array
+   * 
+   * @param closure $callback Filter callback
+   * @return array
+   */
+  public function toArray($callback = null) {
+
+    $data = array(
+      'id'               => $this->id(),
+      'title'            => $this->title()->toString(),
+      'parent'           => $this->parent()->uri(),
+      'dirname'          => $this->dirname(),
+      'diruri'           => $this->diruri(),
+      'url'              => $this->url(),
+      'contentUrl'       => $this->contentUrl(),
+      'tinyUrl'          => $this->tinyUrl(),
+      'depth'            => $this->depth(),
+      'uri'              => $this->uri(),
+      'root'             => $this->root(),
+      'uid'              => $this->uid(),
+      'slug'             => $this->slug(),
+      'num'              => $this->num(),
+      'hash'             => $this->hash(),
+      'modified'         => $this->modified(),
+      'template'         => $this->template(),
+      'intendedTemplate' => $this->intendedTemplate(),
+      'content'          => $this->content()->toArray(),
+    );
+
+    if(is_null($callback)) {
+      return $data;
+    } else if(is_callable($callback)) {
+      return $callback($this);
+    }
+
+  }
+
+  /**
+   * Converts the entire page array into 
+   * a json string
+   * 
+   * @param closure $callback Filter callback
+   * @return string
+   */
+  public function toJson($callback = null) {
+    return json_encode($this->toArray($callback));
+  }
+
+  /**
    * Makes it possible to echo the entire object
    *
    * @return string
    */
   public function __toString() {
-    return $this->id();
+    return (string)$this->id();
   }
 
 }

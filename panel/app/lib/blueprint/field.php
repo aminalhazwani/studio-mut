@@ -42,7 +42,7 @@ class Field extends Obj {
       return 'true';
     } else if($default === false) {
       return 'false';
-    } else if(empty($default)) {
+    } else if(empty($default) and strlen($default) == 0) {
       return '';
     } else if(is_string($default)) {
       return $default;
@@ -62,6 +62,9 @@ class Field extends Obj {
           $user = isset($default['user']) ? site()->users()->find($default['user']) : site()->user();
           if(!$user) return '';
           return (isset($default['field']) and $default['field'] != 'password') ? $user->{$default['field']}() : $user->username();
+          break;
+        case 'structure':
+          return "\n" . \data::encode(array($default), 'yaml') . "\n";
           break;
         default:
           return $default;

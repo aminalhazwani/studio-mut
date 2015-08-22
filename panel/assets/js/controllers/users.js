@@ -38,15 +38,25 @@ var UsersController = {
       element.find('.sidebar').sidebar();
 
       var form = element.find('.form').form();
+      var lang = form.find('[name=language]').val();
 
       form.find('[autofocus]').focus();
 
       form.on('submit', function() {
-        UserModel.update(username, form.serializeObject(), function() {
-          app.main.data('current', false);
-          UsersController.edit(username, to, function(element) {
-            element.find('.form').trigger('success');
-          });
+        
+        var data = form.serializeObject();
+
+        UserModel.update(username, data, function() {
+
+          if(data.language !== lang) {
+            window.location.reload();
+          } else {
+            app.main.data('current', false);
+            UsersController.edit(username, to, function(element) {
+              element.find('.form').trigger('success');
+            });            
+          }
+
         }, function(message) {
           form.message('alert', message);
         });
@@ -74,7 +84,10 @@ var UsersController = {
 
     app.modal.view('users/avatar/' + username, {to: to}, function(element) {
 
-      element.find('.dropzone').dropzone($http.endpoint + '/avatars/upload/' + username, function() {
+      var dropzone = element.find('.dropzone');
+      var url      = $http.endpoint + '/avatars/upload/' + username + '?_csrf=' + dropzone.data('csrf');
+
+      dropzone.dropzone(url, function() {
         app.main.data('current', false);
         app.modal.close();
       });

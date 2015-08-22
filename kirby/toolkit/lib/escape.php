@@ -14,8 +14,8 @@
  * 
  * @package   Kirby Toolkit
  * @author    Ezra Verheijen <ezra.verheijen@gmail.com>
- * @link      http://getkirby.com
- * @copyright Bastian Allgeier
+ * @link      https://github.com/ezraverheijen/escape
+ * @copyright Ezra Verheijen
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
 class Escape {
@@ -78,6 +78,33 @@ class Escape {
   }
   
   /**
+   * Escape XML element content
+   * 
+   * Removes offending characters that could be wrongfully interpreted as XML markup.
+   * 
+   * The following characters are reserved in XML and will be replaced with their
+   * corresponding XML entities:
+   * 
+   * ' is replaced with &apos;
+   * " is replaced with &quot;
+   * & is replaced with &amp;
+   * < is replaced with &lt;
+   * > is replaced with &gt;
+   * 
+   * @uses ENT_XML1 if available (PHP >= 5.4)
+   * 
+   * @param  string $string
+   * @return string 
+   */
+  static public function xml($string) {
+    if (defined('ENT_XML1')) {
+      return htmlspecialchars($string, ENT_QUOTES | ENT_XML1, 'UTF-8');
+    } else {
+      return str_replace('&#039;', '&apos;', htmlspecialchars($string, ENT_QUOTES, 'UTF-8'));
+    }
+  }
+  
+  /**
    * Escape common HTML attributes data
    * 
    * This can be used to put untrusted data into typical attribute values
@@ -93,11 +120,16 @@ class Escape {
    * <div attr="...ESCAPE UNTRUSTED DATA BEFORE PUTTING HERE...">content</div>
    * 
    * @param  string $string
+   * @param  string $strict Whether to escape characters like [space] % * + , - / ; < = > ^ and |
+   *                        which is necessary in case of unquoted HTML attributes.
    * @return string
    */
-  static public function attr($string) {
+  static public function attr($string, $strict = false) {
     if(static::noNeedToEscape($string)) return $string;
-    return preg_replace_callback('/[^a-z0-9,\.\-_]/iSu', 'static::escapeAttrChar', $string);
+    if($strict) {
+      return preg_replace_callback('/[^a-z0-9,\.\-_]/iSu', 'static::escapeAttrChar', $string);
+    }
+    return static::html($string);
   }
   
   /**

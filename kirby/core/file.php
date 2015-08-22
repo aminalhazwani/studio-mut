@@ -135,6 +135,16 @@ abstract class FileAbstract extends Media {
   }
 
   /**
+   * Custom modified method for files
+   * 
+   * @param string $format
+   * @return string
+   */
+  public function modified($format = null, $handler = null) {
+    return parent::modified($format, $handler ? $handler : $this->kirby->options['date.handler']);
+  }
+
+  /**
    * Magic getter for all meta fields
    *
    * @return Field
@@ -150,8 +160,13 @@ abstract class FileAbstract extends Media {
    */
   public function rename($name) {
 
-    $filename = f::safeName($name) . '.' . $this->extension();
+    $name     = f::safeName($name);
+    $filename = $name . '.' . $this->extension();
     $root     = $this->dir() . DS . $filename;
+
+    if(empty($name)) {
+      throw new Exception('The filename is missing');
+    }
 
     if($root == $this->root()) return $filename;
 
@@ -169,7 +184,11 @@ abstract class FileAbstract extends Media {
       f::move($meta, $this->page->textfile($filename));
     }
 
+    // reset the page cache
+    $this->page->reset();
+
     cache::flush();
+
     return $filename;
 
   }
@@ -185,6 +204,12 @@ abstract class FileAbstract extends Media {
     if(!data::write($this->textfile(), $data, 'kd')) {
       throw new Exception('The file data could not be saved');
     }
+
+    // reset the page cache
+    $this->page->reset();
+
+    // reset the file cache
+    $this->cache = array();
 
     cache::flush();
     return true;
@@ -205,13 +230,61 @@ abstract class FileAbstract extends Media {
 
   }
 
+  public function resize($width, $height = null, $quality = null) {
+
+    if($this->type() != 'image') return $this;
+
+    $params = array('width' => $width);
+
+    if($height)  $params['height']  = $height;
+    if($quality) $params['quality'] = $quality;
+
+    return thumb($this, $params);
+
+  }
+
+  public function crop($width, $height = null, $quality = null) {
+
+    if($this->type() != 'image') return $this;
+
+    $params = array('width' => $width, 'crop' => true);
+
+    if($height)  $params['height']  = $height;
+    if($quality) $params['quality'] = $quality;
+
+    return thumb($this, $params);
+
+  }
+
+  /**
+   * Converts the entire file object into 
+   * a plain PHP array
+   * 
+   * @param closure $callback Filter callback
+   * @return array
+   */
+  public function toArray($callback = null) {
+
+    $data = parent::toArray();
+
+    // add the meta content
+    $data['meta'] = $this->meta()->toArray();
+
+    if(is_null($callback)) {
+      return $data;
+    } else {
+      return array_map($callback, $data);
+    }
+
+  }
+
   /**
    * Makes it possible to echo the entire object
    *
    * @return string
    */
   public function __toString() {
-    return $this->root;
+    return (string)$this->root;
   }
 
 }
