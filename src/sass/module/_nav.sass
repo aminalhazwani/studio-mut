@@ -15,6 +15,11 @@
   display: flex
   justify-content: space-between
 
+.navMobile_inner a,
+.navMobile_inner span,
+  &:hover
+    color: $red
+
 .navMobile_items
   position: absolute
   top: auto
@@ -24,6 +29,8 @@
 
 .navMobile_item
   display: block
+  &:hover
+    color: $red
 
 .navMobile_item:first-child
   display: none
@@ -63,4 +70,4 @@
     margin-right: calc(28px + 5%)
 
 .nav_item:hover
-  opacity: .5
+  color: $red

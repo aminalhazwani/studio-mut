@@ -18,24 +18,26 @@ $heading.eq(random % $heading.length).addClass("u-blk");
 jQuery(".fit").fitText();
 
 // Huge typography navigation
-var mqp = window.matchMedia("(orientation: portrait)");
-var mql = window.matchMedia("(orientation: landscape)");
+$(window).on("scroll load", function() {  
+  var mqp = window.matchMedia("(orientation: portrait)");
+  var mql = window.matchMedia("(orientation: landscape)");
 
-if(mqp.matches) {  
-  $(".fit-nav").fitText();
-}
-else {
-  $(".fit-nav").removeAttr('style');
-}
-
-window.addEventListener("orientationchange", function() {
-  if(mql.matches) {
-    $(".fit-nav").removeAttr('style');
-  }
   if(mqp.matches) {  
     $(".fit-nav").fitText();
   }
-}, false);
+  else {
+    $(".fit-nav").removeAttr('style');
+  }
+
+  window.addEventListener("orientationchange", function() {
+    if(mql.matches) {
+      $(".fit-nav").removeAttr('style');
+    }
+    if(mqp.matches) {  
+      $(".fit-nav").fitText();
+    }
+  }, false);
+});
 
 // Mobile Navigation
 $('.menu').on('click', function(e) {
