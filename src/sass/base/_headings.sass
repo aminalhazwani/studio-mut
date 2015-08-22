@@ -6,11 +6,13 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6
   font-family: $font
   line-height: 1.1
-  margin: 0 0 $space-half
+  margin: 0 0 $space-quarter
   font-weight: inherit
 
 h1, .h1
   font-size: $fs-h1
+  +mq($bp-sm)
+    margin-bottom: $space-half
 
 h2, .h2
   font-size: $fs-h2
