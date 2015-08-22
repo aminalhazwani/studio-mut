@@ -21,12 +21,10 @@ fields:
     label: Header text color
     type: color
     width: 1/2
-    default: ffffff
   bkcolor:
     label: Slider background color
     type: color
     width: 1/2
-    default: 000000
   text:
     label: Description for SEO and Open Graph
     type: textarea
@@ -46,11 +44,9 @@ files:
     slidebgcolor:
       label: Slide background color
       type: color
-      default: 000000
     overtextcolor:
       label: Slide text color
       type: color
-      default: ffffff
     overtext: 
       label: Slide text
       type: textarea
