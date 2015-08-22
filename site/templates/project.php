@@ -4,7 +4,7 @@
 
   <header class="header header-secondary u-padd-top-quarter u-padd-btm-quarter" style="color: <?php echo $page->headercolor() ?>">
     <div class="l-container">
-      <a href="/">Studio Mut</a>
+      <a class="project_home" href="/">Studio Mut</a>
       <?php $_SERVER['HTTP_REFERER']; ?>
       <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
         <a class="project_close" href="javascript:history.back(1)">Close</a>
