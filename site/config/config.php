@@ -30,3 +30,5 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 */
 
 c::set('debug',false);
+c::set('thumbs.driver','im');
+c::set('panel.stylesheet', 'assets/css/panel.css');
