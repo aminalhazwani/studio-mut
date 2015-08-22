@@ -14,7 +14,7 @@
 					</div>
 				</div>
 				<?php foreach($project->images() as $image): ?>
-					<?php if($image->cover() == 'ja'): ?>
+					<?php if($image->cover() == '1'): ?>
 						<a href="<?php echo $project->url() ?>">
               <?php if($image->extension() == 'gif'): ?>
                 <img class="lazyload" src="<?php echo $image->url() ?>">

@@ -34,12 +34,8 @@ files:
   sortable: true
   fields: 
     cover:
-      label: Is this the project preview?
-      type: radio
-      default: nein
-      options: 
-        ja: Yes, please!
-        nein: No, thank you.
+      type: checkbox
+      text: Cover Image
     measure:
       label: Slide size
       type: radio

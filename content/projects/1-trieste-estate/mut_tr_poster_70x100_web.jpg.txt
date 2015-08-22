@@ -18,4 +18,4 @@ Overtextcolor: #ffffff
 
 ----
 
-Slidebgcolor: #fa1919
+Slidebgcolor: #8a4d4d

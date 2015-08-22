@@ -2,11 +2,7 @@ Sort: 2
 
 ----
 
-Caption: 
-
-----
-
-Cover: ja
+Cover: 1
 
 ----
 
@@ -18,4 +14,8 @@ Overtext:
 
 ----
 
-Poster: 
+Slidebgcolor: #000000
+
+----
+
+Overtextcolor: #ffffff

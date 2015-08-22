@@ -2,11 +2,7 @@ Sort: 3
 
 ----
 
-Caption: 
-
-----
-
-Cover: ja
+Cover: 1
 
 ----
 
@@ -22,8 +18,8 @@ Photography by Nicoló Degiorgis
 
 ----
 
-Poster: 
+Overtextcolor: 
 
 ----
 
-Overtextcolor: text-white
+Slidebgcolor: #000000
