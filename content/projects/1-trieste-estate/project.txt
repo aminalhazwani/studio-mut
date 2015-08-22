@@ -21,7 +21,7 @@ Text: Trieste Estate is a festival organised by the awesome Studiomut.
 
 ----
 
-Bkcolor: #000000
+Bkcolor: #ffd45e
 
 ----
 

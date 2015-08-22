@@ -3,6 +3,7 @@ $(function() {
     autoScaleSlider: false,
     autoHeight: false,
     keyboardNavEnabled: true,
+    slidesSpacing: 0,
     deeplinking: {
       enabled: true,
       change: true,
