@@ -24,6 +24,7 @@ fields:
   bkcolor:
     label: Slider background color
     type: color
+    default: 1f1f1f
     width: 1/2
   text:
     label: Description for SEO and Open Graph
@@ -44,6 +45,7 @@ files:
     slidebgcolor:
       label: Slide background color
       type: color
+      default: 1f1f1f
     overtextcolor:
       label: Slide text color
       type: color
