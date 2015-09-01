@@ -69,7 +69,7 @@
               console.log(prevSlide, si.currSlideId);
               if(prevSlide === si.currSlideId){
                 <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
-                  return window.history.back();
+                  return history.back(1);
                 <?php else: ?>
                   return window.location.href = 'http://localhost:9000/';
                 <?php endif ?>
