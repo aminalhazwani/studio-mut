@@ -6,7 +6,11 @@
 
 	<main>
 		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
-			<article>
+      <?php 
+        $title = preg_replace('#[ -]+#', '-', $project->title()->html());
+        $title = strtolower($title);
+      ?>
+			<article id="<?php echo $title ?>">
 				<div class="bg-blue u-ta-center u-padd-huge">
 					<div class="l-container">
 						<h2 class="h1 fit"><a class="project_title" href="<?php echo $project->url() ?>"><?php echo $project->titl()->kirbytext() ?></a></h2>

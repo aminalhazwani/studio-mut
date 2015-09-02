@@ -5,9 +5,13 @@
   <header class="header header-secondary u-padd-top-quarter u-padd-btm-quarter" style="color: <?php echo $page->headercolor() ?>">
     <div class="l-container">
       <a class="project_home" href="/">Studio Mut</a>
+      <?php 
+        $title = preg_replace('#[ -]+#', '-', $page->title()->html());
+        $title = strtolower($title);
+      ?>
       <?php $_SERVER['HTTP_REFERER']; ?>
       <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
-        <a class="project_close" href="javascript:history.back(1)">Close</a>
+        <a class="project_close" href="<?php echo $site->url() ?>#<?php echo $title ?>">Close</a>
       <?php else: ?>
         <a class="project_close" href="<?php echo $site->url() ?>">Close</a>
       <?php endif ?>
@@ -69,9 +73,9 @@
               console.log(prevSlide, si.currSlideId);
               if(prevSlide === si.currSlideId){
                 <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
-                  return history.back(1);
+                  return window.location.href = 'http:<?php echo $site->url() ?>#<?php echo $title ?>';
                 <?php else: ?>
-                  return window.location.href = 'http://localhost:9000/';
+                  return window.location.href = 'http:<?php echo $site->url() ?>';
                 <?php endif ?>
               }
               prevSlide = si.currSlideId;
