@@ -69,7 +69,7 @@
         $( document ).ready(function() {
           var si = jQuery('.royalSlider').data('royalSlider');
           var prevSlide = (si.currSlideId === si.numSlides-1) ? si.currSlideId : undefined;
-          si.ev.on('rsBeforeAnimStart', function(e, type, action) {
+          si.ev.on('rsBeforeAnimStart', function(e) {
               console.log(prevSlide, si.currSlideId);
               if(prevSlide === si.currSlideId){
                 <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
