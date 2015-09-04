@@ -27,7 +27,7 @@
 	<?php endif ?>
 
 	<!-- Favicon and Touch icons -->
-	<link rel="icon" type="image/png" href="#">
+	<link rel="icon" type="image/png" href="assets/images/favicon.png">
 	<link href="#" rel="apple-touch-icon" />
 	<link href="#" rel="apple-touch-icon" sizes="76x76" />
 	<link href="#" rel="apple-touch-icon" sizes="120x120" />
@@ -57,7 +57,7 @@
 
 	<?php if($page->template() == 'project'): ?>
 		<?php foreach($page->images() as $image): ?>
-			<?php if($image->cover() == 'ja'): ?>
+			<?php if($image->cover() == '1'): ?>
 				<meta property="og:image" content="<?php echo $image->url() ?>" />
 				<meta property="og:image:width" content="<?php echo $image->width() ?>"/>
 				<meta property="og:image:height" content="<?php echo $image->height() ?>"/>
@@ -74,7 +74,7 @@
 	<?php else: ?>
 		<?php $projects = $pages->find('/projects') ?>
 			<?php foreach($projects->children()->first()->images() as $image): ?>
-				<?php if($image->cover() == 'ja'): ?>
+				<?php if($image->cover() == '1'): ?>
 					<meta property="og:image" content="<?php echo $image->url() ?>" />
 					<meta property="og:image:width" content="<?php echo $image->width() ?>"/>
 					<meta property="og:image:height" content="<?php echo $image->height() ?>"/>
