@@ -24,4 +24,3 @@ $(function() {
 });
 
 $('.project_caption').find('h1').fitText();
-
