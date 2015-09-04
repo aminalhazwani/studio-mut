@@ -83,14 +83,20 @@
         </section>
       </div>
       <div class="g g-sm-6 u-sm-padd-top">
-        <section class="l-section">
+        <section class="l-section list">
           <?php echo $about->social()->kirbytext() ?>
         </section>
-        <section class="l-section">
+        <section class="l-section list">
           <?php echo $about->awards()->kirbytext() ?>
         </section>
-        <section class="l-section">
+        <section class="l-section list">
           <?php echo $about->talks()->kirbytext() ?>
+        </section>
+        <section class="l-section list">
+          <?php echo $about->feature()->kirbytext() ?>
+        </section>
+        <section class="l-section list">
+          <?php echo $about->exhibit()->kirbytext() ?>
         </section>
         <section class="l-section">
           <?php echo $about->newsletter()->kirbytext() ?>

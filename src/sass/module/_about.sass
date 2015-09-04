@@ -36,6 +36,14 @@
     +mq($bp-lg)
       font-size: smaller
 
+.list li
+  display: flex
+
+.list li:before
+  display: inline-block
+  content: "● "
+  margin-right: 8px
+
 .indent > p
   text-indent: -$space
   margin-left: $space

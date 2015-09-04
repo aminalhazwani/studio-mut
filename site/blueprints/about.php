@@ -42,6 +42,12 @@ fields:
   awards:
     label: Mut wins
     type: textarea
+  feature:
+    label: Mut featured on
+    type: textarea
+  exhibit:
+    label: Mut exhibited
+    type: textarea
   talks:
     label: Mut talks
     type: textarea
