@@ -21,6 +21,7 @@ fields:
     label: Header text color
     type: color
     width: 1/2
+    default: ffffff
   bkcolor:
     label: Slider background color
     type: color
@@ -42,6 +43,10 @@ files:
       options:
         full: Full
         enclosed: Enclosed
+    video:
+      type: text
+      label: Vimeo Video ID
+      placeholder: i.e. 140293593
     slidebgcolor:
       label: Slide background color
       type: color
@@ -49,6 +54,7 @@ files:
     overtextcolor:
       label: Slide text color
       type: color
+      default: ffffff
     overtext: 
       label: Slide text
       type: textarea
