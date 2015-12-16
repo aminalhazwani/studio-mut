@@ -25,9 +25,6 @@
         <figure class="project_figure" <?php if($image->slidebgcolor() != ''): ?>style="background-color: <?php echo $image->slidebgcolor() ?>"<?php endif ?>>
           <video class="project_image-enclosed" poster="<?php echo $image->url() ?>" controls>
             <source src="<?php echo $page->url() ?>/<?php echo $image->name() ?>.mp4" type="video/mp4">
-            <?php if($image->videogg() != ''): ?>
-              <source src="<?php echo $page->url() ?>/<?php echo $image->name() ?>.ogg" type="video/ogg">
-            <?php endif ?>
           </video>
         </figure>
       <?php else: ?>
