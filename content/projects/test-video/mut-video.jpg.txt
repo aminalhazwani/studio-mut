@@ -1,0 +1,25 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+----
+
+Videomp4: http://next.studiomut.com/content/1-projects/5-busk-festival/busk-video.mp4
+
+----
+
+Videoogg: 

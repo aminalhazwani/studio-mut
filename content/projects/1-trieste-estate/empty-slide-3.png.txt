@@ -2,11 +2,7 @@ Sort: 4
 
 ----
 
-Caption: 
-
-----
-
-Cover: nein
+Cover: 
 
 ----
 
@@ -16,16 +12,14 @@ Measure: full
 
 Overtext: 
 
-# Santa Claus wearing a green hat. And the pope got involved too.
+----
 
-Alpini. Un racconto contemporaneo.
-Photography by Nicoló Degiorgis
-192 Pages, printed in CMYK Euroskala + Pantone.
+Overtextcolor: #ffffff
 
 ----
 
-Poster: 
+Video: 140293593
 
 ----
 
-Overtextcolor: text-black
+Slidebgcolor: #1f1f1f

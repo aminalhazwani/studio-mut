@@ -43,10 +43,6 @@ files:
       options:
         full: Full
         enclosed: Enclosed
-    video:
-      type: text
-      label: Vimeo Video ID
-      placeholder: i.e. 140293593
     slidebgcolor:
       label: Slide background color
       type: color
@@ -58,3 +54,11 @@ files:
     overtext: 
       label: Slide text
       type: textarea
+    videomp4:
+      type: text
+      label: Vimeo MP4
+      placeholder: http://
+    videoogg:
+      type: text
+      label: Vimeo OGG
+      placeholder: http://

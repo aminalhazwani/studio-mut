@@ -1,3 +1,9 @@
+function pauseAllVideos() {
+    $("video").each(function() {
+        $(this).get(0).pause()
+    })
+}
+
 $(function() {
   var sliderJQ = $('.slider').royalSlider({
     autoScaleSlider: false,
@@ -20,6 +26,7 @@ $(function() {
     slideCountEl.html( (sliderInstance.currSlideId+1) + '&nbsp;&nbsp;/&nbsp;&nbsp;' + sliderInstance.numSlides );
   }
   sliderInstance.ev.on('rsAfterSlideChange', updCount);
+  sliderInstance.ev.on('rsAfterSlideChange', pauseAllVideos);
   updCount();
 });
 

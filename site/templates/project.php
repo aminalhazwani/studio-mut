@@ -19,20 +19,21 @@
     </div>
   </header>
 
-  <div class="royalSlider rsDefault slider" style="background-color: <?php echo $page->bkcolor() ?>">
+  <div class="royalSlider rsDefault slider" <?php if($page->bkcolor() != ''): ?>style="background-color: <?php echo $page->bkcolor() ?>"<?php endif ?>>
     <?php foreach($page->files()->sortBy('sort', 'asc') as $image): ?>
-      <?php if($image->video() != ''): ?>
-        <figure class="project_figure" style="background-color: <?php echo $image->slidebgcolor() ?>">
-          <div class="project_image-enclosed project_image-video">
-            <div class="embed embed-16-9">
-              <iframe src="https://player.vimeo.com/video/<?php echo $image->video() ?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-          </div>
+      <?php if($image->videomp4() != ''): ?>
+        <figure class="project_figure" <?php if($image->slidebgcolor() != ''): ?>style="background-color: <?php echo $image->slidebgcolor() ?>"<?php endif ?>>
+          <video class="project_image-enclosed" poster="<?php echo $image->url() ?>" controls>
+            <source src="<?php echo $image->videomp4() ?>" type="video/mp4">
+            <?php if($image->videogg() != ''): ?>
+              <source src="<?php echo $image->videoogg() ?>" type="video/ogg">
+            <?php endif ?>
+          </video>
         </figure>
       <?php else: ?>
         <?php if($image->cover() != '1'): ?>
           <?php if($image->measure() == 'enclosed'): ?>
-            <figure class="project_figure" style="background-color: <?php echo $image->slidebgcolor() ?>">
+            <figure class="project_figure" <?php if($image->slidebgcolor() != ''): ?>style="background-color: <?php echo $image->slidebgcolor() ?>"<?php endif ?>>
               <?php if($image->extension() == 'gif'): ?>
                 <img class="project_image-enclosed" src="<?php echo $image->url() ?>">
               <?php else: ?>
@@ -47,7 +48,7 @@
                 >
               <?php endif ?>
               <?php if($image->overtext() != ''): ?>
-                <figcaption class="project_caption" style="color:<?php echo $image->overtextcolor() ?>">
+                <figcaption class="project_caption" <?php if($image->overtextcolor() != ''): ?>style="color:<?php echo $image->overtextcolor() ?>"<?php endif ?>>
                   <?php echo $image->overtext()->kirbytext() ?>
                 </figcaption>
               <?php endif ?>

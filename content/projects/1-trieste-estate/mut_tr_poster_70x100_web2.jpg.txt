@@ -2,11 +2,7 @@ Sort: 6
 
 ----
 
-Caption: 
-
-----
-
-Cover: nein
+Cover: 
 
 ----
 
@@ -18,8 +14,12 @@ Overtext:
 
 ----
 
-Poster: 
+Overtextcolor: 
 
 ----
 
-Overtextcolor: text-black
+Video: 
+
+----
+
+Slidebgcolor: #1f1f1f
