@@ -35,7 +35,7 @@ files:
   fields: 
     cover:
       type: checkbox
-      text: Cover Image
+      text: Cover Image?
     measure:
       label: Slide size
       type: radio
@@ -54,11 +54,6 @@ files:
     overtext: 
       label: Slide text
       type: textarea
-    videomp4:
-      type: text
-      label: Vimeo MP4
-      placeholder: http://
-    videoogg:
-      type: text
-      label: Vimeo OGG
-      placeholder: http://
+    video:
+      type: checkbox
+      text: Video?

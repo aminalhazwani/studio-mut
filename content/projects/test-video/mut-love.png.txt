@@ -18,8 +18,4 @@ Overtext:
 
 ----
 
-Videomp4: http://next.studiomut.com/content/1-projects/5-busk-festival/busk-video.mp4
-
-----
-
-Videoogg: 
+Video: 1

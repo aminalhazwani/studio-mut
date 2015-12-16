@@ -20,13 +20,13 @@
   </header>
 
   <div class="royalSlider rsDefault slider" <?php if($page->bkcolor() != ''): ?>style="background-color: <?php echo $page->bkcolor() ?>"<?php endif ?>>
-    <?php foreach($page->files()->sortBy('sort', 'asc') as $image): ?>
-      <?php if($image->videomp4() != ''): ?>
+    <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+      <?php if($image->video() == '1'): ?>
         <figure class="project_figure" <?php if($image->slidebgcolor() != ''): ?>style="background-color: <?php echo $image->slidebgcolor() ?>"<?php endif ?>>
           <video class="project_image-enclosed" poster="<?php echo $image->url() ?>" controls>
-            <source src="<?php echo $image->videomp4() ?>" type="video/mp4">
+            <source src="<?php echo $page->url() ?>/<?php echo $image->name() ?>.mp4" type="video/mp4">
             <?php if($image->videogg() != ''): ?>
-              <source src="<?php echo $image->videoogg() ?>" type="video/ogg">
+              <source src="<?php echo $page->url() ?>/<?php echo $image->name() ?>.ogg" type="video/ogg">
             <?php endif ?>
           </video>
         </figure>
