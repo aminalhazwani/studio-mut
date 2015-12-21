@@ -7,24 +7,49 @@ window.onload = function() {
       if (video.get(0).paused === true) {
         video.get(0).play();
           playButton.addClass('button-pause');
+          playButton.addClass('button-hide');
         } 
         else {
           video.get(0).pause();
           playButton.removeClass('button-pause');
+          playButton.removeClass('button-hide');
         }
     });
   })
+}
+
+$("#project_video").mousemove(function() {
+  $('.button').removeClass('button-hide');
+});
+
+$(".project_figure").mousestop(function() {
+  $('.button-pause').addClass('button-hide');
+});
+
+function end() {
+  $('.button').removeClass('button-pause');
+  $('.button').removeClass('button-hide');
 }
 
 function pauseAllVideos() {
   $('video').each(function() {
     $(this).get(0).pause();
     $('.button').removeClass('button-pause');
+    $('.button').removeClass('button-hide');
   });
 }
 
 $('.button').click(function(e) {
   e.stopPropagation();
+});
+
+$(function() {
+  var is_ios = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+  if(is_ios)
+  {
+    $('video').attr('controls',true);
+    $('.button').hide();
+  };
 });
 
 $(function() {
