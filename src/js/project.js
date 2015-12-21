@@ -1,8 +1,31 @@
-function pauseAllVideos() {
-    $("video").each(function() {
-        $(this).get(0).pause()
-    })
+window.onload = function() {
+  var currentFigure = $('.project_figure');
+    currentFigure.each(function() {
+    var video = $(this).children('#project_video');
+    var playButton = $(this).children('.button');
+    playButton.on("click", function() {
+      if (video.get(0).paused === true) {
+        video.get(0).play();
+          playButton.addClass('button-pause');
+        } 
+        else {
+          video.get(0).pause();
+          playButton.removeClass('button-pause');
+        }
+    });
+  })
 }
+
+function pauseAllVideos() {
+  $('video').each(function() {
+    $(this).get(0).pause();
+    $('.button').removeClass('button-pause');
+  });
+}
+
+$('.button').click(function(e) {
+  e.stopPropagation();
+});
 
 $(function() {
   var sliderJQ = $('.slider').royalSlider({

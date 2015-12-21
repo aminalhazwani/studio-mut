@@ -23,9 +23,10 @@
     <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
       <?php if($image->video() == '1'): ?>
         <figure class="project_figure" <?php if($image->slidebgcolor() != ''): ?>style="background-color: <?php echo $image->slidebgcolor() ?>"<?php endif ?>>
-          <video class="project_image-enclosed" poster="<?php echo $image->url() ?>" controls>
+          <video id="project_video" class="project_image-enclosed" poster="<?php echo $image->url() ?>">
             <source src="<?php echo $page->url() ?>/<?php echo $image->name() ?>.mp4" type="video/mp4">
           </video>
+          <button class="button" type="button" style="position: absolute; z-index: 1"></button>
         </figure>
       <?php else: ?>
         <?php if($image->cover() != '1'): ?>
