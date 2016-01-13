@@ -29,8 +29,8 @@
     </div>
   </div>
 
-  <div class="profile u-padd-top u-sm-padd-top-double" style="background-image:url('content/1-about/thomas.jpg')">
-    <?php foreach($about->images()->filterBy('filename', '*=', 'thomas') as $image): ?>
+  <div class="profile u-padd-top u-sm-padd-top-double" style="background-image:url('content/1-about/thomas-kronbichler.jpg')">
+    <?php foreach($about->images()->filterBy('filename', '*=', 'thomas-kronbichler') as $image): ?>
     <div class="l-container">
       <h2 class="h1 u-ta-center profile_name fit"><?php echo $image->fullname() ?></h2>
       <div class="g-row u-hide u-sm-blk u-md-padd-top-double">
@@ -40,8 +40,8 @@
     <?php endforeach ?>
   </div>
 
-  <div class="profile u-padd-top u-sm-padd-top-double" style="background-image:url('content/1-about/martin.jpg')">
-    <?php foreach($about->images()->filterBy('filename', '*=', 'martin') as $image): ?>
+  <div class="profile u-padd-top u-sm-padd-top-double" style="background-image:url('content/1-about/martin-kerschbaumer.jpg')">
+    <?php foreach($about->images()->filterBy('filename', '*=', 'martin-kerschbaumer') as $image): ?>
     <div class="l-container">
       <h2 class="h1 u-ta-center profile_name fit"><?php echo $image->fullname() ?></h2>
       <div class="g-row u-hide u-sm-blk u-md-padd-top-double">
