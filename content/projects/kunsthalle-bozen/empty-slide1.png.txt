@@ -1,0 +1,31 @@
+Sort: 5
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+##Kunsthalle Bozen
+
+Studio Mut created the identity and the graphic design for Kunsthalle Bozen.
+Founded by artist Cornelia Lochmann and collector André Simonow, the new art space wants 
+to become a center for hedonism and beauty, connecting Bolzano to the rest of the world.
+
+----
+
+Video: 

@@ -1,0 +1,27 @@
+Sort: 2
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 
+
+#Turris Babel
+Design and Art Direction of the Turris Babel architecture magazine
+for the Architecture Foundation South Tyrol
+Design: Studio Mut, Thomas Kronbichler, Martin Kerschbaumer
+Illustration: Max Edelberg, Eszter Zetelaki

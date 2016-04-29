@@ -1,0 +1,27 @@
+Sort: 9
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 
+
+##The (338 Hour) Cineclub
+Catalogue for the exhibition curated by Rosalie Dubal, Alec Steadman and Emeline Vincent
+for Fondazione Sandretto Re Rebaudengo, Torino 
+Design: Studio Mut, Thomas Kronbichler
+Printed in Italy with glow-in-the-dark ink on the cover

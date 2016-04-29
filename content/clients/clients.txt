@@ -7,43 +7,97 @@ Text:
 # A
 - Akademie der bildenden Künste Stuttgart
 - Architekturstiftung Südtirol
+- Dr. Aichner
+
 
 # B
-- Bozen-Bolzano University Press
+- Barth
+- Biometic
+- Bozen Bolzano University Press
+- Blufink
+- Brugger & Partner
+
 
 # C
-- Château de Versailles, Paris 
+- Centrale Fies
+- Comune di Trieste
+
 
 # E
 - ewo
 
-# F
-- Freie Universität Bozen
 
-# J
-- Jewish Museum Berlin
+# F
+- Fondazione Sandretto Re Rebaudengo
+- Freie Universität Bozen
+- Franz Lab
+
+
+# G
+- Galerie Gefängnis Le Carceri
+- Galleria Doris Ghetta
+- Gärtnerei Schullian
+- GastroFresh
+- Grüne Verdi Verc
+
+
+# H
+- Hofburg Brixen
+- Hopfen & Co
+- Humus Bio Bistro
+
+
+# K
+- Kloster Neustift
+- Konditorei Hofer
+- Kunstresidenz Bad Gastein
+
 
 # L
 - Lange Nacht der Forschung Südtirol
+- Leitner Ropeways
+- Leander Schwazer
+- Lottozero Textile Lab
+
 
 # M
+- Maurits
+- Malojer Gummerhof Weingut 
 - Martino Gamper
 - Microtec
-- Museion Bozen
+- Museion
+
+
+# O
+- Oliver Kroening Photography
+
 
 # P
+- Paul Thuile
+- Piero Martinello Photography
 - Plank
 
+
 # R
-- Red Dot Design Award
-- Royal College of Art, London
+- RAS, Rundfunk-Anstalt Südtirol
+- Royal College of Art London
+
 
 # S
 - Stiftung Südtiroler Sparkasse
+- Sub Skateshop
+
 
 # T
 - Technische Universität Berlin
 - Tiroler Festspiele
+- Turris Babel
+
 
 # V
 - Val Gardena Marketing
+
+
+# W
+- The Wedding Enterprise
+- Weissraum Innsbruck

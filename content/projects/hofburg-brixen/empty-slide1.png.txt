@@ -1,0 +1,27 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 
+
+Corporate Identity
+for the Hofburg Brixen
+Design: Studio Mut. Thomas Kronbichler, Martin Kerschbaumer
+Product Design: Joachim Falser
+Coding: Jens Buss
+
+----
+
+Sort: 9

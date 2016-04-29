@@ -1,0 +1,28 @@
+Sort: 8
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 
+
+##Glashaus III 
+Exhibition design, brochure, website for Gärtnerei Schullian
+Curated by Paul Thuile
+Design: Studio Mut, Martin Kerschbaumer
+Product Design: Moritz Kessler
+Photography: Ludwig Thalheimer

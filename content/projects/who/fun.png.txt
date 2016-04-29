@@ -1,0 +1,24 @@
+Sort: 6
+
+----
+
+Cover: nein
+
+----
+
+Measure: enclosed
+
+----
+
+Overtext: 
+
+# 3. Fun
+We like to keep things interesting. For our clients, for ourselves and for you. And boring things just don't work.
+
+----
+
+Overtextcolor: #000000
+
+----
+
+Slidebgcolor: #ffffff

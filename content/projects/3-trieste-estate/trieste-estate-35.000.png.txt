@@ -1,0 +1,27 @@
+Sort: 11
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+#35.000
+We completely re-imagined the website and transformed it 
+into a big calendar app, optimised for mobile phones.
+ People could find interesting events on the go. 
+And they did: We counted over 35.000 visitors.

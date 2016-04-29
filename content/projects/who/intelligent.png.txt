@@ -1,0 +1,24 @@
+Sort: 4
+
+----
+
+Cover: nein
+
+----
+
+Measure: enclosed
+
+----
+
+Overtext: 
+
+# 2. Intelligent
+We have read the books, watched the movies, read the blogs, our interests are manyfold. We try to understand your business, your artwork, your message. And then we try to change things, when we believe they should be different. Sometimes we create something completely different from what's expected from us.  Sometimes we say to our clients: don't change.
+
+----
+
+Overtextcolor: #000000
+
+----
+
+Slidebgcolor: #ffffff

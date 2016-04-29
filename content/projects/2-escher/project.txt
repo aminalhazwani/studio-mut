@@ -1,0 +1,32 @@
+Title: M.C. Escher
+
+----
+
+Titl: 
+
+Art, and
+Pop History
+
+----
+
+Date: 
+
+----
+
+Client: M.C. Escher Book
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Text: 
+
+----
+
+Showinhome: 1

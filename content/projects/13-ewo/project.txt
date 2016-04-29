@@ -1,0 +1,33 @@
+Title: ewo christmas card
+
+----
+
+Date: 
+
+----
+
+Client: ewo
+
+----
+
+Text: 
+
+----
+
+Titl: 
+
+Structure, Pattern,
+Explosions and a
+Very Merry Christmas
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Showinhome: 

@@ -1,0 +1,33 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Video: 
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+##Josef
+The insider’s travel book to South Tyrol
+Edited by Franz Lab
+130 Pages, Printed in Italy
+ISBN 978-88-941414-0-5
+Design: Studio Mut, Thomas Kronbichler, Martin Kerschbaumer, Adèle Hurbault
+Illustration: Studio Mut, Eszter Zetelaki, Adèle Hurbault
+
+----
+
+Sort: 14

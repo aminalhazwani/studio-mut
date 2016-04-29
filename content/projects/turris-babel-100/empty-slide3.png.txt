@@ -1,0 +1,29 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Video: 
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+Turris Babel #100
+Architecture Magazine for Architecture Foundation South Tyrol, Italy
+Design and Art Direction: Studio Mut. Thomas Kronbichler, Martin Kerschbaumer
+
+----
+
+Sort: 26

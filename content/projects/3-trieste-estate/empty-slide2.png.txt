@@ -1,0 +1,26 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+##Summer in Trieste
+3 months of art shows, concerts, cinema and theatre in Trieste.
+We created the new image for the summer festival of the Italian city of Trieste,  
+including posters, advertising, program books, and a mobile website.
+
+----
+
+Sort: 2

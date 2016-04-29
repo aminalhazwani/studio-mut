@@ -1,0 +1,31 @@
+Title: Graphic Design Exhibiting Curating
+
+----
+
+Titl: 
+
+Graphic Design, 
+Exhibiting, Curating
+
+----
+
+Date: 
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Client: Two-coloured book for Bolzano University Press
+
+----
+
+Text: 
+
+Graphic Design Exhibiting Curating
+Book design for the conference «Graphic Design Exhibiting Curating» at Free University of Bolzano. Published by Bolzano University Press. Design: Studio Mut, Martin Kerschbaumer
+
+----
+
+Headercolor: #ffffff

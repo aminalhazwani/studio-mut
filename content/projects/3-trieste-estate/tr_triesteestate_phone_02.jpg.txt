@@ -1,0 +1,21 @@
+Sort: 13
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #999999
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 

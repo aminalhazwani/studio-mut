@@ -1,0 +1,25 @@
+Title: GIF
+
+----
+
+Titl: to Gif or not to Gif
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Headercolor: 
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Text: 

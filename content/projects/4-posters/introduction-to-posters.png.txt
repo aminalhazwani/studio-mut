@@ -1,0 +1,27 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 
+
+#Big and Red
+The following is a selection of posters designed by Studio Mut, 
+some of which have been awarded international design awards.
+Awarded or not, these are our favourites.
+(They are all printed offset, 70 &#215; 100 cm)
+
+----
+
+Sort: 2

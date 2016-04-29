@@ -1,0 +1,30 @@
+Sort: 15
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+6
+Busk Singer Songwriter Festival 2014 (designed with Max Edelberg and adapted by Adèle Hurbault)
+
+7
+Penetration (designed by Thomas Kronbichler)
+
+8
+Yes I Do (for The Wedding Enterprise)

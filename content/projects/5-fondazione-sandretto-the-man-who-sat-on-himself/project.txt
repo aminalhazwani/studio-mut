@@ -1,0 +1,32 @@
+Title: The Man who sat on Himself
+
+----
+
+Titl: 
+
+The Man 
+who sat on Himself
+
+----
+
+Date: 
+
+----
+
+Client: Exhibition design and catalogue for Fondazione Sandretto Re Rebaudengo
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Text: 
+
+----
+
+Showinhome: 1

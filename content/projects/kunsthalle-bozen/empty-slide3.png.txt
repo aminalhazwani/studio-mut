@@ -1,0 +1,25 @@
+Sort: 19
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: Design: Studio Mut. Thomas Kronbichler, Martin Kerschbaumer, Adèle Hurbault
+
+----
+
+Video: 

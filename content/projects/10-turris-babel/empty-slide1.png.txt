@@ -1,0 +1,30 @@
+Sort: 37
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+##Turris Babel
+Architecture Magazine for Architecture Foundation South Tyrol, Italy
+Art Direction: Thomas Kronbichler
+Design: Studio Mut. Thomas Kronbichler, Martin Kerschbaumer
+
+----
+
+Video: 

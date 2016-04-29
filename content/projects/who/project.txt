@@ -1,0 +1,28 @@
+Title: Who We Are
+
+----
+
+Titl: 
+
+Who we are
+and what we do
+
+----
+
+Date: 
+
+----
+
+Bkcolor: #ffffff
+
+----
+
+Client: A short story about Studio Mut
+
+----
+
+Text: Who and what is Studio Mut? A short story with coloured images.
+
+----
+
+Headercolor: #000000

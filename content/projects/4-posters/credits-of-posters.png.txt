@@ -1,0 +1,30 @@
+Sort: 14
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+2
+Rosengarten Festa (for Franz Lab)
+
+3 + 4
+Technische Universität Berlin, Effect and Affect (coding by Julian Koschwitz)
+
+5
+Technische Universität Berlin, ThinkingArchitecture (designed with Adèle Hurbault, Series of 3)

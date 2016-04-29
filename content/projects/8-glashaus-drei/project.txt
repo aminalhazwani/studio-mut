@@ -1,0 +1,32 @@
+Title: Glashaus III
+
+----
+
+Titl: 
+
+The history
+of people and plants
+
+----
+
+Date: 
+
+----
+
+Client: An Exhibition about Gardening at Gärtnerei Schullian
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Text: Exhibition Design for Gärtnerei Schullian by Studio Mut. Curated by Paul Thuile
+
+----
+
+Showinhome: 1

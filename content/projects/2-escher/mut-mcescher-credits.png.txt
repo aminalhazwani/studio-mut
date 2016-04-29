@@ -1,0 +1,34 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Video: 
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+##M.C. Escher
+edited by Federico Giudiceandrea and Marco Bussagli
+Exhibition at Complesso di Santa Caterina, Treviso
+contains a full size reproduction of M.C. Escher’s masterpiece 
+*Metamorfosi II*, 1939–1940, 192 ×  3895 mm
+252 Pages,  Printed in Italy
+ISBN 978-88-941328-0-9
+Design: Studio Mut, Martin Kerschbaumer, Thomas Kronbichler
+
+----
+
+Sort: 17

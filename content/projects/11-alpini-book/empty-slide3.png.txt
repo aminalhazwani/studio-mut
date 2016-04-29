@@ -1,0 +1,27 @@
+Sort: 11
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 
+
+##Alpini
+Photographs by Nicolò Degiorgis
+Texts by Paolo Bill Valente 
+Design: Studio Mut, Thomas Kronbichler
+Printed in Italy

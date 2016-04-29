@@ -1,0 +1,31 @@
+Sort: 2
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Video: 
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+## M.C. Escher
+Loved by the hippies and the beat-generation, 
+adored by the mathematicians of the 21st century, 
+Maurits Aurelius Escher is one of the most famous
+and most imitated artists in the world.

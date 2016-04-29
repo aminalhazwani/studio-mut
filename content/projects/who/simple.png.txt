@@ -1,0 +1,24 @@
+Cover: nein
+
+----
+
+Measure: enclosed
+
+----
+
+Overtext: 
+
+# 1. Simple
+The essence of good graphic design is to strip away stuff you don't need. When things are clear, you can make them bigger, bolder, louder. Your message gehts heard. People understand what you want to say.
+
+----
+
+Overtextcolor: #000000
+
+----
+
+Sort: 2
+
+----
+
+Slidebgcolor: #ffffff

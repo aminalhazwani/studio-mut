@@ -1,0 +1,32 @@
+Title: Trieste Estate
+
+----
+
+Titl: 
+
+Italian Summer
+and Culture
+
+----
+
+Date: 
+
+----
+
+Client: Designing the Trieste Summer Festival
+
+----
+
+Text: The communication for Trieste Estate 2015 was designed by Studio Mut
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Showinhome: 1

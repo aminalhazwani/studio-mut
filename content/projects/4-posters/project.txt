@@ -1,0 +1,32 @@
+Title: Posters
+
+----
+
+Titl: 
+
+Looking at 
+Posters
+
+----
+
+Date: 
+
+----
+
+Client: A selection of posters from Studio Mut
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Text: A selection of very nice Posters from award winning design studio Mut
+
+----
+
+Showinhome: 1

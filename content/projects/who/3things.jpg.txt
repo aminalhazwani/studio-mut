@@ -1,0 +1,20 @@
+Cover: 1
+
+----
+
+Measure: full
+
+----
+
+Overtext: 
+
+# Three Things
+on Studio Mut, on our practice, in general
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Slidebgcolor: #ffffff

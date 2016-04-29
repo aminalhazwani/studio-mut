@@ -1,0 +1,21 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: 
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 
+
+----
+
+Sort: 1

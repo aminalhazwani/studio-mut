@@ -1,0 +1,25 @@
+Sort: 4
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+## Working with Studio Mut
+Kate Strain, Angelica Sule and Zsuzsanna Stánitz came to our studio too. 
+Shortly after, we started working with them on the communication for their final exhibition in Torino, Italy.

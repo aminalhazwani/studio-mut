@@ -1,0 +1,21 @@
+Cover: 
+
+----
+
+Measure: full
+
+----
+
+Slidebgcolor: #000000
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+----
+
+Sort: 5

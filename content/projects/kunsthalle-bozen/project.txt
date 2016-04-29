@@ -1,0 +1,25 @@
+Title: Kunsthalle Bozen
+
+----
+
+Titl: 
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Headercolor: ffffff
+
+----
+
+Bkcolor: 1f1f1f
+
+----
+
+Text: 

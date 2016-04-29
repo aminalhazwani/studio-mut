@@ -1,0 +1,27 @@
+Sort: 16
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+##Trieste Estate
+Branding, poster series, program books (Italian, English), responsive website.
+For the City of Trieste, councillor of culture Paolo Tassinari
+Design: Studio Mut. Thomas Kronbichler,  Martin Kerschbaumer, Adèle Hurbault
+Website coding: TCD Trieste

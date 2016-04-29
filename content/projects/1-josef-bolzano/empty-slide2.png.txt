@@ -1,0 +1,29 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+##The alternative Travel Book
+Studio Mut created the identity and the graphic design for *Josef*, 
+the insider’s travel book to South Tyrol, Italy.
+
+----
+
+Video: 
+
+----
+
+Sort: 3

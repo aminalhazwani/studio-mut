@@ -1,0 +1,26 @@
+Sort: 18
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 
+
+## Mut for Love
+7 animated love letters and 7 limited edition Posters printed in South Tyrol, Italy for Museion Bolzano Bozen
+Design: Studio Mut. Martin Kerschbaumer, Thomas Kronbichler, Adèle Hurbault
+Coding of www.mutforlove.com: Amin Al Hazwani

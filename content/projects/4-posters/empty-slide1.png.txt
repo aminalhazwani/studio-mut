@@ -1,0 +1,33 @@
+Sort: 16
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+9
+More Drinks (designed by Martin Kerschbaumer)
+
+10
+Berlin Bozen Connection (commissioned by Cornelia Lochmann)
+
+11
+Motherlode (for Centrale Fies)
+
+12
+Trieste Estate 2015 (for the City of Trieste)

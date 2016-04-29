@@ -1,0 +1,28 @@
+Title: Alpini
+
+----
+
+Date: 
+
+----
+
+Client: A book about the Alpini
+
+----
+
+Text: 
+
+----
+
+Titl: 
+
+Give me 
+that Hat
+
+----
+
+Headercolor: 
+
+----
+
+Bkcolor: #1f1f1f

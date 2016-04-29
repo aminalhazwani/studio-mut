@@ -1,0 +1,25 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Video: 
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+----
+
+Sort: 8

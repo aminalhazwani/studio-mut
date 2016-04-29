@@ -2,11 +2,11 @@ Title: Studio Mut
 
 ----
 
-Description: Mut is a graphic design studio, founded by Thomas Kronbichler and Martin Kerschbaumer in Bolzano, Italy.
+Description: Studio Mut designs powerful and clever brands, websites, publications. The Studio is based in South Tyrol, Italy, and was founded by Thomas Kronbichler and Martin Kerschbaumer.
 
 ----
 
-Keywords: design,art direction,creative direction,editotial
+Keywords: design,art direction,creative direction,web design,südtirol,alto adige,thomas kronbichler,martin kerschbaumer,editorial design,bozen,bolzano,graphic design,grafica,grafik,branding,markenbildung,corporate design,south tyrol,graphic,editorial,books,identity,catalogue,kronbichler,kerschbaumer,martin,thomas,mut,studio mut,art,katalog,buch,catalogo,libro,webseite,website
 
 ----
 
@@ -20,7 +20,7 @@ Menuitems:
   hyperlink: http://studiomut.com/about
 - 
   label: Contact
-  hyperlink: 'http://studiomut.com/about#contanct'
+  hyperlink: 'http://studiomut.com/about#contact'
 - 
   label: Clients
   hyperlink: 'http://studiomut.com/about#clients'
@@ -28,12 +28,8 @@ Menuitems:
   label: Awesomeness
   hyperlink: 'http://arillo.dev/studiomut.com/#archive'
 - 
-  label: Mutposter
-  hyperlink: http://poster.studiomut.com
-  target: true
-- 
-  label: Mut ✕ Love
-  hyperlink: http://mutforlove.com
+  label: ↥ Mutboard
+  hyperlink: http://www.mutboard.com
   target: true
 
 ----
@@ -41,8 +37,117 @@ Menuitems:
 Footer: 
 
 - 
-  sentence: Do you piss under the shower?
+  sentence: Do you know what your your name means?
+- 
+  sentence: What did you do this past weekend?
+- 
+  sentence: What are your plans for this weekend?
 - 
   sentence: >
-    Do you wipe your boogers away when
-    nobody looks at you?
+    What is the first thing you do when you
+    wake up?
+- 
+  sentence: >
+    What is the last thing you do before you
+    go to sleep?
+- 
+  sentence: What is your favourite day of the week?
+- 
+  sentence: >
+    If you could meet anyone in history, who
+    would it be?
+- 
+  sentence: Are you a saver or a spender?
+- 
+  sentence: What is your first childhood memory?
+- 
+  sentence: >
+    What type of kid were you (spoiled,
+    rebellious, well-behaved, quiet,
+    obnoxious...)?
+- 
+  sentence: >
+    What did you want to be when you were
+    younger?
+- 
+  sentence: >
+    What is one thing you miss about being a
+    kid?
+- 
+  sentence: >
+    Were you the class clown or teacher’s
+    pet?
+- 
+  sentence: >
+    If you had 10 million Euro, would you
+    still be working?
+- 
+  sentence: >
+    What is the first thing you notice about
+    a girl or guy?
+- 
+  sentence: Have you ever been in love?
+- 
+  sentence: >
+    Would you rather be rich and never find
+    true love or be poor and find true love?
+- 
+  sentence: >
+    Where was the last place you went on
+    vacation?
+- 
+  sentence: >
+    If you could live anywhere in the world,
+    where would it be?
+- 
+  sentence: What is your favourite drink?
+- 
+  sentence: >
+    Are there any foods that you dislike or
+    will not eat?
+- 
+  sentence: >
+    What was the worst movie you have ever
+    seen?
+- 
+  sentence: What are you scared of?
+- 
+  sentence: |
+    What is the best piece
+    of advice you have received?
+- 
+  sentence: What is your biggest regret?
+- 
+  sentence: What was your most embarrassing moment?
+- 
+  sentence: >
+    What is the craziest thing you have ever
+    done?
+- 
+  sentence: Do you sleep with a stuffed animal?
+- 
+  sentence: Do you drink coffee or tea my dear?
+- 
+  sentence: >
+    If you could have any super power, what
+    would it be?
+- 
+  sentence: Do you believe in luck?
+- 
+  sentence: >
+    Do you believe people are inherently
+    good?
+- 
+  sentence: Do you prefer cats or dogs?
+- 
+  sentence: >
+    Have you ever cried because you were so
+    happy?
+- 
+  sentence: >
+    What is the most valuable thing that you
+    own?
+- 
+  sentence: Do you piss in the shower?
+- 
+  sentence: What is your favourite pizza topping?

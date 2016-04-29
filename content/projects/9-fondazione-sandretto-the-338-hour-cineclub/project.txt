@@ -1,0 +1,32 @@
+Title: The (338 Hour) Cineclub
+
+----
+
+Date: 
+
+----
+
+Client: The (338 Hour) Cineclub for Fondazione Sandretto Re Rebaudengo, Torino
+
+----
+
+Text: 
+
+----
+
+Titl: 
+
+It’s glowing
+inside the Cinema
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Showinhome: 1

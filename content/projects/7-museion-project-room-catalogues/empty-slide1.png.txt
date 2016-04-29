@@ -1,0 +1,28 @@
+Sort: 16
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+##Museion Project Room
+Series of five catalogues for Museion 
+Museum of Modern and Contemporary Art Bolzano
+Design: Studio Mut. Martin Kerschbaumer, Thomas Kronbichler
+Photography: Luca Meneghel, Augustin Ochsenreiter
+Reel-feed offset newspaper print

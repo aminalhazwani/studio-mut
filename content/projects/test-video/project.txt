@@ -1,4 +1,4 @@
-Title: Test Video
+Title: Test-video
 
 ----
 
@@ -14,11 +14,11 @@ Client:
 
 ----
 
-Headercolor: #ffffff
+Headercolor: ffffff
 
 ----
 
-Bkcolor: #1f1f1f
+Bkcolor: 1f1f1f
 
 ----
 

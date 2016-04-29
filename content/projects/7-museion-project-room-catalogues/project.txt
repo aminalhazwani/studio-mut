@@ -1,0 +1,29 @@
+Title: Museion Project Room
+
+----
+
+Date: 
+
+----
+
+Client: Exhibition Catalogues for Museion Bolzano
+
+----
+
+Text: Exhibition Catalogues for Museion Bolzano by Studio Mut
+
+----
+
+Titl: Art, and our reflection
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Showinhome: 1

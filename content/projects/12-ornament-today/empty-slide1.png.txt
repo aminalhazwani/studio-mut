@@ -1,0 +1,28 @@
+Sort: 10
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: 
+
+----
+
+Overtext: 
+
+##Ornament Today
+for Bolzano University Press
+Edited by Jörg H. Gleiter (TU Berlin), with essays by Mario Carpo (Yale University), Ingeborg Rocker (Harvard University), Elisabetta di Stefano (University of Palermo), Martin Kirves (University of Basel), Jan Bovelet (University of Bozen-Bolzano)
+Design: Studio Mut, Thomas Kronbichler, Martin Kerschbaumer
+Printed in Italy on Munken Paper with two Pantone colours and foil stamp cover. 184 pages, 170 × 240 mm
+ISBN 978-88-6046-048-6

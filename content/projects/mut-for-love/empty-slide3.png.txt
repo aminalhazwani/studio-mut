@@ -1,0 +1,25 @@
+Cover: 
+
+----
+
+Measure: full
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+----
+
+Video: 140293593
+
+----
+
+Sort: 2

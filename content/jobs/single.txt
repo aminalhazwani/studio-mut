@@ -1,0 +1,24 @@
+Title: Jobs
+
+----
+
+Text: We want to work with talented people.
+
+----
+
+Descriptioneng: 
+
+# Web Developer
+We are looking for a web designer/developer that wants to work full-time with us in our studio in Bolzano, Italy.
+These should be your conversation starters: HTML5, CSS3, PHP5; Javascript (jQuery); WordPress; Mobile-First, Git
+You should speak English, and German or Italian.
+If this sounds like you, drop us a line at work@studiomut.com
+or call us at +39 0471 194 2440 (and talk to Thomas)
+
+----
+
+Descriptiondeu: 
+
+----
+
+Descriptionita: 

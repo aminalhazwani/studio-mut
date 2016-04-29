@@ -1,0 +1,32 @@
+Title: Ornament Today
+
+----
+
+Date: 
+
+----
+
+Client: Book design for Bolzano University Press
+
+----
+
+Text: A book about Ornament in Architecture, designed by Studio Mut.
+
+----
+
+Titl: 
+
+Ornament in
+Architecture
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Showinhome: 1

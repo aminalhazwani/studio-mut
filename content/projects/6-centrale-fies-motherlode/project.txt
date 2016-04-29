@@ -1,0 +1,29 @@
+Title: Centrale Fies Motherlode
+
+----
+
+Titl: Made to Happen
+
+----
+
+Date: 
+
+----
+
+Client: Design for the Performance Art Festival at Centrale Fies
+
+----
+
+Text: 
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Showinhome: 1

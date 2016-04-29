@@ -1,0 +1,25 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+# Things Are
+Every year for one week, the performance and performing art circus comes to a abandoned power station in Northern Italy to see what’s new. 
+Centrale Fies is a fantastic place, with huge theatre stages and parties in the woods, far from everything urban.
+
+----
+
+Sort: 2

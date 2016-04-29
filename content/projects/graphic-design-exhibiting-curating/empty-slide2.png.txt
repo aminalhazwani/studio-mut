@@ -1,0 +1,30 @@
+Sort: 12
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Overtext: 
+
+Graphic Design, Exhibiting, Curating
+for Bolzano University Press
+Edited by Giorgio Camuffo and Maddalena Dalla Mura
+Contributions by Brave New Alps, Charlotte Cheetham (manystuff.org), Mieke Gerritzen (Museum of the Image, Breda), Lungomare / Lupo&Burtscher, Prem Krishnamurthy (Project Projects), and Jon Sueda 
+⧓
+Design: Studio Mut. Martin Kerschbaumer
+Two coloured Risograph Printing printed  in Venice by b-r-u-n-o on Munken Paper. 156 pages.
+ISBN 978-8860460622
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Slidebgcolor: #1f1f1f

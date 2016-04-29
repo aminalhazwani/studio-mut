@@ -1,0 +1,25 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+# Made to Happen
+Studio Mut created the communication design for the art festival Motherlode, 
+including the program book (printed in gold), posters, banners, ads, and big flags with this year’s slogan.
+
+----
+
+Sort: 4

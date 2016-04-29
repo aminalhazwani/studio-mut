@@ -1,0 +1,21 @@
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #fc0d1b
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: #Mut × Love
+
+----
+
+Sort: 1

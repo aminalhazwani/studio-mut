@@ -1,0 +1,31 @@
+Sort: 4
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Video: 
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+##The Big Picture
+Studio Mut worked with Escher expert and collector
+Federico Giudiceandrea and art historian Marco Bussagli
+to show both early works and masterpieces,
+including M.C. Escher’s impact in pop culture today.

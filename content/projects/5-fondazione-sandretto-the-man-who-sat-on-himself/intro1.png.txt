@@ -1,0 +1,27 @@
+Sort: 2
+
+----
+
+Cover: 
+
+----
+
+Measure: enclosed
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+## Young Art Curators in Italy
+Three curators traveled all over Italy for 3 months,
+visiting artists, galleries and museums,
+as part of the Young Curators Programme
+by Fondazione Sandretto Re Rebaudengo, Torino
