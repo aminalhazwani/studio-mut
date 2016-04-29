@@ -3,6 +3,7 @@
 <div class="splash"></div>
 <?php snippet('header') ?>
 <?php snippet('navigation') ?>
+<?php snippet('archive') ?>
 
 <main class="about">
   <div class="intro bg-blue u-sm-padd-double u-sm-padd-btm-none">
