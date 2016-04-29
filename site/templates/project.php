@@ -10,7 +10,7 @@
         $title = strtolower($title);
       ?>
       <?php $_SERVER['HTTP_REFERER']; ?>
-      <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
+      <?php if($_SERVER['HTTP_REFERER'] == ($site->url() + '/') ): ?>
         <a class="project_close" href="<?php echo $site->url() ?>#<?php echo $title ?>">Close</a>
       <?php else: ?>
         <a class="project_close" href="<?php echo $site->url() ?>">Close</a>
@@ -78,10 +78,10 @@
           si.ev.on('rsBeforeAnimStart', function(e) {
               console.log(prevSlide, si.currSlideId);
               if(prevSlide === si.currSlideId){
-                <?php if($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/' ): ?>
-                  return window.location.href = 'http:<?php echo $site->url() ?>#<?php echo $title ?>';
+                <?php if($_SERVER['HTTP_REFERER'] == ($site->url() + '/') ): ?>
+                  return window.location.href = '<?php echo $site->url() ?>#<?php echo $title ?>';
                 <?php else: ?>
-                  return window.location.href = 'http:<?php echo $site->url() ?>';
+                  return window.location.href = '<?php echo $site->url() ?>';
                 <?php endif ?>
               }
               prevSlide = si.currSlideId;
