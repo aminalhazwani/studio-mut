@@ -13,12 +13,20 @@ Date:
 
 ----
 
-Pagebkcolor: bg-black
-
-----
-
 Client: Centrale Fies
 
 ----
 
 Text: 
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Showinhome: 1

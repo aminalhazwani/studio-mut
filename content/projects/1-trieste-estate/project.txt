@@ -26,3 +26,7 @@ Bkcolor: #ffd45e
 ----
 
 Headercolor: #1f11ba
+
+----
+
+Showinhome: 1

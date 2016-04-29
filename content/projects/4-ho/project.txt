@@ -10,10 +10,6 @@ Client: Hofburg Brixen
 
 ----
 
-Pagebkcolor: bg-white
-
-----
-
 Text: 
 
 ----
@@ -22,3 +18,15 @@ Titl:
 
 Classical Music,
 Modern Twist
+
+----
+
+Showinhome: 1
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f

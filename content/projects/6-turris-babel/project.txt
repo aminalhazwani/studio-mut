@@ -17,7 +17,7 @@ Client: Designing the architecture magazine Turris Babel
 
 ----
 
-Headercolor: 
+Headercolor: #ffffff
 
 ----
 
@@ -26,3 +26,7 @@ Bkcolor: #1f1f1f
 ----
 
 Text: 
+
+----
+
+Showinhome: 1

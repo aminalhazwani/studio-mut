@@ -9,6 +9,9 @@ fields:
   titl:
     label: Title on homepage
     type:  textarea
+  showinhome:
+    text: Show in home?
+    type: checkbox
   date:
     label: Date
     type:  date

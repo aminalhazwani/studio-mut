@@ -10,12 +10,20 @@ Date:
 
 ----
 
-Pagebkcolor: bg-black
-
-----
-
 Client: 
 
 ----
 
 Text: 
+
+----
+
+Showinhome: 1
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
