@@ -2,6 +2,7 @@
 
 title: Projects
 pages:
+  limit: 100
   template: 
 	  - project
 files: false
