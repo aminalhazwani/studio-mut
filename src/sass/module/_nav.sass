@@ -29,13 +29,14 @@
 
 .navMobile_item
   display: block
+  line-height: 1.2
   &:hover
     color: $red
 
 .navMobile_item:first-child
   display: none
 
-.navMobile-is-open
+.navMobile-open
   .navMobile_items
     top: 0
     bottom: auto
@@ -51,7 +52,7 @@
   +mq($bp-md)
     display: block
 
-.nav-scrolled
+.nav-fixed
   position: fixed
   top: 0
   left: 0
