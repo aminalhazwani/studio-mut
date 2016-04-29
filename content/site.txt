@@ -25,17 +25,16 @@ Menuitems:
   label: Clients
   hyperlink: 'http://studiomut.com/about#clients'
 - 
-  label: Mutboard
-  hyperlink: http://board.studiomut.com
-  target: on
+  label: Awesomeness
+  hyperlink: 'http://arillo.dev/studiomut.com/#archive'
 - 
   label: Mutposter
   hyperlink: http://poster.studiomut.com
-  target: on
+  target: true
 - 
   label: Mut ✕ Love
   hyperlink: http://mutforlove.com
-  target: on
+  target: true
 
 ----
 
