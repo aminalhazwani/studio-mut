@@ -10,6 +10,7 @@ fields:
     label: Title on homepage
     type:  textarea
   showinhome:
+    label: Visibility
     text: Show in home?
     type: checkbox
   date:
