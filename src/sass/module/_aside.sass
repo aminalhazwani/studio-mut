@@ -1,0 +1,28 @@
+//============================================
+// Aside
+//============================================
+
+.aside
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 2
+  width: 90%
+  height: 100%
+  transform: translateX(-100%)
+  background-color: $salmon
+  color: $black
+  overflow-y: scroll
+  transition: transform .5s cubic-bezier(.55, 0, .1, 1)
+
+  +mq($bp-xs)
+    width: 70%
+
+  +mq($bp-md)
+    width: 50%
+
+.aside-open
+  transform: translateX(0)
+
+.aside-is-open
+  overflow: hidden
