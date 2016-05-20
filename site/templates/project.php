@@ -36,13 +36,13 @@
                 <img class="project_image-enclosed" src="<?php echo $image->url() ?>">
               <?php else: ?>
                 <img class="project_image-enclosed"
-                      src="<?php echo thumb($image, array('width' => 1200), false) ?>" 
-                      srcset="<?php echo thumb($image, array('width' => 600), false) ?> 600w,
+                     src="<?php echo thumb($image, array('width' => 1200), false) ?>" 
+                     srcset="<?php echo thumb($image, array('width' => 600), false) ?> 600w,
                               <?php echo thumb($image, array('width' => 800), false) ?> 800w,
                               <?php echo thumb($image, array('width' => 1200), false) ?> 1200w,
                               <?php echo thumb($image, array('width' => 1600), false) ?> 1600w,
                               <?php echo thumb($image, array('width' => 2560), false) ?> 2560w"
-                      sizes="100vw"
+                     sizes="100vw"
                 >
               <?php endif ?>
               <?php if($image->overtext() != ''): ?>
@@ -94,9 +94,9 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-54435071-1', 'auto');
+      ga('create', '<?php echo $site->trackingcode()->html() ?>', 'auto');
       ga('send', 'pageview');
     </script>
-    
+    </div>
   </body>
 </html>

@@ -12,6 +12,9 @@ fields:
   description:
     label: Meta description for SEO
     type:  textarea
+  trackingcode:
+    label: Google Analytics tracking ID
+    type:  text
   line-a:
     type: line
   menuItems:
