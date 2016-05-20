@@ -11,7 +11,11 @@
       ?>
       <?php $_SERVER['HTTP_REFERER']; ?>
       <?php if($_SERVER['HTTP_REFERER'] == ($site->url() + '/') ): ?>
-        <a class="project_close" href="<?php echo $site->url() ?>#<?php echo $title ?>">Close</a>
+        <?php if($page->visibility() == 'homepage'): ?>
+          <a class="project_close" href="<?php echo $site->url() ?>#<?php echo $title ?>">Close</a>
+        <?php else: ?>
+          <a class="project_close" href="<?php echo $site->url() ?>#archive">Close</a>
+        <?php endif ?>
       <?php else: ?>
         <a class="project_close" href="<?php echo $site->url() ?>">Close</a>
       <?php endif ?>
@@ -54,7 +58,7 @@
           <?php endif ?>
           <?php if($image->measure() == 'full'): ?>
             <figure class="project_figure">
-              <img class="project_image-full" src="/assets/images/1px.png" style="background-image:url('<?php echo $image->url() ?>')">
+              <img class="project_image-full" src="../assets/images/1px.png" style="background-image:url('<?php echo $image->url() ?>')">
               <?php if($image->overtext() != ''): ?>
                 <figcaption class="project_caption" style="color:<?php echo $image->overtextcolor() ?>">
                   <?php echo $image->overtext()->kirbytext() ?>

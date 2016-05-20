@@ -44,6 +44,13 @@ $(window).on("scroll load", function() {
 
 
 // Open aside
+if (window.location.hash.split('-')[0] == '#archive') {
+  setTimeout(function() {
+    $('body').addClass('aside-is-open');
+    $('.aside').addClass('aside-open');
+  }, 1000);
+}
+
 jQuery('body').on('click', '.nav_item', function (e) {
   if ($(this).is('[href*="#archive"]')) {
     $('body').addClass('aside-is-open');
