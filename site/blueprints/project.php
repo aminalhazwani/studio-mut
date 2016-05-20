@@ -16,14 +16,12 @@ fields:
     options:
       homepage: Homepage
       archive: Archive
-  date:
-    label: Date
-    type:  date
-    width: 1/2
+  cover:
+    label: Cover image
+    type: image
   client:
     label: Client
     type: text
-    width: 1/2
   headercolor:
     label: Header text color
     type: color
@@ -40,9 +38,6 @@ fields:
 files:
   sortable: true
   fields: 
-    cover:
-      type: checkbox
-      text: Cover Image?
     measure:
       label: Slide size
       type: radio

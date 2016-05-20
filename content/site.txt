@@ -15,22 +15,27 @@ Menuitems:
 - 
   label: Studio Mut
   hyperlink: http://arillo.dev/studiomut.com
+  target: 'no'
 - 
   label: About
   hyperlink: http://arillo.dev/studiomut.com/about
+  target: 'no'
 - 
   label: Contact
-  hyperlink: 'http://studiomut.com/about#contact'
+  hyperlink: 'http://arillo.dev/studiomut.com/about#contact'
+  target: 'no'
 - 
   label: Clients
   hyperlink: 'http://arillo.dev/about#clients'
+  target: 'no'
 - 
   label: Awesomeness
   hyperlink: 'http://arillo.dev/studiomut.com/#archive'
+  target: 'no'
 - 
   label: Mutboard
   hyperlink: http://www.mutboard.com
-  target: true
+  target: 'yes'
 
 ----
 

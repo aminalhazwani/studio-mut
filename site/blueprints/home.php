@@ -3,6 +3,7 @@
 title: Home
 pages: false
 files: false
+hide: true
 fields:
 	title:
 		label: Title

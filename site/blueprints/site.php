@@ -2,6 +2,7 @@
 
 title: Site
 pages: single
+files: false
 fields:
   title:
     label: Website title
@@ -20,27 +21,32 @@ fields:
   menuItems:
     label: Menu items
     type: structure
-    entry: >
+    style: table
+    entry:
       {{ label }}<br />
-      {{ hyperlink }}
+      {{ hyperlink }}<br />
+      {{ target.option }}
     fields:
       label:
-        label: Menu Item Text
+        label: Menu item text
         type: text
       hyperlink:
-        label: Menu Item Link
+        label: Menu item link
         type: url
       target:
         label: Target blank
-        type: checkbox
-        text: Open in a new window
+        type: radio
+        default: no
+        options:
+          no: "No"
+          yes: "Yes"
   line-b:
     type: line
   footer:
     label: Footer sentences
     type: structure
-    entry: >
-      {{ sentence }}
+    style: table
+    entry: {{ sentence }}
     fields:
       sentence:
         label: Sentence

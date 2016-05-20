@@ -3,6 +3,7 @@
 title: Error
 pages: false
 files: true
+hide: true
 fields:
   title:
     label: Title
