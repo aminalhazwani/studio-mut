@@ -8,7 +8,7 @@ module.exports = {
 
   browserSync: {
     port: 9000,
-    proxy: 'http://studiomut.dev/',
+    proxy: 'http://arillo.dev/studiomut.com',
     notify: false,
     open: false
   },
