@@ -28,7 +28,7 @@ Menuitems:
   label: Awesomeness
   hyperlink: 'http://arillo.dev/studiomut.com/#archive'
 - 
-  label: ↥ Mutboard
+  label: Mutboard
   hyperlink: http://www.mutboard.com
   target: true
 
@@ -151,3 +151,7 @@ Footer:
   sentence: Do you piss in the shower?
 - 
   sentence: What is your favourite pizza topping?
+
+----
+
+Trackingcode: UA-54435071-1
