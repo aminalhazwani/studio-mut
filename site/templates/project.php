@@ -75,23 +75,27 @@
   <?php echo js('assets/js/project.min.js') ?>
   <?php $_SERVER['HTTP_REFERER']; ?>
     
-      <script type="text/javascript">
-        $( document ).ready(function() {
-          var si = jQuery('.royalSlider').data('royalSlider');
-          var prevSlide = (si.currSlideId === si.numSlides-1) ? si.currSlideId : undefined;
-          si.ev.on('rsBeforeAnimStart', function(e) {
-              console.log(prevSlide, si.currSlideId);
-              if(prevSlide === si.currSlideId){
-                <?php if($_SERVER['HTTP_REFERER'] == ($site->url() + '/') ): ?>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        var si = jQuery('.royalSlider').data('royalSlider');
+        var prevSlide = (si.currSlideId === si.numSlides-1) ? si.currSlideId : undefined;
+        si.ev.on('rsBeforeAnimStart', function(e) {
+            console.log(prevSlide, si.currSlideId);
+            if(prevSlide === si.currSlideId){
+              <?php if($_SERVER['HTTP_REFERER'] == ($site->url() + '/') ): ?>
+                <?php if($page->visibility() == 'homepage'): ?>
                   return window.location.href = '<?php echo $site->url() ?>#<?php echo $title ?>';
                 <?php else: ?>
-                  return window.location.href = '<?php echo $site->url() ?>';
+                  return window.location.href = '<?php echo $site->url() ?>#archive';
                 <?php endif ?>
-              }
-              prevSlide = si.currSlideId;
-          });
+              <?php else: ?>
+                return window.location.href = '<?php echo $site->url() ?>';
+              <?php endif ?>
+            }
+            prevSlide = si.currSlideId;
         });
-      </script>
+      });
+    </script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

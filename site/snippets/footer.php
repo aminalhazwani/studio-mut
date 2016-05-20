@@ -19,9 +19,9 @@
   <?php if($page->template() == 'default'): ?>
     <?php echo js('assets/js/main.min.js') ?>
     <script type="text/javascript">
-    $('body').keyup(function (e){
-      window.location.href = '<?php echo $site->url() ?>';
-    });
+      $('body').keyup(function (e){
+        window.location.href = '<?php echo $site->url() ?>';
+      });
     </script>
   <?php endif ?>
   <?php if($page->template() == 'single'): ?>
