@@ -1,30 +1,50 @@
-  <footer class="u-ta-center u-padd-huge bg-red">
-    <div class="l-container ">
-      <?php $sentences = yaml($site->footer()) ?>
-      <?php foreach($sentences as $sentence): ?>
-        <h2 class="h1 fit u-hide">
-          <a href="mailto:hello@studiomut.com?subject=<?php echo $sentence['sentence'] ?>"><?php echo $sentence['sentence'] ?></a>
-        </h2>
-      <?php endforeach ?>
-      <a href="mailto:hello@studiomut.com">hello@studiomut.com</a>
-    </div>
-  </footer>
-  <?php if($page->template() == 'home'): ?>
-    <?php echo js('assets/js/main.min.js') ?>
-  <?php endif ?>
-  <?php if($page->template() == 'about'): ?>
-    <?php echo js('assets/js/about.min.js') ?>
-    <?php echo js('assets/js/main.min.js') ?>
-  <?php endif ?>
-  <?php if($page->template() == 'default'): ?>
-    <?php echo js('assets/js/main.min.js') ?>
+  <?php if($page->template() == 'project'): ?>
+    <?php echo js('assets/js/vendor/vendors.min.js') ?>
+    <?php echo js('assets/js/project.min.js') ?>
+    <?php $_SERVER['HTTP_REFERER']; ?>
     <script type="text/javascript">
-      $('body').keyup(function (e){
-        window.location.href = '<?php echo $site->url() ?>';
+      $( document ).ready(function() {
+        var si = jQuery('.royalSlider').data('royalSlider');
+        var prevSlide = (si.currSlideId === si.numSlides-1) ? si.currSlideId : undefined;
+        si.ev.on('rsBeforeAnimStart', function(e) {
+            console.log(prevSlide, si.currSlideId);
+            if(prevSlide === si.currSlideId){
+              <?php if($_SERVER['HTTP_REFERER'] == ($site->url() + '/') ): ?>
+                <?php if($page->visibility() == 'homepage'): ?>
+                  return window.location.href = '<?php echo $site->url() ?>#<?php echo $title ?>';
+                <?php else: ?>
+                  return window.location.href = '<?php echo $site->url() ?>#archive';
+                <?php endif ?>
+              <?php else: ?>
+                return window.location.href = '<?php echo $site->url() ?>';
+              <?php endif ?>
+            }
+            prevSlide = si.currSlideId;
+        });
       });
     </script>
-  <?php endif ?>
-  <?php if($page->template() == 'single'): ?>
+  <?php else: ?>
+    <footer class="u-ta-center u-padd-huge bg-red">
+      <div class="l-container ">
+        <?php $sentences = yaml($site->footer()) ?>
+        <?php foreach($sentences as $sentence): ?>
+          <h2 class="h1 fit u-hide">
+            <a href="mailto:hello@studiomut.com?subject=<?php echo $sentence['sentence'] ?>"><?php echo $sentence['sentence'] ?></a>
+          </h2>
+        <?php endforeach ?>
+        <a href="mailto:hello@studiomut.com">hello@studiomut.com</a>
+      </div>
+    </footer>
+    <?php if($page->template() == 'about'): ?>
+      <?php echo js('assets/js/about.min.js') ?>
+    <?php endif ?>
+    <?php if($page->template() == 'default'): ?>
+      <script type="text/javascript">
+        $('body').keyup(function (e){
+          window.location.href = '<?php echo $site->url() ?>';
+        });
+      </script>
+    <?php endif ?>
     <?php echo js('assets/js/main.min.js') ?>
   <?php endif ?>
   <script>

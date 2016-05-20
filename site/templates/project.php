@@ -71,40 +71,4 @@
     <?php endforeach ?>
   </div>
 
-  <?php echo js('assets/js/vendor/vendors.min.js') ?>
-  <?php echo js('assets/js/project.min.js') ?>
-  <?php $_SERVER['HTTP_REFERER']; ?>
-    
-    <script type="text/javascript">
-      $( document ).ready(function() {
-        var si = jQuery('.royalSlider').data('royalSlider');
-        var prevSlide = (si.currSlideId === si.numSlides-1) ? si.currSlideId : undefined;
-        si.ev.on('rsBeforeAnimStart', function(e) {
-            console.log(prevSlide, si.currSlideId);
-            if(prevSlide === si.currSlideId){
-              <?php if($_SERVER['HTTP_REFERER'] == ($site->url() + '/') ): ?>
-                <?php if($page->visibility() == 'homepage'): ?>
-                  return window.location.href = '<?php echo $site->url() ?>#<?php echo $title ?>';
-                <?php else: ?>
-                  return window.location.href = '<?php echo $site->url() ?>#archive';
-                <?php endif ?>
-              <?php else: ?>
-                return window.location.href = '<?php echo $site->url() ?>';
-              <?php endif ?>
-            }
-            prevSlide = si.currSlideId;
-        });
-      });
-    </script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '<?php echo $site->trackingcode()->html() ?>', 'auto');
-      ga('send', 'pageview');
-    </script>
-    </div>
-  </body>
-</html>
+<?php snippet('footer') ?>
