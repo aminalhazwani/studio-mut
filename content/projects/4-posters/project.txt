@@ -29,4 +29,8 @@ Text: A selection of very nice Posters from award winning design studio Mut
 
 ----
 
-Visibility: archive
+Visibility: homepage
+
+----
+
+Cover: mut_moredrinks_poster_detail.jpg

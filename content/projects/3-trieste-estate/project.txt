@@ -30,3 +30,7 @@ Headercolor: #ffffff
 ----
 
 Visibility: archive
+
+----
+
+Cover: mut_tr_triesteestate_07.jpg
