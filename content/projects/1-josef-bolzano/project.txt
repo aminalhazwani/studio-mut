@@ -30,3 +30,7 @@ Text: Studio Mut designed Josef, the insiders travel book to South Tyrol. Graphi
 ----
 
 Showinhome: 1
+
+----
+
+Visibility: homepage

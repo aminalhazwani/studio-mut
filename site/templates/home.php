@@ -7,7 +7,7 @@
 
 	<main>
 		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
-    <?php if($project->showinhome() == '1'): ?>
+    <?php if($project->visibility() == 'homepage'): ?>
       <?php 
         $title = preg_replace('#[ -]+#', '-', $project->title()->html());
         $title = strtolower($title);

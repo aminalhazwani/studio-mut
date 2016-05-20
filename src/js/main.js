@@ -64,6 +64,7 @@ $(document).keydown(function(e){
   if(e.keyCode == 27) {
     if ($('body').hasClass("aside-is-open")) {
       $('body').removeClass("aside-is-open");
+      history.pushState('', document.title, window.location.pathname);
     }
     if ($('.aside').hasClass("aside-open")) {
       $('.aside').removeClass("aside-open");
@@ -75,6 +76,7 @@ $("main").on('click', function(e){
   if ($('.aside').hasClass("aside-open")) {
     $('body').removeClass("aside-is-open");
     $('.aside').removeClass("aside-open");
+    history.pushState('', document.title, window.location.pathname);
     e.preventDefault();
   }
 });
@@ -83,6 +85,7 @@ $(".header").on('click', function(e){
   if ($('.aside').hasClass("aside-open")) {
     $('body').removeClass("aside-is-open");
     $('.aside').removeClass("aside-open");
+    history.pushState('', document.title, window.location.pathname);
     e.preventDefault();
   }
 });
@@ -91,6 +94,7 @@ $(".nav").on('click', function(e){
   if ($('.aside').hasClass("aside-open")) {
     $('body').removeClass("aside-is-open");
     $('.aside').removeClass("aside-open");
+    history.pushState('', document.title, window.location.pathname);
     e.preventDefault();
   }
 });
@@ -99,6 +103,7 @@ $(".navMobile").on('click', function(e){
   if ($('.aside').hasClass("aside-open")) {
     $('body').removeClass("aside-is-open");
     $('.aside').removeClass("aside-open");
+    history.pushState('', document.title, window.location.pathname);
     e.preventDefault();
   }
 });

@@ -9,10 +9,13 @@ fields:
   titl:
     label: Title on homepage
     type:  textarea
-  showinhome:
+  visibility:
     label: Visibility
-    text: Show in home?
-    type: checkbox
+    type: radio
+    default: archive
+    options:
+      homepage: Homepage
+      archive: Archive
   date:
     label: Date
     type:  date

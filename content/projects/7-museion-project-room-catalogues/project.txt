@@ -26,4 +26,4 @@ Bkcolor: #1f1f1f
 
 ----
 
-Showinhome: 1
+Visibility: archive

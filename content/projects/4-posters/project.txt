@@ -29,4 +29,4 @@ Text: A selection of very nice Posters from award winning design studio Mut
 
 ----
 
-Showinhome: 1
+Visibility: archive

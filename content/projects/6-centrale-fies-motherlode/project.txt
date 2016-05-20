@@ -26,4 +26,4 @@ Headercolor: #ffffff
 
 ----
 
-Showinhome: 1
+Visibility: archive
