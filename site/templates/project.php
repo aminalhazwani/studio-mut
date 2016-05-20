@@ -33,7 +33,8 @@
           <button class="button" type="button" style="position: absolute; z-index: 1"></button>
         </figure>
       <?php else: ?>
-        <?php if($image->cover() != '1'): ?>
+        <?php $cover = $page->image($page->cover()); ?>
+        <?php if($image != $cover): ?>
           <?php if($image->measure() == 'enclosed'): ?>
             <figure class="project_figure" <?php if($image->slidebgcolor() != ''): ?>style="background-color: <?php echo $image->slidebgcolor() ?>"<?php endif ?>>
               <?php if($image->extension() == 'gif'): ?>
