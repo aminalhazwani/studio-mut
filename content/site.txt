@@ -14,16 +14,16 @@ Menuitems:
 
 - 
   label: Studio Mut
-  hyperlink: http://studiomut.com
+  hyperlink: http://arillo.dev/studiomut.com
 - 
   label: About
-  hyperlink: http://studiomut.com/about
+  hyperlink: http://arillo.dev/studiomut.com/about
 - 
   label: Contact
   hyperlink: 'http://studiomut.com/about#contact'
 - 
   label: Clients
-  hyperlink: 'http://studiomut.com/about#clients'
+  hyperlink: 'http://arillo.dev/about#clients'
 - 
   label: Awesomeness
   hyperlink: 'http://arillo.dev/studiomut.com/#archive'
