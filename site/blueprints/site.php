@@ -34,12 +34,17 @@ fields:
         label: Menu item link
         type: url
       target:
-        label: Target blank
+        label: Open in new tab?
         type: radio
         default: no
         options:
           no: "No"
           yes: "Yes"
+  info:
+    type: info
+    label: Remember
+    text: >
+      Add the hash "#archive" to the menu item that should open the archive panel
   line-b:
     type: line
   footer:
