@@ -1,7 +1,11 @@
   <?php if($page->template() == 'project'): ?>
     <?php echo js('assets/js/vendor/vendors.min.js') ?>
     <?php echo js('assets/js/project.min.js') ?>
-    <?php $_SERVER['HTTP_REFERER']; ?>
+    <?php 
+      $title = preg_replace('#[ -]+#', '-', $page->title()->html());
+      $title = strtolower($title);
+    ?>
+    <?php $prevPage = $_SERVER['HTTP_REFERER']; ?>
     <script type="text/javascript">
       $( document ).ready(function() {
         var si = jQuery('.royalSlider').data('royalSlider');
@@ -9,14 +13,20 @@
         si.ev.on('rsBeforeAnimStart', function(e) {
             console.log(prevSlide, si.currSlideId);
             if(prevSlide === si.currSlideId){
-              <?php if($_SERVER['HTTP_REFERER'] == ($site->url() + '/') ): ?>
+              <?php $prevPage = $_SERVER['HTTP_REFERER']; ?>
+              <?php if(strpos($prevPage, $site->url()) !== false ): ?>
                 <?php if($page->visibility() == 'homepage'): ?>
                   return window.location.href = '<?php echo $site->url() ?>#<?php echo $title ?>';
                 <?php else: ?>
-                  return window.location.href = '<?php echo $site->url() ?>#archive';
+                  // @TODO History back
+                  window.history.back();
                 <?php endif ?>
               <?php else: ?>
-                return window.location.href = '<?php echo $site->url() ?>';
+                <?php if($page->visibility() == 'archive'): ?>
+                  return window.location.href = '<?php echo $site->url() ?>#archive';
+                <?php else: ?>
+                  return window.location.href = '<?php echo $site->url() ?>';
+                <?php endif ?>
               <?php endif ?>
             }
             prevSlide = si.currSlideId;

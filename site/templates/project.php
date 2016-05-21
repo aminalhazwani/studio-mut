@@ -9,15 +9,19 @@
         $title = preg_replace('#[ -]+#', '-', $page->title()->html());
         $title = strtolower($title);
       ?>
-      <?php $_SERVER['HTTP_REFERER']; ?>
-      <?php if($_SERVER['HTTP_REFERER'] == ($site->url() + '/') ): ?>
+      <?php $prevPage = $_SERVER['HTTP_REFERER']; ?>
+      <?php if(strpos($prevPage, $site->url()) !== false ): ?>
         <?php if($page->visibility() == 'homepage'): ?>
           <a class="project_close" href="<?php echo $site->url() ?>#<?php echo $title ?>">Close</a>
         <?php else: ?>
-          <a class="project_close" href="<?php echo $site->url() ?>#archive">Close</a>
+          <a class="project_close" href="javascript:history.back()">Close</a>
         <?php endif ?>
       <?php else: ?>
-        <a class="project_close" href="<?php echo $site->url() ?>">Close</a>
+        <?php if($page->visibility() == 'archive'): ?>
+          <a class="project_close" href="<?php echo $site->url() ?>#archive">Close</a>
+        <?php else: ?>
+          <a class="project_close" href="<?php echo $site->url() ?>">Close</a>
+        <?php endif ?>
       <?php endif ?>
       <p class="project_count u-push-btm-none"></p>
     </div>
