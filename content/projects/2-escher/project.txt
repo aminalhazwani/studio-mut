@@ -30,3 +30,7 @@ Text:
 ----
 
 Visibility: archive
+
+----
+
+Cover: mut_m.c.escher-cover22.jpg

@@ -30,3 +30,7 @@ Text:
 ----
 
 Visibility: archive
+
+----
+
+Cover: mut_sr_theman_cover.jpg

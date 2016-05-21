@@ -27,3 +27,7 @@ Bkcolor: #1f1f1f
 ----
 
 Visibility: archive
+
+----
+
+Cover: mut_mpr_catalogue_cover.jpg

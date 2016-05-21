@@ -27,3 +27,7 @@ Headercolor: #ffffff
 ----
 
 Visibility: archive
+
+----
+
+Cover: mut_cf_centralefies_cover.jpg
