@@ -14,7 +14,7 @@
         <?php if($page->visibility() == 'homepage'): ?>
           <a class="project_close" href="<?php echo $site->url() ?>#<?php echo $title ?>">Close</a>
         <?php else: ?>
-          <a class="project_close" href="javascript:history.back()">Close</a>
+          <a class="project_close" href="javascript:history.go(-1)">Close</a>
         <?php endif ?>
       <?php else: ?>
         <?php if($page->visibility() == 'archive'): ?>

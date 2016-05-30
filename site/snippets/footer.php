@@ -18,8 +18,8 @@
                 <?php if($page->visibility() == 'homepage'): ?>
                   return window.location.href = '<?php echo $site->url() ?>#<?php echo $title ?>';
                 <?php else: ?>
-                  // @TODO History back
-                  window.history.back();
+                  // window.location.href.split('#')[0]
+                  return window.history.go(-1);
                 <?php endif ?>
               <?php else: ?>
                 <?php if($page->visibility() == 'archive'): ?>
