@@ -5,7 +5,8 @@
 	<?php snippet('navigation') ?>
   <?php snippet('archive') ?>
 
-	<main>
+  <main>
+    <?php snippet('news') ?>
 		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
     <?php if($project->visibility() == 'homepage'): ?>
       <?php 

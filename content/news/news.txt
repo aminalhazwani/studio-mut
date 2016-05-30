@@ -1,0 +1,11 @@
+Title: News
+
+----
+
+Newsitems: 
+
+- 
+  newstitle: 'We are going to work at [certain](#) stuff!'
+  newstag: HOT
+  newscolor: '#000000'
+  newsbgcolor: '#ffffff'

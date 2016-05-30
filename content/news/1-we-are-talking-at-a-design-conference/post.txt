@@ -1,0 +1,17 @@
+Title: We are talking at a design conference
+
+----
+
+Tag: HOT
+
+----
+
+Color: #ffffff
+
+----
+
+Bgcolor: #ff0036
+
+----
+
+Textcolor: #ffffff
