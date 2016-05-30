@@ -11,22 +11,23 @@
         var si = jQuery('.royalSlider').data('royalSlider');
         var prevSlide = (si.currSlideId === si.numSlides-1) ? si.currSlideId : undefined;
         si.ev.on('rsBeforeAnimStart', function(e) {
-            console.log(prevSlide, si.currSlideId);
             if(prevSlide === si.currSlideId){
-              <?php $prevPage = $_SERVER['HTTP_REFERER']; ?>
               <?php if(strpos($prevPage, $site->url()) !== false ): ?>
+
                 <?php if($page->visibility() == 'homepage'): ?>
                   return window.location.href = '<?php echo $site->url() ?>#<?php echo $title ?>';
                 <?php else: ?>
-                  // window.location.href.split('#')[0]
-                  return window.history.go(-1);
+                  return window.location.href = '<?php echo $prevPage ?>#archive';
                 <?php endif ?>
+
               <?php else: ?>
-                <?php if($page->visibility() == 'archive'): ?>
-                  return window.location.href = '<?php echo $site->url() ?>#archive';
+
+                <?php if($page->visibility() == 'homepage'): ?>
+                  return window.location.href = '<?php echo $site->url() ?>#<?php echo $title ?>';
                 <?php else: ?>
-                  return window.location.href = '<?php echo $site->url() ?>';
+                  return window.location.href = '<?php echo $site->url() ?>#archive';
                 <?php endif ?>
+
               <?php endif ?>
             }
             prevSlide = si.currSlideId;

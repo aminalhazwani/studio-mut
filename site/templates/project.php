@@ -14,13 +14,13 @@
         <?php if($page->visibility() == 'homepage'): ?>
           <a class="project_close" href="<?php echo $site->url() ?>#<?php echo $title ?>">Close</a>
         <?php else: ?>
-          <a class="project_close" href="javascript:history.go(-1)">Close</a>
+          <a class="project_close" href="<?php echo $prevPage ?>#archive">Close</a>
         <?php endif ?>
       <?php else: ?>
-        <?php if($page->visibility() == 'archive'): ?>
-          <a class="project_close" href="<?php echo $site->url() ?>#archive">Close</a>
+        <?php if($page->visibility() == 'homepage'): ?>
+          <a class="project_close" href="<?php echo $site->url() ?>#<?php echo $title ?>">Close</a>
         <?php else: ?>
-          <a class="project_close" href="<?php echo $site->url() ?>">Close</a>
+          <a class="project_close" href="<?php echo $site->url() ?>#archive">Close</a>
         <?php endif ?>
       <?php endif ?>
       <p class="project_count u-push-btm-none"></p>
