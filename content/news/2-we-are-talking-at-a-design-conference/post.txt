@@ -6,7 +6,7 @@ Tag: HOT
 
 ----
 
-Color: #ffffff
+Color: green
 
 ----
 
@@ -15,3 +15,11 @@ Bgcolor: #ff0036
 ----
 
 Textcolor: #ffffff
+
+----
+
+Palette: green
+
+----
+
+Label: This weekend

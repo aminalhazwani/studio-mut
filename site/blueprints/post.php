@@ -7,17 +7,15 @@ fields:
   title:
     label: Title
     type:  textarea
-  tag:
+  label:
     label: Tag
     type: text
-    width: 1/3
-  textcolor:
-    label: Color text
-    type: color
-    default: 000000
-    width: 1/3
-  bgcolor:
-    label: Background color
-    type: color
-    default: ffffff
-    width: 1/3
+    width: 1/2
+  palette:
+    label: Palette
+    width: 1/2
+    type: radio
+    default: green
+    options:
+      green: Green/White
+      red: Red/White

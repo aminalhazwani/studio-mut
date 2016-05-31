@@ -11,6 +11,7 @@ $black:   #1f1f1f;
 $white:   #ffffff;
 $red:     #ff0036;
 $salmon:  #f99f90;
+$green:   #42ec97;
 
 
 // Dimensions
@@ -20,6 +21,14 @@ $space: 28px;
 $space-half: $space * 0.5;
 $space-quarter: $space * 0.25;
 
+
+// Z-index
+//============================================
+
+$z-aside:  4;
+$z-header: 3;
+$z-nav:    2;
+$z-news:   1;
 
 // Typography
 //============================================
