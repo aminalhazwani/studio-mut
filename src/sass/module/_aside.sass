@@ -7,7 +7,7 @@
   top: 0
   left: 0
   z-index: $z-aside
-  padding: 0 $layout-gutter-xs * 1.8 $space * 2
+  padding: 0 $layout-gutter-xs*1.8 $space*2
   width: 90%
   height: 100%
   color: $black
@@ -17,33 +17,38 @@
   box-shadow: none
   transform: translateX(-100%)
   transition: transform .5s cubic-bezier(.55, 0, .1, 1), box-shadow .5s cubic-bezier(.55, 0, .1, 1)
-
   +mq($bp-xs)
     width: 70%
-    padding: 0 $layout-gutter-sm * 2.4 $space * 2 
-
+    padding: 0 $layout-gutter-sm*2.4 $space*2 
   +mq($bp-sm)
-    padding: 0 $layout-gutter-sm * 2.4 $space * 2 
-
+    padding: 0 $layout-gutter-sm*2.4 $space * 2 
   +mq($bp-md)
-    padding: 0 $layout-gutter-md * 2.2 $space * 2 
+    padding: 0 $layout-gutter-md*2.2 $space*2 
     width: 50%
-
   +mq($bp-lg)
-    padding: 0 $layout-gutter-lg * 1.8 $space * 2 
+    padding: 0 $layout-gutter-lg*1.8 $space*2 
 
-.aside-is-open
-  overflow: hidden
+.aside-open
+  transform: translateX(0)
+  box-shadow: 1rem 0 3rem 0 rgba(0, 0, 0, .3)
+  .aside_projectImage,
+  .aside_projectTitle
+    opacity: 1
+
+
+// Title
+//============================================
 
 .aside_title
-  padding: $space * 4 0
-
+  padding: $space*4 0
   +mq($bp-md)
-    padding: $space * 5 0
-
+    padding: $space*5 0
   +mq($bp-lg)
-    padding: $space * 7 0
+    padding: $space*7 0
 
+
+// Content transition
+//============================================
 
 .aside_projectImage,
 .aside_projectTitle
@@ -51,15 +56,20 @@
   transition: opacity .5s cubic-bezier(.55, 0, .1, 1)
   transition-delay: .5s;
 
+
+// Project thumbnail
+//============================================
+
 .aside_projectImage
   background-position: center
   background-size: cover
   background-repeat: no-repeat
 
-.aside-open
-  transform: translateX(0)
-  box-shadow: 1rem 0 3rem 0 rgba(0, 0, 0, .3)
 
-  .aside_projectImage,
-  .aside_projectTitle
-    opacity: 1
+// Body
+//============================================
+
+// 1. Class applied to the body when aside open
+
+.aside-is-open
+  overflow: hidden // .1

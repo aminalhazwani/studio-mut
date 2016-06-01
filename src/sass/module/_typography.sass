@@ -1,57 +1,45 @@
 //============================================
-// Module
+// Typography
 //============================================
 
-p > a:hover
+// 1. Specific styles for the returned markup from the CMS
+
+.h1 > p // .1
+  line-height: 1.1
+
+p > a:hover // .1
   border-bottom-color: transparent
 
-.bg-blue
-  background-color: $primary
 
-.bg-black
-  background-color: $black
+// List
+//============================================
 
-.bg-red
-  background-color: $red
+// 1. Specific styles for the returned markup from the CMS
 
-.bg-white
-  background-color: $white
+.list li // 1.
+  display: flex
 
-.bg-green
-  background-color: $green
+.list li:before // 1.
+  display: inline-block
+  content: "● "
+  margin-right: 8px
 
-.text-black
-  color: $black
 
-.text-white
-  color: $white
+// Indentation
+//============================================
 
-.splash
-  background-color: $black
-  position: fixed
-  z-index: 999
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  opacity: 1
-  transition: opacity 0.3s cubic-bezier(.55, 0, .1, 1)
-
-.splash-fade
-  opacity: 0
-
-.page-error
-  position: absolute
-  width: 100%
-  height: 100%
-  background-size: 180%
-  background-position: center
-  background-repeat: no-repeat
-  background-color: #0100ff
-  +mq($bp-md)
-    background-size: cover
-
-.h1 > p
-  line-height: 1.3
+.indent > p
+  text-indent: -$space
+  margin-left: $space
+  +mq($bp-xs)
+    text-indent: -$space*2
+    margin-left: $space*2
   +mq($bp-sm)
-    line-height: 1.1
+    text-indent: -$space*3
+    margin-left: $space*3
+  +mq($bp-md)
+    text-indent: -$space*4
+    margin-left: $space*4
+  +mq($bp-lg)
+    text-indent: -$space*5
+    margin-left: $space*5

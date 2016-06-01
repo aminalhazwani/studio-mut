@@ -35,7 +35,7 @@
       });
     </script>
   <?php else: ?>
-    <footer class="u-ta-center u-padd-huge bg-red">
+    <footer class="u-ta-center u-padd-huge u-bg-red">
       <div class="l-container ">
         <?php $sentences = yaml($site->footer()) ?>
         <?php foreach($sentences as $sentence): ?>

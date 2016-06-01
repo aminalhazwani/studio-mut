@@ -1,5 +1,9 @@
 //============================================
-// Project
+// Project page
+//============================================
+
+
+// Slider
 //============================================
 
 .slider
@@ -8,13 +12,21 @@
   height: 100%
   background-color: $black
 
-.bg-white
+.u-bg-white
   .slider
     background-color: $white
+
+
+// Slide image container
+//============================================
 
 .project_figure
   height: 100%
   width: 100%
+
+
+// Slide image enclosed in viewport
+//============================================
 
 .project_image-enclosed
   position: relative
@@ -27,45 +39,15 @@
   left: 50%
   transform: translate(-50%,-49%)
 
+
+// Slide video and controls
+//============================================
+
 .project_image-video
   max-width: 1920px
 
 iframe
   margin-bottom: 0
-
-.project_image-full
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background-repeat: no-repeat
-  background-position: 50% 50%
-  background-size: cover
-
-.project_count,
-.project_close
-  float: right
-
-.project_close
-  margin-left: $space
-  &:hover
-    color: $red
-
-.project_home
-  &:hover
-    color: $red
-    
-.project_caption
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%,-50%)
-  text-align: center
-  width: 85%
-
-.project_caption > p
-  margin: 0 auto
-  max-width: 680px
 
 video::-webkit-media-controls-fullscreen-button
   display: none
@@ -88,3 +70,47 @@ video::-webkit-media-controls-fullscreen-button
   opacity: 0
   transition: opacity 1s ease
   transition-delay: 1s
+
+
+// Slide image full bleed
+//============================================
+
+.project_image-full
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+
+
+// Slide close button and counter
+//============================================
+
+.project_count,
+.project_close
+  float: right
+
+.project_close
+  margin-left: $space
+  &:hover
+    color: $red
+
+
+// Slide image caption
+//============================================
+
+// 1. Specific styles for the returned markup from the CMS
+    
+.project_caption
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  text-align: center
+  width: 85%
+
+.project_caption > p // .1
+  margin: 0 auto
+  max-width: 680px

@@ -1,5 +1,5 @@
 <?php foreach($pages->find('/news')->children()->visible() as $news): ?>
-  <section <?php if($news->palette() == 'red'): ?>class="bg-red"<?php else: ?>class="bg-green"<?php endif ?>>
+  <section <?php if($news->palette() == 'red'): ?>class="u-bg-red"<?php else: ?>class="u-bg-green"<?php endif ?>>
     <div class="news <?php if($news->palette() == 'red'): ?>news-red<?php else: ?>news-green<?php endif ?> u-padd-vert-quarter">
       <div class="news_inner">
         <span class="news_text" data-text="<?php echo $news->title() ?>"><?php echo $news->title() ?></span>

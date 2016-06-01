@@ -6,7 +6,7 @@
   <?php snippet('archive') ?>
 
   <main>
-    <div class="intro bg-blue u-sm-padd-double">
+    <div class="intro u-bg-blue u-sm-padd-double">
       <div class="l-container">
         <div class="h1 u-ta-center u-padd-top-double u-padd-btm-double u-push-btm-none fit">
           <?php echo $page->text()->kirbytext() ?>

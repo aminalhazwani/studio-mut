@@ -9,7 +9,6 @@
 .news_inner
   animation: marquee 10s linear infinite
   white-space: nowrap
-
   +mq($bp-md)
     animation-duration: 15s
 
@@ -21,6 +20,10 @@
     transform: translateX(0)
   100%
     transform: translateX(-100%)
+
+
+// Tag
+//============================================
 
 .news_tag
   position: absolute
@@ -51,6 +54,10 @@
     padding-top: 11px
     font-size: $fs * 2
 
+
+// Text
+//============================================
+
 .news_text
   width: 50%
   text-align: center
@@ -74,6 +81,10 @@
     font-size: $fs * 1.5
   +mq($bp-lg)
     font-size: $fs * 2
+
+
+// Background color (applied via CMS radio button)
+//================================================
     
 .news-green
   .news_tag

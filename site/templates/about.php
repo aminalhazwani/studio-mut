@@ -6,7 +6,7 @@
 <?php snippet('archive') ?>
 
 <main class="about">
-  <div class="intro bg-blue u-sm-padd-double u-sm-padd-btm-none">
+  <div class="intro u-bg-blue u-sm-padd-double u-sm-padd-btm-none">
     <div class="l-container">
       <div class="h1 u-ta-center u-padd-top-double u-padd-btm-none u-sm-padd-btm-none u-push-none fit">
         <?php echo $about->introtext()->kirbytext() ?>
@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div id="contact" class="bg-blue u-padd-btm u-padd-top-double">
+  <div id="contact" class="u-bg-blue u-padd-btm u-padd-top-double">
     <div class="l-container">
       <div class="g-row u-ta-center u-md-ta-lft u-sm-padd-btm u-sm-padd-top-double">
         <div class="g g-md-3">

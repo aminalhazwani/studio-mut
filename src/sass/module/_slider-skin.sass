@@ -1,7 +1,11 @@
+//============================================
+// Slider skin
+//============================================
+
 .rsDefault
-  color: #FFF
+  color: $white
   .rsOverflow, .rsSlide, .rsVideoFrameHolder, .rsThumbs
-    color: #FFF
+    color: $white
   .rsArrow
     height: 100%
     width: 44px
@@ -36,9 +40,9 @@
     position: absolute
     cursor: pointer
     background: url('rs-default.png')
-    background-color: #000
+    background-color: $black
     background-color: rgba(0, 0, 0, 0.75)
-    *background-color: #000
+    *background-color: $black
     border-radius: 2px
     &:hover
       background-color: rgba(0, 0, 0, 0.9)
@@ -64,7 +68,7 @@
     width: 100%
     height: auto
     margin: 0 auto
-    background: #000
+    background: $black
     background: rgba(0, 0, 0, 0.75)
     text-align: center
     line-height: 8px
@@ -84,7 +88,7 @@
       background: #777
       background: rgba(255, 255, 255, 0.5)
     &.rsNavSelected span
-      background-color: #FFF
+      background-color: $white
   .rsThumbsHor
     width: 100%
     height: 72px
@@ -120,7 +124,7 @@
       margin: 0
       padding: 0
       line-height: 20px
-      color: #FFF
+      color: $white
     span
       color: #DDD
       margin: 0
@@ -134,7 +138,7 @@
     display: block
     cursor: pointer
     z-index: 21
-    background: #000
+    background: $black
     background: rgba(0, 0, 0, 0.75)
     &:hover
       background: rgba(0, 0, 0, 0.9)
@@ -197,12 +201,12 @@
     border: 1px solid #D9D9DD
     border-right: 1px solid #f5f5f5
     text-decoration: none
-    background-color: #FFF
+    background-color: $white
     background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4)
     background-image: -moz-linear-gradient(top, #fefefe, #f4f4f4)
     background-image: linear-gradient(to bottom, #fefefe, #f4f4f4)
-    -webkit-box-shadow: inset 1px 0 0 #fff
-    box-shadow: inset 1px 0 0 #fff
+    -webkit-box-shadow: inset 1px 0 0 $white
+    box-shadow: inset 1px 0 0 $white
     *display: inline
     *zoom: 1
     &:first-child
@@ -221,7 +225,7 @@
       background-color: #f4f4f4
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset
     &.rsNavSelected
-      color: #FFF
+      color: $white
       border: 1px solid #999
       text-shadow: 1px 1px #838383
       box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset
@@ -244,9 +248,9 @@
     width: 32px
     height: 32px
     background: url('rs-default.png') 0 0
-    background-color: #000
+    background-color: $black
     background-color: rgba(0, 0, 0, 0.75)
-    *background-color: #000
+    *background-color: $black
     border-radius: 2px
     &:hover
       background-color: rgba(0, 0, 0, 0.9)
@@ -269,9 +273,9 @@
     -moz-transition: .3s
     transition: .3s
     background: url(rs-default.png) no-repeat 0 -32px
-    background-color: #000
+    background-color: $black
     background-color: rgba(0, 0, 0, 0.75)
-    *background-color: #000
+    *background-color: $black
   .rsPlayBtn:hover .rsPlayBtnIcon
     background-color: rgba(0, 0, 0, 0.9)
   .rsBtnCenterer
@@ -296,9 +300,9 @@
     width: 32px
     height: 32px
     background: url('rs-default.png') -64px 0
-    background-color: #000
+    background-color: $black
     background-color: rgba(0, 0, 0, 0.75)
-    *background-color: #000
+    *background-color: $black
     &:hover
       background-color: rgba(0, 0, 0, 0.9)
   .rsPreloader
@@ -317,7 +321,7 @@
     text-align: left
     background: rgb(0, 0, 0)
     background: rgba(0, 0, 0, 0.75)
-    color: #FFF
+    color: $white
     padding: 2px 8px
     width: auto
     font-size: 12px

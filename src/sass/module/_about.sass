@@ -2,9 +2,19 @@
 // About
 //============================================
 
-.intro > p,
-.h1 > p
-  margin-bottom: 0
+
+// Introduction
+//============================================
+
+// 1. Specific styles for the returned markup from the CMS
+
+.intro > p, // 1.
+.h1 > p // 1.
+  margin-bottom: 0 
+
+
+// Profiles
+//============================================
 
 .profile
   position: relative
@@ -20,53 +30,21 @@
   transform: translate(-50%, -50%)
   width: 90%
 
-.l-section
-  margin-bottom: $space
-  +mq($bp-sm)
-    margin-bottom: $space*2
 
-.l-section
-  ul, li
-    margin: 0
-    padding: 0
-    list-style-type: none
-  h4
-    font-size: small
-    margin-bottom: $space-quarter
-    +mq($bp-lg)
-      font-size: smaller
+// Clients
+//============================================
 
-.list li
-  display: flex
-
-.list li:before
-  display: inline-block
-  content: "● "
-  margin-right: 8px
-
-.indent > p
-  text-indent: -$space
-  margin-left: $space
-  +mq($bp-xs)
-    text-indent: -$space*2
-    margin-left: $space*2
-  +mq($bp-sm)
-    text-indent: -$space*3
-    margin-left: $space*3
-  +mq($bp-md)
-    text-indent: -$space*4
-    margin-left: $space*4
-  +mq($bp-lg)
-    text-indent: -$space*5
-    margin-left: $space*5
-
-.clients
+.clients // 1.
   h1
-    margin-bottom: 0
+    margin-bottom: 0 
   ul
     margin-bottom: $space
     +mq(sm)
       margin-bottom: $space*2
+
+
+// Weather
+//============================================
 
 .weather > b,
 .weather > b + br
