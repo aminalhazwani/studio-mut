@@ -2,7 +2,7 @@
   <?php $menuItems = yaml($site->menuItems()) ?>
   <?php foreach($menuItems as $menuItem): ?>
     <?php if(strpos($menuItem['hyperlink'], '#archive') == true): ?>
-      <h2 class="u-ta-center u-push-top-double u-push-btm-double u-padd-btm-double fit"><?php echo $menuItem['label'] ?></h2>
+      <h2 class="aside_title u-ta-center u-push-btm-none fit"><?php echo $menuItem['label'] ?></h2>
     <?php endif ?>
   <?php endforeach ?>
   <div class="g-row g-sm-clear-2 g-lg-clear-3">

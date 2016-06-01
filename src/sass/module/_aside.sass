@@ -7,7 +7,7 @@
   top: 0
   left: 0
   z-index: $z-aside
-  padding: $space * 2 $layout-gutter-xs * 1.8 $space * 2
+  padding: 0 $layout-gutter-xs * 1.8 $space * 2
   width: 90%
   height: 100%
   color: $black
@@ -20,19 +20,30 @@
 
   +mq($bp-xs)
     width: 70%
+    padding: 0 $layout-gutter-sm * 2.4 $space * 2 
 
   +mq($bp-sm)
-    padding: $space * 2 $layout-gutter-sm * 1.8 $space * 2 
+    padding: 0 $layout-gutter-sm * 2.4 $space * 2 
 
   +mq($bp-md)
-    padding: $space * 2 $layout-gutter-md * 1.8 $space * 2 
+    padding: 0 $layout-gutter-md * 2.2 $space * 2 
     width: 50%
 
   +mq($bp-lg)
-    padding: $space * 2 $layout-gutter-lg * 1.8 $space * 2 
+    padding: 0 $layout-gutter-lg * 1.8 $space * 2 
 
 .aside-is-open
   overflow: hidden
+
+.aside_title
+  padding: $space * 4 0
+
+  +mq($bp-md)
+    padding: $space * 5 0
+
+  +mq($bp-lg)
+    padding: $space * 7 0
+
 
 .aside_projectImage,
 .aside_projectTitle
