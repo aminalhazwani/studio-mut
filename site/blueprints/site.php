@@ -47,6 +47,11 @@ fields:
       Add the hash "#archive" to the menu item that should open the archive panel
   line-b:
     type: line
+  newsletterplaceholder:
+    label: Newsletter placeholder
+    type: text
+  line-c:
+    type: line
   footer:
     label: Footer sentences
     type: structure

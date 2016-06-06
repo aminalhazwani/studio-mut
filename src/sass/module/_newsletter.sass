@@ -1,0 +1,53 @@
+//============================================
+// Newsletter
+//============================================
+
+.newsletter_wrap
+  position: relative
+
+.newsletter_label
+  position: absolute
+  padding: $space-quarter
+  width: 100%
+  background-color: $red
+  &:after
+    content: " "
+    position: absolute
+    margin-left: 3px
+    width: 2px
+    height: 60%
+    animation: 1s blink step-end infinite
+
+@keyframes blink
+  from, to
+    background-color: transparent
+  50%
+    background-color: $white
+
+.newsletter_label-hide
+  display: none
+
+.newsletter_input[type="email"]
+  background-color: $red
+  color: $white
+  border: none
+  +mq($bp-xs)
+    height: $space*3
+
+
+// Emoji
+//============================================
+
+.emoji_wrap
+  +pos($space-quarter $space-quarter, top right)
+  +size($space)
+
+
+// Mailchimp
+//============================================
+
+// 1. Specific rules to overwrite Mailchip inline styles
+
+#mc_embed_signup div.mce_inline_error // .1
+  display: none!important
+
