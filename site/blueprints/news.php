@@ -8,5 +8,5 @@ pages:
 files: false
 fields:
   title:
-    label: Title
+    label: Title 
     type:  text

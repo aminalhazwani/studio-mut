@@ -5,7 +5,7 @@ pages: false
 files: false
 fields:
   title:
-    label: Title
+    label: Title (min. 70 characters)
     type:  textarea
   label:
     label: Tag

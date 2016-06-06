@@ -3,17 +3,38 @@
 //============================================
 
 .news
+  display: flex
   position: relative
   overflow: hidden
+  height: 42px
+  +mq($bp-md)
+    height: 56px
+  +mq($bp-lg)
+    height: 70px
 
 .news_inner
-  animation: marquee 10s linear infinite
+  +pos(0 0, top left)
+  padding: $space-quarter $space*2 $space-quarter 0
+  min-width: 40%
   white-space: nowrap
+  animation: marquee 15s linear infinite
+  &:hover
+    animation-play-state: paused
+  &:after,
+  &:before
+    position: absolute
+    content: attr(data-text)
+    top: 0
+    width: 100%
+    padding: $space-quarter $space*2 $space-quarter 0
+  &:before
+    left: 100%
+  &:after
+    left: 200%
   +mq($bp-md)
-    animation-duration: 15s
-
-.news_inner:hover
-  animation-play-state: paused
+    font-size: $fs * 1.5
+  +mq($bp-lg)
+    font-size: $fs * 2
 
 @keyframes marquee
   0%
@@ -52,34 +73,6 @@
     font-size: $fs * 1.5
   +mq($bp-lg)
     padding-top: 11px
-    font-size: $fs * 2
-
-
-// Text
-//============================================
-
-.news_text
-  width: 50%
-  text-align: center
-  padding-left: $space * 2
-  left: 0
-  top: 0
-  white-space: nowrap
-  &:after,
-  &:before
-    content: attr(data-text)
-    top: 0
-    width: 100%
-    white-space: nowrap
-  &:before
-    left: 100%
-    padding-right: $space * 2
-  &:after
-    left: 200%
-    padding-left: $space * 2 
-  +mq($bp-md)
-    font-size: $fs * 1.5
-  +mq($bp-lg)
     font-size: $fs * 2
 
 
