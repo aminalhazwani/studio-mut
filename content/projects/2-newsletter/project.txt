@@ -1,0 +1,29 @@
+Title: Newsletter
+
+----
+
+Titl: 
+
+----
+
+Visibility: homepage
+
+----
+
+Cover: 
+
+----
+
+Client: 
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Text: 

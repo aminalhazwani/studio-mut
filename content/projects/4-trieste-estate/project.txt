@@ -29,7 +29,7 @@ Headercolor: #ffffff
 
 ----
 
-Visibility: archive
+Visibility: homepage
 
 ----
 
