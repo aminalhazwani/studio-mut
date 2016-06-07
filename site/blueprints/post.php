@@ -7,6 +7,9 @@ fields:
   title:
     label: Title (min. 70 characters)
     type:  textarea
+  link:
+    label: Link 
+    type:  url
   label:
     label: Tag
     type: text

@@ -7,3 +7,7 @@ Label: Oh my
 ----
 
 Palette: red
+
+----
+
+Link: http://typographica.org/on-typography/back-to-school-strizvers-nyc-workshop/
