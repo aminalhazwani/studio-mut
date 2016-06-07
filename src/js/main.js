@@ -15,6 +15,15 @@ $(".newsletter_input").on("click", function(){
   $(".newsletter_label").addClass("newsletter_label-hide");
 });
 
+// Newsletter button
+if( $(".newsletter_input").is(":focus") ) {
+  $(".newsletter_input").keyup(function(event) {
+    if(event.keyCode == 13){
+      $("#mc-embedded-subscribe").click();
+    }
+  });
+}
+
 
 // Random sentence in footer
 var random = Math.floor(Math.random() * 1000);

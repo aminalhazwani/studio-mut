@@ -5,11 +5,21 @@
 .newsletter_wrap
   position: relative
 
-.newsletter_label
+.newsletter_label,
+#mce-success-response
   position: absolute
   padding: $space-quarter
   width: 100%
   background-color: $red
+  +mq($bp-sm)
+    padding-bottom: 5px
+    padding-left: $space-half
+    font-size: $fs*1.5
+  +mq($bp-lg)
+    padding-bottom: 3px
+    font-size: $fs*2
+
+.newsletter_label-withcursor
   &:after
     content: " "
     position: absolute
@@ -17,6 +27,10 @@
     width: 2px
     height: 60%
     animation: 1s blink step-end infinite
+    +mq($bp-sm)
+      margin-top: 3px
+      margin-left: 5px
+      width: 3px
 
 @keyframes blink
   from, to
@@ -31,8 +45,13 @@
   background-color: $red
   color: $white
   border: none
-  +mq($bp-xs)
-    height: $space*3
+  +mq($bp-sm)
+    padding-bottom: 5px
+    padding-left: $space-half
+    font-size: $fs*1.5
+  +mq($bp-lg)
+    font-size: $fs*2
+    padding-bottom: 3px
 
 
 // Emoji
@@ -49,5 +68,6 @@
 // 1. Specific rules to overwrite Mailchip inline styles
 
 #mc_embed_signup div.mce_inline_error // .1
-  display: none!important
+  // display: none!important
+
 
