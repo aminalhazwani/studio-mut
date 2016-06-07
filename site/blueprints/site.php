@@ -48,7 +48,13 @@ fields:
   line-b:
     type: line
   newsletterplaceholder:
-    label: Newsletter placeholder
+    label: Newsletter placeholder message
+    type: text
+  newslettersuccess:
+    label: Newsletter success message
+    type: text
+  newslettererror:
+    label: Newsletter error message
     type: text
   line-c:
     type: line

@@ -164,3 +164,11 @@ Trackingcode: UA-54435071-1
 ----
 
 Newsletterplaceholder: Studio Mut newsletter?
+
+----
+
+Newslettersuccess: Best wishes form Oswaldweg!
+
+----
+
+Newslettererror: This address seems invalid
