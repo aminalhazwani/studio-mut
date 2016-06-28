@@ -11,3 +11,11 @@ Palette: red
 ----
 
 Link: http://typographica.org/on-typography/back-to-school-strizvers-nyc-workshop/
+
+----
+
+Bgcolor: #42ec97
+
+----
+
+Txtcolor: #ffffff

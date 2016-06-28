@@ -10,7 +10,7 @@ Color: green
 
 ----
 
-Bgcolor: #ff0036
+Bgcolor: #ffff00
 
 ----
 
@@ -23,3 +23,11 @@ Palette: green
 ----
 
 Label: This weekend
+
+----
+
+Link: 
+
+----
+
+Txtcolor: #000000

@@ -14,11 +14,13 @@ fields:
     label: Tag
     type: text
     width: 1/2
-  palette:
-    label: Palette
-    width: 1/2
-    type: radio
-    default: green
-    options:
-      green: Green/White
-      red: Red/White
+  bgcolor:
+    label: Background color
+    type: color
+    width: 1/4
+    default: 42ec97
+  txtcolor:
+    label: Text color
+    type: color
+    width: 1/4
+    default: ffffff
