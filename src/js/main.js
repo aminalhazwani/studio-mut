@@ -167,12 +167,11 @@ $(function() {
   $(".aside").swipe( {
     //Generic swipe handler for all directions
     allowPageScroll: "auto", 
-    swipeLeft:function(event, direction, distance, duration, fingerCount) {
+    swipeLeft: function(event, direction, distance, duration, fingerCount) {
       if ($('.aside').hasClass("aside-open")) {
         $('body').removeClass("aside-is-open");
         $('.aside').removeClass("aside-open");
         history.pushState('', document.title, window.location.pathname);
-        e.preventDefault();
       }
     }
   });
