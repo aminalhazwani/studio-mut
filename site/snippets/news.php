@@ -7,7 +7,26 @@
             <?php echo $news->title() ?>
           </p>
         </div>
-        <div class="news_tag" style="background-color: <?php echo $news->bgcolor() ?>; color: <?php echo $news->txtcolor() ?>; box-shadow: -50px 0px 50px 5px <?php echo $news->bgcolor() ?>;">
+        <?php 
+          $title = $news->title()->html();
+          $title = strtolower($title);
+          $title = preg_replace("/[^a-z0-9_\s-]/", "", $title);
+          $title = preg_replace("/[\s-]+/", " ", $title);
+          $title = preg_replace("/[\s_]/", "-", $title);
+        ?>
+        <style>
+          .news_tag-<?php echo $title ?> {
+            background-color: <?php echo $news->bgcolor() ?>; 
+            color: <?php echo $news->txtcolor() ?>; 
+            box-shadow: -10px 0px 20px 20px <?php echo $news->bgcolor() ?>;
+          }
+          @media screen and (min-width: 452px) {
+            .news_tag-<?php echo $title ?> {
+              box-shadow: -10px 0px 40px 40px <?php echo $news->bgcolor() ?>;
+            }
+          }
+        </style>
+        <div class="news_tag news_tag-<?php echo $title ?>">
           <p class="u-push-btm-none"><?php echo $news->label() ?></p>
         </div>
       </div>
