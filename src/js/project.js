@@ -43,14 +43,14 @@ $('.button').click(function(e) {
   e.stopPropagation();
 });
 
-$(function() {
-  var is_ios = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
-  if(is_ios)
-  {
-    $('video').attr('controls',true);
-    $('.button').hide();
-  };
-});
+// $(function() {
+//   var is_ios = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+//   if(is_ios)
+//   {
+//     $('video').attr('controls',true);
+//     $('.button').hide();
+//   };
+// });
 
 $(function() {
   var sliderJQ = $('.slider').royalSlider({
