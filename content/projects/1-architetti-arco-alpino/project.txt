@@ -1,0 +1,32 @@
+Title: Architetti Arco Alpino
+
+----
+
+Titl: 
+
+Testing video
+big time
+
+----
+
+Visibility: homepage
+
+----
+
+Cover: aa-placeholder-02.png
+
+----
+
+Client: Another celebrated website
+
+----
+
+Headercolor: #ffffff
+
+----
+
+Bkcolor: #1f1f1f
+
+----
+
+Text: 

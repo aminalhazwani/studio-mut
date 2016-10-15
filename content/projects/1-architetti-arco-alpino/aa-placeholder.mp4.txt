@@ -1,0 +1,21 @@
+Measure: full
+
+----
+
+Slidebgcolor: #1f1f1f
+
+----
+
+Overtextcolor: #ffffff
+
+----
+
+Overtext: 
+
+----
+
+Video: 1
+
+----
+
+Sort: 3
