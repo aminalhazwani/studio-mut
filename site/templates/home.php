@@ -6,7 +6,7 @@
   <?php snippet('archive') ?>
 
   <main>
-    <?php snippet('news') ?>
+    <!-- <?php snippet('news') ?> -->
 		<?php foreach($pages->find('/projects')->children()->visible() as $project): ?>
     <?php if($project->visibility() == 'homepage'): ?>
       <?php 
@@ -14,7 +14,7 @@
         $title = strtolower($title);
       ?>
       <?php if($project->title() == 'Newsletter'): ?>
-        <?php snippet('newsletter-home') ?>
+        <?php snippet('newsletter') ?>
       <?php else: ?>
   			<article id="<?php echo $title ?>">
   				<div class="u-bg-blue u-ta-center u-padd-huge">

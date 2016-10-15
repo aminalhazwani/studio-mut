@@ -2,64 +2,52 @@
 // Newsletter
 //============================================
 
-.newsletter_wrap
+.newsletter_smile
+  display: flex
+  justify-content: space-around
+  margin-bottom: $space
+
+  svg
+    flex-basis: 30%
+
+.newsletter_form
+  margin-bottom: 0
+
+.newsletter_formInner
   position: relative
+  display: flex
 
-.newsletter_label,
-#mce-success-response
-  position: absolute
-  padding: $space-quarter
-  width: 100%
-  background-color: $red
-  +mq($bp-sm)
-    padding-bottom: 5px
-    padding-left: $space-half
-    font-size: $fs*1.5
-  +mq($bp-lg)
-    padding-bottom: 3px
-    font-size: $fs*2
+.newsletter_formInput
+  flex-grow: 1
 
-.newsletter_label-withcursor
-  &:after
-    content: " "
-    position: absolute
-    margin-left: 3px
-    width: 2px
-    height: 60%
-    animation: 1s blink step-end infinite
-    +mq($bp-sm)
-      margin-top: 3px
-      margin-left: 5px
-      width: 3px
-
-@keyframes blink
-  from, to
+  input
     background-color: transparent
-  50%
-    background-color: $white
-
-.newsletter_label-hide
-  display: none
-
-.newsletter_input[type="email"]
-  background-color: $red
-  color: $white
-  border: none
-  +mq($bp-sm)
-    padding-bottom: 5px
+    border: 0.2rem solid $white
     padding-left: $space-half
-    font-size: $fs*1.5
-  +mq($bp-lg)
-    font-size: $fs*2
-    padding-bottom: 3px
 
+    &::-webkit-input-placeholder
+      color: $black
+      opacity: 1
 
-// Emoji
-//============================================
+    &::-moz-placeholder
+      color: $black
+      opacity: 1
 
-.emoji_wrap
-  +pos($space-quarter $space-quarter, top right)
-  +size($space*2)
+    &:-ms-input-placeholder
+      color: $black
+      opacity: 1
+
+    &::-moz-focus-inner
+      border: 0
+      padding: 0
+      background-image: none
+
+.newsletter_formSubmit
+  padding: 0 $space-half 0 0.6rem
+  background-color: $white
+  color: $black
+  border-radius: 0
+  border: none
 
 
 // Mailchimp
@@ -68,6 +56,7 @@
 // 1. Specific rules to overwrite Mailchip inline styles
 
 #mc_embed_signup div.mce_inline_error // .1
-  // display: none!important
+  display: none!important
 
-
+.mce_inline_error
+  border: 0.2rem solid $white!important
