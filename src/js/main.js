@@ -43,7 +43,7 @@ $('#mc-embedded-subscribe').on('click', function(event){
       if($("#mce-success-response").attr("style") == "") {
         console.log("Positive response visible");
         $("#mce-responses").addClass("newsletter_responses");
-        $("#mce-responses").append("<p class=\"newsletter_warning\">Whait, where are the smileys gone? <a href=\"/klick\">Klick</a> for more smileys. You deserve it.</p>");
+        $(".newsletter_responsesLink").append("<p class=\"newsletter_warning\">Whait, where are the smileys gone? <a class=\"newsletter_warningLink\" href=\"/klick\">Klick</a> for more smileys. You deserve it.</p>");
         clearInterval(interval);
       }
   }, 1); 

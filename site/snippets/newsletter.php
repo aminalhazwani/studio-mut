@@ -17,7 +17,9 @@
     </form>
   </div>
   <div id="mce-responses">
-    <div class="response newsletter_response" id="mce-error-response" style="display:none"></div>
-    <div class="response newsletter_response" id="mce-success-response" style="display:none"></div>
+    <a class="newsletter_responsesLink" href="/klick">
+      <!-- <div class="response newsletter_response" id="mce-error-response" style="display:none"></div> -->
+      <div class="response newsletter_response" id="mce-success-response" style="display:none"></div>
+    </a>
   </div>
 </article>

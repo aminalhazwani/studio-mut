@@ -71,6 +71,11 @@
   background-color: $green
   z-index: $z-newsltter
 
+.newsletter_responsesLink
+  display: block
+  height: 100%
+  border-bottom-color: transparent
+
 .newsletter_response
   +center-transform
   width: calc(100% - 3.6rem)
@@ -88,9 +93,6 @@
 .newsletter_warning
   display: none
 
-  a
-    border-bottom-color: $black
-
   +mq($bp-sm)
     +pos($space 50%, bottom left)
     transform: translateX(-50%)
@@ -103,6 +105,13 @@
 
   +mq($bp-md)
     bottom: $space*2
+
+.newsletter_warningLink
+  border-bottom-color: transparent
+
+  &:hover
+    border-bottom-color: $black
+
 
 
 // Mailchimp
