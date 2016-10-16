@@ -8,13 +8,19 @@
 .newsletter_smile
   display: flex
   justify-content: space-around
-  margin-bottom: $space
+  margin-bottom: $space-half
 
   svg
     flex-basis: 30%
 
+  +mq($bp-sm)
+    margin-bottom: $space
+
 .newsletter_form
-  margin-bottom: 0
+  margin: 0 auto
+
+  +mq($bp-sm)
+    max-width: 70%
 
 .newsletter_formInner
   position: relative
@@ -46,6 +52,9 @@
       padding: 0
       background-image: none
 
+    +mq($bp-sm)
+      font-size: larger
+
 .newsletter_formSubmit
   padding: 0 $space-half 0 0.6rem
   background-color: $white
@@ -53,10 +62,47 @@
   border-radius: 0
   border: none
 
-.newsletter_response
+  +mq($bp-sm)
+    font-size: larger
+
+.newsletter_responses
   +pos(0 0, top left)
   +size(100%)
   background-color: $green
+  z-index: $z-newsltter
+
+.newsletter_response
+  +center-transform
+  width: calc(100% - 3.6rem)
+  text-align: center
+  line-height: 1.1
+
+  +mq($bp-sm)
+    max-width: 70%
+    font-size: larger
+    line-height: 1.3
+
+  +mq($bp-md)
+    max-width: 50%
+
+.newsletter_warning
+  display: none
+
+  a
+    border-bottom-color: $black
+
+  +mq($bp-sm)
+    +pos($space 50%, bottom left)
+    transform: translateX(-50%)
+    bottom: $space
+    display: block
+    margin: 0
+    width: calc(100% - 3.6rem)
+    font-size: smaller
+    text-align: center
+
+  +mq($bp-md)
+    bottom: $space*2
 
 
 // Mailchimp
@@ -64,13 +110,10 @@
 
 // 1. Specific rules to overwrite Mailchip inline styles
 
-// #mc_embed_signup div.mce_inline_error // .1
-//   display: none!important
-
-#mc_embed_signup input.mce_inline_error
+#mc_embed_signup input.mce_inline_error // .1
   border: 0.2rem solid $white!important
 
-#mc_embed_signup div.mce_inline_error
+#mc_embed_signup div.mce_inline_error // .1
   +pos(0 0, top left)
   +size(100%)
   margin: 0!important
@@ -83,3 +126,6 @@
   cursor: pointer
   white-space: nowrap
   overflow: hidden
+
+  +mq($bp-sm)
+    font-size: larger

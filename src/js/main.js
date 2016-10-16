@@ -16,36 +16,42 @@ $("#mce-EMAIL").on("focus", function(){
   $(".eyes-round").css("visibility", "hidden");
   $(".eyes-square").removeAttr("style");
   $(".eyes-square").css("visibility", "visible");
-}).on("blur", function(){
-  $(".eyes-square").removeAttr("style");
-  $(".eyes-square").css("visibility", "hidden");
-  $(".eyes-round").removeAttr("style");
-  $(".eyes-round").css("visibility", "visible");
+// }).on("blur", function(){
+//   $(".eyes-square").removeAttr("style");
+//   $(".eyes-square").css("visibility", "hidden");
+//   $(".eyes-round").removeAttr("style");
+//   $(".eyes-round").css("visibility", "visible");
 });
 
 $('#mc-embedded-subscribe').on('click', function(event){
-  console.log('submit');
-  if($('.mc-field-group').find('.mce_inline_error').length != 0) {
-    console.log('found error');
-    $("#mce-EMAIL").blur();
-    event.preventDefault();
-    console.log("input blur");
-    $(".mce_inline_error").show();
-    $('.newsletter').removeClass('u-bg-green').addClass('u-bg-red');
-    $(".eyes-square").removeAttr("style");
-    $(".eyes-square").css("visibility", "hidden");
-    $(".eyes-round").removeAttr("style");
-    $(".eyes-round").css("visibility", "visible");
-    $(".mouth").css("visibility", "hidden");
-    $(".mouth-open").css("visibility", "visible");
-  }
+  var timesRun = 0;
+  var interval = setInterval(function(){
+      timesRun += 1;
+      if($('.mc-field-group').find('.mce_inline_error').length != 0) {
+        $("#mce-EMAIL").blur();
+        event.preventDefault();
+        $(".mce_inline_error").show();
+        $('.newsletter').removeClass('u-bg-green').addClass('u-bg-red');
+        $(".eyes-square").removeAttr("style");
+        $(".eyes-square").css("visibility", "hidden");
+        $(".eyes-round").removeAttr("style");
+        $(".eyes-round").css("visibility", "visible");
+        $(".mouth").css("visibility", "hidden");
+        $(".mouth-open").css("visibility", "visible");
+        clearInterval(interval);
+      }
+      if($("#mce-success-response").attr("style") == "") {
+        console.log("Positive response visible");
+        $("#mce-responses").addClass("newsletter_responses");
+        $("#mce-responses").append("<p class=\"newsletter_warning\">Whait, where are the smileys gone? <a href=\"/klick\">Klick</a> for more smileys. You deserve it.</p>");
+        clearInterval(interval);
+      }
+  }, 1); 
 });
 
 $("body").on("click", ".mce_inline_error", function(e) {
-  console.log("click on error");
   $("div.mce_inline_error").remove();
   $("#mce-EMAIL").show().focus();
-  // $(".mce_inline_error").attr("for","mce-EMAIL");
   $('.newsletter').removeClass('u-bg-red').addClass('u-bg-green');
   $(".mouth-open").css("visibility", "hidden");
   $(".mouth").css("visibility", "visible");
