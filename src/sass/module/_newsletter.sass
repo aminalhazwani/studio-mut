@@ -2,6 +2,9 @@
 // Newsletter
 //============================================
 
+.newsletter
+  position: relative
+
 .newsletter_smile
   display: flex
   justify-content: space-around
@@ -18,6 +21,7 @@
   display: flex
 
 .newsletter_formInput
+  position: relative
   flex-grow: 1
 
   input
@@ -49,14 +53,33 @@
   border-radius: 0
   border: none
 
+.newsletter_response
+  +pos(0 0, top left)
+  +size(100%)
+  background-color: $green
+
 
 // Mailchimp
 //============================================
 
 // 1. Specific rules to overwrite Mailchip inline styles
 
-#mc_embed_signup div.mce_inline_error // .1
-  display: none!important
+// #mc_embed_signup div.mce_inline_error // .1
+//   display: none!important
 
-.mce_inline_error
+#mc_embed_signup input.mce_inline_error
   border: 0.2rem solid $white!important
+
+#mc_embed_signup div.mce_inline_error
+  +pos(0 0, top left)
+  +size(100%)
+  margin: 0!important
+  padding: $space-quarter!important
+  padding-left: $space-half
+  background-color: $red!important
+  color: $black!important
+  font-weight: 400!important
+  border: 0.2rem solid $white!important
+  cursor: pointer
+  white-space: nowrap
+  overflow: hidden

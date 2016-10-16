@@ -11,14 +11,45 @@ $(window).on("scroll load", function() {
 
 
 // Newsletter
-$(".newsletter_formInput > input").on("focus", function(){
+$("#mce-EMAIL").on("focus", function(){
+  $(".eyes-round").removeAttr("style");
   $(".eyes-round").css("visibility", "hidden");
+  $(".eyes-square").removeAttr("style");
   $(".eyes-square").css("visibility", "visible");
 }).on("blur", function(){
-  $(".eyes-round").css("visibility", "visible");
+  $(".eyes-square").removeAttr("style");
   $(".eyes-square").css("visibility", "hidden");
+  $(".eyes-round").removeAttr("style");
+  $(".eyes-round").css("visibility", "visible");
 });
 
+$('#mc-embedded-subscribe').on('click', function(event){
+  console.log('submit');
+  if($('.mc-field-group').find('.mce_inline_error').length != 0) {
+    console.log('found error');
+    $("#mce-EMAIL").blur();
+    event.preventDefault();
+    console.log("input blur");
+    $(".mce_inline_error").show();
+    $('.newsletter').removeClass('u-bg-green').addClass('u-bg-red');
+    $(".eyes-square").removeAttr("style");
+    $(".eyes-square").css("visibility", "hidden");
+    $(".eyes-round").removeAttr("style");
+    $(".eyes-round").css("visibility", "visible");
+    $(".mouth").css("visibility", "hidden");
+    $(".mouth-open").css("visibility", "visible");
+  }
+});
+
+$("body").on("click", ".mce_inline_error", function(e) {
+  console.log("click on error");
+  $("div.mce_inline_error").remove();
+  $("#mce-EMAIL").show().focus();
+  // $(".mce_inline_error").attr("for","mce-EMAIL");
+  $('.newsletter').removeClass('u-bg-red').addClass('u-bg-green');
+  $(".mouth-open").css("visibility", "hidden");
+  $(".mouth").css("visibility", "visible");
+});
 
 // Random sentence in footer
 var random = Math.floor(Math.random() * 1000);
