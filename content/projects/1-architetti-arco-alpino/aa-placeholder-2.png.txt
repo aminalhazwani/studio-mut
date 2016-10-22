@@ -1,4 +1,4 @@
-Measure: full
+Measure: enclosed
 
 ----
 
@@ -14,8 +14,8 @@ Overtext:
 
 ----
 
-Video: 0
+Video: 1
 
 ----
 
-Sort: 5
+Sort: 1
