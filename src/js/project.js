@@ -31,9 +31,10 @@ $(function() {
   }
   sliderInstance.ev.on('rsAfterSlideChange', updCount);
   sliderInstance.ev.on('rsAfterSlideChange', function(){
-    if ($('#project_video').visible()) {
-      playVideo();
-    }
+    var is_ios = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+    if(is_ios) {} else {
+      playVideoInstance();
+    } 
   });
   updCount();
 });

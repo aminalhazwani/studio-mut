@@ -39,6 +39,14 @@
             if(is_ios) {
               $('[data-video="<?php echo $image->name() ?>"]').attr("poster", "<?php echo $image->url() ?>");
               $('<button class="i i-playtriangle project_button"></button>').insertAfter('#project_video[data-video="<?php echo $image->name() ?>"]');
+            } else {
+              function playVideoInstance() {
+                if ($('[data-video="<?php echo $image->name() ?>"]')[0].paused === true) {
+                  if ($('[data-video="<?php echo $image->name() ?>"]').visible()) {
+                    $('[data-video="<?php echo $image->name() ?>"]')[0].play();
+                  }
+                } else {}
+              }
             }
           </script>
         </figure>
