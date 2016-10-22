@@ -13,7 +13,7 @@ Visibility: homepage
 
 ----
 
-Cover: aa-placeholder-02.png
+Cover: aa-placeholder.png
 
 ----
 
