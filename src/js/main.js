@@ -16,11 +16,11 @@ $("#mce-EMAIL").on("focus", function(){
   $(".eyes-round").css("visibility", "hidden");
   $(".eyes-square").removeAttr("style");
   $(".eyes-square").css("visibility", "visible");
-// }).on("blur", function(){
-//   $(".eyes-square").removeAttr("style");
-//   $(".eyes-square").css("visibility", "hidden");
-//   $(".eyes-round").removeAttr("style");
-//   $(".eyes-round").css("visibility", "visible");
+}).on("blur", function(){
+  $(".eyes-square").removeAttr("style");
+  $(".eyes-square").css("visibility", "hidden");
+  $(".eyes-round").removeAttr("style");
+  $(".eyes-round").css("visibility", "visible");
 });
 
 $('#mc-embedded-subscribe').on('click', function(event){

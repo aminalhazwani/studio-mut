@@ -31,10 +31,16 @@
     <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
       <?php if($image->video() == '1'): ?>
         <figure class="project_figure" <?php if($image->slidebgcolor() != ''): ?>style="background-color: <?php echo $image->slidebgcolor() ?>"<?php endif ?>>
-          <video id="project_video" class="project_image-enclosed" poster="<?php echo $image->url() ?>" onended="end()">
+          <video id="project_video" class="project_image-enclosed" loop>
             <source src="<?php echo $page->url() ?>/<?php echo $image->name() ?>.mp4" type="video/mp4">
           </video>
-          <button class="button" type="button" style="position: absolute; z-index: 1"></button>
+          <script>
+            var is_ios = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+            if(is_ios) {
+              console.log("is ios");
+              $("#project_video").attr("poster", "<?php echo $image->url() ?>");
+            }
+          </script>
         </figure>
       <?php else: ?>
         <?php $cover = $page->image($page->cover()); ?>
