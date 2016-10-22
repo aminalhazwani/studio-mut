@@ -1,5 +1,4 @@
   <?php if($page->template() == 'project'): ?>
-    <?php echo js('assets/js/vendor/vendors.min.js') ?>
     <?php echo js('assets/js/project.min.js') ?>
     <?php 
       $title = preg_replace('#[ -]+#', '-', $page->title()->html());
