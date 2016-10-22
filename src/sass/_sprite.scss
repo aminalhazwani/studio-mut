@@ -11,17 +11,13 @@
 
 
 $i-map: (
-  i-map-path: url("../images/sprite-ab3b50b4.svg"),
-  i-map-width: 145px,
-  i-map-height: 35.6px,
+  i-map-path: url("../images/sprite-7d09af52.svg"),
+  i-map-width: 80px,
+  i-map-height: 90px,
 
-  i-video-pause-button-black-width: 67.5px,
-  i-video-pause-button-black-height: 35.6px,
-  i-video-pause-button-black-position: 0 0,
-
-  i-video-play-button-black-width: 76.3px,
-  i-video-play-button-black-height: 34.5px,
-  i-video-play-button-black-position: -68px 0
+  i-playtriangle-width: 80px,
+  i-playtriangle-height: 90px,
+  i-playtriangle-position: 0 0
 );
 
 
@@ -38,7 +34,7 @@ $i-map: (
 }
 
 %i {
-  background-image: url("../images/sprite-ab3b50b4.svg");
+  background-image: url("../images/sprite-7d09af52.svg");
 }
 
 @mixin extend-i-url($extend: true) {
@@ -55,6 +51,23 @@ $i-map: (
   @include i(true);
   @include extend-i-url(true);
 }
+
+
+// Mixins & classes
+//===========================================
+
+@mixin i-playtriangle($add-style: true, $add-url: true) {
+  @include i($add-style);
+  @include extend-i-url($add-url);
+  background-position: 0 0;
+  width: 80px;
+  height: 90px;
+}
+
+.i-playtriangle {
+  @include i-playtriangle(false, false);
+}
+
 
 
 
