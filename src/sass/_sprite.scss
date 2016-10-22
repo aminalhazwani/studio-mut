@@ -57,36 +57,6 @@ $i-map: (
 }
 
 
-// Mixins & classes
-//===========================================
-
-@mixin i-video-pause-button-black($add-style: true, $add-url: true) {
-  @include i($add-style);
-  @include extend-i-url($add-url);
-  background-position: 0 0;
-  width: 67.5px;
-  height: 35.6px;
-}
-
-.i-video-pause-button-black {
-  @include i-video-pause-button-black(false, false);
-}
-
-
-@mixin i-video-play-button-black($add-style: true, $add-url: true) {
-  @include i($add-style);
-  @include extend-i-url($add-url);
-  background-position: -68px 0;
-  width: 76.3px;
-  height: 34.5px;
-}
-
-.i-video-play-button-black {
-  @include i-video-play-button-black(false, false);
-}
-
-
-
 
 
 

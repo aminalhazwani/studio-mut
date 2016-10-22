@@ -49,40 +49,16 @@
 iframe
   margin-bottom: 0
 
+// video::-webkit-media-controls-fullscreen-button
+//   display: none
 
-.button
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%) scale(2)
-  opacity: 1
-  transition: opacity .3s ease
-  background-color: transparent
-  border: none
-  +i-video-play-button-black()
-  // &:after
-  //   content: "Play"
+// video::-webkit-media-controls-panel
+//   display: none!important
+//   -webkit-appearance: none
 
-.button-pause
-  +i-video-pause-button-black()
-  // &:after
-  //   content: "Pause"
-
-video::-webkit-media-controls-fullscreen-button
-  display: none
-
-video::-webkit-media-controls-panel
-  display: none!important
-  -webkit-appearance: none
-
-video::-webkit-media-controls-start-playback-button
-  display: none!important
-  -webkit-appearance: none
-
-.button-hide
-  opacity: 0
-  transition: opacity 1s ease
-  transition-delay: 1s
+// video::-webkit-media-controls-start-playback-button
+//   display: none!important
+//   -webkit-appearance: none
 
 
 // Slide image full bleed
